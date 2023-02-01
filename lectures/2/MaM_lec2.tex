@@ -318,8 +318,8 @@ the bearing at each joint. These features are kinematically unimportant.
 
 
     \begin{subfigure}{0.32\textwidth}
-        \centering\includegraphics[height=2.2cm,width=1\textwidth,keepaspectratio]{H_sd.png}
-        \caption*{H joint}
+        \centering\includegraphics[height=2.2cm,width=1\textwidth,keepaspectratio]{Smin_sd.png}
+        \caption*{S with extra link joint}
     \end{subfigure}
     \begin{subfigure}{0.32\textwidth}
         \centering\includegraphics[height=2.2cm,width=1\textwidth,keepaspectratio]{Tooth_sd.png}
@@ -402,7 +402,18 @@ An \textit{\textbf{open} Kinematic chain} of more than one link will always have
 
 \begin{frame}[t]{Degrees of Freedom}
     \framesubtitle{Definitions}
+        DoF --- the number of independent coordinates required to define its position.
+
+        \begin{align*}
+            \text{DoF}=m(N-1-J) + \sum_{i=1}^{J}f_i,
+        \end{align*}
+        where $N$ --- \# of bodies, including ground;
         
+        $J$ --- \# of joints;
+        
+        $m$ --- eq. to 3 if planar mech, 6 -- spatial;
+        
+        $f_i$ --- DoF of the joint.
     \end{frame}
 
 
@@ -419,17 +430,42 @@ An \textit{\textbf{open} Kinematic chain} of more than one link will always have
 
 \begin{frame}[t]{Degrees of Freedom}
     \framesubtitle{Example}
-        
+    \vspace{-0.5cm}
+    \begin{figure}[H]
+            \centering\includegraphics[height=5cm,width=1\textwidth,keepaspectratio]{rus2_mech.png}
+            \caption*{$\text{DoF}=6(4-1-4) + (1+1+2+3) = 1$}
+    \end{figure}
     \end{frame}
 
 \begin{frame}[t]{Degrees of Freedom}
     \framesubtitle{Practical Task}
-        
+    \vspace{-0.7cm}
+    \begin{figure}[H]
+        \centering\includegraphics[height=5.5cm,width=1\textwidth,keepaspectratio]{stud_task.png}
+        \caption*{\uncover<2->{$\text{DoF}=3(6-1-8) + (2+7*1) = 0$}}
+        \label{fig:stud_task.png}
+    \end{figure}        
     \end{frame}
+
     
 \begin{frame}[t]{Degrees of Freedom}
     \framesubtitle{Not working with classical theory}
-        
+    \vspace{-0.5cm}
+        \begin{figure}[H]
+            \centering\includegraphics[height=5cm,width=1\textwidth,keepaspectratio]{extra_links_mech.png}
+            % \caption{caption_name}
+            \label{fig:extra_links_mech.png}
+        \end{figure}
+    \end{frame}
+
+\begin{frame}[t]{Degrees of Freedom}
+    \framesubtitle{Replacement of the higher joints with the lower joints}
+    \vspace{-0.5cm}
+        \begin{figure}[H]
+            \centering\includegraphics[height=5cm,width=1\textwidth,keepaspectratio]{from_h_to_l_mech.png}
+            \caption*{From Point-Line higher joint (IV Class) to P and R lower joints (both V Class)}
+            \label{from_h_to_l_mech.png}
+        \end{figure}
     \end{frame}
 
 \begin{frame}[t]{Reference material}

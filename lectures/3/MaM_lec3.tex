@@ -11,7 +11,7 @@
 %%   \begin{otherlanguage}{slovak}  ... \end{otherlanguage}
 %%
 %% These macros specify information about the presentation
-\title[MaM]{Mechanics and Machines, Lecture 2} %% that will be typeset on the
+\title[MaM]{Mechanics and Machines, Lecture 3} %% that will be typeset on the
 \subtitle{Types of drives: kinematics, where to find other info
 \\ Drives: friction, belts, chains, gears, universal, geneva       \\ \  
          } %% title page.
@@ -211,33 +211,78 @@
 \end{frame}
 
 \begin{frame}[t]{Belt}
-    \framesubtitle{Types of belt transmission}
+    \framesubtitle{Types of belts}
+    \vspace{-1.2cm}
+    \begin{figure}[H]
+        \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{belt_types.png}
+        \caption*{\textit{а}) flat (плоская), \textit{б}) vee belt (клиновидная), \textit{в}) round (круглая), \textit{г}) timing (toothed, зубчатый)}
+        \label{fig:belt_types.png}
+    \end{figure}
 
 \end{frame}
 
 \begin{frame}[t]{Belt}
     \framesubtitle{Drive kinematics (1)}
-
+    \begin{itemize}
+        \item Linear velocity of a pulley --- $v_1=\omega_1 \frac{d_1}{2}$, $d$ --- diameter of a pulley (шкив)
+        \item Length of pulley --- $l = 2a + \frac{\pi}{2}(d_1 + d_2) + \dfrac{(d_2-d_1)^2}{4a}$, where $a$ --- distance between center of pulleys.
+    \end{itemize}
 \end{frame}
 
-\begin{frame}[t]{Belt}
-    \framesubtitle{Drive kinematics (2)}
-
-\end{frame}
 
 \begin{frame}[t]{Belt}
     \framesubtitle{What can be interesting to find (queries)}
+    \begin{itemize}
+        \item How to find the appropriate diameter of a pulley
+        \item Min and max distance between pulleys
+        \item Appropriate angle of covering the pulley
+    \end{itemize}
+\end{frame}
 
+\begin{frame}[t]{Belt}
+    \framesubtitle{Features and facts}
+    \begin{itemize}
+        \item Simple design and operation, relatively low cost. 
+        \item Smooth and quiet operation due to elasticity belt. 
+        \item Possibility to transfer power over long distances (with V-belts up to 15 m) at speed up to 100 m/s. 
+        \item Softening of vibrations and shocks due to elasticity of the belt. 
+        \item Possibility to protect machines from overloading due to elastic belt tension and slippage  
+        \item Reduced requirements for axle alignment 
+        shafts.
+    \end{itemize}
 \end{frame}
 
 \begin{frame}[t]{Belt}
     \framesubtitle{Reference material}
-
+    \begin{enumerate}
+        \item \textbf{Other names}: ременная передача
+        \item \href{https://en.m.wikipedia.org/wiki/Belt_(mechanical)}{Belt drive (wiki)}
+        \item \textit{"Теория механизмов и машин" Артоболевский И. И. 1988, pdf pages 166--168 }
+        \item \href{https://studfile.net/preview/2156455/}{Детали машин. 9 лекция}
+        \item \href{https://youtu.be/CP_b7bzM9nQ}{Belt formulas}
+    \end{enumerate}
 \end{frame}
+
 
 \begin{frame}[t]{Chain}
     \framesubtitle{Visualisation}
+    \vspace{-1cm}
+    \begin{figure}[H]
+        \begin{subfigure}[c]{0.49\textwidth}
+            \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{belt_kinematics_1.png}
+        \end{subfigure}
+        \begin{subfigure}[c]{0.49\textwidth}
+            \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{chain_1.jpg}
+            % \caption{capture2}
+            \label{fig:chain_1.jpg}
+        \end{subfigure}
 
+        \begin{subfigure}[c]{0.5\textwidth}
+            \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{chain_2.jpg}
+            % \caption{capture2}
+            \label{fig:chain_2.jpg}
+        \end{subfigure}
+    \end{figure}
 \end{frame}
 
 \begin{frame}[t]{Chain}
@@ -262,12 +307,27 @@
 
 \begin{frame}[t]{Chain}
     \framesubtitle{Reference material}
-
+    \begin{enumerate}
+        \item \textbf{Other names}: цепная передача
+        \item \href{https://en.wikipedia.org/wiki/Roller_chain}{Roller chain (wiki)}
+        \item \textit{"Теория механизмов и машин" Артоболевский И. И. 1988, pdf pages 166--168 }
+        \item \href{https://studfile.net/preview/2156460/}{Детали машин. 10 лекция}
+        \item \href{https://www.youtube.com/watch?v=F7o3LOtKEA8}{Sprockets \& Chains For Engineers}
+    \end{enumerate}
 \end{frame}
 
 \begin{frame}[t]{Geneva drive}
     \framesubtitle{Visualisation}
-
+    \vspace{-0.5cm}
+    \begin{figure}[H]
+        \begin{subfigure}{0.49\textwidth}
+            \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{geneva_kinematics.png}
+        \end{subfigure}
+        \begin{subfigure}{0.49\textwidth}
+            \href{https://en.wikipedia.org/wiki/Geneva_drive\#/media/File:Geneva_mechanism_6spoke_animation.gif}{
+                \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{Geneva_drive_video_preview.png}}
+        \end{subfigure}
+    \end{figure}    
 \end{frame}
 
 \begin{frame}[t]{Geneva drive}
@@ -292,7 +352,12 @@
 
 \begin{frame}[t]{Geneva drive}
     \framesubtitle{Reference material}
-
+    \begin{enumerate}
+        \item \textbf{Other names}: мальтийский крест
+        \item \href{https://en.wikipedia.org/wiki/Geneva_drive}{Geneva drive (wiki)}
+        \item \textit{"Теория механизмов и машин" Артоболевский И. И. 1988, pdf pages 172--174 }
+        \item \href{https://www.youtube.com/watch?v=1lyWywC_z4o}{How to draw a geneva drive}
+    \end{enumerate}
 \end{frame}
 
 \begin{frame}[t]{Friction drive}
@@ -322,7 +387,13 @@
 
 \begin{frame}[t]{Friction drive}
     \framesubtitle{Reference material}
-
+    \begin{enumerate}
+        \item \textbf{Other names}: фрикционная передача
+        \item \href{https://en.m.wikipedia.org/wiki/Friction_drive}{Friction drive (wiki)}
+        \item \textit{"Теория механизмов и машин" Артоболевский И. И. 1988, pdf pages 141--146 }
+        \item \href{https://studfile.net/preview/2156467/page:2/}{Детали машин. 22 лекция, 2 страница}
+        \item 
+    \end{enumerate}
 \end{frame}
 
 \begin{frame}[t]{Gears}
@@ -352,10 +423,50 @@
 
 \begin{frame}[t]{Gears}
     \framesubtitle{Reference material}
+    \begin{enumerate}
+        \item \textbf{Other names}: зубчатая передача
+        \item \href{https://en.wikipedia.org/wiki/Gear}{Gears (wiki)}
+        \item \textit{"Теория механизмов и машин" Артоболевский И. И. 1988, pdf pages 145--166 }
+        \item \href{https://studfile.net/preview/2156468/}{Детали машин. 5-8 лекции}
+        \item \textit{"Design of machinery" Robert L. Norton, pdf pages 517--557 } \textbf{2.0 --- 2.11}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}[t]{Ballscrew}
+    \framesubtitle{Visualisation}
 
 \end{frame}
 
+\begin{frame}[t]{Ballscrew}
+    \framesubtitle{Types of ballscrew}
 
+\end{frame}
+
+\begin{frame}[t]{Ballscrew}
+    \framesubtitle{Drive kinematics (1)}
+
+\end{frame}
+
+\begin{frame}[t]{Ballscrew}
+    \framesubtitle{Drive kinematics (2)}
+
+\end{frame}
+
+\begin{frame}[t]{Ballscrew}
+    \framesubtitle{What can be interesting to find (queries)}
+
+\end{frame}
+
+\begin{frame}[t]{Ballscrew}
+    \framesubtitle{Reference material}
+    \begin{enumerate}
+        \item \textbf{Other names}: шарико-винтовая передача
+        \item \href{https://en.wikipedia.org/wiki/Ball_screw}{Ball screw (wiki)}
+        \item \textit{"Теория механизмов и машин" Артоболевский И. И. 1988, pdf pages 166--168 }
+        \item \href{https://studfile.net/preview/2156460/}{Детали машин. 10 лекция}
+        \item 
+    \end{enumerate}
+\end{frame}
 
 \begin{frame}[t]{Reference material}
     % \Large

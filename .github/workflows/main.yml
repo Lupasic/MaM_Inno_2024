@@ -35,7 +35,7 @@ jobs:
           
               
       - name: Update compiled PDFs in git repository
-        if: github.event.pull_request.merged == true || github.event_name == 'push'
+        if: github.event.pull_request.merged == true || github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         run: |
           git config --global user.name 'CI PDF compiler'
           git config --global user.email '<>'

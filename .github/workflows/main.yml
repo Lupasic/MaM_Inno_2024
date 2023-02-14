@@ -1,7 +1,7 @@
 name: Build LaTeX document
 
 on: 
-  push:
+  workflow_dispatch:
   pull_request:
     types:
       - closed
@@ -33,19 +33,13 @@ jobs:
           name: HW_slides
           path: HWs/${{matrix.name}}/MaM_${{matrix.name}}.pdf
           
-  update_git:
-      runs-on: ubuntu-latest
-      needs: build_latex
-      steps: 
-          - name: Set up Git repository
-            uses: actions/checkout@v2
               
-          - name: Update compiled PDFs in git repository
-            if: github.event.pull_request.merged == true || github.event_name == 'push'
-            run: |
-              git config --global user.name 'CI PDF compiler'
-              git config --global user.email '<>'
-              git add HWs/*/*.pdf
+      - name: Update compiled PDFs in git repository
+        if: github.event.pull_request.merged == true || github.event_name == 'push'
+        run: |
+          git config --global user.name 'CI PDF compiler'
+          git config --global user.email '<>'
+          git add HWs/*/*.pdf
 
-              git commit -m "Update compiled PDFs"
-              git push
+          git commit -m "Update compiled PDFs"
+          git push

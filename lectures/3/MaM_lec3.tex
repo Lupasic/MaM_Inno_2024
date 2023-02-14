@@ -1,0 +1,642 @@
+% \documentclass[aspectratio=169,notes]{beamer}
+\documentclass[aspectratio=169]{beamer}
+\usetheme[faculty=phil]{fibeamer}
+\usepackage{polyglossia}
+\setmainlanguage{english} %% main locale instead of `english`, you
+%% can typeset the presentation in either Czech or Slovak,
+%% respectively.
+\setotherlanguages{russian} %% The additional keys allow
+%%
+%%   \begin{otherlanguage}{czech}   ... \end{otherlanguage}
+%%   \begin{otherlanguage}{slovak}  ... \end{otherlanguage}
+%%
+%% These macros specify information about the presentation
+\title[MaM]{Mechanics and Machines, Lecture 3} %% that will be typeset on the
+\subtitle{Types of drives: kinematics, where to find other info
+\\ Drives: friction, belts, chains, gears, universal, geneva,       \\ ballscrew  
+         } %% title page.
+\author{Oleg Bulichev}
+%% These additional packages are used within the document:
+\usepackage{ragged2e}  % `\justifying` text
+\usepackage{booktabs}  % Tables
+\usepackage{tabularx}
+\usepackage{tikz}      % Diagrams
+\usetikzlibrary{calc, shapes, backgrounds}
+\usepackage{amsmath, amssymb}
+\usepackage{url}       % `\url`s
+\usepackage{listings}  % Code listings
+% \usepackage{subfigure}
+\usepackage{floatrow}
+\usepackage{subcaption}
+\usepackage{mathtools}
+\usepackage{todonotes}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{pdfpages}
+\usepackage{wrapfig}
+\usepackage{animate}
+\usepackage{booktabs}
+\usepackage{multirow}
+% \usepackage{graphicx}
+\usepackage{colortbl}
+
+\graphicspath{{resources/}}
+\frenchspacing
+
+\setbeamertemplate{caption}[numbered]
+\usetikzlibrary{graphs}
+
+% \usepackage[backend=biber,style=ieee,autocite=footnote]{biblatex}
+% \addbibresource{biblio.bib}
+% \DefineBibliographyStrings{english}{%
+%   bibliography = {References},}
+
+\newcommand{\oleg}[2][] {\todo[color=red, #1] {OLEG:\\ #2}}
+\newcommand{\fbckg}[1]{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{#1}}}%frame background
+
+\usepackage[framemethod=TikZ]{mdframed}
+\newcommand{\dbox}[1]{
+\begin{mdframed}[roundcorner=3pt, backgroundcolor=yellow, linewidth=0]
+\vspace{1mm}
+{#1}
+\vspace{1mm}
+\end{mdframed}
+}
+
+\begin{document}
+\setlength{\abovedisplayskip}{0pt}
+\setlength{\belowdisplayskip}{0pt}
+\setlength{\abovedisplayshortskip}{0pt}
+\setlength{\belowdisplayshortskip}{0pt}
+
+\fbckg{fibeamer/figs/title_page.png}
+\frame[c]{\setcounter{framenumber}{0}
+    \usebeamerfont{title}%
+    \usebeamercolor[fg]{title}%
+    \begin{minipage}[b][6.5\baselineskip][b]{\textwidth}%
+        \textcolor{black}{\raggedright\inserttitle}
+    \end{minipage}
+    % \vskip-1.5\baselineskip
+
+    \usebeamerfont{subtitle}%
+    \usebeamercolor[fg]{framesubtitle}%
+    \begin{minipage}[b][3\baselineskip][b]{\textwidth}
+        \raggedright%
+        \insertsubtitle%
+    \end{minipage}
+    \vskip.25\baselineskip
+}
+%   \frame[c]{\maketitle}
+
+\fbckg{fibeamer/figs/common.png}
+
+\note{\scriptsize \begin{itemize}
+        \item \
+    \end{itemize}}
+
+\begin{frame}[c]{Goal of the lecture}
+    \framesubtitle{}
+    \LARGE
+    \centering
+    Make an overview of typical drives. \\ Give a hint how to work with it. \\ Explain how to find information about particular drive.
+\end{frame}
+
+\begin{frame}[t]{General info about drives}
+    \framesubtitle{Video}
+    \vspace{-0.6cm}
+    \begin{figure}[H]
+        \href{https://youtu.be/XOh8qfXDRIs}{
+            \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{drives_preview.jpg}}
+        % \caption{Click on a picture for a video}
+        \label{fig:drives_preview.jpg}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[t]{Universal Joint}
+    \framesubtitle{Visualisation}
+    \vspace{-0.5cm}
+    \begin{figure}[H]
+        \begin{subfigure}{0.49\textwidth}
+            \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{universal_kinematics.png}
+        \end{subfigure}
+        \begin{subfigure}{0.49\textwidth}
+            \href{https://en.wikipedia.org/wiki/Universal_joint\#/media/File:Universal_joint.gif}{
+                \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{cardan_video_preview.png}}
+        \end{subfigure}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}[t]{Universal Joint}
+    \framesubtitle{Types of universal joint}
+    \begin{figure}[H]
+        \begin{subfigure}{0.32\textwidth}
+            \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{universal_1.png}
+            \caption*{Cardan}
+        \end{subfigure}
+        \begin{subfigure}{0.32\textwidth}
+            \href{https://en.wikipedia.org/wiki/Constant-velocity_joint\#/media/File:Double_Cardan_Joint_(animated).gif}{
+                \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{universal_2_video_preview.png}}
+            \caption*{Double cardan joint}
+        \end{subfigure}
+        \begin{subfigure}{0.32\textwidth}
+            \href{https://gifyu.com/image/SqMnR}{
+                \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{shrus_video_preview.png}}
+            \caption*{Constant-velocity universal ball joint}
+        \end{subfigure}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[t]{Universal Joint}
+    \framesubtitle{Drive kinematics}
+    \begin{columns}[T,onlytextwidth]
+        \begin{column}{0.59\textwidth}
+            Angle relationship --- $\tan(\psi)=\tan(\psi')\cos(\beta)$ \\
+            Angular velocities relationship --- $ \omega \cos(\beta) = \omega'(\sin^2(\psi) + \cos^2(\psi)\cos^2(\beta))$
+        \end{column}
+        \begin{column}{0.39\textwidth}
+            \vspace{-0.9cm}
+            \begin{figure}[H]
+                \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{universal_kinematics.png}
+                % \caption{caption_name}
+                \label{fig:universal_kinematics.png}
+            \end{figure}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}[t]{Universal Joint}
+    \framesubtitle{Features and facts}
+    \begin{itemize}
+        \item It's effective tool for transferring a torque for max 30 degrees.
+        \item Constant-velocity universal ball joint (шрус) is not a small device and it's not easy to find it (it can be found as a car detail).
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[t]{Universal Joint}
+    \framesubtitle{What can be interesting to find (queries)}
+    \begin{enumerate}
+        \item Correlation between velocities and angle between links in Universal joint
+        \item Cardan dynamics
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}[t]{Universal Joint}
+    \framesubtitle{Reference material}
+    \begin{enumerate}
+        \item \textbf{Other names}: cardan joint, Hooke's joint, кардан, универсальный шарнир
+        \item \href{https://en.wikipedia.org/wiki/Universal_joint}{Universal joint (wiki)}
+        \item \textit{"Теория механизмов и машин" Артоболевский И. И. 1988, pdf pages 168--172 }
+        \item \href{https://elar.urfu.ru/bitstream/10995/102516/1/2-s2.0-85107367228.pdf}{Find U-joint parameters using quaternions}
+        \item \href{https://www.researchgate.net/publication/257774799_Dynamics_of_universal_joints_its_failures_and_some_propositions_for_practically_improving_its_performance_and_life_expectancy}{Dynamics of universal joints}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}[t]{Belt}
+    \framesubtitle{Visualisation}
+    \vspace{-0.5cm}
+    \begin{figure}[H]
+        \begin{subfigure}{0.49\textwidth}
+            \centering\includegraphics[height=2.6cm,width=1\textwidth,keepaspectratio]{belt_kinematics_1.png}
+            % \caption{capture1}
+            \label{fig:belt_kinematics_1.png}
+        \end{subfigure}
+        \begin{subfigure}{0.49\textwidth}
+            \centering\includegraphics[height=2.6cm,width=1\textwidth,keepaspectratio]{belt_1.png}
+            % \caption{capture2}
+            \label{fig:belt_1.png}
+        \end{subfigure}
+
+        \begin{subfigure}{0.49\textwidth}
+            \centering\includegraphics[height=2.6cm,width=1\textwidth,keepaspectratio]{belt_kinematics_2.png}
+            % \caption{capture1}
+            \label{fig:belt_kinematics_2.png}
+        \end{subfigure}
+        \begin{subfigure}{0.49\textwidth}
+            \centering\includegraphics[height=3.1cm,width=1\textwidth,keepaspectratio]{belt_2.jpg}
+            % \caption{capture2}
+            \label{fig:belt_2.jpg}
+        \end{subfigure}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[t]{Belt}
+    \framesubtitle{Types of belts}
+    \vspace{-1.2cm}
+    \begin{figure}[H]
+        \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{belt_types.png}
+        \caption*{\textit{а}) flat (плоская), \textit{б}) vee belt (клиновидная), \textit{в}) round (круглая), \textit{г}) timing (toothed, зубчатый)}
+        \label{fig:belt_types.png}
+    \end{figure}
+
+\end{frame}
+
+\begin{frame}[t]{Belt}
+    \framesubtitle{Drive kinematics}
+    \begin{itemize}
+        \item Linear velocity of a pulley --- $v_1=\omega_1 \frac{d_1}{2}$, $d$ --- diameter of a pulley (шкив)
+        \item Length of a belt --- $l = 2a + \frac{\pi}{2}(d_1 + d_2) + \dfrac{(d_2-d_1)^2}{4a}$, where $a$ --- distance between center of pulleys.
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}[t]{Belt}
+    \framesubtitle{What can be interesting to find (queries)}
+    \begin{itemize}
+        \item How to find the appropriate diameter of a pulley
+        \item Min and max distance between pulleys
+        \item Appropriate angle of covering the pulley
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[t]{Belt}
+    \framesubtitle{Features and facts}
+    \begin{itemize}
+        \item Simple design and operation, relatively low cost. 
+        \item Smooth and quiet operation due to elasticity belt. 
+        \item Possibility to transfer power over long distances (with V-belts up to 15 m) at speed up to 100 m/s. 
+        \item Softening of vibrations and shocks due to elasticity of the belt. 
+        \item Possibility to protect machines from overloading due to elastic belt tension and slippage  
+        \item Reduced requirements for axle alignment 
+        shafts.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[t]{Belt}
+    \framesubtitle{Reference material}
+    \begin{enumerate}
+        \item \textbf{Other names}: ременная передача
+        \item \href{https://en.m.wikipedia.org/wiki/Belt_(mechanical)}{Belt drive (wiki)}
+        \item \textit{"Теория механизмов и машин" Артоболевский И. И. 1988, pdf pages 166--168 }
+        \item \href{https://studfile.net/preview/2156455/}{Детали машин. 9 лекция}
+        \item \href{https://youtu.be/CP_b7bzM9nQ}{Belt formulas}
+        \item \href{https://youtu.be/Lr5E-WrTajs}{Ременная передача (видео)}
+    \end{enumerate}
+\end{frame}
+
+
+\begin{frame}[t]{Chain}
+    \framesubtitle{Visualisation}
+    \vspace{-1cm}
+    \begin{figure}[H]
+        \begin{subfigure}[c]{0.49\textwidth}
+            \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{belt_kinematics_1.png}
+        \end{subfigure}
+        \begin{subfigure}[c]{0.49\textwidth}
+            \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{chain_1.jpg}
+            % \caption{capture2}
+            \label{fig:chain_1.jpg}
+        \end{subfigure}
+
+        \begin{subfigure}[c]{0.5\textwidth}
+            \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{chain_2.jpg}
+            % \caption{capture2}
+            \label{fig:chain_2.jpg}
+        \end{subfigure}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[t]{Chain}
+    \framesubtitle{Types of chain transmissions}
+    \begin{figure}[H]
+        \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{chain_types.png}
+        % \caption{caption_name}
+        \label{fig:chain_types.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[t]{Chain}
+    \framesubtitle{Drive kinematics}
+    Almost the same as in belt. The main difference, that max angle of sprocket covering by chain is $120^\circ$.
+
+    Distance between centers can be found $a = (30 - 50)P$, where $P$ --- chain pitch.
+\end{frame}
+
+
+\begin{frame}[t]{Chain}
+    \framesubtitle{What can be interesting to find (queries)}
+    \begin{itemize}
+        \item Amount of tooth in sprockets.
+        \item How to find a length of the chain 
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[t]{Chain}
+    \framesubtitle{Features and facts}
+    \begin{itemize}
+        \item Compared to gears, chain transmissions can transmit motion between shafts at large center distance (up to 5 m)
+        \item Compared to belt drives, chain transmissions are more compact, transmit more power, can be used within a considerable range of axle spacing, ensure constant transmission ratio (no slipping); 
+        \item can transmit motion with one chain to several sprockets. 
+        \item Irregularity of sprocket rotation.
+        \item The necessity of a high accuracy of the transmission assembly.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[t]{Chain}
+    \framesubtitle{Reference material}
+    \begin{enumerate}
+        \item \textbf{Other names}: цепная передача
+        \item \href{https://en.wikipedia.org/wiki/Roller_chain}{Roller chain (wiki)}
+        \item \textit{"Теория механизмов и машин" Артоболевский И. И. 1988, pdf pages 166--168 }
+        \item \href{https://studfile.net/preview/2156460/}{Детали машин. 10 лекция}
+        \item \href{https://www.youtube.com/watch?v=F7o3LOtKEA8}{Sprockets \& Chains For Engineers}
+        \item \href{https://studfile.net/preview/4421819/page:3/}{Расчет цепной передачи}
+        \item \href{https://youtu.be/ps3yeekVz5I}{Цепная передача (видео)}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}[t]{Geneva drive}
+    \framesubtitle{Visualisation}
+    \vspace{-0.5cm}
+    \begin{figure}[H]
+        \begin{subfigure}{0.49\textwidth}
+            \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{geneva_kinematics.png}
+        \end{subfigure}
+        \begin{subfigure}{0.49\textwidth}
+            \href{https://en.wikipedia.org/wiki/Geneva_drive\#/media/File:Geneva_mechanism_6spoke_animation.gif}{
+                \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{Geneva_drive_video_preview.png}}
+        \end{subfigure}
+    \end{figure}    
+\end{frame}
+
+\begin{frame}[t]{Geneva drive}
+    \framesubtitle{Example of geneva drive}
+    \vspace{-0.6cm}
+    \begin{figure}[H]
+        \href{https://youtu.be/56l4rKLsha0}{
+            \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{geneva_drive_video.jpg}}
+        % \caption{Click on a picture for a video}
+        \label{fig:geneva_drive_video.jpg}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[t]{Geneva drive}
+\framesubtitle{Types of geneva drive}
+\vspace{-0.6cm}
+    \begin{figure}[H]
+        \begin{subfigure}{0.49\textwidth}
+            \centering\includegraphics[height=5cm,width=1\textwidth,keepaspectratio]{geneva_inner.png}
+            \caption*{Inner connection}
+            \label{fig:geneva_inner.png}
+        \end{subfigure}
+        \begin{subfigure}{0.49\textwidth}
+            \centering\includegraphics[height=5cm,width=1\textwidth,keepaspectratio]{geneva_outer.png}
+            \caption*{Outer connection}
+            \label{fig:geneva_outer.png}
+        \end{subfigure}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[t]{Geneva drive}
+\framesubtitle{}
+    \vspace{-0.6cm}
+    \begin{figure}[H]
+        \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{geneva_plot.png}
+        \caption*{Angular velocity and acc diagram of output link}
+        \label{fig:geneva_plot.png}
+    \end{figure}
+\end{frame}
+
+% \begin{frame}[t]{Geneva drive}
+%     \framesubtitle{What can be interesting to find (queries)}
+
+% \end{frame}
+
+\begin{frame}[t]{Geneva drive}
+    \framesubtitle{Features and facts}
+    \begin{itemize}
+        \item The best application --- when you want to have a constant velocity in input link and some fancy behavior with stopping --- on output link. 
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[t]{Geneva drive}
+    \framesubtitle{Reference material}
+    \begin{enumerate}
+        \item \textbf{Other names}: мальтийский крест
+        \item \href{https://en.wikipedia.org/wiki/Geneva_drive}{Geneva drive (wiki)}
+        \item \textit{"Теория механизмов и машин" Артоболевский И. И. 1988, pdf pages 172--174 }
+        \item \href{https://www.youtube.com/watch?v=1lyWywC_z4o}{How to draw a geneva drive}
+        \item \href{https://www.instructables.com/Make-Geneva-Wheels-of-Any-Size-in-a-Easier-Way/}{Make a geneva wheels of any size}
+        \item \href{https://7universum.com/ru/tech/archive/item/5061}{Structural synthesis of geneva wheels (rus)}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}[t]{Friction drive}
+    \framesubtitle{Visualisation}
+    \vspace{-0.5cm}
+    \begin{figure}[H]
+        \begin{subfigure}{0.49\textwidth}
+            \centering\includegraphics[height=3cm,width=1\textwidth,keepaspectratio]{friction_kinematics.png}
+            % \caption{capture1}
+            \label{fig:friction_kinematics.png}
+        \end{subfigure}
+        \begin{subfigure}{0.49\textwidth}
+            \centering\includegraphics[height=3cm,width=1\textwidth,keepaspectratio]{friction_1.jpg}
+            % \caption{capture2}
+            \label{fig:friction_1.jpg}
+        \end{subfigure}
+    
+        \begin{subfigure}{0.49\textwidth}
+            \centering\includegraphics[height=3cm,width=1\textwidth,keepaspectratio]{friction_2_kinematics.png}
+            % \caption{capture3}
+            \label{fig:friction_2_kinematics.png}
+        \end{subfigure}
+        \begin{subfigure}{0.49\textwidth}
+            \centering\includegraphics[height=3cm,width=1\textwidth,keepaspectratio]{friction_2.jpg}
+            % \caption{capture4}
+            \label{fig:friction_2.jpg}
+        \end{subfigure}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[t]{Friction drive}
+    \framesubtitle{Continuously Variable Transmission (CVT) Video}
+    \vspace{-0.6cm}
+    \begin{figure}[H]
+        \href{https://youtu.be/PEq5_b4LWNY}{
+            \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{friction_variator_preview.jpg}}
+        % \caption{Click on a picture for a video}
+        \label{fig:friction_variator_preview.jpg}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[t]{Friction drive}
+    \framesubtitle{Features and facts}
+    \begin{itemize}
+        \item Simple design and maintenance.
+        \item Smooth motion transmission and noiseless operation.
+        \item Large kinematic capabilities (conversion of rotary motion into translational motion, stepless speed change, reversing on the fly, gear engagement and disengagement on the fly without stopping)
+        \item Gear ratio varies due to slippage.
+        \item Necessity of using specially designed shaft supports with clamping devices.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[t]{Friction drive}
+    \framesubtitle{Reference material}
+    \begin{enumerate}
+        \item \textbf{Other names}: фрикционная передача
+        \item \href{https://en.m.wikipedia.org/wiki/Friction_drive}{Friction drive (wiki)}
+        \item \textit{"Теория механизмов и машин" Артоболевский И. И. 1988, pdf pages 141--146 }
+        \item \href{https://studfile.net/preview/2156467/page:2/}{Детали машин. 22 лекция, 2 страница}
+        \item \href{https://www.youtube.com/watch?v=uCEvBGT8twM}{CVT --- how it works}
+        \item \href{https://youtu.be/H1Dde7frZx8}{Фрикционная передача}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}[t]{Gears}
+    \framesubtitle{Visualisation}
+    \vspace{-0.6cm}
+    \begin{figure}[H]
+        \begin{subfigure}[c]{0.32\textwidth}
+            \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{friction_kinematics.png}
+            % \caption{capture1}
+        \end{subfigure}
+        \begin{subfigure}[c]{0.32\textwidth}
+            \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{gear_1.png}
+            % \caption{capture2}
+            \label{fig:gear_1.png}
+        \end{subfigure}
+        \begin{subfigure}[c]{0.32\textwidth}
+            \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{gear_2.png}
+            % \caption{capture3}
+            \label{fig:gear_2.png}
+        \end{subfigure}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[t]{Gears}
+    \framesubtitle{Types of Gears}
+    \vspace{-0.6cm}
+    \begin{figure}[H]
+        \begin{subfigure}{0.49\textwidth}
+            \centering\includegraphics[height=2.2cm,width=1\textwidth,keepaspectratio]{gear_1.png}
+            \caption{Spur and helical gears}
+        \end{subfigure}
+        \begin{subfigure}{0.49\textwidth}
+            \centering\includegraphics[height=2.2cm,width=1\textwidth,keepaspectratio]{gear_3.png}
+            \caption{Rack and pinion}
+            \label{fig:gear_3.png}
+        \end{subfigure}
+    
+        \begin{subfigure}{0.49\textwidth}
+            \centering\includegraphics[height=2.2cm,width=1\textwidth,keepaspectratio]{bevel_gear_1.png}
+            \caption{bevel gear}
+            \label{fig:bevel_gear_1.png}
+        \end{subfigure}
+        \begin{subfigure}{0.49\textwidth}
+            \centering\includegraphics[height=2.2cm,width=1\textwidth,keepaspectratio]{gear_worm_1.png}
+            \caption{worm gear}
+            \label{fig:gear_worm_1.png}
+        \end{subfigure}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[t]{Gears}
+    \framesubtitle{Gear classification (Video)}
+    \vspace{-0.6cm}
+    \begin{figure}[H]
+        \href{https://youtu.be/9n0Kn_0AHB4}{
+            \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{gear_classification_preview.jpg}}
+        % \caption{Click on a picture for a video}
+        \label{fig:gear_classification_preview.jpg}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[t]{Gears}
+    \framesubtitle{Gear ratio calculation methods}
+    \begin{enumerate}
+        \item Common one, when you have a simple gear train. (Artobolevskii, pdf page 150)
+        \item When you have a planetary gearset, fundamental formula of the planetary gear train (Формула Виллиса для дифференциалов). (Artobolevskii, pdf page 154 --- 166)
+        \item When you have a planetary gearset, tabular method (Norton R., pdf page 550 --- 551)
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}[t]{Gears}
+    \framesubtitle{Features and facts}
+    \begin{itemize}
+        \item Consistency of transmission ratio.
+        \item Reliability and durability of operation.
+        \item Large range of transferable speeds.
+        \item High efficiency.
+        \item The need for high accuracy of fabrication and assembly
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[t]{Gears}
+    \framesubtitle{Reference material}
+    \begin{enumerate}
+        \item \textbf{Other names}: зубчатая передача
+        \item \href{https://en.wikipedia.org/wiki/Gear}{Gears (wiki)}
+        \item \textit{"Теория механизмов и машин" Артоболевский И. И. 1988, pdf pages 145--166 }
+        \item \href{https://studfile.net/preview/2156468/}{Детали машин. 5-8 лекции}
+        \item \textit{"Design of machinery" Robert L. Norton, pdf pages 517--557 } \textbf{2.0 --- 2.11}
+        \item \href{https://youtu.be/ThVIKgBucUk}{Зубчатая передача (видео)}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}[t]{Ballscrew}
+    \framesubtitle{Visualisation}
+    \vspace{-0.5cm}
+    \begin{figure}[H]
+        \begin{subfigure}{0.49\textwidth}
+            \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{H_sd.png}
+        \end{subfigure}
+        \begin{subfigure}{0.49\textwidth}
+            \href{https://www.youtube.com/watch?v=oEPrXljqeHA}{
+                \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{ballscrew_preview.jpg}}
+        \end{subfigure}
+    \end{figure} 
+\end{frame}
+
+\begin{frame}[t]{Ballscrew}
+    \framesubtitle{Types of ballscrew (Video)}
+    \vspace{-0.6cm}
+    \begin{figure}[H]
+        \href{https://youtu.be/1P6nbs1-4dQ}{
+            \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{ballscrew_types_preview.jpg}}
+        % \caption{Click on a picture for a video}
+        \label{fig:ballscrew_types_preview.jpg}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[t]{Ballscrew}
+    \framesubtitle{Drive kinematics (1)}
+    \href{https://studfile.net/preview/4295396/page:16/}{Helical gear kinematics (rus)}
+    
+    Artobolevskii, pdf page 27
+\end{frame}
+
+\begin{frame}[t]{Ballscrew}
+    \framesubtitle{Features and facts}
+    \begin{itemize}
+        \item Conversion of fast rotational motion of the master element into slow rectilinear motion of the slave element.
+        \item Conversion of a small torque at the leading element into a significant force at the moving linear element.
+        \item Realization of the self-locking phenomenon.
+        \item Simplicity of design, compactness, reliability.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[t]{Ballscrew}
+    \framesubtitle{Reference material}
+    \begin{enumerate}
+        \item \textbf{Other names}: шарико-винтовая передача, передача винт-гайка
+        \item \href{https://en.wikipedia.org/wiki/Ball_screw}{Ball screw (wiki)}
+        \item \textit{"Теория механизмов и машин" Артоболевский И. И. 1988, pdf pages 166--168 }
+        \item \href{https://studfile.net/preview/2156460/}{Детали машин. 10 лекция}
+        \item \href{https://youtu.be/kcrnG13NKCw}{Передача винт-гайка (видео)}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}[c]{How to use provided materials}
+\framesubtitle{Guidline}
+    \Huge
+    \centering
+    Live Demo
+\end{frame}
+
+
+\fbckg{fibeamer/figs/last_page.png}
+\frame[plain]{}
+
+\end{document}

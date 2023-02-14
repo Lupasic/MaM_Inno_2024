@@ -43,7 +43,7 @@ jobs:
             run: |
               git config --global user.name 'CI PDF compiler'
               git config --global user.email '<>'
-              git add slides/*
+              git add HWs/*/*.pdf
 
               git commit -m "Update compiled PDFs"
               git push

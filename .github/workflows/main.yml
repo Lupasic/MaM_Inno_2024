@@ -13,6 +13,7 @@ on:
 jobs:
   build_latex:
     strategy:
+      max-parallel: 1
       matrix:
         name: ['HW_CAD_ASM1','HW_CAD_ASM2','HW_CAD_DET1','HW_CAD_DET2']
     runs-on: ubuntu-latest
@@ -31,14 +32,18 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: PDF
-          path: slides/MaM_${{matrix.name}}.pdf
+          path: HWs/${{matrix.name}}/MaM_${{matrix.name}}.pdf
+          
+  update_git:
+      runs-on: ubuntu-latest
+      needs: build_latex
+      steps: 
+          - name: Update compiled PDFs in git repository
+            if: github.event.pull_request.merged == true || github.event_name == 'push'
+            run: |
+              git config --global user.name 'CI PDF compiler'
+              git config --global user.email '<>'
+              git add slides/*
 
-      - name: Update compiled PDFs in git repository
-        if: github.event.pull_request.merged == true || github.event_name == 'push'
-        run: |
-          git config --global user.name 'CI PDF compiler'
-          git config --global user.email '<>'
-          git add slides/*
-
-          git commit -m "Update compiled PDFs"
-          git push
+              git commit -m "Update compiled PDFs"
+              git push

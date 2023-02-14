@@ -6,7 +6,7 @@ on:
     types:
       - closed
     branches:
-      - master
+      - main
 
 
 
@@ -25,7 +25,7 @@ jobs:
         with:
           root_file: ${{ matrix.files.file }}.tex
           latexmk_use_lualatex: true
-          working_directory: HWs/${{matrix.files.dir }}/
+          working_directory: ../../HWs/${{matrix.files.dir }}/
 
       - name: Save ${{ matrix.files.file }} artifact
         uses: actions/upload-artifact@v3

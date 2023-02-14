@@ -13,7 +13,6 @@ on:
 jobs:
   build_latex:
     strategy:
-      max-parallel: 1
       matrix:
         name: ['HW_CAD_ASM1','HW_CAD_ASM2','HW_CAD_DET1','HW_CAD_DET2']
     runs-on: ubuntu-latest

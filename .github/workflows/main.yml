@@ -16,16 +16,25 @@ jobs:
 #       matrix:
 #         name: ['HW_CAD_ASM1','HW_CAD_ASM2','HW_CAD_DET1','HW_CAD_DET2']
     runs-on: ubuntu-latest
+    env:
+        HW1: 'HW_CAD_DET1'
+        HW2: 'HW_CAD_DET2'
+        HW3: 'HW_CAD_ASM1'
+        HW4: 'HW_CAD_ASM2'
+        
+        LAB1: 'CAD_DET1'
+        LAB2: 'CAD_DET2'
+        LAB3: 'CAD_ASM1'
+        LAB4: 'CAD_ASM2'
+        
+#         LEC1:
+        LEC2: 'lec2'
+        LEC3: 'lec3'
+#         LEC4: 'lec4'
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2
-
-      - name: Create list of modified files
-        id: modified_files_list
-        uses: lucaspinheirogit/list-from-string-array-action@v1.4.3
-        with:
-          stringArray: '["HW_CAD_ASM1","HW_CAD_ASM2","HW_CAD_DET1","HW_CAD_DET2"]'
-
+        
 #       - name: Compile LaTeX document MaM_${{ matrix.name}}
 #         uses: xu-cheng/latex-action@master
 #         with:
@@ -37,28 +46,160 @@ jobs:
 #         uses: actions/upload-artifact@v3
 #         with:
 #           name: HW_slides
-#           path: HWs/${{matrix.name}}/MaM_${{matrix.name}}.pdf
+#           path: HWs/${{matrix.name}}/MaM_${{matrix.name}}.pdf    
 
-      - name: Compile LaTeX document MaM_${{ steps.modified_files_list.outputs.stringList}}
+# HWs
+      - name: Compile LaTeX document MaM_$HW1
         uses: xu-cheng/latex-action@master
         with:
-          root_file: MaM_${{ steps.modified_files_list.outputs.stringList}}.tex
+          root_file: MaM_$HW1.tex
           latexmk_use_lualatex: true
-          working_directory: HWs/${{steps.modified_files_list.outputs.stringList}}/
+          working_directory: HWs/$HW1/
 
-      - name: Save ${{ steps.modified_files_list.outputs.stringList }} artifact
+      - name: Save $HW1 artifact
         uses: actions/upload-artifact@v3
         with:
           name: HW_slides
-          path: HWs/${{steps.modified_files_list.outputs.stringList}}/MaM_${{steps.modified_files_list.outputs.stringList}}.pdf
-          
-              
-#       - name: Update compiled PDFs in git repository
-#         if: github.event.pull_request.merged == true || github.event_name == 'push' || github.event_name == 'workflow_dispatch'
-#         run: |
-#           git config --global user.name 'CI PDF compiler'
-#           git config --global user.email '<>'
-#           git add HWs/*/*.pdf
+          path: HWs/$HW1/MaM_$HW1.pdf
 
-#           git commit -m "Update compiled PDFs"
-#           git push
+      - name: Compile LaTeX document MaM_$HW2
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: MaM_$HW2.tex
+          latexmk_use_lualatex: true
+          working_directory: HWs/$HW2/
+
+      - name: Save $HW1 artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: HW_slides
+          path: HWs/$HW1/MaM_$HW2.pdf
+
+      - name: Compile LaTeX document MaM_$HW3
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: MaM_$HW3.tex
+          latexmk_use_lualatex: true
+          working_directory: HWs/$HW3/
+
+      - name: Save $HW3 artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: HW_slides
+          path: HWs/$HW1/MaM_$HW3.pdf
+          
+      - name: Compile LaTeX document MaM_$HW4
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: MaM_$HW4.tex
+          latexmk_use_lualatex: true
+          working_directory: HWs/$HW4/
+
+      - name: Save $HW4 artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: HW_slides
+          path: HWs/$HW1/MaM_$HW4.pdf
+          
+# LABs
+      - name: Compile LaTeX document MaM_$LAB1
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: MaM_$LAB1.tex
+          latexmk_use_lualatex: true
+          working_directory: labs/$LAB1/
+
+      - name: Save $LAB1 artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: Lab_slides
+          path: labs/$LAB1/MaM_$LAB1.pdf
+
+      - name: Compile LaTeX document MaM_$LAB2
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: MaM_$LAB2.tex
+          latexmk_use_lualatex: true
+          working_directory: labs/$LAB2/
+
+      - name: Save $LAB2 artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: Lab_slides
+          path: labs/$LAB2/MaM_$LAB2.pdf
+
+      - name: Compile LaTeX document MaM_$LAB3
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: MaM_$LAB3.tex
+          latexmk_use_lualatex: true
+          working_directory: labs/$LAB3/
+
+      - name: Save $LAB3 artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: Lab_slides
+          path: labs/$LAB3/MaM_$LAB3.pdf
+          
+      - name: Compile LaTeX document MaM_$LAB4
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: MaM_$LAB4.tex
+          latexmk_use_lualatex: true
+          working_directory: labs/$LAB4/
+
+      - name: Save $LAB4 artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: Lab_slides
+          path: labs/$LAB4/MaM_$LAB4.pdf
+          
+# LECs
+#       - name: Compile LaTeX document MaM_$LEC1
+#         uses: xu-cheng/latex-action@master
+#         with:
+#           root_file: MaM_$LEC1.tex
+#           latexmk_use_lualatex: true
+#           working_directory: lectures/1/
+
+#       - name: Save $LEC1 artifact
+#         uses: actions/upload-artifact@v3
+#         with:
+#           name: Lectures_slides
+#           path: lectures/1/MaM_$LEC1.pdf
+
+      - name: Compile LaTeX document MaM_$LEC2
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: MaM_$LEC2.tex
+          latexmk_use_lualatex: true
+          working_directory: lectures/2/
+
+      - name: Save $LEC2 artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: Lectures_slides
+          path: lectures/2/MaM_$LEC2.pdf
+
+      - name: Compile LaTeX document MaM_$LEC3
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: MaM_$LEC3.tex
+          latexmk_use_lualatex: true
+          working_directory: lectures/3/
+
+      - name: Save $LEC3 artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: Lectures_slides
+          path: lectures/3/MaM_$LEC3.pdf
+          
+      - name: Update compiled PDFs in git repository
+        if: github.event.pull_request.merged == true || github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        run: |
+          git config --global user.name 'CI PDF compiler'
+          git config --global user.email '<>'
+          git add HWs/*/*.pdf
+
+          git commit -m "Update compiled PDFs"
+          git push

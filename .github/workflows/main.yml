@@ -49,150 +49,150 @@ jobs:
 #           path: HWs/${{matrix.name}}/MaM_${{matrix.name}}.pdf    
 
 # HWs
-      - name: Compile LaTeX document MaM_$HW1
+      - name: Compile LaTeX document MaM_${{ env.HW1}}
         uses: xu-cheng/latex-action@master
         with:
-          root_file: MaM_$HW1.tex
+          root_file: MaM_${{ env.HW1.tex}}
           latexmk_use_lualatex: true
-          working_directory: HWs/$HW1/
+          working_directory: HWs/${{ env.HW1}}/
 
-      - name: Save $HW1 artifact
+      - name: Save ${{ env.HW1}} artifact
         uses: actions/upload-artifact@v3
         with:
           name: HW_slides
-          path: HWs/$HW1/MaM_$HW1.pdf
+          path: HWs/${{ env.HW1}}/MaM_${{ env.HW1}}.pdf
 
-      - name: Compile LaTeX document MaM_$HW2
+      - name: Compile LaTeX document MaM_${{ env.HW2}}
         uses: xu-cheng/latex-action@master
         with:
-          root_file: MaM_$HW2.tex
+          root_file: MaM_${{ env.HW2}}.tex
           latexmk_use_lualatex: true
-          working_directory: HWs/$HW2/
+          working_directory: HWs/${{ env.HW2}}/
 
-      - name: Save $HW1 artifact
+      - name: Save ${{ env.HW2}} artifact
         uses: actions/upload-artifact@v3
         with:
           name: HW_slides
-          path: HWs/$HW1/MaM_$HW2.pdf
+          path: HWs/${{ env.HW2}}/MaM_${{ env.HW2}}.pdf
 
-      - name: Compile LaTeX document MaM_$HW3
+      - name: Compile LaTeX document MaM_${{ env.HW3}}
         uses: xu-cheng/latex-action@master
         with:
-          root_file: MaM_$HW3.tex
+          root_file: MaM_${{ env.HW3}}.tex
           latexmk_use_lualatex: true
-          working_directory: HWs/$HW3/
+          working_directory: HWs/${{ env.HW3}}/
 
-      - name: Save $HW3 artifact
+      - name: Save ${{ env.HW3}} artifact
         uses: actions/upload-artifact@v3
         with:
           name: HW_slides
-          path: HWs/$HW1/MaM_$HW3.pdf
+          path: HWs/${{ env.HW3}}/MaM_${{ env.HW3}}.pdf
           
-      - name: Compile LaTeX document MaM_$HW4
+      - name: Compile LaTeX document MaM_${{ env.HW4}}
         uses: xu-cheng/latex-action@master
         with:
-          root_file: MaM_$HW4.tex
+          root_file: MaM_${{ env.HW4}}.tex
           latexmk_use_lualatex: true
-          working_directory: HWs/$HW4/
+          working_directory: HWs/${{ env.HW4}}/
 
-      - name: Save $HW4 artifact
+      - name: Save ${{ env.HW4}} artifact
         uses: actions/upload-artifact@v3
         with:
           name: HW_slides
-          path: HWs/$HW1/MaM_$HW4.pdf
+          path: HWs/${{ env.HW4}}/MaM_${{ env.HW4}}.pdf
           
 # LABs
-      - name: Compile LaTeX document MaM_$LAB1
+      - name: Compile LaTeX document MaM_${{ env.LAB1}}
         uses: xu-cheng/latex-action@master
         with:
-          root_file: MaM_$LAB1.tex
+          root_file: MaM_${{ env.LAB1}}.tex
           latexmk_use_lualatex: true
-          working_directory: labs/$LAB1/
+          working_directory: labs/${{ env.LAB1}}/
 
-      - name: Save $LAB1 artifact
+      - name: Save ${{ env.LAB1}} artifact
         uses: actions/upload-artifact@v3
         with:
           name: Lab_slides
-          path: labs/$LAB1/MaM_$LAB1.pdf
+          path: labs/${{ env.LAB1}}/MaM_${{ env.LAB1}}.pdf
 
-      - name: Compile LaTeX document MaM_$LAB2
+      - name: Compile LaTeX document MaM_${{ env.LAB2}}
         uses: xu-cheng/latex-action@master
         with:
-          root_file: MaM_$LAB2.tex
+          root_file: MaM_${{ env.LAB2}}.tex
           latexmk_use_lualatex: true
-          working_directory: labs/$LAB2/
+          working_directory: labs/${{ env.LAB2}}/
 
-      - name: Save $LAB2 artifact
+      - name: Save ${{ env.LAB2}} artifact
         uses: actions/upload-artifact@v3
         with:
           name: Lab_slides
-          path: labs/$LAB2/MaM_$LAB2.pdf
+          path: labs/${{ env.LAB2}}/MaM_${{ env.LAB2}}.pdf
 
-      - name: Compile LaTeX document MaM_$LAB3
+      - name: Compile LaTeX document MaM_${{ env.LAB3}}
         uses: xu-cheng/latex-action@master
         with:
-          root_file: MaM_$LAB3.tex
+          root_file: MaM_${{ env.LAB3}}.tex
           latexmk_use_lualatex: true
-          working_directory: labs/$LAB3/
+          working_directory: labs/${{ env.LAB3}}/
 
-      - name: Save $LAB3 artifact
+      - name: Save ${{ env.LAB3}} artifact
         uses: actions/upload-artifact@v3
         with:
           name: Lab_slides
-          path: labs/$LAB3/MaM_$LAB3.pdf
+          path: labs/${{ env.LAB3}}/MaM_${{ env.LAB3}}.pdf
           
-      - name: Compile LaTeX document MaM_$LAB4
+      - name: Compile LaTeX document MaM_${{ env.LAB4}}
         uses: xu-cheng/latex-action@master
         with:
-          root_file: MaM_$LAB4.tex
+          root_file: MaM_${{ env.LAB4}}.tex
           latexmk_use_lualatex: true
-          working_directory: labs/$LAB4/
+          working_directory: labs/${{ env.LAB4}}/
 
-      - name: Save $LAB4 artifact
+      - name: Save ${{ env.LAB4}} artifact
         uses: actions/upload-artifact@v3
         with:
           name: Lab_slides
-          path: labs/$LAB4/MaM_$LAB4.pdf
+          path: labs/${{ env.LAB4}}/MaM_${{ env.LAB4}}.pdf
           
 # LECs
-#       - name: Compile LaTeX document MaM_$LEC1
+#       - name: Compile LaTeX document MaM_${{ env.LEC1}}
 #         uses: xu-cheng/latex-action@master
 #         with:
-#           root_file: MaM_$LEC1.tex
+#           root_file: MaM_${{ env.LEC1}}.tex
 #           latexmk_use_lualatex: true
 #           working_directory: lectures/1/
 
-#       - name: Save $LEC1 artifact
+#       - name: Save ${{ env.LEC1}} artifact
 #         uses: actions/upload-artifact@v3
 #         with:
 #           name: Lectures_slides
-#           path: lectures/1/MaM_$LEC1.pdf
+#           path: lectures/1/MaM_${{ env.LEC1}}.pdf
 
-      - name: Compile LaTeX document MaM_$LEC2
+      - name: Compile LaTeX document MaM_${{ env.LEC2}}
         uses: xu-cheng/latex-action@master
         with:
-          root_file: MaM_$LEC2.tex
+          root_file: MaM_${{ env.LEC2}}.tex
           latexmk_use_lualatex: true
           working_directory: lectures/2/
 
-      - name: Save $LEC2 artifact
+      - name: Save ${{ env.LEC2}} artifact
         uses: actions/upload-artifact@v3
         with:
           name: Lectures_slides
-          path: lectures/2/MaM_$LEC2.pdf
+          path: lectures/2/MaM_${{ env.LEC2}}.pdf
 
-      - name: Compile LaTeX document MaM_$LEC3
+      - name: Compile LaTeX document MaM_${{ env.LEC3}}
         uses: xu-cheng/latex-action@master
         with:
-          root_file: MaM_$LEC3.tex
+          root_file: MaM_${{ env.LEC3}}.tex
           latexmk_use_lualatex: true
           working_directory: lectures/3/
 
-      - name: Save $LEC3 artifact
+      - name: Save ${{ env.LEC3}} artifact
         uses: actions/upload-artifact@v3
         with:
           name: Lectures_slides
-          path: lectures/3/MaM_$LEC3.pdf
+          path: lectures/3/MaM_${{ env.LEC3}}.pdf
           
       - name: Update compiled PDFs in git repository
         if: github.event.pull_request.merged == true || github.event_name == 'push' || github.event_name == 'workflow_dispatch'

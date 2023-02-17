@@ -12,34 +12,53 @@ on:
 
 jobs:
   build_latex:
-    strategy:
-      matrix:
-        name: ['HW_CAD_ASM1','HW_CAD_ASM2','HW_CAD_DET1','HW_CAD_DET2']
+#     strategy:
+#       matrix:
+#         name: ['HW_CAD_ASM1','HW_CAD_ASM2','HW_CAD_DET1','HW_CAD_DET2']
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2
 
-      - name: Compile LaTeX document MaM_${{ matrix.name}}
+      - name: Create list of modified files
+        id: modified_files_list
+        uses: lucaspinheirogit/list-from-string-array-action@v1.4.3
+        with:
+          stringArray: '["HW_CAD_ASM1","HW_CAD_ASM2","HW_CAD_DET1","HW_CAD_DET2"]'
+
+#       - name: Compile LaTeX document MaM_${{ matrix.name}}
+#         uses: xu-cheng/latex-action@master
+#         with:
+#           root_file: MaM_${{ matrix.name}}.tex
+#           latexmk_use_lualatex: true
+#           working_directory: HWs/${{matrix.name}}/
+
+#       - name: Save ${{ matrix.name }} artifact
+#         uses: actions/upload-artifact@v3
+#         with:
+#           name: HW_slides
+#           path: HWs/${{matrix.name}}/MaM_${{matrix.name}}.pdf
+
+      - name: Compile LaTeX document MaM_${{ steps.modified_files_list.outputs.stringList}}
         uses: xu-cheng/latex-action@master
         with:
-          root_file: MaM_${{ matrix.name}}.tex
+          root_file: MaM_${{ steps.modified_files_list.outputs.stringList}}.tex
           latexmk_use_lualatex: true
-          working_directory: HWs/${{matrix.name}}/
+          working_directory: HWs/${{steps.modified_files_list.outputs.stringList}}/
 
-      - name: Save ${{ matrix.name }} artifact
+      - name: Save ${{ steps.modified_files_list.outputs.stringList }} artifact
         uses: actions/upload-artifact@v3
         with:
           name: HW_slides
-          path: HWs/${{matrix.name}}/MaM_${{matrix.name}}.pdf
+          path: HWs/${{steps.modified_files_list.outputs.stringList}}/MaM_${{steps.modified_files_list.outputs.stringList}}.pdf
           
               
-      - name: Update compiled PDFs in git repository
-        if: github.event.pull_request.merged == true || github.event_name == 'push' || github.event_name == 'workflow_dispatch'
-        run: |
-          git config --global user.name 'CI PDF compiler'
-          git config --global user.email '<>'
-          git add HWs/*/*.pdf
+#       - name: Update compiled PDFs in git repository
+#         if: github.event.pull_request.merged == true || github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+#         run: |
+#           git config --global user.name 'CI PDF compiler'
+#           git config --global user.email '<>'
+#           git add HWs/*/*.pdf
 
-          git commit -m "Update compiled PDFs"
-          git push
+#           git commit -m "Update compiled PDFs"
+#           git push

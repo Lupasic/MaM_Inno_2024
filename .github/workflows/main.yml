@@ -52,7 +52,7 @@ jobs:
       - name: Compile LaTeX document MaM_${{ env.HW1}}
         uses: xu-cheng/latex-action@master
         with:
-          root_file: MaM_${{ env.HW1.tex}}
+          root_file: MaM_${{ env.HW1}}.tex
           latexmk_use_lualatex: true
           working_directory: HWs/${{ env.HW1}}/
 

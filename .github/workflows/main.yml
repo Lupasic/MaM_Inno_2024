@@ -22,7 +22,7 @@ jobs:
         HW3: 'HW_CAD_ASM1'
         HW4: 'HW_CAD_ASM2'
         
-        LAB1: 'CAD_DET1'
+        # LAB1: 'CAD_DET1'
         LAB2: 'CAD_DET2'
         LAB3: 'CAD_ASM1'
         LAB4: 'CAD_ASM2'
@@ -102,18 +102,18 @@ jobs:
           path: HWs/${{ env.HW4}}/MaM_${{ env.HW4}}.pdf
           
 # LABs
-      - name: Compile LaTeX document MaM_${{ env.LAB1}}
-        uses: xu-cheng/latex-action@master
-        with:
-          root_file: MaM_${{ env.LAB1}}.tex
-          latexmk_use_lualatex: true
-          working_directory: labs/${{ env.LAB1}}/
+      # - name: Compile LaTeX document MaM_${{ env.LAB1}}
+      #   uses: xu-cheng/latex-action@master
+      #   with:
+      #     root_file: MaM_${{ env.LAB1}}.tex
+      #     latexmk_use_lualatex: true
+      #     working_directory: labs/${{ env.LAB1}}/
 
-      - name: Save ${{ env.LAB1}} artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: Lab_slides
-          path: labs/${{ env.LAB1}}/MaM_${{ env.LAB1}}.pdf
+      # - name: Save ${{ env.LAB1}} artifact
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: Lab_slides
+      #     path: labs/${{ env.LAB1}}/MaM_${{ env.LAB1}}.pdf
 
       - name: Compile LaTeX document MaM_${{ env.LAB2}}
         uses: xu-cheng/latex-action@master

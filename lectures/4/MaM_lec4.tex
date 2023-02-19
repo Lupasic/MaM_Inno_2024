@@ -92,7 +92,10 @@
 \fbckg{fibeamer/figs/common.png}
 
 \note{\scriptsize \begin{itemize}
-        \item \
+        \item нужно дозакодить генетику и пофиксить траекторию генерацию. А то основанная на комплексных числах не понятная. Попробовать ее расписать в обычной форме (проблема в том, что требуется знать все углы между узлами, а это очень странно с точки зрения инженерии).
+        \item Рассмотреть траекторную генерацию 1ый пример (аналитика) и потом оптимизационную и сравнить.
+        \item По факту эта тема сыровата.
+        \item По хорошему еще раз рассчитать графический и реальные методы и сравнить (а то там явно багуля где-то)
     \end{itemize}}
 
 \begin{frame}[c]{Difference between Analysis and Synthesis}
@@ -130,6 +133,35 @@
     \end{column}
 \end{columns}
 \end{frame}
+
+\begin{frame}[t]{Structural Synthesis}
+    \framesubtitle{2 questions, which should be answered}
+    \vspace{-0.6cm}
+    \begin{figure}[H]
+        \begin{minipage}{0.50\textwidth}
+            \footnotesize
+            \textbf{1) Synthesis of type or Reuleaux synthesis:} What type of mechanism is more suitable? What type of elements will it be made of? Can it be formed by linkages, gears, ﬂexible elements or cams?
+            
+            Different conﬁgurations are developed according to the pre-established requirements. The criteria to value the different characteristics of the mechanism are set.
+            \label{reuleaux_synthesis.png}
+        \end{minipage}\hfill
+        \begin{minipage}{0.48\textwidth}
+            \centering\includegraphics[height=3cm,width=1\textwidth,keepaspectratio]{reuleaux_synthesis.png}
+        \end{minipage}
+    \end{figure}
+    \vspace{-0.6cm}
+    
+    \begin{figure}[H]
+        \begin{minipage}{0.50\textwidth}
+            \footnotesize
+            \textbf{2) Synthesis of number or Grübler synthesis:} In the case of a linkage, it determines the number of links and their conﬁguration. 
+            \label{grubler_synthesis.png}
+        \end{minipage}\hfill
+        \begin{minipage}{0.48\textwidth}
+            \centering\includegraphics[height=3cm,width=1\textwidth,keepaspectratio]{grubler_synthesis.png}
+        \end{minipage}
+    \end{figure}
+    \end{frame}
 
 \begin{frame}[t]{Structural Synthesis: Case Study}
     \framesubtitle{Structural synthesis problem}
@@ -312,44 +344,6 @@
 \end{frame}
 
 
-\begin{frame}[t]{Dimensional Synthesis: Case Study}
-\framesubtitle{}
-\vspace{-0.6cm}
-    \begin{figure}[H]
-        \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{dimensional_synthesis_exp.png}
-        \label{fig:dimensional_synthesis_exp.png}
-    \end{figure}
-\end{frame}
-
-\begin{frame}[t]{Structural Synthesis}
-\framesubtitle{2 questions, which should be answered}
-\vspace{-0.6cm}
-\begin{figure}[H]
-    \begin{minipage}{0.50\textwidth}
-        \footnotesize
-        \textbf{1) Synthesis of type or Reuleaux synthesis:} What type of mechanism is more suitable? What type of elements will it be made of? Can it be formed by linkages, gears, ﬂexible elements or cams?
-        
-        Different conﬁgurations are developed according to the pre-established requirements. The criteria to value the different characteristics of the mechanism are set.
-        \label{reuleaux_synthesis.png}
-    \end{minipage}\hfill
-    \begin{minipage}{0.48\textwidth}
-        \centering\includegraphics[height=3cm,width=1\textwidth,keepaspectratio]{reuleaux_synthesis.png}
-    \end{minipage}
-\end{figure}
-\vspace{-0.6cm}
-
-\begin{figure}[H]
-    \begin{minipage}{0.50\textwidth}
-        \footnotesize
-        \textbf{2) Synthesis of number or Grübler synthesis:} In the case of a linkage, it determines the number of links and their conﬁguration. 
-        \label{grubler_synthesis.png}
-    \end{minipage}\hfill
-    \begin{minipage}{0.48\textwidth}
-        \centering\includegraphics[height=3cm,width=1\textwidth,keepaspectratio]{grubler_synthesis.png}
-    \end{minipage}
-\end{figure}
-\end{frame}
-
 \begin{frame}[t]{Dimensional Synthesis}
 \framesubtitle{Functional Generation}
 Pre-established conditions refer to the relation between the input and output motions. These are defined by variables $\phi$ and $\psi$, that indentify their positions.
@@ -360,8 +354,8 @@ Pre-established conditions refer to the relation between the input and output mo
     \end{figure}
 \end{frame}
 
-\begin{frame}[t]{Dimensional Synthesis}
-\framesubtitle{Application}
+\begin{frame}[t]{Functional Generation}
+\framesubtitle{Case Study}
     \begin{columns}[T,onlytextwidth]
         \begin{column}{0.49\textwidth}
             Function generation can be used to design mechanisms that carry out mathematical operations: addition, differentiation, integration or a combination of them. \smallskip
@@ -395,6 +389,17 @@ Pre-established conditions refer to the relation between the input and output mo
     \end{columns}
 \end{frame}
 
+\begin{frame}[t]{Trajectory Generation}
+    \framesubtitle{Case Study: Video}
+    \vspace{-0.6cm}
+    \begin{figure}[H]
+        \href{https://youtu.be/DfznnKUwywQ}{
+            \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{disney_research_preview.jpg}}
+        % \caption{Click on a picture for a video}
+        \label{fig:disney_research_preview.jpg}
+    \end{figure}
+\end{frame}
+
 \begin{frame}[t]{Types of solving methods}
 \framesubtitle{}
     \begin{exampleblock}{Graphical}
@@ -409,6 +414,235 @@ Pre-established conditions refer to the relation between the input and output mo
         They can ﬁnd the optimal solution to the problem by means of the minimization of an objective function and the establishment of a series of restrictions. Different optimization techniques can be used.
     \end{exampleblock}
 
+\end{frame}
+
+\begin{frame}[t]{Function Generation Synthesis}
+\framesubtitle{How to represent data}
+
+\vspace{-0.6cm}
+\begin{figure}[H]
+    \begin{minipage}{0.58\textwidth}
+        \centering\includegraphics[height=2.8cm,width=1\textwidth,keepaspectratio]{func_gen3.png}
+    \end{minipage}\hfill
+    \begin{minipage}{0.40\textwidth}
+        1) Continuous function (desired and generated)
+        \label{fig:func_gen3.png}
+    \end{minipage}
+\end{figure}
+\vspace{-0.6cm}
+
+\begin{figure}[H]
+    \begin{minipage}{0.58\textwidth}
+        \centering\includegraphics[height=2cm,width=1\textwidth,keepaspectratio]{func_gen4.png}
+    \end{minipage}\hfill
+    \begin{minipage}{0.40\textwidth}
+        2) Precision points
+        \label{fig:func_gen4.png}
+    \end{minipage}
+\end{figure}
+\vspace{-0.6cm}
+
+\begin{figure}[H]
+    \begin{minipage}{0.58\textwidth}
+        \centering\includegraphics[height=2cm,width=1\textwidth,keepaspectratio]{func_gen5.png}
+    \end{minipage}\hfill
+    \begin{minipage}{0.40\textwidth}
+        \textit{It's representation for optimation based algorithms}. Error function (difference between generated and desired)
+        \label{fig:func_gen5.png}
+    \end{minipage}
+\end{figure}
+\end{frame}
+
+\begin{frame}[t]{Function Generation Synthesis}
+\framesubtitle{Graphical Method (1)}
+    \begin{columns}[T,onlytextwidth]
+        \begin{column}{0.39\textwidth}
+            As an example, we will generate a four-bar mechanism in which a rotated angle of the input link between positions $1$ and $2$, $\phi_12$, corresponds to a rotated angle of output link $\psi_12$
+        \end{column}
+        \begin{column}{0.59\textwidth}
+            \vspace{-0.6cm}
+            \begin{figure}[H]
+                \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{func_gen6.png}
+                % \caption{caption_name}
+                \label{fig:func_gen6.png}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}[t]{Function Generation Synthesis}
+    \framesubtitle{Graphical Method (2): Algorithm}
+    \vspace{-0.8cm}
+    \begin{figure}[H]
+        \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{func_gen7.png}
+        % \caption{caption_name}
+        \label{fig:func_gen7.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[t]{Function Generation Synthesis}
+    \framesubtitle{Graphical Method (3): Particular Case}
+    \vspace{-0.8cm}
+    \begin{figure}[H]
+        \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{func_gen8.png}
+        % \caption{caption_name}
+        \label{fig:func_gen8.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[t]{Function Generation Synthesis}
+    \framesubtitle{Analytical Method (1): Freudenstein's method}
+    % \vspace{-0.8cm}
+    Find all lengths of four link bar mechanism if we know 3 related positions of input and output links.
+    \begin{figure}[H]
+        \centering\includegraphics[height=4cm,width=1\textwidth,keepaspectratio]{func_gen9.png}
+        % \caption{caption_name}
+        \label{fig:func_gen9.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[t]{Function Generation Synthesis}
+    \framesubtitle{Analytical Method (2): full solution in pdf page 11}
+    \vspace{-0.8cm}
+    \begin{gather}
+        \vec{a} + \vec{c} = \vec{d} + \vec{b} \\ 
+        \left\{\begin{matrix*}[l]
+        a\cos(\phi) + c\cos(\theta) = d + b \cos(\psi)\\ 
+        a\sin(\phi)+c\sin(\theta)=b\sin(\psi)
+        \end{matrix*}\right. \\ 
+        \text{In order to find the relation $\psi = f(\phi)$} \\ 
+        c^2 = d^2 + b^2 + a^2 + 2bd\cos(\psi) - 2ab\cos(\psi - \phi) - 2da\cos(\phi) \\ 
+        R_1\cos(\psi) - R_2\cos(\phi) + R_3 = \cos(\psi - \phi), \text{ where: } \\
+        \left\{\begin{matrix*}[l]
+        R_1=\dfrac{d}{a};\ R_2 = \dfrac{d}{b}\\ 
+        R_3 = \dfrac{d^2+b^2+a^2-c^2}{2ab}
+        \end{matrix*}\right.
+    \end{gather}
+\end{frame}
+
+\begin{frame}[t]{Function Generation Synthesis}
+    \framesubtitle{Analytical Method (3)}
+    \vspace{-0.7cm}
+    \begin{figure}[H]
+        \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{func_gen10.png}
+        % \caption{caption_name}
+        \label{fig:func_gen10.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[t]{Function Generation Synthesis}
+    \framesubtitle{Analytical Method (4): Comparison with graphical}
+    \vspace{-0.7cm}
+    \begin{figure}[H]
+        \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{func_gen11.png}
+        % \caption{caption_name}
+        \label{fig:func_gen11.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[t]{Trajectory Generation Synthesis}
+\framesubtitle{Formal definition}
+\vspace{-0.5cm}
+
+Relationship between the trajectory described by a point in a link and the motion of another link, usually the input one.
+\vspace{-0.5cm}
+
+\begin{figure}[H]
+    \href{https://www.geogebra.org/m/SF2rQXEp}{
+        \centering\includegraphics[height=5cm,width=1\textwidth,keepaspectratio]{traj_gen2.png}}
+    \label{fig:traj_gen2.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}[t]{Trajectory Generation Synthesis}
+    \framesubtitle{Graphical Method (1)}
+    \vspace{-0.5cm}
+    \begin{columns}[T,onlytextwidth]
+        \begin{column}{0.49\textwidth}
+            This method allows ﬁnding a four-bar mechanism in which the coupler link passes through the three speciﬁed positions. The steps to follow are the next:
+ones:
+        \end{column}
+        \begin{column}{0.49\textwidth}
+            \begin{figure}[H]
+                \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{traj_gen3.png}
+                \label{fig:traj_gen3.png}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}[t]{Trajectory Generation Synthesis}
+    \framesubtitle{Graphical Method (2): Algorithm}
+    \vspace{-0.7cm}
+    \begin{figure}[H]
+        \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{traj_gen4.png}
+        % \caption{caption_name}
+        \label{fig:traj_gen4.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[t]{Trajectory Generation Synthesis}
+    \framesubtitle{Analytical Method (1): Based on complex numbers}
+    \vspace{-0.7cm}
+    \begin{figure}[H]
+        \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{traj_gen5.png}
+        \vspace{-0.7cm}
+
+        \caption*{Full solution is \textit{on pdf page 16}}
+        \label{fig:traj_gen5.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[t]{Optimal Synthesis}
+    \framesubtitle{Formal definition (1)}
+    \vspace{-0.7cm}
+    \begin{figure}[H]
+        \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{opti_gen1.png}
+        % \caption{caption_name}
+        \label{fig:opti_gen1.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[t]{Optimal Synthesis}
+    \framesubtitle{Formal definition (2)}
+    \vspace{-0.7cm}
+    \begin{figure}[H]
+        \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{opti_gen2.png}
+        % \caption{caption_name}
+        \label{fig:opti_gen2.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[t]{Optimal Synthesis}
+    \framesubtitle{Formal definition (3)}
+    \vspace{-0.7cm}
+    \begin{figure}[H]
+        \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{opti_gen2_5.png}
+        % \caption{caption_name}
+        \label{fig:opti_gen2_5.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[t]{Optimal Synthesis}
+    \framesubtitle{Function Generation: objective function}
+    \vspace{-0.7cm}
+    \begin{figure}[H]
+        \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{opti_gen3.png}
+        % \caption{caption_name}
+        \label{fig:opti_gen3.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[t]{Optimal Synthesis}
+    \framesubtitle{Trajectory Generation: objective function}
+        \centering \LARGE
+        Starting \textit{pdf page 23}
+    \end{frame}
+
+\begin{frame}[t]{Optimal Synthesis}
+\framesubtitle{Evolutionary Algorithms}
+    \centering \LARGE
+    Starting \textit{pdf page 28}
 \end{frame}
 
 \begin{frame}[t]{Reference material}

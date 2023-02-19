@@ -5,16 +5,18 @@ Mechanisms and machines" course for robotics track at Innopolis University in 20
 
 This repository contains regularly updated course materials. You can use lecture, lab slides for self study. They are created in such manner, that almost 90% of material can be understood  without teacher.
 
-# Lecture slides
+# Project related material
+* [Project Guideline](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/1/MaM_Project.pdf)
+* [Projects from previous years](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/1/MaM_possible_projects.pdf) 
 
+# Lecture slides
 * [Lecture 1 (Introduction; Engineering Drawings)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/1/MaM_lec1.pdf)
 * [Lecture 2 (Intro to Theory of Mechanisms and Machines; Links, Joints (Kinematic pairs); Kinematic chains, Degrees of Freedom, Mobility)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/2/MaM_lec2.pdf) 
 * [Lecture 3 (Types of drives: kinematics, where to find other info; Drives: friction, belts, chains, gears, universal, geneva, ballscrew)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/3/MaM_lec3.pdf)
 * [Lecture 4 (Synthesis of planar mechanisms)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/4/MaM_lec4.pdf)
 
 # Lab slides
-
-* [Lab 1 CAD_DET1 (Intro to subject; History of CAD; Solid modeling)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/labs/CAD_DET1/MaM_lab_1_CAD1.pdf)
+* [Lab 1 CAD_DET1 (Intro to subject; History of CAD; Solid modeling)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/labs/CAD_DET1/MaM_CAD_DET1.pdf)
 * [Lab 2 CAD_DET2 (Workflow, Work in groups; CAD file formats; Threads)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/labs/CAD_DET2/MaM_CAD_DET2.pdf) 
 * [Lab 3 CAD_ASM1 (Bottom-Up approach; Basics)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/labs/CAD_ASM1/MaM_CAD_ASM1.pdf)
 * [Lab 4 CAD_ASM2 (Top - Down approach: WAVE; Assembly Load Options; GOST Naming convection; Common Parts Library; Sequence (<Dis>Assembling animation))](https://github.com/Lupasic/MaM_Inno_2023/blob/main/labs/CAD_ASM2/MaM_CAD_ASM2.pdf)

@@ -1,9 +1,9 @@
 # MaM_Inno_2023
-Mechanisms and machines" course for robotics track at Innopolis University in 2023
+"Mechanisms and machines" course for robotics track at Innopolis University in 2023
 
 # How to use
 
-This repository contains regularly updated course materials. You can use lecture, lab slides for self study. They are created in such manner, that almost 90% of material can be understood  without teacher.
+This repository contains regularly updated course materials. You can use lecture, lab slides for self-study. They are created in such manner that almost 90% of material can be understood without teacher.
 
 # Project related material
 * [Project Guideline](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/1/MaM_Project.pdf)

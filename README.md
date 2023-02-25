@@ -5,6 +5,8 @@ Mechanisms and machines" course for robotics track at Innopolis University in 20
 
 This repository contains regularly updated course materials. You can use lecture, lab slides for self study. They are created in such manner, that almost 90% of material can be understood  without teacher.
 
+All class related material can be found in corresponding folder/task_data
+
 # Project related material
 * [Project Guideline](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/1/MaM_Project.pdf)
 * [Projects from previous years](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/1/MaM_possible_projects.pdf) 
@@ -20,12 +22,16 @@ This repository contains regularly updated course materials. You can use lecture
 * [Lab 2 CAD_DET2 (Workflow, Work in groups; CAD file formats; Threads)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/labs/CAD_DET2/MaM_CAD_DET2.pdf) 
 * [Lab 3 CAD_ASM1 (Bottom-Up approach; Basics)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/labs/CAD_ASM1/MaM_CAD_ASM1.pdf)
 * [Lab 4 CAD_ASM2 (Top - Down approach: WAVE; Assembly Load Options; GOST Naming convection; Common Parts Library; Sequence (<Dis>Assembling animation))](https://github.com/Lupasic/MaM_Inno_2023/blob/main/labs/CAD_ASM2/MaM_CAD_ASM2.pdf)
+* [Lab 5 CAE_DYN1 (Introduction to CAE; Animation Designer; Mechatronics Concept Designer; Motion; Measure; Interference; Density; Assign Materials)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/labs/CAE_DYN1/MaM_CAE_DYN1.pdf)
+* [Lab 6 CAE_DYN2 (Motion Analysis, Part 2)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/labs/CAE_DYN2/MaM_CAE_DYN2.pdf)
 
 # HWs
 * [HW 1 CAD_DET1 (Simple Detail)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/HWs/HW_CAD_DET1/MaM_HW_CAD_DET1.pdf)
 * [HW 2 CAD_DET2 (Complex Detail)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/HWs/HW_CAD_DET2/MaM_HW_CAD_DET2.pdf) 
 * [HW 3 CAD_ASM1 (Simple Assembly)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/HWs/HW_CAD_ASM1/MaM_HW_CAD_ASM1.pdf)
 * [HW 4 CAD_ASM2 (Complex Assembly)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/HWs/HW_CAD_ASM2/MaM_HW_CAD_ASM2.pdf)
+* [HW 5 CAE_DYN1 (Inverse Dynamics Problem)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/HWs/HW_CAE_DYN1/MaM_HW_CAE_DYN1.pdf)
+* [HW 6 CAE_DYN2 (Motion Analysis)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/HWs/HW_CAE_DYN2/MaM_HW_CAE_DYN2.pdf)
 
 # For contributors
 

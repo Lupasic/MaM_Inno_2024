@@ -277,4 +277,4 @@ ehthumbs.db
 Thumbs.db
 
 .vscode/*
-**/**/solution/**
+solution/

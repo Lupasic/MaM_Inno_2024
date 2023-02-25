@@ -1,0 +1,334 @@
+HIEROBJ  EWORLD                                             NONE                
+ROOT                                                                            
+1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  
+0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  
+0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  
+0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 
+HIEROBJ  EHIEROBJECT1                                       NONE                
+BODYNCBF  WORLD                                   BODY1                         
+1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  
+0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  
+0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  
+0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 
+HIEROBJ  EHIEROBJECT2                                       NONE                
+CGTRIAD   HIEROBJECT1                                                           
+-1.360860989895E-03 -1.480752492942E-03 9.9999797771267E-01 0.000000000000E+00  
+9.9986579227561E-01 -1.632823312058E-02 1.3365029827324E-03 0.000000000000E+00  
+1.6326221070080E-02 9.9986558905446E-01 1.5027742200068E-03 0.000000000000E+00  
+3.5721238587000E-01 5.0639905492000E-01 -9.141515600000E-04 1.0000000000000E+00 
+HIEROBJ  EHIEROBJECT3                                       NONE                
+BODYNCBF  WORLD                                   BODY2                         
+1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  
+0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  
+0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  
+0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 
+HIEROBJ  EHIEROBJECT4                                       NONE                
+CGTRIAD   HIEROBJECT3                                                           
+0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  
+1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  
+0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  
+7.6829068570000E-02 4.7279426810000E-02 2.5000000000000E-03 1.0000000000000E+00 
+HIEROBJ  EHIEROBJECT5                                       NONE                
+BODYNCBF  WORLD                                   BODY3                         
+1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  
+0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  
+0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  
+0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 
+HIEROBJ  EHIEROBJECT6                                       NONE                
+CGTRIAD   HIEROBJECT5                                                           
+1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  
+0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  
+0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  
+0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 
+HIEROBJ  EHIEROBJECT7                                       NONE                
+JFCTRIAD  HIEROBJECT1                                                           
+-1.360860989895E-03 -1.480752492941E-03 9.9999797771267E-01 0.000000000000E+00  
+9.9986579227561E-01 -1.632823312058E-02 1.3365029827327E-03 0.000000000000E+00  
+1.6326221070080E-02 9.9986558905446E-01 1.5027742200067E-03 0.000000000000E+00  
+0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 
+HIEROBJ  EHIEROBJECT8                                       NONE                
+JFCTRIAD  HIEROBJECT1                                                           
+-1.360860989895E-03 -1.480752492941E-03 9.9999797771267E-01 0.000000000000E+00  
+9.9986579227561E-01 -1.632823312058E-02 1.3365029827327E-03 0.000000000000E+00  
+1.6326221070080E-02 9.9986558905446E-01 1.5027742200067E-03 0.000000000000E+00  
+3.5721238587000E-01 5.0639905492000E-01 -9.141515600000E-04 1.0000000000000E+00 
+HIEROBJ  EHIEROBJECT9                                       NONE                
+JFCTRIAD  HIEROBJECT1                                                           
+1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  
+0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  
+0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  
+0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 
+HIEROBJ  EHIEROBJECT10                                      NONE                
+JFCTRIAD  HIEROBJECT1                                                           
+1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  
+0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  
+0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  
+0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 
+HIEROBJ  EHIEROBJECT11                                      NONE                
+JFCTRIAD  HIEROBJECT1                                                           
+1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  
+0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  
+0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  
+7.6829068565343E-02 4.7279426809442E-02 0.000000000000E+00  1.0000000000000E+00 
+HIEROBJ  EHIEROBJECT12                                      NONE                
+JFCTRIAD  HIEROBJECT3                                                           
+4.4408920985006E-16 -4.440892098501E-16 1.0000000000000E+00 0.000000000000E+00  
+1.0000000000000E+00 0.000000000000E+00  -4.440892098501E-16 0.000000000000E+00  
+0.000000000000E+00  1.0000000000000E+00 4.4408920985006E-16 0.000000000000E+00  
+0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 
+HIEROBJ  EHIEROBJECT13                                      NONE                
+JFCTRIAD  HIEROBJECT3                                                           
+4.4408920985006E-16 -4.440892098501E-16 1.0000000000000E+00 0.000000000000E+00  
+1.0000000000000E+00 0.000000000000E+00  -4.440892098501E-16 0.000000000000E+00  
+0.000000000000E+00  1.0000000000000E+00 4.4408920985006E-16 0.000000000000E+00  
+7.6829068570000E-02 4.7279426810000E-02 2.5000000000000E-03 1.0000000000000E+00 
+HIEROBJ  EHIEROBJECT14                                      NONE                
+JFCTRIAD  HIEROBJECT3                                                           
+1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  
+0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  
+0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  
+6.6740844580118E-02 3.6178627882171E-02 2.7818937394357E-03 1.0000000000000E+00 
+HIEROBJ  EHIEROBJECT15                                      NONE                
+JFCTRIAD  HIEROBJECT3                                                           
+1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  
+0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  
+0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  
+3.5416666666667E-01 5.0000000000000E-01 0.000000000000E+00  1.0000000000000E+00 
+HIEROBJ  EHIEROBJECT16                                      NONE                
+JFCTRIAD  HIEROBJECT3                                                           
+1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  
+0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  
+0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  
+7.6829068565343E-02 4.7279426809442E-02 0.000000000000E+00  1.0000000000000E+00 
+HIEROBJ  EHIEROBJECT17                                      NONE                
+JFCTRIAD  HIEROBJECT5                                                           
+7.5859505991508E-01 -6.515623800316E-01 0.000000000000E+00  0.000000000000E+00  
+1.4467591125813E-16 1.6844194037692E-16 -1.000000000000E+00 0.000000000000E+00  
+6.5156238003160E-01 7.5859505991508E-01 2.2204460492503E-16 0.000000000000E+00  
+0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 
+HIEROBJ  EHIEROBJECT18                                      NONE                
+JFCTRIAD  HIEROBJECT5                                                           
+9.3646161184343E-01 3.5077008074179E-01 0.000000000000E+00  0.000000000000E+00  
+-1.084062023697E-09 2.8941533793056E-09 -1.000000000000E+00 0.000000000000E+00  
+-3.507700807418E-01 9.3646161184343E-01 3.0905200620879E-09 0.000000000000E+00  
+0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 
+HIEROBJ  EHIEROBJECT19                                      NONE                
+JFCTRIAD  HIEROBJECT5                                                           
+1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  
+0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  
+0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  
+0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 
+HIEROBJ  EHIEROBJECT20                                      NONE                
+JFCTRIAD  HIEROBJECT1                                                           
+0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  
+0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  
+1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  
+7.6829068565343E-02 4.7279426809442E-02 0.000000000000E+00  1.0000000000000E+00 
+HIEROBJ  EHIEROBJECT21                                      NONE                
+JFCTRIAD  HIEROBJECT3                                                           
+0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  
+0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  
+1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  
+7.6829068565343E-02 4.7279426809442E-02 0.000000000000E+00  1.0000000000000E+00 
+NAMEMAP   WORLD               5    5    UTF8 UTF8 ELEMENT                       
+WORLD                                                                           
+WORLD                                                                           
+NAMEMAP   HIEROBJECT1         14   14   UTF8 UTF8 ELEMENT                       
+B001/B001_NCBF                                                                  
+B001/B001_NCBF                                                                  
+NAMEMAP   HIEROBJECT2         12   12   UTF8 UTF8 ELEMENT                       
+B001/B001_cm                                                                    
+B001/B001_cm                                                                    
+NAMEMAP   HIEROBJECT3         14   14   UTF8 UTF8 ELEMENT                       
+B002/B002_NCBF                                                                  
+B002/B002_NCBF                                                                  
+NAMEMAP   HIEROBJECT4         12   12   UTF8 UTF8 ELEMENT                       
+B002/B002_cm                                                                    
+B002/B002_cm                                                                    
+NAMEMAP   HIEROBJECT5         26   26   UTF8 UTF8 ELEMENT                       
+the_ground/the_ground_NCBF                                                      
+the_ground/the_ground_NCBF                                                      
+NAMEMAP   HIEROBJECT6         13   13   UTF8 UTF8 ELEMENT                       
+the_ground_cm                                                                   
+the_ground_cm                                                                   
+NAMEMAP   HIEROBJECT7         13   13   UTF8 UTF8 ELEMENT                       
+B001/B001_coi                                                                   
+B001/B001_coi                                                                   
+NAMEMAP   HIEROBJECT8         13   13   UTF8 UTF8 ELEMENT                       
+B001/B001_com                                                                   
+B001/B001_com                                                                   
+NAMEMAP   HIEROBJECT9         4    11   UTF8 UTF8 ELEMENT                       
+3/54                                                                            
+B001/G001_j                                                                     
+NAMEMAP   HIEROBJECT10        4    11   UTF8 UTF8 ELEMENT                       
+3/73                                                                            
+B001/G002_j                                                                     
+NAMEMAP   HIEROBJECT11        4    11   UTF8 UTF8 ELEMENT                       
+3/37                                                                            
+B001/J001_j                                                                     
+NAMEMAP   HIEROBJECT12        13   13   UTF8 UTF8 ELEMENT                       
+B002/B002_coi                                                                   
+B002/B002_coi                                                                   
+NAMEMAP   HIEROBJECT13        13   13   UTF8 UTF8 ELEMENT                       
+B002/B002_com                                                                   
+B002/B002_com                                                                   
+NAMEMAP   HIEROBJECT14        5    11   UTF8 UTF8 ELEMENT                       
+15/53                                                                           
+B002/G001_i                                                                     
+NAMEMAP   HIEROBJECT15        5    11   UTF8 UTF8 ELEMENT                       
+15/72                                                                           
+B002/G002_i                                                                     
+NAMEMAP   HIEROBJECT16        5    11   UTF8 UTF8 ELEMENT                       
+15/36                                                                           
+B002/J001_i                                                                     
+NAMEMAP   HIEROBJECT17        17   17   UTF8 UTF8 ELEMENT                       
+the_ground/G001_k                                                               
+the_ground/G001_k                                                               
+NAMEMAP   HIEROBJECT18        17   17   UTF8 UTF8 ELEMENT                       
+the_ground/G002_k                                                               
+the_ground/G002_k                                                               
+NAMEMAP   HIEROBJECT19        1    14   UTF8 UTF8 ELEMENT                       
+1                                                                               
+the_ground/gnd                                                                  
+NAMEMAP   HIEROBJECT20        18   25   UTF8 UTF8 ELEMENT                       
+3/37 (transformed)                                                              
+B001/J001_j (transformed)                                                       
+NAMEMAP   HIEROBJECT21        19   25   UTF8 UTF8 ELEMENT                       
+15/36 (transformed)                                                             
+B002/J001_i (transformed)                                                       
+NAMEMAP   CURRENT_DIRECTORY   49   0    UTF8 UTF8 FILE                          
+D:\Latex_docs\MaM\HWs\HW_CAE_DYN2\solution\task_3                               
+SYSTEM   GMETER               DYNAMIC             SPARSE    FULL_NCBF      TRUE 
+9.8066500000000E+00 0.000000000000E+00  0.000000000000E+00  -1.000000000000E+00 
+1.0000000000000E+00 0.000000000000E+00  6.0040000000000E+00 1.0006666666667E-03 
+1.0000000000000E-09 1.0000000000000E-03 NULL_FALSEBINARY_ONLFALSEKILOGNEWTO    1
+NONE                NONE                    1NONE                TRUE ITERAFALSE
+NONE                NONE                                                        
+NONE                                                                            
+HEADER                                                                          
+SET_IASIZE =    5000000;                                                        
+SET_DASIZE =    5000000;                                                        
+SDK_BUILD_INFO = RC2206_6000 2022-09-14                                         
+END                                                                             
+DYNAMIC  ETRUE      INTERPOLATED        GLOBAL    BDF           1     HARWELL   
+5.0000000000000E-02 1.0000000000000E-03 1.0000000000000E-03 1.0000000000000E-03 
+NONE                QR       1TRUE                                              
+PRELOAD  F          0.000000000000E+00      0                                   
+NONE                                                                            
+NONE                                                                            
+NCBF     EBODY1_REF           BODY1               PARAMETERSPOSITIVE            
+HIEROBJECT1                                                                     
+0.000000000000E+00  0.000000000000E+00  0.000000000000E+00                      
+BODY     EBODY1               POSITIVE  PARAMETERSTRUE FALSEFALSEFALSE          
+NONE                NONE                NONE                                    
+NONE                NONE                NONE                                    
+HIEROBJECT2                                                                     
+0.000000000000E+00  0.000000000000E+00  0.000000000000E+00                      
+1.7199100548800E+01 2.1143098573200E+00 1.4133130810100E+00 7.0146354874000E-01 
+0.000000000000E+00  0.000000000000E+00  0.000000000000E+00                      
+0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  FALSE               
+0.000000000000E+00  0.000000000000E+00  0.000000000000E+00                      
+NCBF     EBODY2_REF           BODY2               PARAMETERSPOSITIVE            
+HIEROBJECT3                                                                     
+0.000000000000E+00  0.000000000000E+00  0.000000000000E+00                      
+BODY     EBODY2               POSITIVE  PARAMETERSFALSEFALSEFALSEFALSE          
+NONE                NONE                NONE                                    
+NONE                NONE                NONE                                    
+HIEROBJECT4                                                                     
+0.000000000000E+00  0.000000000000E+00  0.000000000000E+00                      
+3.7110063200000E-03 4.1749000000000E-07 2.1648000000000E-07 2.1648000000000E-07 
+0.000000000000E+00  0.000000000000E+00  0.000000000000E+00                      
+0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  FALSE               
+0.000000000000E+00  0.000000000000E+00  0.000000000000E+00                      
+NCBF     EBODY3_REF           BODY3               PARAMETERSPOSITIVE            
+HIEROBJECT5                                                                     
+0.000000000000E+00  0.000000000000E+00  0.000000000000E+00                      
+BODY     EBODY3               POSITIVE  PARAMETERSTRUE FALSEFALSEFALSE          
+NONE                NONE                NONE                                    
+NONE                NONE                NONE                                    
+HIEROBJECT6                                                                     
+0.000000000000E+00  0.000000000000E+00  0.000000000000E+00                      
+1.0000000000000E+00 1.0000000000000E+00 1.0000000000000E+00 1.0000000000000E+00 
+0.000000000000E+00  0.000000000000E+00  0.000000000000E+00                      
+0.000000000000E+00  0.000000000000E+00  0.000000000000E+00  FALSE               
+0.000000000000E+00  0.000000000000E+00  0.000000000000E+00                      
+EXPRFORC  EXP_FORC_VECTOR1    VECT6VECMVACTION_REACTION                         
+HIEROBJECT14                            HIEROBJECT9                             
+HIEROBJECT17                            NONE                NONE                
+EXPRESSION1         NONE                NONE                NONE                
+EXPRFORC  EXP_FORC_VECTOR2    VECT6VECMVACTION_REACTION                         
+HIEROBJECT15                            HIEROBJECT10                            
+HIEROBJECT18                            NONE                NONE                
+EXPRESSION2         NONE                NONE                NONE                
+PLANAR   EPLANAR_JOINT1       BODY1               BODY2               TRUE      
+HIEROBJECT20                                                                    
+HIEROBJECT21                                                                    
+0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00                     
+0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00                     
+1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00                      
+1.0000000000000E+00 0.000000000000E+00  0.000000000000E+00                      
+CURVE    ESPLINE_CURVE1       SPLINE.EXPLICIT              4    1FALSE    1     
+0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 1.0000000000000E+00 
+0.000000000000E+00  0.000000000000E+00  LINEAR    LINEAR                        
+0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  
+0.000000000000E+00  1.0000000000000E+00 1.0000000000000E-03 0.000000000000E+00  
+CURVE    ESPLINE_CURVE2       SPLINE.EXPLICIT              6    1FALSE    1     
+0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 1.0000000000000E+00 
+0.000000000000E+00  0.000000000000E+00  LINEAR    LINEAR                        
+0.000000000000E+00  0.000000000000E+00  1.0000000000000E+00 0.000000000000E+00  
+5.6700000000000E+00 0.000000000000E+00  5.6800000000000E+00 4.0000000000000E-01 
+5.6900000000000E+00 0.000000000000E+00                                          
+EXPRESS  DEXPRESSION1         FALSE              10.000000000000E+00            
+MAXIMUM   0.000000000000E+00  0.000000000000E+00  FORCE                         
+SPLINE_CURVE1(time)*1                                                           
+EXPRESS  DEXPRESSION2         FALSE              10.000000000000E+00            
+MAXIMUM   0.000000000000E+00  0.000000000000E+00  FORCE                         
+SPLINE_CURVE2(time)*1                                                           
+NAMEMAP   SYSTEM_DATA1        11   11   UTF8 UTF8 ELEMENT                       
+Mandatory:1                                                                     
+Mandatory:1                                                                     
+NAMEMAP   DYNAMIC_DATA1       11   11   UTF8 UTF8 ELEMENT                       
+Mandatory:2                                                                     
+Mandatory:2                                                                     
+NAMEMAP   PRELOAD_DATA1       11   11   UTF8 UTF8 ELEMENT                       
+Mandatory:5                                                                     
+Mandatory:5                                                                     
+NAMEMAP   BODY1               4    4    UTF8 UTF8 ELEMENT                       
+B001                                                                            
+B001                                                                            
+NAMEMAP   BODY1_REF           8    8    UTF8 UTF8 ELEMENT                       
+B001_REF                                                                        
+B001_REF                                                                        
+NAMEMAP   BODY2               4    4    UTF8 UTF8 ELEMENT                       
+B002                                                                            
+B002                                                                            
+NAMEMAP   BODY2_REF           8    8    UTF8 UTF8 ELEMENT                       
+B002_REF                                                                        
+B002_REF                                                                        
+NAMEMAP   BODY3               10   10   UTF8 UTF8 ELEMENT                       
+the_ground                                                                      
+the_ground                                                                      
+NAMEMAP   BODY3_REF           14   14   UTF8 UTF8 ELEMENT                       
+the_ground_REF                                                                  
+the_ground_REF                                                                  
+NAMEMAP   EXP_FORC_VECTOR1    4    4    UTF8 UTF8 ELEMENT                       
+G001                                                                            
+G001                                                                            
+NAMEMAP   EXP_FORC_VECTOR2    4    4    UTF8 UTF8 ELEMENT                       
+G002                                                                            
+G002                                                                            
+NAMEMAP   PLANAR_JOINT1       4    4    UTF8 UTF8 ELEMENT                       
+J001                                                                            
+J001                                                                            
+NAMEMAP   SPLINE_CURVE1       32   32   UTF8 UTF8 ELEMENT                       
+AFUREC_hokey_motion1.afu#Force_1                                                
+AFUREC_hokey_motion1.afu#Force_1                                                
+NAMEMAP   SPLINE_CURVE2       32   32   UTF8 UTF8 ELEMENT                       
+AFUREC_hokey_motion1.afu#Force_2                                                
+AFUREC_hokey_motion1.afu#Force_2                                                
+NAMEMAP   EXPRESSION1         2    41   UTF8 UTF8 ELEMENT                       
+59                                                                              
+SPLINE (AFUREC_hokey_motion1.afu#Force_1)                                       
+NAMEMAP   EXPRESSION2         2    41   UTF8 UTF8 ELEMENT                       
+61                                                                              
+SPLINE (AFUREC_hokey_motion1.afu#Force_2)                                       

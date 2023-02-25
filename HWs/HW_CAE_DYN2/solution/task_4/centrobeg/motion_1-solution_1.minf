@@ -1,0 +1,1567 @@
+Input file: E:\YandexDisk\Документы\ДЗ все\Преподавание\Mechanics and Machines\Bauman material\Готовые билеты 2020\7 билет\centrobeg\motion_1-solution_1.minp
+
+Solver running in Simcenter Mode
+
+Copyright Siemens 2022
+
+
+[1764]
+Info: The Business Analytics flag has been set to Yes.
+
+Solver: Simcenter 3D Motion Version 2206.0001 (13.0) Sep  6 2022 03:30:13 Intel Release 64bit
+Interface: RC2206_6000 2022-09-14
+Hostname: DESKTOP-6AFHIMM
+OS Type: Windows
+Release: 6.2
+Version: Build 9200
+Machine: 8664
+Integer size:    5000000
+Real size:    5000000
+Mcheps: 0.22204460492503E-15
+
+[1482]
+NOTE:  The system data element specifies inconsistent units:
+  LENGTH.UNIT = MILLIMETER
+  MASS.UNIT   = KILOGRAM
+  FORCE.UNIT  = NEWTON
+Force and mass values are converted to a consistent set of units for
+solution and then converted back to the specified units before being
+reported.
+
+[1296]
+Warning (dynamic data element):  When "INTERPOLATED" is selected for the
+print method, the print frequency feature cannot be used.  PRINT.Freq is
+being reset to zero (disabled) and execution is continuing.
+ The GGL formulation is turned on.
+
+License Server is [27800@localhost]
+
+Features requiring licenses
+-----------------------
+sc_motion_solver "Simcenter Motion Solver"
+
+
+[1134]
+Warning:  Prior to assembly the number of constraints, drivers and
+initial conditions is not equal to the number of generalized
+coordinates.  The assembly algorithm will be executed but the
+result will represent one of several possible solutions.
+Number of constraints, drivers, I.C's =                   61
+Number of generalized coordinates     =                   57
+
+[1516]
+Warning: Prior to the assembly analysis one or more constraints are not
+satisfied within the specified assembly tolerance.  The assembly analysis will
+attempt to adjust the model to achieve this tolerance across all constraints.
+If assembly analysis fails, or if the model assembles to an undesired position
+the following elements whose constraint residuals exceed the specified assembly
+tolerance should be checked:
+                                 Constraint
+.........Element Type.........  ..Number..  ..Violation..  ........Name........
+ Revolute joint                     2       -2.604169    
+G1_K
+ Revolute joint                     3        2.541619    
+G1_K
+ Revolute joint                     1        2.000000    
+G1_Z1
+ Revolute joint                     2        11.10985    
+G2_K
+ Revolute joint                     3        2.475397    
+G2_K
+ Revolute joint                     1        2.000000    
+G2_Z2
+ Revolute joint                     1        2.000000    
+Z1_K
+ Revolute joint                     2       0.9237654E-01
+Z1_K
+ Revolute joint                     3       -.2359769    
+Z1_K
+ Revolute joint                     1        2.000000    
+Z2_K
+
+Results achieved by the model assembly process without drivers:
+
+  Number of function evaluations =     4
+  Maximum constraint violation   =   0.747911E-03
+
+ Element: GRUZ
+    Coordinate    New Value     Original Value  Difference
+    X              1.0000        -1.0000         2.0000    
+    Y             -133.20        -133.23        0.32041E-01
+    Z              134.21         134.43       -0.22968    
+    E0            0.99796        0.99797       -0.13710E-04
+    E1           -0.63925E-01   -0.63659E-01   -0.26646E-03
+    E2            0.24830E-10    0.24835E-10   -0.47362E-14
+    E3           -0.33240E-11   -0.33814E-11    0.57430E-13
+
+ Element: GRUZ_1
+    Coordinate    New Value     Original Value  Difference
+    X              1.0000        -1.0000         2.0000    
+    Y             -76.681        -72.644        -4.0376    
+    Z              134.31         134.85       -0.53744    
+    E0            0.99840        0.99722        0.11743E-02
+    E1            0.56592E-01    0.74473E-01   -0.17880E-01
+    E2           -0.24886E-10   -0.24839E-10   -0.47810E-13
+    E3           -0.25838E-11   -0.30934E-11    0.50965E-12
+
+ Element: KRASNAYA
+    Coordinate    New Value     Original Value  Difference
+    X              0.0000         0.0000         0.0000    
+    Y             -104.17        -104.17         0.0000    
+    Z              95.471         92.904         2.5669    
+    E0            0.49996        0.49996        0.32918E-13
+    E1           -0.50004       -0.50004        0.32974E-13
+    E2           -0.50004       -0.50004       -0.31197E-13
+    E3           -0.49996       -0.49996        0.31364E-13
+
+ Element: KRASNAYA_1
+    Coordinate    New Value     Original Value  Difference
+    X              0.0000         0.0000         0.0000    
+    Y             -104.17        -104.17         0.0000    
+    Z              246.90         246.90         0.0000    
+    E0            0.49996        0.49996        0.32585E-13
+    E1           -0.50004       -0.50004        0.32974E-13
+    E2           -0.50004       -0.50004       -0.31308E-13
+    E3           -0.49996       -0.49996        0.31308E-13
+
+ Element: OSNOVA
+    Coordinate    New Value     Original Value  Difference
+    X              0.0000         0.0000         0.0000    
+    Y             -104.17        -104.17         0.0000    
+    Z              150.00         150.00         0.0000    
+    E0             1.0000         1.0000         0.0000    
+    E1             0.0000         0.0000         0.0000    
+    E2             0.0000         0.0000         0.0000    
+    E3             0.0000         0.0000         0.0000    
+
+ Element: PALKA
+    Coordinate    New Value     Original Value  Difference
+    X             0.24194E-11     0.0000        0.24194E-11
+    Y             -123.23        -124.55         1.3284    
+    Z              135.32         135.42       -0.10079    
+    E0            0.99821        0.99904       -0.82999E-03
+    E1            0.59803E-01    0.43740E-01    0.16063E-01
+    E2            0.36683E-14     0.0000        0.36683E-14
+    E3            0.64081E-13     0.0000        0.64081E-13
+
+ Element: PALKA_1
+    Coordinate    New Value     Original Value  Difference
+    X            -0.24075E-11     0.0000       -0.24075E-11
+    Y             -85.413        -78.567        -6.8469    
+    Z              135.40         135.54       -0.13521    
+    E0            0.99856         1.0000       -0.14432E-02
+    E1           -0.53706E-01   -0.12069E-03   -0.53585E-01
+    E2           -0.34469E-14     0.0000       -0.34469E-14
+    E3            0.64103E-13     0.0000        0.64103E-13
+
+ Element: the_ground
+    Coordinate    New Value     Original Value  Difference
+    X              0.0000         0.0000         0.0000    
+    Y              0.0000         0.0000         0.0000    
+    Z              0.0000         0.0000         0.0000    
+    E0             1.0000         1.0000         0.0000    
+    E1             0.0000         0.0000         0.0000    
+    E2             0.0000         0.0000         0.0000    
+    E3             0.0000         0.0000         0.0000    
+
+ Element: MOTION_K_V_RZ
+    Coordinate    New Value     Original Value  Difference
+    Rel.angle    -0.12837E-12   -0.22204E-15   -0.12815E-12
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: G1_Z1
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ/G1_Z1_j"
+
+ Name: K_N
+    Type:  Cylindrical joint              ( 5) relative rotation about Y axis of "the_ground/K_N_j"
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+ Name: G2_Z2
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ_1/G2_Z2_j"
+
+ Name: K_V
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "the_ground/K_V_j"
+
+
+The remaining constraints in which the redundant
+constraints are linearly dependent to are summarized as:
+
+Name: G1_Z1
+     constraint ( 4) relative rotation about X axis of "GRUZ/G1_Z1_j"
+     is linearly dependent to:
+
+     Name: G2_K
+        Constraint: ( 5) relative rotation about Y axis of "KRASNAYA/G2_K_j"  Factor:  -0.4752    
+     Name: G2_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.4796E-01
+     Name: G1_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.4796E-01
+     Name: G1_K
+        Constraint: ( 4) relative rotation about X axis of "KRASNAYA/G1_K_j"  Factor:   0.8117    
+     Name: G1_Z1
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.4796E-01
+     Name: G1_Z1
+        Constraint: ( 5) relative rotation about Y axis of "GRUZ/G1_Z1_j"  Factor:  -0.8852E-01
+     Name: G2_K
+        Constraint: ( 4) relative rotation about X axis of "KRASNAYA/G2_K_j"  Factor:  -0.2474    
+     Name: G2_Z2
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.4796E-01
+     Name: Z1_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.4796E-01
+     Name: Z2_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.4796E-01
+     Name: Z2_K
+        Constraint: ( 4) relative rotation about X axis of "GRUZ_1/Z2_K_j"  Factor:  -0.7937E-01
+     Name: Z1_K
+        Constraint: ( 4) relative rotation about X axis of "GRUZ/Z1_K_j"  Factor:  -0.2575    
+     Name: G2_Z2
+        Constraint: ( 5) relative rotation about Y axis of "GRUZ_1/G2_Z2_j"  Factor:   0.8654E-01
+     Name: G1_K
+        Constraint: ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"  Factor:   0.4755    
+
+Name: K_N
+     constraint ( 5) relative rotation about Y axis of "the_ground/K_N_j"
+     is linearly dependent to:
+
+     Name: G2_K
+        Constraint: ( 5) relative rotation about Y axis of "KRASNAYA/G2_K_j"  Factor:  -0.4818    
+     Name: G2_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.4862E-01
+     Name: G1_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.5203E-01
+     Name: Z1_K
+        Constraint: ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"  Factor:  -0.1364E-01
+     Name: G1_K
+        Constraint: ( 4) relative rotation about X axis of "KRASNAYA/G1_K_j"  Factor:   0.2043    
+     Name: G1_Z1
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.5203E-01
+     Name: G1_Z1
+        Constraint: ( 5) relative rotation about Y axis of "GRUZ/G1_Z1_j"  Factor:   0.1014    
+     Name: G2_K
+        Constraint: ( 4) relative rotation about X axis of "KRASNAYA/G2_K_j"  Factor:  -0.2508    
+     Name: G2_Z2
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.4862E-01
+     Name: K_N
+        Constraint: ( 1) relative translation along X axis of "the_ground/K_N_j"  Factor:  -0.1007    
+     Name: Z1_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.5203E-01
+     Name: Z2_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.4862E-01
+     Name: Z2_K
+        Constraint: ( 4) relative rotation about X axis of "GRUZ_1/Z2_K_j"  Factor:  -0.8046E-01
+     Name: Z1_K
+        Constraint: ( 4) relative rotation about X axis of "GRUZ/Z1_K_j"  Factor:  -0.6564E-01
+     Name: K_V
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.1007    
+     Name: G2_Z2
+        Constraint: ( 5) relative rotation about Y axis of "GRUZ_1/G2_Z2_j"  Factor:   0.8773E-01
+     Name: G1_K
+        Constraint: ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"  Factor:  -0.5295    
+
+Name: Z2_K
+     constraint ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+     is linearly dependent to:
+
+     Name: G2_K
+        Constraint: ( 5) relative rotation about Y axis of "KRASNAYA/G2_K_j"  Factor:  -0.8660    
+     Name: Z1_K
+        Constraint: ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"  Factor:   0.9923    
+     Name: G1_K
+        Constraint: ( 4) relative rotation about X axis of "KRASNAYA/G1_K_j"  Factor:   0.4513E-01
+     Name: G1_Z1
+        Constraint: ( 5) relative rotation about Y axis of "GRUZ/G1_Z1_j"  Factor:  -0.3600    
+     Name: G2_K
+        Constraint: ( 4) relative rotation about X axis of "KRASNAYA/G2_K_j"  Factor:  -0.1963    
+     Name: Z2_K
+        Constraint: ( 4) relative rotation about X axis of "GRUZ_1/Z2_K_j"  Factor:   0.1760E-01
+     Name: G2_Z2
+        Constraint: ( 5) relative rotation about Y axis of "GRUZ_1/G2_Z2_j"  Factor:   0.3530    
+     Name: G1_K
+        Constraint: ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"  Factor:   0.8659    
+
+Name: G2_Z2
+     constraint ( 4) relative rotation about X axis of "GRUZ_1/G2_Z2_j"
+     is linearly dependent to:
+
+     Name: G2_K
+        Constraint: ( 5) relative rotation about Y axis of "KRASNAYA/G2_K_j"  Factor:  -0.4302    
+     Name: G2_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.4291E-01
+     Name: G1_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.4291E-01
+     Name: G1_K
+        Constraint: ( 4) relative rotation about X axis of "KRASNAYA/G1_K_j"  Factor:  -0.1685    
+     Name: G1_Z1
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.4291E-01
+     Name: G1_Z1
+        Constraint: ( 5) relative rotation about Y axis of "GRUZ/G1_Z1_j"  Factor:  -0.8111E-01
+     Name: G2_K
+        Constraint: ( 4) relative rotation about X axis of "KRASNAYA/G2_K_j"  Factor:   0.7767    
+     Name: G2_Z2
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.4291E-01
+     Name: Z1_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.4291E-01
+     Name: Z2_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.4291E-01
+     Name: Z2_K
+        Constraint: ( 4) relative rotation about X axis of "GRUZ_1/Z2_K_j"  Factor:   0.2492    
+     Name: Z1_K
+        Constraint: ( 4) relative rotation about X axis of "GRUZ/Z1_K_j"  Factor:   0.5413E-01
+     Name: G2_Z2
+        Constraint: ( 5) relative rotation about Y axis of "GRUZ_1/G2_Z2_j"  Factor:   0.7743E-01
+     Name: G1_K
+        Constraint: ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"  Factor:   0.4304    
+
+Name: K_V
+     constraint ( 5) relative rotation about Y axis of "the_ground/K_V_j"
+     is linearly dependent to:
+
+     Name: G2_K
+        Constraint: ( 5) relative rotation about Y axis of "KRASNAYA/G2_K_j"  Factor:  -0.4730    
+     Name: G2_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.4773E-01
+     Name: G1_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.5075E-01
+     Name: Z1_K
+        Constraint: ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"  Factor:   0.9861    
+     Name: G1_K
+        Constraint: ( 4) relative rotation about X axis of "KRASNAYA/G1_K_j"  Factor:   0.2026    
+     Name: G1_Z1
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.5075E-01
+     Name: G1_Z1
+        Constraint: ( 5) relative rotation about Y axis of "GRUZ/G1_Z1_j"  Factor:  -0.2835    
+     Name: G2_K
+        Constraint: ( 4) relative rotation about X axis of "KRASNAYA/G2_K_j"  Factor:  -0.2463    
+     Name: G2_Z2
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.4773E-01
+     Name: K_N
+        Constraint: ( 1) relative translation along X axis of "the_ground/K_N_j"  Factor:  -0.9849E-01
+     Name: Z1_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.5075E-01
+     Name: Z2_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.4773E-01
+     Name: Z2_K
+        Constraint: ( 4) relative rotation about X axis of "GRUZ_1/Z2_K_j"  Factor:  -0.7899E-01
+     Name: Z1_K
+        Constraint: ( 4) relative rotation about X axis of "GRUZ/Z1_K_j"  Factor:  -0.6402E-01
+     Name: K_V
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.9849E-01
+     Name: G2_Z2
+        Constraint: ( 5) relative rotation about Y axis of "GRUZ_1/G2_Z2_j"  Factor:   0.8614E-01
+     Name: G1_K
+        Constraint: ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"  Factor:   0.4619    
+
+Ignoring Initial conditions, the following were chosen
+as independent coordinates:
+
+
+ Element: GRUZ_1
+    Coordinate:  E1        
+
+Results achieved by the model assembly process with drivers:
+
+  Number of function evaluations =     1
+  Maximum constraint violation   =   0.747911E-03
+
+ Element: GRUZ
+    Coordinate    New Value     Original Value  Difference
+    X              1.0000         1.0000         0.0000    
+    Y             -133.20        -133.20         0.0000    
+    Z              134.21         134.21         0.0000    
+    E0            0.99796        0.99796         0.0000    
+    E1           -0.63925E-01   -0.63925E-01     0.0000    
+    E2            0.24830E-10    0.24830E-10     0.0000    
+    E3           -0.33240E-11   -0.33240E-11     0.0000    
+
+ Element: GRUZ_1
+    Coordinate    New Value     Original Value  Difference
+    X              1.0000         1.0000         0.0000    
+    Y             -76.681        -76.681         0.0000    
+    Z              134.31         134.31         0.0000    
+    E0            0.99840        0.99840         0.0000    
+    E1            0.56592E-01    0.56592E-01     0.0000    
+    E2           -0.24886E-10   -0.24886E-10     0.0000    
+    E3           -0.25838E-11   -0.25838E-11     0.0000    
+
+ Element: KRASNAYA
+    Coordinate    New Value     Original Value  Difference
+    X              0.0000         0.0000         0.0000    
+    Y             -104.17        -104.17         0.0000    
+    Z              95.471         95.471         0.0000    
+    E0            0.49996        0.49996         0.0000    
+    E1           -0.50004       -0.50004         0.0000    
+    E2           -0.50004       -0.50004         0.0000    
+    E3           -0.49996       -0.49996         0.0000    
+
+ Element: KRASNAYA_1
+    Coordinate    New Value     Original Value  Difference
+    X              0.0000         0.0000         0.0000    
+    Y             -104.17        -104.17         0.0000    
+    Z              246.90         246.90         0.0000    
+    E0            0.49996        0.49996         0.0000    
+    E1           -0.50004       -0.50004         0.0000    
+    E2           -0.50004       -0.50004         0.0000    
+    E3           -0.49996       -0.49996         0.0000    
+
+ Element: OSNOVA
+    Coordinate    New Value     Original Value  Difference
+    X              0.0000         0.0000         0.0000    
+    Y             -104.17        -104.17         0.0000    
+    Z              150.00         150.00         0.0000    
+    E0             1.0000         1.0000         0.0000    
+    E1             0.0000         0.0000         0.0000    
+    E2             0.0000         0.0000         0.0000    
+    E3             0.0000         0.0000         0.0000    
+
+ Element: PALKA
+    Coordinate    New Value     Original Value  Difference
+    X             0.24194E-11    0.24194E-11     0.0000    
+    Y             -123.23        -123.23         0.0000    
+    Z              135.32         135.32         0.0000    
+    E0            0.99821        0.99821         0.0000    
+    E1            0.59803E-01    0.59803E-01     0.0000    
+    E2            0.36683E-14    0.36683E-14     0.0000    
+    E3            0.64081E-13    0.64081E-13     0.0000    
+
+ Element: PALKA_1
+    Coordinate    New Value     Original Value  Difference
+    X            -0.24075E-11   -0.24075E-11     0.0000    
+    Y             -85.413        -85.413         0.0000    
+    Z              135.40         135.40         0.0000    
+    E0            0.99856        0.99856         0.0000    
+    E1           -0.53706E-01   -0.53706E-01     0.0000    
+    E2           -0.34469E-14   -0.34469E-14     0.0000    
+    E3            0.64103E-13    0.64103E-13     0.0000    
+
+ Element: the_ground
+    Coordinate    New Value     Original Value  Difference
+    X              0.0000         0.0000         0.0000    
+    Y              0.0000         0.0000         0.0000    
+    Z              0.0000         0.0000         0.0000    
+    E0             1.0000         1.0000         0.0000    
+    E1             0.0000         0.0000         0.0000    
+    E2             0.0000         0.0000         0.0000    
+    E3             0.0000         0.0000         0.0000    
+
+ Element: MOTION_K_V_RZ
+    Coordinate    New Value     Original Value  Difference
+    Rel.angle    -0.12837E-12   -0.12837E-12     0.0000    
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: G1_Z1
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ/G1_Z1_j"
+
+ Name: K_N
+    Type:  Cylindrical joint              ( 5) relative rotation about Y axis of "the_ground/K_N_j"
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+ Name: G2_Z2
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ_1/G2_Z2_j"
+
+ Name: K_V
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "the_ground/K_V_j"
+
+
+The remaining constraints in which the redundant
+constraints are linearly dependent to are summarized as:
+
+Name: G1_Z1
+     constraint ( 4) relative rotation about X axis of "GRUZ/G1_Z1_j"
+     is linearly dependent to:
+
+     Name: G2_K
+        Constraint: ( 5) relative rotation about Y axis of "KRASNAYA/G2_K_j"  Factor:  -0.4752    
+     Name: G2_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.4796E-01
+     Name: G1_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.4796E-01
+     Name: G1_K
+        Constraint: ( 4) relative rotation about X axis of "KRASNAYA/G1_K_j"  Factor:   0.8117    
+     Name: G1_Z1
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.4796E-01
+     Name: G1_Z1
+        Constraint: ( 5) relative rotation about Y axis of "GRUZ/G1_Z1_j"  Factor:  -0.8852E-01
+     Name: G2_K
+        Constraint: ( 4) relative rotation about X axis of "KRASNAYA/G2_K_j"  Factor:  -0.2474    
+     Name: G2_Z2
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.4796E-01
+     Name: Z1_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.4796E-01
+     Name: Z2_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.4796E-01
+     Name: Z2_K
+        Constraint: ( 4) relative rotation about X axis of "GRUZ_1/Z2_K_j"  Factor:  -0.7937E-01
+     Name: Z1_K
+        Constraint: ( 4) relative rotation about X axis of "GRUZ/Z1_K_j"  Factor:  -0.2575    
+     Name: G2_Z2
+        Constraint: ( 5) relative rotation about Y axis of "GRUZ_1/G2_Z2_j"  Factor:   0.8654E-01
+     Name: G1_K
+        Constraint: ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"  Factor:   0.4755    
+
+Name: K_N
+     constraint ( 5) relative rotation about Y axis of "the_ground/K_N_j"
+     is linearly dependent to:
+
+     Name: G2_K
+        Constraint: ( 5) relative rotation about Y axis of "KRASNAYA/G2_K_j"  Factor:  -0.4818    
+     Name: G2_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.4862E-01
+     Name: G1_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.5203E-01
+     Name: Z1_K
+        Constraint: ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"  Factor:  -0.1364E-01
+     Name: G1_K
+        Constraint: ( 4) relative rotation about X axis of "KRASNAYA/G1_K_j"  Factor:   0.2043    
+     Name: G1_Z1
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.5203E-01
+     Name: G1_Z1
+        Constraint: ( 5) relative rotation about Y axis of "GRUZ/G1_Z1_j"  Factor:   0.1014    
+     Name: G2_K
+        Constraint: ( 4) relative rotation about X axis of "KRASNAYA/G2_K_j"  Factor:  -0.2508    
+     Name: G2_Z2
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.4862E-01
+     Name: K_N
+        Constraint: ( 1) relative translation along X axis of "the_ground/K_N_j"  Factor:  -0.1007    
+     Name: Z1_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.5203E-01
+     Name: Z2_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.4862E-01
+     Name: Z2_K
+        Constraint: ( 4) relative rotation about X axis of "GRUZ_1/Z2_K_j"  Factor:  -0.8046E-01
+     Name: Z1_K
+        Constraint: ( 4) relative rotation about X axis of "GRUZ/Z1_K_j"  Factor:  -0.6564E-01
+     Name: K_V
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.1007    
+     Name: G2_Z2
+        Constraint: ( 5) relative rotation about Y axis of "GRUZ_1/G2_Z2_j"  Factor:   0.8773E-01
+     Name: G1_K
+        Constraint: ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"  Factor:  -0.5295    
+
+Name: Z2_K
+     constraint ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+     is linearly dependent to:
+
+     Name: G2_K
+        Constraint: ( 5) relative rotation about Y axis of "KRASNAYA/G2_K_j"  Factor:  -0.8660    
+     Name: Z1_K
+        Constraint: ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"  Factor:   0.9923    
+     Name: G1_K
+        Constraint: ( 4) relative rotation about X axis of "KRASNAYA/G1_K_j"  Factor:   0.4513E-01
+     Name: G1_Z1
+        Constraint: ( 5) relative rotation about Y axis of "GRUZ/G1_Z1_j"  Factor:  -0.3600    
+     Name: G2_K
+        Constraint: ( 4) relative rotation about X axis of "KRASNAYA/G2_K_j"  Factor:  -0.1963    
+     Name: Z2_K
+        Constraint: ( 4) relative rotation about X axis of "GRUZ_1/Z2_K_j"  Factor:   0.1760E-01
+     Name: G2_Z2
+        Constraint: ( 5) relative rotation about Y axis of "GRUZ_1/G2_Z2_j"  Factor:   0.3530    
+     Name: G1_K
+        Constraint: ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"  Factor:   0.8659    
+
+Name: G2_Z2
+     constraint ( 4) relative rotation about X axis of "GRUZ_1/G2_Z2_j"
+     is linearly dependent to:
+
+     Name: G2_K
+        Constraint: ( 5) relative rotation about Y axis of "KRASNAYA/G2_K_j"  Factor:  -0.4302    
+     Name: G2_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.4291E-01
+     Name: G1_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.4291E-01
+     Name: G1_K
+        Constraint: ( 4) relative rotation about X axis of "KRASNAYA/G1_K_j"  Factor:  -0.1685    
+     Name: G1_Z1
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.4291E-01
+     Name: G1_Z1
+        Constraint: ( 5) relative rotation about Y axis of "GRUZ/G1_Z1_j"  Factor:  -0.8111E-01
+     Name: G2_K
+        Constraint: ( 4) relative rotation about X axis of "KRASNAYA/G2_K_j"  Factor:   0.7767    
+     Name: G2_Z2
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.4291E-01
+     Name: Z1_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.4291E-01
+     Name: Z2_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.4291E-01
+     Name: Z2_K
+        Constraint: ( 4) relative rotation about X axis of "GRUZ_1/Z2_K_j"  Factor:   0.2492    
+     Name: Z1_K
+        Constraint: ( 4) relative rotation about X axis of "GRUZ/Z1_K_j"  Factor:   0.5413E-01
+     Name: G2_Z2
+        Constraint: ( 5) relative rotation about Y axis of "GRUZ_1/G2_Z2_j"  Factor:   0.7743E-01
+     Name: G1_K
+        Constraint: ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"  Factor:   0.4304    
+
+Name: K_V
+     constraint ( 5) relative rotation about Y axis of "the_ground/K_V_j"
+     is linearly dependent to:
+
+     Name: G2_K
+        Constraint: ( 5) relative rotation about Y axis of "KRASNAYA/G2_K_j"  Factor:  -0.4730    
+     Name: G2_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.4773E-01
+     Name: G1_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.5075E-01
+     Name: Z1_K
+        Constraint: ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"  Factor:   0.9861    
+     Name: G1_K
+        Constraint: ( 4) relative rotation about X axis of "KRASNAYA/G1_K_j"  Factor:   0.2026    
+     Name: G1_Z1
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.5075E-01
+     Name: G1_Z1
+        Constraint: ( 5) relative rotation about Y axis of "GRUZ/G1_Z1_j"  Factor:  -0.2835    
+     Name: G2_K
+        Constraint: ( 4) relative rotation about X axis of "KRASNAYA/G2_K_j"  Factor:  -0.2463    
+     Name: G2_Z2
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.4773E-01
+     Name: K_N
+        Constraint: ( 1) relative translation along X axis of "the_ground/K_N_j"  Factor:  -0.9849E-01
+     Name: Z1_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.5075E-01
+     Name: Z2_K
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:  -0.4773E-01
+     Name: Z2_K
+        Constraint: ( 4) relative rotation about X axis of "GRUZ_1/Z2_K_j"  Factor:  -0.7899E-01
+     Name: Z1_K
+        Constraint: ( 4) relative rotation about X axis of "GRUZ/Z1_K_j"  Factor:  -0.6402E-01
+     Name: K_V
+        Constraint: ( 1) relative translation along X axis of "Global coordinate system"  Factor:   0.9849E-01
+     Name: G2_Z2
+        Constraint: ( 5) relative rotation about Y axis of "GRUZ_1/G2_Z2_j"  Factor:   0.8614E-01
+     Name: G1_K
+        Constraint: ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"  Factor:   0.4619    
+
+Ignoring Initial conditions, the following were chosen
+as independent coordinates:
+
+
+ Element: GRUZ_1
+    Coordinate:  E1        
+ Using QR Initial Velocity Method
+
+[1286]
+Warning:  Initial conditions may not be sufficient (DAP2).
+Solution of initial velocities, using QR method:
+
+ Element: GRUZ
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: GRUZ_1
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: KRASNAYA
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: KRASNAYA_1
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: OSNOVA
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: PALKA
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: PALKA_1
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: the_ground
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: MOTION_K_V_RZ
+    Coordinate    Velocity
+    Rel.angle      0.00000    
+
+Solution of velocities in local coordinates:
+
+ Element: GRUZ
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: GRUZ_1
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: KRASNAYA
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: KRASNAYA_1
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: OSNOVA
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: PALKA
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: PALKA_1
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: the_ground
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+Number of real data in the system     =    172460
+Number of integer data in the system  =    100843
+
+
+Solution of accelerations in local coordinates:
+
+ Element: GRUZ
+    Coordinate    Acceleration
+    X             -25.3334    
+    Y              1108.63    
+    Z             -144.041    
+    OMEGAD_XL      9.84325    
+    OMEGAD_YL     0.111343    
+    OMEGAD_ZL    -0.865538    
+
+ Element: GRUZ_1
+    Coordinate    Acceleration
+    X              23.9856    
+    Y             -1247.63    
+    Z             -143.267    
+    OMEGAD_XL     -11.0410    
+    OMEGAD_YL    -0.986139E-01
+    OMEGAD_ZL    -0.867075    
+
+ Element: KRASNAYA
+    Coordinate    Acceleration
+    X            -0.254703E-03
+    Y            -0.805551E-16
+    Z             -175.735    
+    OMEGAD_XL    -0.872664    
+    OMEGAD_YL    -0.555112E-16
+    OMEGAD_ZL     0.139161E-03
+
+ Element: KRASNAYA_1
+    Coordinate    Acceleration
+    X            -0.254703E-03
+    Y            -0.533414E-16
+    Z             0.241960E-15
+    OMEGAD_XL    -0.872665    
+    OMEGAD_YL     0.555112E-16
+    OMEGAD_ZL     0.139161E-03
+
+ Element: OSNOVA
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGAD_XL      0.00000    
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+ Element: PALKA
+    Coordinate    Acceleration
+    X             -16.6316    
+    Y              354.787    
+    Z             -134.783    
+    OMEGAD_XL     -8.96171    
+    OMEGAD_YL    -0.104189    
+    OMEGAD_ZL    -0.866427    
+
+ Element: PALKA_1
+    Coordinate    Acceleration
+    X              16.3654    
+    Y             -398.318    
+    Z             -133.057    
+    OMEGAD_XL      10.0567    
+    OMEGAD_YL     0.935992E-01
+    OMEGAD_ZL    -0.867630    
+
+ Element: the_ground
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGAD_XL      0.00000    
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+Total Number of Bodies             =    8
+
+Total Number of Degrees of Freedom =   49
+Number of Kinematic Constraints    =   48
+Number of Drivers                  =    1
+Number of Initial Conditions       =    0
+Number of Degrees of Freedom       =    1
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =    189
+  Current simulation time =   0.141916
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ_1/Z2_K_j"
+
+ Name: G1_Z1
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ/G1_Z1_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"
+
+ Name: G2_Z2
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ_1/G2_Z2_j"
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =    146
+  Current simulation time =   0.141905
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =    141
+  Current simulation time =    5.69213
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ_1/Z2_K_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"
+
+ Name: G2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G2_K_j"
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+ Name: G1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ_1/Z2_K_j"
+
+ Name: G2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G2_K_j"
+
+ Name: K_N
+    Type:  Cylindrical joint              ( 4) relative rotation about X axis of "the_ground/K_N_j"
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     56
+  Current simulation time =    5.99996
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"
+
+ Name: K_N
+    Type:  Cylindrical joint              ( 5) relative rotation about Y axis of "the_ground/K_N_j"
+
+ Name: G1_Z1
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ/G1_Z1_j"
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+ Name: G2_Z2
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ_1/G2_Z2_j"
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =    121
+  Current simulation time =    6.29230
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ_1/Z2_K_j"
+
+ Name: G2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G2_K_j"
+
+ Name: K_N
+    Type:  Cylindrical joint              ( 4) relative rotation about X axis of "the_ground/K_N_j"
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =    123
+  Current simulation time =    6.56944
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: G1_Z1
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ/G1_Z1_j"
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+ Name: G1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"
+
+ Name: G2_Z2
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ_1/G2_Z2_j"
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =    114
+  Current simulation time =    6.84073
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+ Name: K_N
+    Type:  Cylindrical joint              ( 4) relative rotation about X axis of "the_ground/K_N_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"
+
+ Name: G1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ_1/Z2_K_j"
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+ Name: K_N
+    Type:  Cylindrical joint              ( 4) relative rotation about X axis of "the_ground/K_N_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"
+
+ Name: G1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =    145
+  Current simulation time =    7.09627
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"
+
+ Name: G1_Z1
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ/G1_Z1_j"
+
+ Name: G1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+ Name: G2_Z2
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ_1/G2_Z2_j"
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =    110
+  Current simulation time =    7.58652
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: K_V
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "the_ground/K_V_j"
+
+ Name: G1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"
+
+ Name: G2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G2_K_j"
+
+ Name: G1_Z1
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ/G1_Z1_j"
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =    122
+  Current simulation time =    7.82269
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: G1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"
+
+ Name: G2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G2_K_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ/Z1_K_j"
+
+ Name: K_V
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "the_ground/K_V_j"
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: G1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"
+
+ Name: G2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G2_K_j"
+
+ Name: K_V
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "the_ground/K_V_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ/Z1_K_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =    155
+  Current simulation time =    8.04351
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: G2_Z2
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ_1/G2_Z2_j"
+
+ Name: G1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: G2_Z2
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ_1/G2_Z2_j"
+
+ Name: G2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G2_K_j"
+
+ Name: G1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =    167
+  Current simulation time =    8.26740
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ/Z1_K_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"
+
+ Name: G1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+ Name: G2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G2_K_j"
+
+ Name: G1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ/Z1_K_j"
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =    160
+  Current simulation time =    8.46677
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+ Name: G1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"
+
+ Name: G2_Z2
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ_1/G2_Z2_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: G2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G2_K_j"
+
+ Name: G2_Z2
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ_1/G2_Z2_j"
+
+ Name: G1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =    122
+  Current simulation time =    8.69292
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ/Z1_K_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"
+
+ Name: G1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+ Name: G2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G2_K_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ/Z1_K_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"
+
+ Name: G1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =    176
+  Current simulation time =    8.89528
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"
+
+ Name: G1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"
+
+ Name: G2_Z2
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ_1/G2_Z2_j"
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"
+
+ Name: G2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G2_K_j"
+
+ Name: G1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"
+
+ Name: G2_Z2
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ_1/G2_Z2_j"
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =    134
+  Current simulation time =    9.29496
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: K_N
+    Type:  Cylindrical joint              ( 5) relative rotation about Y axis of "the_ground/K_N_j"
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"
+
+ Name: G2_Z2
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ_1/G2_Z2_j"
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =    123
+  Current simulation time =    9.48405
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ/Z1_K_j"
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+ Name: G1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ/Z1_K_j"
+
+ Name: G2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G2_K_j"
+
+ Name: G1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =    134
+  Current simulation time =    9.66798
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+ Name: G1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"
+
+ Name: G2_Z2
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ_1/G2_Z2_j"
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"
+
+ Name: G2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G2_K_j"
+
+ Name: G1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"
+
+ Name: G2_Z2
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ_1/G2_Z2_j"
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =    158
+  Current simulation time =    9.85108
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+ Name: G1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ/Z1_K_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"
+
+[1172]
+The following are redundant constraints and will be deleted from the system:
+.........Element Info.........  ..........Meaning..............
+
+ Name: Z2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ_1/Z2_K_j"
+
+ Name: G2_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G2_K_j"
+
+ Name: G1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "KRASNAYA/G1_K_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 5) relative rotation about Y axis of "GRUZ/Z1_K_j"
+
+ Name: Z1_K
+    Type:  Revolute joint                 ( 4) relative rotation about X axis of "GRUZ/Z1_K_j"
+
+The number of symbolic factorizations of the Acceleration matrix =                   19
+
+The number of symbolic factorizations of BDF Jacobian matrix =                   20
+
+[1441]
+Final integrator statistics:
+  Number of steps                 =                14869
+  Number of f-s                   =               104544
+  Number of j-s                   =                 2540
+  Ratio of f-s/steps              =  7.0310041024951
+  Ratio of j-s/steps              = 0.17082520680611
+  Current time                    =  9.9999999999998
+  Total velocity computations     =                   35
+  Total position computations     =                   35
+Average Integration Order =   1.041293967315    
+Average Step Size         =  0.6725655824610E-03
+
+Userdef was internal
+
+    Total elapsed CPU time:   4.434000    
+    Total clock time:          4

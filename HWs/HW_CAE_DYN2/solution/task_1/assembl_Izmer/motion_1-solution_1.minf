@@ -1,0 +1,282 @@
+Input file: D:\Latex_docs\MaM\HWs\HW_CAE_DYN2\solution\task_1\assembl_Izmer\motion_1-solution_1.minp
+
+Solver running in Simcenter Mode
+
+Copyright Siemens 2022
+
+
+[1764]
+Info: The Business Analytics flag has been set to Yes.
+
+Solver: Simcenter 3D Motion Version 2206.0001 (13.0) Sep  6 2022 03:30:13 Intel Release 64bit
+Interface: RC2206_6000 2022-09-14
+Hostname: DESKTOP-6AFHIMM
+OS Type: Windows
+Release: 6.2
+Version: Build 9200
+Machine: 8664
+Integer size:    5000000
+Real size:    5000000
+Mcheps: 0.22204460492503E-15
+
+[1482]
+NOTE:  The system data element specifies inconsistent units:
+  LENGTH.UNIT = MILLIMETER
+  MASS.UNIT   = KILOGRAM
+  FORCE.UNIT  = NEWTON
+Force and mass values are converted to a consistent set of units for
+solution and then converted back to the specified units before being
+reported.
+
+[1296]
+Warning (dynamic data element):  When "INTERPOLATED" is selected for the
+print method, the print frequency feature cannot be used.  PRINT.Freq is
+being reset to zero (disabled) and execution is continuing.
+ The GGL formulation is turned on.
+
+[1655]
+Warning: The static friction coefficient is zero in
+friction element , "J002_FRICTION",
+This element will not be allowed to lock up.
+
+[1276]
+Warning:  In the dynamic data element, the step size is larger
+than the print interval specified in the system data element.  The step
+size is being reset so that it equals the print interval.
+  PRint.interval = 0.75000000000000E-02
+  old MAX.int.step = 1.0000000000000E-02
+  new MAX.int.step = 0.75000000000000E-02
+NOTE:  The Time Series Global Output element will reduce PRint.interval
+       when the Output Rate variable is set to two or more.
+
+License Server is [27800@localhost]
+
+Features requiring licenses
+-----------------------
+sc_motion_solver "Simcenter Motion Solver"
+
+
+[1134]
+Warning:  Prior to assembly the number of constraints, drivers and
+initial conditions is not equal to the number of generalized
+coordinates.  The assembly algorithm will be executed but the
+result will represent one of several possible solutions.
+Number of constraints, drivers, I.C's =                   26
+Number of generalized coordinates     =                   28
+
+Results achieved by the model assembly process with drivers:
+
+  Number of function evaluations =     1
+  Maximum constraint violation   =   0.199520E-10
+
+ Element: KULISA
+    Coordinate    New Value     Original Value  Difference
+    X             -285.11        -285.11         0.0000    
+    Y              424.89         424.89         0.0000    
+    Z              37.000         37.000         0.0000    
+    E0            0.62721        0.62721         0.0000    
+    E1           -0.32651       -0.32651         0.0000    
+    E2           -0.62721       -0.62721         0.0000    
+    E3           -0.32651       -0.32651         0.0000    
+
+ Element: OSNOVA_DLIN
+    Coordinate    New Value     Original Value  Difference
+    X              4.0000         4.0000         0.0000    
+    Y              400.00         400.00         0.0000    
+    Z              8.2632         8.2632         0.0000    
+    E0            0.50000        0.50000         0.0000    
+    E1           -0.50000       -0.50000         0.0000    
+    E2           -0.50000       -0.50000         0.0000    
+    E3           -0.50000       -0.50000         0.0000    
+
+ Element: PODVIGN
+    Coordinate    New Value     Original Value  Difference
+    X              4.0000         4.0000         0.0000    
+    Y              20.884         20.884         0.0000    
+    Z              27.698         27.698         0.0000    
+    E0            0.83482        0.83482         0.0000    
+    E1            0.55053        0.55053         0.0000    
+    E2             0.0000         0.0000         0.0000    
+    E3             0.0000         0.0000         0.0000    
+
+ Element: the_ground
+    Coordinate    New Value     Original Value  Difference
+    X              0.0000         0.0000         0.0000    
+    Y              0.0000         0.0000         0.0000    
+    Z              0.0000         0.0000         0.0000    
+    E0             1.0000         1.0000         0.0000    
+    E1             0.0000         0.0000         0.0000    
+    E2             0.0000         0.0000         0.0000    
+    E3             0.0000         0.0000         0.0000    
+
+Ignoring Initial conditions, the following were chosen
+as independent coordinates:
+
+
+ Element: KULISA
+    Coordinate:  Y         
+
+ Element: KULISA
+    Coordinate:  X         
+
+[1440]
+Warning:  Initial velocities of all generalized coordinates have
+been set to zero.
+Solution of initial velocities, using QR method:
+
+ Element: KULISA
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: OSNOVA_DLIN
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: PODVIGN
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: the_ground
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+Solution of velocities in local coordinates:
+
+ Element: KULISA
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: OSNOVA_DLIN
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: PODVIGN
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: the_ground
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+Number of real data in the system     =     91448
+Number of integer data in the system  =     53325
+
+
+Solution of accelerations in local coordinates:
+
+ Element: KULISA
+    Coordinate    Acceleration
+    X              7027.24    
+    Y              910.527    
+    Z             0.108362E-09
+    OMEGAD_XL     -17.0196    
+    OMEGAD_YL    -0.888178E-15
+    OMEGAD_ZL     0.888178E-15
+
+ Element: OSNOVA_DLIN
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGAD_XL      0.00000    
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+ Element: PODVIGN
+    Coordinate    Acceleration
+    X             0.790833E-27
+    Y             -4010.00    
+    Z            -0.178080E-11
+    OMEGAD_XL      0.00000    
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+ Element: the_ground
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGAD_XL      0.00000    
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+Total Number of Bodies             =    4
+
+Total Number of Degrees of Freedom =   24
+Number of Kinematic Constraints    =   22
+Number of Drivers                  =    0
+Number of Initial Conditions       =    0
+Number of Degrees of Freedom       =    2
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     64
+  Current simulation time =   0.435218
+
+The number of symbolic factorizations of the Acceleration matrix =                    1
+
+The number of symbolic factorizations of BDF Jacobian matrix =                    2
+
+[1441]
+Final integrator statistics:
+  Number of steps                 =                 4519
+  Number of f-s                   =                28191
+  Number of j-s                   =                  489
+  Ratio of f-s/steps              =  6.2383270635096
+  Ratio of j-s/steps              = 0.10820978092498
+  Current time                    =  6.0000000000000
+  Total velocity computations     =                    0
+  Total position computations     =                    0
+Average Integration Order =   1.425757911042    
+Average Step Size         =  0.1328125346836E-02
+
+Userdef was internal
+
+    Total elapsed CPU time:   2.021000    
+    Total clock time:          2

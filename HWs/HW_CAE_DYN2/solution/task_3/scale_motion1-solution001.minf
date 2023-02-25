@@ -1,0 +1,1020 @@
+Input file: D:\Latex_docs\MaM\HWs\HW_CAE_DYN2\solution\task_3\scale_motion1-solution001.minp
+
+Solver running in Simcenter Mode
+
+Copyright Siemens 2022
+
+
+[1764]
+Info: The Business Analytics flag has been set to Yes.
+
+Solver: Simcenter 3D Motion Version 2206.0001 (13.0) Sep  6 2022 03:30:13 Intel Release 64bit
+Interface: RC2206_6000 2022-09-14
+Hostname: DESKTOP-6AFHIMM
+OS Type: Windows
+Release: 6.2
+Version: Build 9200
+Machine: 8664
+Integer size:    5000000
+Real size:    5000000
+Mcheps: 0.22204460492503E-15
+
+[1296]
+Warning (dynamic data element):  When "INTERPOLATED" is selected for the
+print method, the print frequency feature cannot be used.  PRINT.Freq is
+being reset to zero (disabled) and execution is continuing.
+ The GGL formulation is turned on.
+
+[1655]
+Warning: The static friction coefficient is zero in
+friction element , "J001_FRICTION",
+This element will not be allowed to lock up.
+
+[1276]
+Warning:  In the dynamic data element, the step size is larger
+than the print interval specified in the system data element.  The step
+size is being reset so that it equals the print interval.
+  PRint.interval = 0.10000000000000E-01
+  old MAX.int.step = 5.0000000000000E-02
+  new MAX.int.step = 0.10000000000000E-01
+NOTE:  The Time Series Global Output element will reduce PRint.interval
+       when the Output Rate variable is set to two or more.
+
+License Server is [27800@localhost]
+
+Features requiring licenses
+-----------------------
+sc_motion_solver "Simcenter Motion Solver"
+
+
+[1134]
+Warning:  Prior to assembly the number of constraints, drivers and
+initial conditions is not equal to the number of generalized
+coordinates.  The assembly algorithm will be executed but the
+result will represent one of several possible solutions.
+Number of constraints, drivers, I.C's =                   25
+Number of generalized coordinates     =                   35
+
+Results achieved by the model assembly process with drivers:
+
+  Number of function evaluations =     1
+  Maximum constraint violation   =   0.337598E-14
+
+ Element: B001
+    Coordinate    New Value     Original Value  Difference
+    X              0.0000         0.0000         0.0000    
+    Y              0.0000         0.0000         0.0000    
+    Z              0.0000         0.0000         0.0000    
+    E0             1.0000         1.0000         0.0000    
+    E1             0.0000         0.0000         0.0000    
+    E2             0.0000         0.0000         0.0000    
+    E3             0.0000         0.0000         0.0000    
+
+ Element: B002
+    Coordinate    New Value     Original Value  Difference
+    X             0.13943        0.13943         0.0000    
+    Y            -0.64970E-07   -0.64970E-07     0.0000    
+    Z             0.39992        0.39992         0.0000    
+    E0            0.50007        0.50007         0.0000    
+    E1           -0.50007       -0.50007         0.0000    
+    E2           -0.49993       -0.49993         0.0000    
+    E3           -0.49993       -0.49993         0.0000    
+
+ Element: load1
+    Coordinate    New Value     Original Value  Difference
+    X             0.14000        0.14000         0.0000    
+    Y            -0.22000       -0.22000         0.0000    
+    Z             0.23397        0.23397         0.0000    
+    E0            0.50000        0.50000         0.0000    
+    E1           -0.50000       -0.50000         0.0000    
+    E2           -0.50000       -0.50000         0.0000    
+    E3           -0.50000       -0.50000         0.0000    
+
+ Element: load2
+    Coordinate    New Value     Original Value  Difference
+    X             0.14000        0.14000         0.0000    
+    Y             0.22000        0.22000         0.0000    
+    Z             0.31897        0.31897         0.0000    
+    E0            0.50000        0.50000         0.0000    
+    E1           -0.50000       -0.50000         0.0000    
+    E2           -0.50000       -0.50000         0.0000    
+    E3           -0.50000       -0.50000         0.0000    
+
+ Element: the_ground
+    Coordinate    New Value     Original Value  Difference
+    X              0.0000         0.0000         0.0000    
+    Y              0.0000         0.0000         0.0000    
+    Z              0.0000         0.0000         0.0000    
+    E0             1.0000         1.0000         0.0000    
+    E1             0.0000         0.0000         0.0000    
+    E2             0.0000         0.0000         0.0000    
+    E3             0.0000         0.0000         0.0000    
+
+Ignoring Initial conditions, the following were chosen
+as independent coordinates:
+
+
+ Element: load2
+    Coordinate:  E1        
+
+ Element: load2
+    Coordinate:  E2        
+
+ Element: load2
+    Coordinate:  E3        
+
+ Element: load1
+    Coordinate:  E3        
+
+ Element: B002
+    Coordinate:  E1        
+
+ Element: load1
+    Coordinate:  E1        
+
+ Element: load1
+    Coordinate:  E2        
+
+ Element: load1
+    Coordinate:  X         
+
+ Element: load1
+    Coordinate:  Y         
+
+ Element: load1
+    Coordinate:  Z         
+
+Number of real data in the system     =     56869
+Number of integer data in the system  =     43573
+
+
+Warning: may need (   10) more driver constraint to drive this model !!!
+
+
+ Time = 0.000000E+00
+*************** initial *****************
+
+Solution of acceleration of generalized coordinates:
+
+ Element: B001
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: B002
+    Coordinate    Acceleration
+    X            -0.142733E-15
+    Y            -0.833257E-04
+    Z             0.234072E-05
+    E0            -9.00817    
+    E1            -9.00817    
+    E2            -9.00571    
+    E3             9.00571    
+
+ Element: load1
+    Coordinate    Acceleration
+    X             0.153698E-23
+    Y             0.114263E-24
+    Z             -9.80665    
+    E0            0.275811E-22
+    E1           -0.320113E-22
+    E2            0.275811E-22
+    E3            0.320113E-22
+
+ Element: load2
+    Coordinate    Acceleration
+    X            -0.628448E-15
+    Y            -0.426601    
+    Z             -7.92611    
+    E0             8.27017    
+    E1             8.27017    
+    E2             8.27017    
+    E3            -8.27017    
+
+ Element: the_ground
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Newton's Method
+
+ Iteration =    1  Residual =  1214913.1255704      PE =  20978698.764440    Rate =  92926.199865740
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     38
+  Current simulation time =    0.00000
+ Iteration =    2  Residual =  15.017713159378      PE =  63.105075128081    Rate = 0.12361141585598E-04
+ Iteration =    3  Residual =  15.017241834094      PE =  63.098823295974    Rate = 0.99998430756477
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     33
+  Current simulation time =    0.00000
+ Iteration =    4  Residual =  15.012561394314      PE =  63.050158951651    Rate = 0.99968832893338
+ Iteration =    5  Residual =  15.011686275782      PE =  63.009590827315    Rate = 0.99994170758019
+ Iteration =    6  Residual =  15.010577152837      PE =  62.981872200349    Rate = 0.99992611603223
+ Iteration =    7  Residual =  15.009243482443      PE =  62.957726829223    Rate = 0.99991115129147
+ Iteration =    8  Residual =  15.007727768667      PE =  62.935734411402    Rate = 0.99989901464538
+ Iteration =    9  Residual =  15.006060860463      PE =  62.915257990755    Rate = 0.99988893000792
+ Iteration =   10  Residual =  15.004265354309      PE =  62.895937151602    Rate = 0.99988034793604
+ Iteration =   11  Residual =  15.002358357439      PE =  62.877541467575    Rate = 0.99987290301628
+ Iteration =   12  Residual =  15.000353213865      PE =  62.859911805075    Rate = 0.99986634477550
+ Iteration =   13  Residual =  14.998260606638      PE =  62.842932205457    Rate = 0.99986049613649
+ Iteration =   14  Residual =  14.996089263943      PE =  62.826514752248    Rate = 0.99985522703255
+ Iteration =   15  Residual =  14.993846443029      PE =  62.810590716286    Rate = 0.99985043961298
+ Iteration =   16  Residual =  14.991538267444      PE =  62.795105041484    Rate = 0.99984605847511
+ Iteration =   17  Residual =  14.989169970347      PE =  62.780012738130    Rate = 0.99984202441038
+ Iteration =   18  Residual =  14.986746071030      PE =  62.765276427803    Rate = 0.99983828995729
+ Iteration =   19  Residual =  14.984270512488      PE =  62.750864617368    Rate = 0.99983481680874
+ Iteration =   20  Residual =  14.983907612604      PE =  62.715586805275    Rate = 0.99997578127785
+ Iteration =   21  Residual =  14.983108899124      PE =  62.684184142471    Rate = 0.99994669524800
+ Iteration =   22  Residual =  14.981903636802      PE =  62.655301307042    Rate = 0.99991955859557
+ Iteration =   23  Residual =  14.980335219645      PE =  62.628258381204    Rate = 0.99989531255872
+ Iteration =   24  Residual =  14.978443408367      PE =  62.602648885730    Rate = 0.99987371368866
+ Iteration =   25  Residual =  14.976262094410      PE =  62.578204062039    Rate = 0.99985436978344
+ Iteration =   26  Residual =  14.973819788359      PE =  62.554734004732    Rate = 0.99983692152053
+ Iteration =   27  Residual =  14.971140559450      PE =  62.532098002284    Rate = 0.99982107244862
+ Iteration =   28  Residual =  14.968244863456      PE =  62.510188002123    Rate = 0.99980658147040
+ Iteration =   29  Residual =  14.965150243753      PE =  62.488918677263    Rate = 0.99979325433732
+ Iteration =   30  Residual =  14.961871897719      PE =  62.468221114422    Rate = 0.99978093463947
+ Iteration =   31  Residual =  14.958423068333      PE =  62.448038618855    Rate = 0.99976949211908
+ Iteration =   32  Residual =  14.954815399362      PE =  62.428323817577    Rate = 0.99975882023428
+ Iteration =   33  Residual =  14.951059194408      PE =  62.409036601556    Rate = 0.99974882973449
+ Iteration =   34  Residual =  14.947163640892      PE =  62.390142623965    Rate = 0.99973944631845
+ Iteration =   35  Residual =  14.943136964085      PE =  62.371612180627    Rate = 0.99973060595954
+ Iteration =   36  Residual =  14.938986570541      PE =  62.353419357706    Rate = 0.99972225419909
+ Iteration =   37  Residual =  14.934719160142      PE =  62.335541373729    Rate = 0.99971434405015
+ Iteration =   38  Residual =  14.930340825486      PE =  62.317958062822    Rate = 0.99970683515306
+ Iteration =   39  Residual =  14.925857130123      PE =  62.300651463943    Rate = 0.99969969236366
+ Iteration =   40  Residual =  14.921273155191      PE =  62.283605491100    Rate = 0.99969288363864
+ Iteration =   41  Residual =  14.916593578554      PE =  62.266805663707    Rate = 0.99968638221501
+ Iteration =   42  Residual =  14.911822719944      PE =  62.250238886717    Rate = 0.99968016433608
+ Iteration =   43  Residual =  14.906964561141      PE =  62.233893268342    Rate = 0.99967420758050
+ Iteration =   44  Residual =  14.902022804745      PE =  62.217757967001    Rate = 0.99966849344982
+ Iteration =   45  Residual =  14.897000885746      PE =  62.201823063712    Rate = 0.99966300420656
+ Iteration =   46  Residual =  14.891902003002      PE =  62.186079453167    Rate = 0.99965772421013
+ Iteration =   47  Residual =  14.886729151659      PE =  62.170518751346    Rate = 0.99965263998237
+ Iteration =   48  Residual =  14.881485129373      PE =  62.155133216734    Rate = 0.99964773844998
+ Iteration =   49  Residual =  14.876172563353      PE =  62.139915681446    Rate = 0.99964300834397
+ Iteration =   50  Residual =  14.870793912339      PE =  62.124859492796    Rate = 0.99963843851696
+ Iteration =   51  Residual =  14.865351502344      PE =  62.109958461202    Rate = 0.99963402021257
+ Iteration =   52  Residual =  14.859847515429      PE =  62.095206815824    Rate = 0.99962974391060
+ Iteration =   53  Residual =  14.854284023872      PE =  62.080599164899    Rate = 0.99962560237906
+ Iteration =   54  Residual =  14.848662972463      PE =  62.066130461325    Rate = 0.99962158718658
+ Iteration =   55  Residual =  14.842986214195      PE =  62.051795971523    Rate = 0.99961769229467
+ Iteration =   56  Residual =  14.837255500990      PE =  62.037591248502    Rate = 0.99961391103368
+ Iteration =   57  Residual =  14.831472495206      PE =  62.023512107710    Rate = 0.99961023750088
+ Iteration =   58  Residual =  14.825638787473      PE =  62.009554605232    Rate = 0.99960666698904
+ Iteration =   59  Residual =  14.819755877391      PE =  61.995715018745    Rate = 0.99960319348352
+ Iteration =   60  Residual =  14.813825196099      PE =  61.981989829944    Rate = 0.99959981248402
+ Iteration =   61  Residual =  14.813499455044      PE =  61.947971856118    Rate = 0.99997801100997
+ Iteration =   62  Residual =  14.812777785367      PE =  61.915515855286    Rate = 0.99995128297133
+ Iteration =   63  Residual =  14.811640435539      PE =  61.884370050192    Rate = 0.99992321832919
+ Iteration =   64  Residual =  14.810085705706      PE =  61.854347448258    Rate = 0.99989503324501
+ Iteration =   65  Residual =  14.808121061775      PE =  61.825304191688    Rate = 0.99986734418895
+ Iteration =   66  Residual =  14.805758582944      PE =  61.797126510248    Rate = 0.99984046059450
+ Iteration =   67  Residual =  14.803012528771      PE =  61.769722405720    Rate = 0.99981452796505
+ Iteration =   68  Residual =  14.799897999073      PE =  61.743016109802    Rate = 0.99978960163063
+ Iteration =   69  Residual =  14.796430189788      PE =  61.716944255658    Rate = 0.99976568694692
+ Iteration =   70  Residual =  14.792623975235      PE =  61.691453150229    Rate = 0.99974276129417
+ Iteration =   71  Residual =  14.788493696157      PE =  61.666496782194    Rate = 0.99972078793564
+ Iteration =   72  Residual =  14.784053053084      PE =  61.642035334337    Rate = 0.99969972309795
+ Iteration =   73  Residual =  14.779315014360      PE =  61.618034051444    Rate = 0.99967951692902
+ Iteration =   74  Residual =  14.774291849796      PE =  61.594462363241    Rate = 0.99966012196376
+ Iteration =   75  Residual =  14.768995139789      PE =  61.571293196830    Rate = 0.99964149144599
+ Iteration =   76  Residual =  14.763435811069      PE =  61.548502428961    Rate = 0.99962358111253
+ Iteration =   77  Residual =  14.757624139452      PE =  61.526068445768    Rate = 0.99960634694448
+ Iteration =   78  Residual =  14.751569841671      PE =  61.503971783873    Rate = 0.99958975118733
+ Iteration =   79  Residual =  14.745282052208      PE =  61.482194836328    Rate = 0.99957375455425
+ Iteration =   80  Residual =  14.738769409737      PE =  61.460721608311    Rate = 0.99955832364218
+ Iteration =   81  Residual =  14.732040071550      PE =  61.439537513573    Rate = 0.99954342604870
+ Iteration =   82  Residual =  14.725101712654      PE =  61.418629203025    Rate = 0.99952902932231
+ Iteration =   83  Residual =  14.717961650556      PE =  61.397984419100    Rate = 0.99951510948872
+ Iteration =   84  Residual =  14.710626770575      PE =  61.377591872813    Rate = 0.99950163751239
+ Iteration =   85  Residual =  14.703103620642      PE =  61.357441137031    Rate = 0.99948859079560
+ Iteration =   86  Residual =  14.695398421168      PE =  61.337522555391    Rate = 0.99947594741409
+ Iteration =   87  Residual =  14.687517055106      PE =  61.317827163132    Rate = 0.99946368476471
+ Iteration =   88  Residual =  14.679465132152      PE =  61.298346617977    Rate = 0.99945178460563
+ Iteration =   89  Residual =  14.671247999016      PE =  61.279073140075    Rate = 0.99944022939107
+ Iteration =   90  Residual =  14.662870734239      PE =  61.259999459252    Rate = 0.99942900121531
+ Iteration =   91  Residual =  14.654338209318      PE =  61.241118768228    Rate = 0.99941808633006
+ Iteration =   92  Residual =  14.645655036523      PE =  61.222424681846    Rate = 0.99940746742226
+ Iteration =   93  Residual =  14.636825644720      PE =  61.203911200145    Rate = 0.99939713233847
+ Iteration =   94  Residual =  14.627854266290      PE =  61.185572675987    Rate = 0.99938706802637
+ Iteration =   95  Residual =  14.618744939496      PE =  61.167403786035    Rate = 0.99937726158407
+ Iteration =   96  Residual =  14.609501545260      PE =  61.149399504730    Rate = 0.99936770261235
+ Iteration =   97  Residual =  14.600127800188      PE =  61.131555081042    Rate = 0.99935838022656
+ Iteration =   98  Residual =  14.590627273638      PE =  61.113866017363    Rate = 0.99934928469938
+ Iteration =   99  Residual =  14.581003394682      PE =  61.096328050627    Rate = 0.99934040677104
+ Iteration =  100  Residual =  14.571259442998      PE =  61.078937135187    Rate = 0.99933173654650
+ Iteration =  101  Residual =  14.561398585372      PE =  61.061689427058    Rate = 0.99932326662191
+ Iteration =  102  Residual =  14.551423857054      PE =  61.044581269914    Rate = 0.99931498830560
+ Iteration =  103  Residual =  14.541338189451      PE =  61.027609182198    Rate = 0.99930689479586
+ Iteration =  104  Residual =  14.531144405022      PE =  61.010769845332    Rate = 0.99929897893190
+ Iteration =  105  Residual =  14.520845214088      PE =  60.994060093062    Rate = 0.99929123332293
+ Iteration =  106  Residual =  14.510443242212      PE =  60.977476901422    Rate = 0.99928365245115
+ Iteration =  107  Residual =  14.499941023035      PE =  60.961017379926    Rate = 0.99927623029834
+ Iteration =  108  Residual =  14.489340999154      PE =  60.944678763154    Rate = 0.99926896089682
+ Iteration =  109  Residual =  14.478645524125      PE =  60.928458403166    Rate = 0.99926183840733
+ Iteration =  110  Residual =  14.467856882066      PE =  60.912353762339    Rate = 0.99925485833322
+ Iteration =  111  Residual =  14.456977274961      PE =  60.896362407043    Rate = 0.99924801529389
+ Iteration =  112  Residual =  14.446008845922      PE =  60.880482001480    Rate = 0.99924130550736
+ Iteration =  113  Residual =  14.434953655464      PE =  60.864710302202    Rate = 0.99923472354363
+ Iteration =  114  Residual =  14.423813712819      PE =  60.849045152924    Rate = 0.99922826613020
+ Iteration =  115  Residual =  14.412590949457      PE =  60.833484479746    Rate = 0.99922192815402
+ Iteration =  116  Residual =  14.401287233298      PE =  60.818026286615    Rate = 0.99921570547594
+ Iteration =  117  Residual =  14.389904405142      PE =  60.802668651166    Rate = 0.99920959647762
+ Iteration =  118  Residual =  14.378444224441      PE =  60.787409721027    Rate = 0.99920359577253
+ Iteration =  119  Residual =  14.366908415042      PE =  60.772247710071    Rate = 0.99919770114077
+ Iteration =  120  Residual =  14.355298626270      PE =  60.757180895115    Rate = 0.99919190765076
+ Iteration =  121  Residual =  14.343616490487      PE =  60.742207612607    Rate = 0.99918621436676
+ Iteration =  122  Residual =  14.331863576417      PE =  60.727326255925    Rate = 0.99918061710049
+ Iteration =  123  Residual =  14.320041417300      PE =  60.712535272477    Rate = 0.99917511361628
+ Iteration =  124  Residual =  14.308151506829      PE =  60.697833161146    Rate = 0.99916970139093
+ Iteration =  125  Residual =  14.296195272045      PE =  60.683218469870    Rate = 0.99916437600070
+ Iteration =  126  Residual =  14.284174125430      PE =  60.668689793207    Rate = 0.99915913665239
+ Iteration =  127  Residual =  14.272089444301      PE =  60.654245770393    Rate = 0.99915398111064
+ Iteration =  128  Residual =  14.259942565086      PE =  60.639885083257    Rate = 0.99914890673417
+ Iteration =  129  Residual =  14.247734786209      PE =  60.625606454320    Rate = 0.99914391107674
+ Iteration =  130  Residual =  14.235467358104      PE =  60.611408644984    Rate = 0.99913899098426
+ Iteration =  131  Residual =  14.223141524751      PE =  60.597290453734    Rate = 0.99913414621078
+ Iteration =  132  Residual =  14.210758492164      PE =  60.583250714689    Rate = 0.99912937429714
+ Iteration =  133  Residual =  14.198319439322      PE =  60.569288296110    Rate = 0.99912467354584
+ Iteration =  134  Residual =  14.185825500676      PE =  60.555402098871    Rate = 0.99912004102317
+ Iteration =  135  Residual =  14.173277805582      PE =  60.541591055143    Rate = 0.99911547656547
+ Iteration =  136  Residual =  14.160677426886      PE =  60.527854127171    Rate = 0.99911097638323
+ Iteration =  137  Residual =  14.148025433528      PE =  60.514190305886    Rate = 0.99910654038807
+ Iteration =  138  Residual =  14.135322864769      PE =  60.500598609934    Rate = 0.99910216667204
+ Iteration =  139  Residual =  14.122570740563      PE =  60.487078084505    Rate = 0.99909785405487
+ Iteration =  140  Residual =  14.109770054170      PE =  60.473627800387    Rate = 0.99909360083029
+ Iteration =  141  Residual =  14.096921766799      PE =  60.460246852840    Rate = 0.99908940490727
+ Iteration =  142  Residual =  14.084026831441      PE =  60.446934360760    Rate = 0.99908526587777
+ Iteration =  143  Residual =  14.071086164099      PE =  60.433689465735    Rate = 0.99908118129168
+ Iteration =  144  Residual =  14.058100670110      PE =  60.420511331219    Rate = 0.99907715055979
+ Iteration =  145  Residual =  14.045071256170      PE =  60.407399141748    Rate = 0.99907317394825
+ Iteration =  146  Residual =  14.031998775738      PE =  60.394352102206    Rate = 0.99906924783836
+ Iteration =  147  Residual =  14.018884068863      PE =  60.381369437011    Rate = 0.99906537143531
+ Iteration =  148  Residual =  14.005727979301      PE =  60.368450389406    Rate = 0.99906154516315
+ Iteration =  149  Residual =  13.992531308573      PE =  60.355594220904    Rate = 0.99905776616911
+ Iteration =  150  Residual =  13.979294868101      PE =  60.342800210538    Rate = 0.99905403531502
+ Iteration =  151  Residual =  13.966019421837      PE =  60.330067654344    Rate = 0.99905034936388
+ Iteration =  152  Residual =  13.952705727304      PE =  60.317395864673    Rate = 0.99904670800380
+ Iteration =  153  Residual =  13.939354549172      PE =  60.304784169714    Rate = 0.99904311189582
+ Iteration =  154  Residual =  13.925966606460      PE =  60.292231912976    Rate = 0.99903955791749
+ Iteration =  155  Residual =  13.912542625872      PE =  60.279738452724    Rate = 0.99903604676306
+ Iteration =  156  Residual =  13.899083308501      PE =  60.267303161538    Rate = 0.99903257673791
+ Iteration =  157  Residual =  13.885589348352      PE =  60.254925425834    Rate = 0.99902914747325
+ Iteration =  158  Residual =  13.872061420444      PE =  60.242604645424    Rate = 0.99902575774289
+ Iteration =  159  Residual =  13.858500185693      PE =  60.230340233066    Rate = 0.99902240666764
+ Iteration =  160  Residual =  13.844906290056      PE =  60.218131614054    Rate = 0.99901909330344
+ Iteration =  161  Residual =  13.831280375177      PE =  60.205978225820    Rate = 0.99901581747150
+ Iteration =  162  Residual =  13.817623083828      PE =  60.193879517593    Rate = 0.99901257938679
+ Iteration =  163  Residual =  13.817561145562      PE =  60.163805601649    Rate = 0.99999551744428
+ Iteration =  164  Residual =  13.817015879205      PE =  60.134399118758    Rate = 0.99996053816218
+ Iteration =  165  Residual =  13.815970809158      PE =  60.105613713441    Rate = 0.99992436354878
+ Iteration =  166  Residual =  13.814416003390      PE =  60.077408646524    Rate = 0.99988746315488
+ Iteration =  167  Residual =  13.812346576636      PE =  60.049747864042    Rate = 0.99985019802836
+ Iteration =  168  Residual =  13.809761368661      PE =  60.022599258996    Rate = 0.99981283354274
+ Iteration =  169  Residual =  13.806662086796      PE =  59.995934077352    Rate = 0.99977557310500
+ Iteration =  170  Residual =  13.803052612378      PE =  59.969726436071    Rate = 0.99973857009065
+ Iteration =  171  Residual =  13.798938472971      PE =  59.943952927519    Rate = 0.99970193988800
+ Iteration =  172  Residual =  13.794326422773      PE =  59.918592292499    Rate = 0.99966576775402
+ Iteration =  173  Residual =  13.789224125003      PE =  59.893625147194    Rate = 0.99963011620768
+ Iteration =  174  Residual =  13.783639960911      PE =  59.869033753755    Rate = 0.99959503420631
+ Iteration =  175  Residual =  13.777582794438      PE =  59.844801826527    Rate = 0.99956055392555
+ Iteration =  176  Residual =  13.771061747503      PE =  59.820914366707    Rate = 0.99952669150803
+ Iteration =  177  Residual =  13.764086228043      PE =  59.797357520409    Rate = 0.99949346538500
+ Iteration =  178  Residual =  13.756665750520      PE =  59.774118457228    Rate = 0.99946088120924
+ Iteration =  179  Residual =  13.748809845548      PE =  59.751185264663    Rate = 0.99942893829694
+ Iteration =  180  Residual =  13.740528055618      PE =  59.728546856123    Rate = 0.99939763586647
+ Iteration =  181  Residual =  13.731829886255      PE =  59.706192891001    Rate = 0.99936696978980
+ Iteration =  182  Residual =  13.722724725882      PE =  59.684113704422    Rate = 0.99933693029640
+ Iteration =  183  Residual =  13.713221826838      PE =  59.662300245209    Rate = 0.99930750640027
+ Iteration =  184  Residual =  13.703330298902      PE =  59.640744021166    Rate = 0.99927868679869
+ Iteration =  185  Residual =  13.693059162749      PE =  59.619437050484    Rate = 0.99925046423542
+ Iteration =  186  Residual =  13.682417220102      PE =  59.598371818882    Rate = 0.99922282212317
+ Iteration =  187  Residual =  13.671413109575      PE =  59.577541240821    Rate = 0.99919574806482
+ Iteration =  188  Residual =  13.660055265514      PE =  59.556938625064    Rate = 0.99916922676756
+ Iteration =  189  Residual =  13.648351933025      PE =  59.536557643635    Rate = 0.99914324413325
+ Iteration =  190  Residual =  13.636311215020      PE =  59.516392303985    Rate = 0.99911778960102
+ Iteration =  191  Residual =  13.623940998394      PE =  59.496436923905    Rate = 0.99909284729342
+ Iteration =  192  Residual =  13.611248951766      PE =  59.476686108706    Rate = 0.99906840123355
+ Iteration =  193  Residual =  13.598242632084      PE =  59.457134730528    Rate = 0.99904444333306
+ Iteration =  194  Residual =  13.584929343233      PE =  59.437777909796    Rate = 0.99902095519165
+ Iteration =  195  Residual =  13.571316265795      PE =  59.418610997950    Rate = 0.99899792799108
+ Iteration =  196  Residual =  13.557410349427      PE =  59.399629562026    Rate = 0.99897534505163
+ Iteration =  197  Residual =  13.543218347169      PE =  59.380829370263    Rate = 0.99895319224743
+ Iteration =  198  Residual =  13.528746962721      PE =  59.362206379108    Rate = 0.99893146635631
+ Iteration =  199  Residual =  13.514002658233      PE =  59.343756721453    Rate = 0.99891015002882
+ Iteration =  200  Residual =  13.498991697001      PE =  59.325476695488    Rate = 0.99888922907508
+ Iteration =  201  Residual =  13.483720234785      PE =  59.307362754543    Rate = 0.99886869608045
+ Iteration =  202  Residual =  13.468194244190      PE =  59.289411497846    Rate = 0.99884853806488
+ Iteration =  203  Residual =  13.452419582566      PE =  59.271619661810    Rate = 0.99882874709568
+ Iteration =  204  Residual =  13.436401979449      PE =  59.253984112256    Rate = 0.99880931433793
+ Iteration =  205  Residual =  13.420146914478      PE =  59.236501836963    Rate = 0.99879022189159
+ Iteration =  206  Residual =  13.403659860218      PE =  59.219169938685    Rate = 0.99877146991268
+ Iteration =  207  Residual =  13.386946081651      PE =  59.201985629052    Rate = 0.99875304366561
+ Iteration =  208  Residual =  13.370010742755      PE =  59.184946222503    Rate = 0.99873493634823
+ Iteration =  209  Residual =  13.352858837745      PE =  59.168049130866    Rate = 0.99871713603377
+ Iteration =  210  Residual =  13.335495348510      PE =  59.151291858181    Rate = 0.99869964256745
+ Iteration =  211  Residual =  13.317924991772      PE =  59.134671996122    Rate = 0.99868243688903
+ Iteration =  212  Residual =  13.300152476412      PE =  59.118187219233    Rate = 0.99866551918777
+ Iteration =  213  Residual =  13.282182355303      PE =  59.101835281028    Rate = 0.99864887856433
+ Iteration =  214  Residual =  13.264019089272      PE =  59.085614009921    Rate = 0.99863250890968
+ Iteration =  215  Residual =  13.245667025200      PE =  59.069521305732    Rate = 0.99861640246830
+ Iteration =  216  Residual =  13.227130417126      PE =  59.053555136096    Rate = 0.99860055306854
+ Iteration =  217  Residual =  13.208413399240      PE =  59.037713533387    Rate = 0.99858495249569
+ Iteration =  218  Residual =  13.189520028774      PE =  59.021994591599    Rate = 0.99856959576483
+ Iteration =  219  Residual =  13.170454256261      PE =  59.006396463538    Rate = 0.99855447563889
+ Iteration =  220  Residual =  13.151219985733      PE =  58.990917358191    Rate = 0.99853958943605
+ Iteration =  221  Residual =  13.131821005829      PE =  58.975555538221    Rate = 0.99852492925178
+ Iteration =  222  Residual =  13.112260968140      PE =  58.960309317534    Rate = 0.99851048550844
+ Iteration =  223  Residual =  13.092543523115      PE =  58.945177059026    Rate = 0.99849625895385
+ Iteration =  224  Residual =  13.072672156212      PE =  58.930157172529    Rate = 0.99848223785794
+ Iteration =  225  Residual =  13.052650397671      PE =  58.915248112780    Rate = 0.99846842647762
+ Iteration =  226  Residual =  13.032481592878      PE =  58.900448377606    Rate = 0.99845481153806
+ Iteration =  227  Residual =  13.012169040043      PE =  58.885756506051    Rate = 0.99844139025322
+ Iteration =  228  Residual =  12.991715988641      PE =  58.871171076706    Rate = 0.99842815972195
+ Iteration =  229  Residual =  12.971125613836      PE =  58.856690706104    Rate = 0.99841511507614
+ Iteration =  230  Residual =  12.950400986246      PE =  58.842314047280    Rate = 0.99840224910260
+ Iteration =  231  Residual =  12.929545180248      PE =  58.828039788175    Rate = 0.99838956291626
+ Iteration =  232  Residual =  12.908561177780      PE =  58.813866650479    Rate = 0.99837705022288
+ Iteration =  233  Residual =  12.887451858200      PE =  58.799793388171    Rate = 0.99836470391321
+ Iteration =  234  Residual =  12.866220073746      PE =  58.785818786312    Rate = 0.99835252269516
+ Iteration =  235  Residual =  12.844868587944      PE =  58.771941659885    Rate = 0.99834050049826
+ Iteration =  236  Residual =  12.823400153762      PE =  58.758160852612    Rate = 0.99832863730480
+ Iteration =  237  Residual =  12.801817457046      PE =  58.744475236029    Rate = 0.99831692870397
+ Iteration =  238  Residual =  12.780123130254      PE =  58.730883708403    Rate = 0.99830537133774
+ Iteration =  239  Residual =  12.758319713862      PE =  58.717385193754    Rate = 0.99829395881642
+ Iteration =  240  Residual =  12.736409750773      PE =  58.703978640944    Rate = 0.99828269211141
+ Iteration =  241  Residual =  12.714395689471      PE =  58.690663022790    Rate = 0.99827156461417
+ Iteration =  242  Residual =  12.692279975004      PE =  58.677437335234    Rate = 0.99826057682908
+ Iteration =  243  Residual =  12.670064947919      PE =  58.664300596539    Rate = 0.99824972131650
+ Iteration =  244  Residual =  12.647752953696      PE =  58.651251846504    Rate = 0.99823899922262
+ Iteration =  245  Residual =  12.625346277327      PE =  58.638290145803    Rate = 0.99822840654372
+ Iteration =  246  Residual =  12.602847130753      PE =  58.625414575189    Rate = 0.99821793825853
+ Iteration =  247  Residual =  12.580257732439      PE =  58.612624234895    Rate = 0.99820759562661
+ Iteration =  248  Residual =  12.557580218796      PE =  58.599918243954    Rate = 0.99819737288971
+ Iteration =  249  Residual =  12.534816722141      PE =  58.587295739620    Rate = 0.99818727045673
+ Iteration =  250  Residual =  12.511969296033      PE =  58.574755876758    Rate = 0.99817728279443
+ Iteration =  251  Residual =  12.489039976751      PE =  58.562297827260    Rate = 0.99816740924309
+ Iteration =  252  Residual =  12.466030766499      PE =  58.549920779555    Rate = 0.99815764780206
+ Iteration =  253  Residual =  12.442943603817      PE =  58.537623938056    Rate = 0.99814799408773
+ Iteration =  254  Residual =  12.419780443225      PE =  58.525406522668    Rate = 0.99813845008627
+ Iteration =  255  Residual =  12.396543155574      PE =  58.513267768331    Rate = 0.99812900978752
+ Iteration =  256  Residual =  12.373233590487      PE =  58.501206924519    Rate = 0.99811967217033
+ Iteration =  257  Residual =  12.349853562351      PE =  58.489223254845    Rate = 0.99811043508022
+ Iteration =  258  Residual =  12.326404856469      PE =  58.477316036584    Rate = 0.99810129684829
+ Iteration =  259  Residual =  12.302889252230      PE =  58.465484560335    Rate = 0.99809225767674
+ Iteration =  260  Residual =  12.279308466679      PE =  58.453728129626    Rate = 0.99808331319028
+ Iteration =  261  Residual =  12.255664158060      PE =  58.442046060468    Rate = 0.99807445926756
+ Iteration =  262  Residual =  12.231957986593      PE =  58.430437680996    Rate = 0.99806569671283
+ Iteration =  263  Residual =  12.208191625729      PE =  58.418902331191    Rate = 0.99805702726494
+ Iteration =  264  Residual =  12.184366673784      PE =  58.407439362527    Rate = 0.99804844544757
+ Iteration =  265  Residual =  12.160484689206      PE =  58.396048137631    Rate = 0.99803994863107
+ Iteration =  266  Residual =  12.136547221074      PE =  58.384728029951    Rate = 0.99803153667444
+ Iteration =  267  Residual =  12.112555793243      PE =  58.373478423463    Rate = 0.99802320813375
+ Iteration =  268  Residual =  12.088511925940      PE =  58.362298712440    Rate = 0.99801496333939
+ Iteration =  269  Residual =  12.064417059585      PE =  58.351188301123    Rate = 0.99800679632842
+ Iteration =  270  Residual =  12.040272649737      PE =  58.340146603421    Rate = 0.99799870895303
+ Iteration =  271  Residual =  12.016080126334      PE =  58.329173042714    Rate = 0.99799069970367
+ Iteration =  272  Residual =  11.991840878011      PE =  58.318267051588    Rate = 0.99798276575485
+ Iteration =  273  Residual =  11.967556297025      PE =  58.307428071547    Rate = 0.99797490800352
+ Iteration =  274  Residual =  11.943227708143      PE =  58.296655552856    Rate = 0.99796712141741
+ Iteration =  275  Residual =  11.918856461292      PE =  58.285948954260    Rate = 0.99795940867519
+ Iteration =  276  Residual =  11.894443848106      PE =  58.275307742768    Rate = 0.99795176548482
+ Iteration =  277  Residual =  11.869991172732      PE =  58.264731393475    Rate = 0.99794419346657
+ Iteration =  278  Residual =  11.845499667002      PE =  58.254219389308    Rate = 0.99793668711512
+ Iteration =  279  Residual =  11.820970583559      PE =  58.243771220850    Rate = 0.99792924873303
+ Iteration =  280  Residual =  11.796405156715      PE =  58.233386386191    Rate = 0.99792187733912
+ Iteration =  281  Residual =  11.771804612440      PE =  58.223064390691    Rate = 0.99791457279158
+ Iteration =  282  Residual =  11.747170118086      PE =  58.212804746861    Rate = 0.99790733067995
+ Iteration =  283  Residual =  11.722502787951      PE =  58.202606974108    Rate = 0.99790014702378
+ Iteration =  284  Residual =  11.697803831941      PE =  58.192470598595    Rate = 0.99789303048533
+ Iteration =  285  Residual =  11.673074361613      PE =  58.182395153148    Rate = 0.99788597324050
+ Iteration =  286  Residual =  11.648315486335      PE =  58.172380177017    Rate = 0.99787897562274
+ Iteration =  287  Residual =  11.623528287153      PE =  58.162425215755    Rate = 0.99787203572816
+ Iteration =  288  Residual =  11.598713817953      PE =  58.152529821049    Rate = 0.99786515173478
+ Iteration =  289  Residual =  11.573873185082      PE =  58.142693550616    Rate = 0.99785832866808
+ Iteration =  290  Residual =  11.549007429184      PE =  58.132915968060    Rate = 0.99785156140040
+ Iteration =  291  Residual =  11.524117527873      PE =  58.123196642714    Rate = 0.99784484498222
+ Iteration =  292  Residual =  11.499204531022      PE =  58.113535149510    Rate = 0.99783818615261
+ Iteration =  293  Residual =  11.474269418321      PE =  58.103931068880    Rate = 0.99783157933808
+ Iteration =  294  Residual =  11.449313156154      PE =  58.094383986605    Rate = 0.99782502386357
+ Iteration =  295  Residual =  11.424336725122      PE =  58.084893493712    Rate = 0.99781852145272
+ Iteration =  296  Residual =  11.399341065205      PE =  58.075459186349    Rate = 0.99781206904883
+ Iteration =  297  Residual =  11.374327099504      PE =  58.066080665682    Rate = 0.99780566564704
+ Iteration =  298  Residual =  11.349295756304      PE =  58.056757537786    Rate = 0.99779931217197
+ Iteration =  299  Residual =  11.324247950773      PE =  58.047489413528    Rate = 0.99779300794788
+ Iteration =  300  Residual =  11.299184577618      PE =  58.038275908501    Rate = 0.99778675164440
+ Iteration =  301  Residual =  11.274106519795      PE =  58.029116642894    Rate = 0.99778054268872
+ Iteration =  302  Residual =  11.249014611845      PE =  58.020011241386    Rate = 0.99777437725053
+ Iteration =  303  Residual =  11.223909706118      PE =  58.010959333055    Rate = 0.99776825734582
+ Iteration =  304  Residual =  11.198792663933      PE =  58.001960551321    Rate = 0.99776218422612
+ Iteration =  305  Residual =  11.173664316135      PE =  57.993014533813    Rate = 0.99775615563642
+ Iteration =  306  Residual =  11.148525456733      PE =  57.984120922329    Rate = 0.99775016872787
+ Iteration =  307  Residual =  11.123376929088      PE =  57.975279362715    Rate = 0.99774422835181
+ Iteration =  308  Residual =  11.098219474933      PE =  57.966489504798    Rate = 0.99773832584156
+ Iteration =  309  Residual =  11.073053882023      PE =  57.957751002290    Rate = 0.99773246573764
+ Iteration =  310  Residual =  11.047880925728      PE =  57.949063512744    Rate = 0.99772664735826
+ Iteration =  311  Residual =  11.022701374488      PE =  57.940426697438    Rate = 0.99772087050823
+ Iteration =  312  Residual =  10.997515950191      PE =  57.931840221349    Rate = 0.99771513139640
+ Iteration =  313  Residual =  10.972325396699      PE =  57.923303753038    Rate = 0.99770943242033
+ Iteration =  314  Residual =  10.947130431645      PE =  57.914816964608    Rate = 0.99770377161245
+ Iteration =  315  Residual =  10.921931751480      PE =  57.906379531610    Rate = 0.99769814744393
+ Iteration =  316  Residual =  10.896730076816      PE =  57.897991133006    Rate = 0.99769256252124
+ Iteration =  317  Residual =  10.871526116020      PE =  57.889651451104    Rate = 0.99768701613990
+ Iteration =  318  Residual =  10.846320509389      PE =  57.881360171478    Rate = 0.99768150245305
+ Iteration =  319  Residual =  10.821113966408      PE =  57.873116982921    Rate = 0.99767602820151
+ Iteration =  320  Residual =  10.795907138328      PE =  57.864921577373    Rate = 0.99767058842942
+ Iteration =  321  Residual =  10.770700685327      PE =  57.856773649881    Rate = 0.99766518434464
+ Iteration =  322  Residual =  10.745495239921      PE =  57.848672898536    Rate = 0.99765981377229
+ Iteration =  323  Residual =  10.720291444664      PE =  57.840619024396    Rate = 0.99765447802134
+ Iteration =  324  Residual =  10.695089924639      PE =  57.832611731479    Rate = 0.99764917584987
+ Iteration =  325  Residual =  10.669891275865      PE =  57.824650726674    Rate = 0.99764390491791
+ Iteration =  326  Residual =  10.644696109596      PE =  57.816735719675    Rate = 0.99763866701000
+ Iteration =  327  Residual =  10.619505038047      PE =  57.808866422975    Rate = 0.99763346259116
+ Iteration =  328  Residual =  10.594318630700      PE =  57.801042551793    Rate = 0.99762828801756
+ Iteration =  329  Residual =  10.569137500106      PE =  57.793263824043    Rate = 0.99762314770095
+ Iteration =  330  Residual =  10.543962198012      PE =  57.785529960267    Rate = 0.99761803627839
+ Iteration =  331  Residual =  10.518793301156      PE =  57.777840683613    Rate = 0.99761295645951
+ Iteration =  332  Residual =  10.493631348109      PE =  57.770195719785    Rate = 0.99760790498238
+ Iteration =  333  Residual =  10.468476895157      PE =  57.762594796962    Rate = 0.99760288387141
+ Iteration =  334  Residual =  10.443330512168      PE =  57.755037645823    Rate = 0.99759789478058
+ Iteration =  335  Residual =  10.418192700688      PE =  57.747523999471    Rate = 0.99759293154125
+ Iteration =  336  Residual =  10.393063988968      PE =  57.740053593375    Rate = 0.99758799703155
+ Iteration =  337  Residual =  10.367944918502      PE =  57.732626165363    Rate = 0.99758309286916
+ Iteration =  338  Residual =  10.342835991855      PE =  57.725241455579    Rate = 0.99757821565953
+ Iteration =  339  Residual =  10.317737699315      PE =  57.717899206431    Rate = 0.99757336454337
+ Iteration =  340  Residual =  10.292650525045      PE =  57.710599162557    Rate = 0.99756853924758
+ Iteration =  341  Residual =  10.267575012080      PE =  57.703341070803    Rate = 0.99756374581025
+ Iteration =  342  Residual =  10.242511594922      PE =  57.696124680173    Rate = 0.99755897403923
+ Iteration =  343  Residual =  10.217460760770      PE =  57.688949741813    Rate = 0.99755422935871
+ Iteration =  344  Residual =  10.192422998563      PE =  57.681816008967    Rate = 0.99754951227189
+ Iteration =  345  Residual =  10.167398776838      PE =  57.674723236951    Rate = 0.99754482111576
+ Iteration =  346  Residual =  10.142388522353      PE =  57.667671183107    Rate = 0.99754015210446
+ Iteration =  347  Residual =  10.117392693734      PE =  57.660659606782    Rate = 0.99753550866603
+ Iteration =  348  Residual =  10.117131974021      PE =  57.643285065378    Rate = 0.99997423054323
+ Iteration =  349  Residual =  10.115517523062      PE =  57.626257072965    Rate = 0.99984042404874
+ Iteration =  350  Residual =  10.112572011154      PE =  57.609562489532    Rate = 0.99970881253470
+ Iteration =  351  Residual =  10.108320343555      PE =  57.593189081692    Rate = 0.99957956614852
+ Iteration =  352  Residual =  10.102789235120      PE =  57.577125433665    Rate = 0.99945281626949
+ Iteration =  353  Residual =  10.096006723461      PE =  57.561360869438    Rate = 0.99932864959359
+ Iteration =  354  Residual =  10.088001621670      PE =  57.545885384268    Rate = 0.99920710217305
+ Iteration =  355  Residual =  10.078803521105      PE =  57.530689584187    Rate = 0.99908821380986
+ Iteration =  356  Residual =  10.068442452061      PE =  57.515764632552    Rate = 0.99897199414376
+ Iteration =  357  Residual =  10.056948531279      PE =  57.501102202504    Rate = 0.99885842116722
+ Iteration =  358  Residual =  10.044351903198      PE =  57.486694434473    Rate = 0.99874747016532
+ Iteration =  359  Residual =  10.030682685936      PE =  57.472533898259    Rate = 0.99863911406200
+ Iteration =  360  Residual =  10.015970672517      PE =  57.458613559110    Rate = 0.99853329889103
+ Iteration =  361  Residual =  10.000245395401      PE =  57.444926746973    Rate = 0.99842997971638
+ Iteration =  362  Residual =  9.9835359989525      PE =  57.431467129067    Rate = 0.99832910135823
+ Iteration =  363  Residual =  9.9658712598664      PE =  57.418228684873    Rate = 0.99823061297240
+ Iteration =  364  Residual =  9.9472793496859      PE =  57.405205683679    Rate = 0.99813444206776
+ Iteration =  365  Residual =  9.9277880656541      PE =  57.392392663921    Rate = 0.99804054120262
+ Iteration =  366  Residual =  9.9074245677879      PE =  57.379784414701    Rate = 0.99794883837855
+ Iteration =  367  Residual =  9.8862154295038      PE =  57.367375958654    Rate = 0.99785926825493
+ Iteration =  368  Residual =  9.8641868278594      PE =  57.355162536453    Rate = 0.99777178620054
+ Iteration =  369  Residual =  9.8413641453786      PE =  57.343139592575    Rate = 0.99768630877750
+ Iteration =  370  Residual =  9.8177722028575      PE =  57.331302762123    Rate = 0.99760277719912
+ Iteration =  371  Residual =  9.7934352601996      PE =  57.319647858539    Rate = 0.99752113390339
+ Iteration =  372  Residual =  9.7683762313956      PE =  57.308170861576    Rate = 0.99744124220580
+ Iteration =  373  Residual =  9.7426076713761      PE =  57.296867899703    Rate = 0.99736204263543
+ Iteration =  374  Residual =  9.6859431454752      PE =  57.285713095045    Rate = 0.99418384401670
+ Iteration =  375  Residual =  9.6277719517374      PE =  57.274600331818    Rate = 0.99399426644735
+ Iteration =  376  Residual =  9.6008406494581      PE =  57.263754339056    Rate = 0.99720274821483
+ Iteration =  377  Residual =  9.5732848853344      PE =  57.253070588281    Rate = 0.99712985923527
+ Iteration =  378  Residual =  9.5451246433874      PE =  57.242545778512    Rate = 0.99705845566236
+ Iteration =  379  Residual =  9.5163798833705      PE =  57.232176723488    Rate = 0.99698854010914
+ Iteration =  380  Residual =  9.4870701065925      PE =  57.221960347065    Rate = 0.99692007074778
+ Iteration =  381  Residual =  9.4572144293456      PE =  57.211893677795    Rate = 0.99685301395357
+ Iteration =  382  Residual =  9.4268313345287      PE =  57.201973843519    Rate = 0.99678731036037
+ Iteration =  383  Residual =  9.3959389151506      PE =  57.192198066221    Rate = 0.99672292647637
+ Iteration =  384  Residual =  9.3645547450116      PE =  57.182563657287    Rate = 0.99665981543490
+ Iteration =  385  Residual =  9.3326959973978      PE =  57.173068013038    Rate = 0.99659794315040
+ Iteration =  386  Residual =  9.3003793562205      PE =  57.163708610507    Rate = 0.99653726627479
+ Iteration =  387  Residual =  9.2676211219752      PE =  57.154483003590    Rate = 0.99647775289688
+ Iteration =  388  Residual =  9.2344370551412      PE =  57.145388819290    Rate = 0.99641935439556
+ Iteration =  389  Residual =  9.2008425939288      PE =  57.136423754293    Rate = 0.99636204556793
+ Iteration =  390  Residual =  9.1668528146694      PE =  57.127585571789    Rate = 0.99630579711452
+ Iteration =  391  Residual =  9.1324822766247      PE =  57.118872098365    Rate = 0.99625056289878
+ Iteration =  392  Residual =  9.0977452249091      PE =  57.110281221172    Rate = 0.99619631873752
+ Iteration =  393  Residual =  9.0626555652898      PE =  57.101810885232    Rate = 0.99614303778004
+ Iteration =  394  Residual =  9.0272268036762      PE =  57.093459090928    Rate = 0.99609068651474
+ Iteration =  395  Residual =  8.9914720804434      PE =  57.085223891581    Rate = 0.99603923508179
+ Iteration =  396  Residual =  8.9554042312706      PE =  57.077103391219    Rate = 0.99598866027163
+ Iteration =  397  Residual =  8.9190357939373      PE =  57.069095742454    Rate = 0.99593893961745
+ Iteration =  398  Residual =  8.8823788435626      PE =  57.061199144454    Rate = 0.99589003214904
+ Iteration =  399  Residual =  8.8454453170373      PE =  57.053411841052    Rate = 0.99584193298037
+ Iteration =  400  Residual =  8.8082466679391      PE =  57.045732118945    Rate = 0.99579459848941
+ Iteration =  401  Residual =  8.7707942052779      PE =  57.038158305991    Rate = 0.99574802295245
+ Iteration =  402  Residual =  8.7330988483900      PE =  57.030688769598    Rate = 0.99570217291552
+ Iteration =  403  Residual =  8.6951713430912      PE =  57.023321915219    Rate = 0.99565703927583
+ Iteration =  404  Residual =  8.6570220314539      PE =  57.016056184867    Rate = 0.99561258655730
+ Iteration =  405  Residual =  8.6186611131090      PE =  57.008890055773    Rate = 0.99556880897317
+ Iteration =  406  Residual =  8.5800984164755      PE =  57.001822039053    Rate = 0.99552567433301
+ Iteration =  407  Residual =  8.5413435787199      PE =  56.994850678471    Rate = 0.99548317095277
+ Iteration =  408  Residual =  8.5024060468052      PE =  56.987974549281    Rate = 0.99544128724529
+ Iteration =  409  Residual =  8.4632948777091      PE =  56.981192257082    Rate = 0.99539998808798
+ Iteration =  410  Residual =  8.4240190873950      PE =  56.974502436761    Rate = 0.99535927899457
+ Iteration =  411  Residual =  8.3845873212705      PE =  56.967903751485    Rate = 0.99531912668817
+ Iteration =  412  Residual =  8.3450080744117      PE =  56.961394891710    Rate = 0.99527952356602
+ Iteration =  413  Residual =  8.3052896100408      PE =  56.954974574282    Rate = 0.99524045225400
+ Iteration =  414  Residual =  8.2654399843360      PE =  56.948641541533    Rate = 0.99520189811844
+ Iteration =  415  Residual =  8.2254670526492      PE =  56.942394560462    Rate = 0.99516384708344
+ Iteration =  416  Residual =  8.1853784810523      PE =  56.936232421919    Rate = 0.99512628628378
+ Iteration =  417  Residual =  8.1451817358135      PE =  56.930153939847    Rate = 0.99508920139346
+ Iteration =  418  Residual =  8.1048841273837      PE =  56.924157950554    Rate = 0.99505258326494
+ Iteration =  419  Residual =  8.0644927264293      PE =  56.918243312003    Rate = 0.99501641228677
+ Iteration =  420  Residual =  8.0240145341671      PE =  56.912408903162    Rate = 0.99498068959383
+ Iteration =  421  Residual =  7.9834562749260      PE =  56.906653623354    Rate = 0.99494539060612
+ Iteration =  422  Residual =  7.9428245313692      PE =  56.900976391635    Rate = 0.99491050715911
+ Iteration =  423  Residual =  7.9021257572305      PE =  56.895376146225    Rate = 0.99487603257784
+ Iteration =  424  Residual =  7.8613662356476      PE =  56.889851843937    Rate = 0.99484195483150
+ Iteration =  425  Residual =  7.8205520970863      PE =  56.884402459650    Rate = 0.99480826394066
+ Iteration =  426  Residual =  7.7796893233833      PE =  56.879026985787    Rate = 0.99477495025982
+ Iteration =  427  Residual =  7.7387836832599      PE =  56.873724431809    Rate = 0.99474199567322
+ Iteration =  428  Residual =  7.6978409462806      PE =  56.868493823765    Rate = 0.99470940930060
+ Iteration =  429  Residual =  7.6568665789525      PE =  56.863334203813    Rate = 0.99467716108788
+ Iteration =  430  Residual =  7.6158660579942      PE =  56.858244629807    Rate = 0.99464526114756
+ Iteration =  431  Residual =  7.5748446229345      PE =  56.853224174853    Rate = 0.99461368743262
+ Iteration =  432  Residual =  7.5338074729166      PE =  56.848271926936    Rate = 0.99458244332911
+ Iteration =  433  Residual =  7.4927595575963      PE =  56.843386988498    Rate = 0.99455150460536
+ Iteration =  434  Residual =  7.4517058317567      PE =  56.838568476089    Rate = 0.99452088038806
+ Iteration =  435  Residual =  7.4106511036734      PE =  56.833815520014    Rate = 0.99449055974426
+ Iteration =  436  Residual =  7.3696000044850      PE =  56.829127263974    Rate = 0.99446052733909
+ Iteration =  437  Residual =  7.3285571298804      PE =  56.824502864741    Rate = 0.99443078666689
+ Iteration =  438  Residual =  7.2875269456550      PE =  56.819941491850    Rate = 0.99440132846095
+ Iteration =  439  Residual =  7.2465137382286      PE =  56.815442327268    Rate = 0.99437213642813
+ Iteration =  440  Residual =  7.2055217548939      PE =  56.811004565112    Rate = 0.99434321318975
+ Iteration =  441  Residual =  7.1645551199114      PE =  56.806627411358    Rate = 0.99431454981665
+ Iteration =  442  Residual =  7.1236179284503      PE =  56.802310083586    Rate = 0.99428615025274
+ Iteration =  443  Residual =  7.0827140141893      PE =  56.798051810684    Rate = 0.99425798594593
+ Iteration =  444  Residual =  7.0418473335588      PE =  56.793851832629    Rate = 0.99423008178099
+ Iteration =  445  Residual =  7.0010215532455      PE =  56.789709400211    Rate = 0.99420240479813
+ Iteration =  446  Residual =  6.9602403672965      PE =  56.785623774805    Rate = 0.99417496637614
+ Iteration =  447  Residual =  6.9195072892030      PE =  56.781594228136    Rate = 0.99414774836155
+ Iteration =  448  Residual =  6.8788258501888      PE =  56.777620042071    Rate = 0.99412076072560
+ Iteration =  449  Residual =  6.8381994527328      PE =  56.773700508405    Rate = 0.99409399244279
+ Iteration =  450  Residual =  6.7976313573577      PE =  56.769834928629    Rate = 0.99406743022699
+ Iteration =  451  Residual =  6.7571248209785      PE =  56.766022613757    Rate = 0.99404108074567
+ Iteration =  452  Residual =  6.7166830527723      PE =  56.762262884131    Rate = 0.99401494433243
+ Iteration =  453  Residual =  6.6763090853798      PE =  56.758555069224    Rate = 0.99398900214953
+ Iteration =  454  Residual =  6.6360058793924      PE =  56.754898507453    Rate = 0.99396325043195
+ Iteration =  455  Residual =  6.5957764081788      PE =  56.751292546015    Rate = 0.99393769807550
+ Iteration =  456  Residual =  6.5556235455252      PE =  56.747736540726    Rate = 0.99391233720358
+ Iteration =  457  Residual =  6.5155500524168      PE =  56.744229855843    Rate = 0.99388715767002
+ Iteration =  458  Residual =  6.4755586094867      PE =  56.740771863901    Rate = 0.99386215398418
+ Iteration =  459  Residual =  6.4753500247250      PE =  56.732312777577    Rate = 0.99996778891609
+ Iteration =  460  Residual =  6.4693224600120      PE =  56.724195754426    Rate = 0.99906915229448
+ Iteration =  461  Residual =  6.4578657012362      PE =  56.716402285987    Rate = 0.99822906357711
+ Iteration =  462  Residual =  6.4413501862653      PE =  56.708915465974    Rate = 0.99744257379529
+ Iteration =  463  Residual =  6.4201265091873      PE =  56.701719789036    Rate = 0.99670508876799
+ Iteration =  464  Residual =  6.3945256023212      PE =  56.694800981360    Rate = 0.99601239838040
+ Iteration =  465  Residual =  6.3648594122745      PE =  56.688145857154    Rate = 0.99536068945664
+ Iteration =  466  Residual =  6.3314215116513      PE =  56.681742196367    Rate = 0.99474648245038
+ Iteration =  467  Residual =  6.2944879194435      PE =  56.675578639818    Rate = 0.99416661927502
+ Iteration =  468  Residual =  6.2543179993823      PE =  56.669644598850    Rate = 0.99361823859616
+ Iteration =  469  Residual =  6.2111554717168      PE =  56.663930177116    Rate = 0.99309876349911
+ Iteration =  470  Residual =  6.1652293932901      PE =  56.658426102586    Rate = 0.99260587202561
+ Iteration =  471  Residual =  6.1167549564524      PE =  56.653123668156    Rate = 0.99213744797713
+ Iteration =  472  Residual =  6.0659342669083      PE =  56.648014679536    Rate = 0.99169156032800
+ Iteration =  473  Residual =  6.0129572649808      PE =  56.643091409400    Rate = 0.99126647279767
+ Iteration =  474  Residual =  5.9580026471845      PE =  56.638346556932    Rate = 0.99086063389867
+ Iteration =  475  Residual =  5.9012381636040      PE =  56.633773211925    Rate = 0.99047256489432
+ Iteration =  476  Residual =  5.8428219002370      PE =  56.629364822922    Rate = 0.99010101579575
+ Iteration =  477  Residual =  5.7829022793436      PE =  56.625115168766    Rate = 0.98974474630300
+ Iteration =  478  Residual =  5.7216193130202      PE =  56.621018333219    Rate = 0.98940273181819
+ Iteration =  479  Residual =  5.6591045009488      PE =  56.617068682171    Rate = 0.98907393018456
+ Iteration =  480  Residual =  5.5954818322836      PE =  56.613260843166    Rate = 0.98875746707724
+ Iteration =  481  Residual =  5.5308681403810      PE =  56.609589686984    Rate = 0.98845252404721
+ Iteration =  482  Residual =  5.4653733671771      PE =  56.606050310976    Rate = 0.98815831953655
+ Iteration =  483  Residual =  5.3991011581978      PE =  56.602638023994    Rate = 0.98787416622307
+ Iteration =  484  Residual =  5.3321492472819      PE =  56.599348332735    Rate = 0.98759943387720
+ Iteration =  485  Residual =  5.2646097513230      PE =  56.596176929324    Rate = 0.98733353234752
+ Iteration =  486  Residual =  5.1965695945405      PE =  56.593119680006    Rate = 0.98707593535011
+ Iteration =  487  Residual =  5.1281105979723      PE =  56.590172614816    Rate = 0.98682611762959
+ Iteration =  488  Residual =  5.0593100161075      PE =  56.587331918143    Rate = 0.98658363922728
+ Iteration =  489  Residual =  4.9902406738381      PE =  56.584593920097    Rate = 0.98634807077457
+ Iteration =  490  Residual =  4.9209712687234      PE =  56.581955088572    Rate = 0.98611902518492
+ Iteration =  491  Residual =  4.8515666736472      PE =  56.579412021975    Rate = 0.98589615925674
+ Iteration =  492  Residual =  4.7820878708467      PE =  56.576961442483    Rate = 0.98567909966530
+ Iteration =  493  Residual =  4.7125925117991      PE =  56.574600189875    Rate = 0.98546756962136
+ Iteration =  494  Residual =  4.6431348898724      PE =  56.572325215797    Rate = 0.98526127142272
+ Iteration =  495  Residual =  4.5737661582628      PE =  56.570133578468    Rate = 0.98505993617355
+ Iteration =  496  Residual =  4.5045345464613      PE =  56.568022437771    Rate = 0.98486332501357
+ Iteration =  497  Residual =  4.4354854533614      PE =  56.565989050689    Rate = 0.98467120356439
+ Iteration =  498  Residual =  4.4320903001071      PE =  56.561187936989    Rate = 0.99923454753939
+ Iteration =  499  Residual =  4.4022458809884      PE =  56.556865157449    Rate = 0.99326628811736
+ Iteration =  500  Residual =  4.3506440137883      PE =  56.552965657548    Rate = 0.98827828599422
+ Iteration =  501  Residual =  4.2812254891414      PE =  56.549443094737    Rate = 0.98404408073221
+ Iteration =  502  Residual =  4.1973104921670      PE =  56.546257896452    Rate = 0.98039930454792
+ Iteration =  503  Residual =  4.1017071535072      PE =  56.543375859747    Rate = 0.97722271467926
+ Iteration =  504  Residual =  3.9967983421649      PE =  56.540767118329    Rate = 0.97442313470560
+ Iteration =  505  Residual =  3.8846130317707      PE =  56.538405365558    Rate = 0.97193120573267
+ Iteration =  506  Residual =  3.7668829700700      PE =  56.536267259681    Rate = 0.96969323308712
+ Iteration =  507  Residual =  3.6450895973132      PE =  56.534331961403    Rate = 0.96766733298471
+ Iteration =  508  Residual =  3.5205012977046      PE =  56.532580769108    Rate = 0.96582023670958
+ Iteration =  509  Residual =  3.3942049701454      PE =  56.530996827280    Rate = 0.96412547052843
+ Iteration =  510  Residual =  3.2671316134736      PE =  56.529564890478    Rate = 0.96256167267755
+ Iteration =  511  Residual =  3.2591736574942      PE =  56.526488357273    Rate = 0.99756423771035
+ Iteration =  512  Residual =  3.1268228957347      PE =  56.524165439338    Rate = 0.95939131336092
+ Iteration =  513  Residual =  2.9243177290025      PE =  56.522398818584    Rate = 0.93523612513889
+ Iteration =  514  Residual =  2.6855194185933      PE =  56.521052848742    Rate = 0.91834050450784
+ Iteration =  515  Residual =  2.4322110384191      PE =  56.520028788628    Rate = 0.90567620609242
+ Iteration =  516  Residual =  2.3094394058375      PE =  56.518330932482    Rate = 0.94952262338986
+ Iteration =  517  Residual =  1.7560676468173      PE =  56.517572633989    Rate = 0.76038697632791
+ Iteration =  518  Residual =  1.6477348172531      PE =  56.517272942972    Rate = 0.96866372967534
+ Iteration =  519  Residual = 0.48648276227804      PE =  56.516996022185    Rate = 0.29524335905522
+ Iteration =  520  Residual = 0.69843015771161E-01  PE =  56.516990792600    Rate = 0.37890275551702
+ Iteration =  521  Residual = 0.33256430793863E-01  PE =  56.516990437256    Rate = 0.78087985276187
+ Iteration =  522  Residual = 0.57775046662543E-02  PE =  56.516990410345    Rate = 0.64560393223183
+ Iteration =  523  Residual = 0.25226152649899E-02  PE =  56.516990408239    Rate = 0.84727061191047
+ Iteration =  524  Residual = 0.48335514028618E-03  PE =  56.516990408066    Rate = 0.75928103725243
+
+ Time = 0.000000E+00
+*************** final *******************
+
+Solution of acceleration of generalized coordinates:
+
+ Element: B001
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: B002
+    Coordinate    Acceleration
+    X            -0.508393E-20
+    Y             0.269024E-08
+    Z            -0.755713E-10
+    E0            0.290836E-03
+    E1            0.290836E-03
+    E2            0.290757E-03
+    E3           -0.290756E-03
+
+ Element: load1
+    Coordinate    Acceleration
+    X            -0.123635E-04
+    Y            -0.128026E-04
+    Z             0.314002E-03
+    E0           -0.129152E-01
+    E1            0.571119E-03
+    E2           -0.129156E-01
+    E3           -0.571589E-03
+
+ Element: load2
+    Coordinate    Acceleration
+    X            -0.283251E-15
+    Y             0.137731E-04
+    Z             0.255901E-03
+    E0           -0.267009E-03
+    E1           -0.267009E-03
+    E2           -0.267009E-03
+    E3            0.267009E-03
+
+ Element: the_ground
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+Ignoring Initial conditions, the following were chosen
+as independent coordinates:
+
+
+ Element: load2
+    Coordinate:  E1        
+
+ Element: load2
+    Coordinate:  E2        
+
+ Element: load2
+    Coordinate:  E3        
+
+ Element: load1
+    Coordinate:  E2        
+
+ Element: B002
+    Coordinate:  E1        
+
+ Element: load1
+    Coordinate:  E1        
+
+ Element: load1
+    Coordinate:  E3        
+
+ Element: load1
+    Coordinate:  X         
+
+ Element: load1
+    Coordinate:  Y         
+
+ Element: load1
+    Coordinate:  Z         
+
+[1440]
+Warning:  Initial velocities of all generalized coordinates have
+been set to zero.
+Solution of initial velocities, using QR method:
+
+ Element: B001
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: B002
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: load1
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: load2
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: the_ground
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+Solution of velocities in local coordinates:
+
+ Element: B001
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: B002
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: load1
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: load2
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: the_ground
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+Number of real data in the system     =     78921
+Number of integer data in the system  =     46626
+
+
+Solution of accelerations in local coordinates:
+
+ Element: B001
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGAD_XL      0.00000    
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+ Element: B002
+    Coordinate    Acceleration
+    X            -0.548170E-20
+    Y             0.269024E-08
+    Z            -0.755713E-10
+    OMEGAD_XL     0.317614E-06
+    OMEGAD_YL     0.116318E-02
+    OMEGAD_ZL     0.151005E-09
+
+ Element: load1
+    Coordinate    Acceleration
+    X            -0.123635E-04
+    Y            -0.128026E-04
+    Z             0.314002E-03
+    OMEGAD_XL     0.433681E-18
+    OMEGAD_YL    -0.237827E-01
+    OMEGAD_ZL    -0.277751E-01
+
+ Element: load2
+    Coordinate    Acceleration
+    X            -0.112669E-19
+    Y             0.137731E-04
+    Z             0.255901E-03
+    OMEGAD_XL     0.335935E-14
+    OMEGAD_YL    -0.106803E-02
+    OMEGAD_ZL     0.318388E-10
+
+ Element: the_ground
+    Coordinate    Acceleration
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGAD_XL      0.00000    
+    OMEGAD_YL      0.00000    
+    OMEGAD_ZL      0.00000    
+
+Total Number of Bodies             =    5
+
+Total Number of Degrees of Freedom =   30
+Number of Kinematic Constraints    =   20
+Number of Drivers                  =    0
+Number of Initial Conditions       =    0
+Number of Degrees of Freedom       =   10
+
+The number of symbolic factorizations of the Acceleration matrix =                    2
+
+The number of symbolic factorizations of BDF Jacobian matrix =                    1
+
+[1441]
+Final integrator statistics:
+  Number of steps                 =                 1010
+  Number of f-s                   =                 2242
+  Number of j-s                   =                    2
+  Ratio of f-s/steps              =  2.2198019801980
+  Ratio of j-s/steps              = 0.19801980198020E-02
+  Current time                    =  9.9999999999998
+  Total velocity computations     =                    0
+  Total position computations     =                    0
+Average Integration Order =   3.303960396040    
+Average Step Size         =  0.9909906704352E-02
+
+Userdef was internal
+
+    Total elapsed CPU time:  0.6080000    
+    Total clock time:          0

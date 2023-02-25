@@ -268,6 +268,9 @@ jobs:
           git config --global user.name 'CI PDF compiler'
           git config --global user.email '<>'
           git add HWs/*/*.pdf
+          git add labs/*/*.pdf
+          git add lectures/*/*.pdf
+
 
           git commit -m "Update compiled PDFs"
           git push

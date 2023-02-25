@@ -21,16 +21,20 @@ jobs:
         HW2: 'HW_CAD_DET2'
         HW3: 'HW_CAD_ASM1'
         HW4: 'HW_CAD_ASM2'
+        HW5: 'HW_CAE_DYN1'
+        HW6: 'HW_CAE_DYN2'
         
         # LAB1: 'CAD_DET1'
         LAB2: 'CAD_DET2'
         LAB3: 'CAD_ASM1'
         LAB4: 'CAD_ASM2'
+        LAB5: 'CAE_DYN1'
+        LAB6: 'CAE_DYN2'
         
 #         LEC1:
         LEC2: 'lec2'
         LEC3: 'lec3'
-#         LEC4: 'lec4'
+        LEC4: 'lec4'
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2
@@ -100,7 +104,33 @@ jobs:
         with:
           name: HW_slides
           path: HWs/${{ env.HW4}}/MaM_${{ env.HW4}}.pdf
-          
+      
+      - name: Compile LaTeX document MaM_${{ env.HW5}}
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: MaM_${{ env.HW5}}.tex
+          latexmk_use_lualatex: true
+          working_directory: HWs/${{ env.HW5}}/
+
+      - name: Save ${{ env.HW5}} artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: HW_slides
+          path: HWs/${{ env.HW5}}/MaM_${{ env.HW5}}.pdf
+
+      - name: Compile LaTeX document MaM_${{ env.HW6}}
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: MaM_${{ env.HW6}}.tex
+          latexmk_use_lualatex: true
+          working_directory: HWs/${{ env.HW6}}/
+
+      - name: Save ${{ env.HW4}} artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: HW_slides
+          path: HWs/${{ env.HW6}}/MaM_${{ env.HW6}}.pdf
+      
 # LABs
       # - name: Compile LaTeX document MaM_${{ env.LAB1}}
       #   uses: xu-cheng/latex-action@master
@@ -153,7 +183,32 @@ jobs:
         with:
           name: Lab_slides
           path: labs/${{ env.LAB4}}/MaM_${{ env.LAB4}}.pdf
-          
+
+      - name: Compile LaTeX document MaM_${{ env.LAB5}}
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: MaM_${{ env.LAB5}}.tex
+          latexmk_use_lualatex: true
+          working_directory: labs/${{ env.LAB5}}/
+
+      - name: Save ${{ env.LAB5}} artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: Lab_slides
+          path: labs/${{ env.LAB5}}/MaM_${{ env.LAB5}}.pdf
+
+      - name: Compile LaTeX document MaM_${{ env.LAB6}}
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: MaM_${{ env.LAB6}}.tex
+          latexmk_use_lualatex: true
+          working_directory: labs/${{ env.LAB6}}/
+
+      - name: Save ${{ env.LAB6}} artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: Lab_slides
+          path: labs/${{ env.LAB6}}/MaM_${{ env.LAB6}}.pdf          
 # LECs
 #       - name: Compile LaTeX document MaM_${{ env.LEC1}}
 #         uses: xu-cheng/latex-action@master
@@ -193,6 +248,19 @@ jobs:
         with:
           name: Lectures_slides
           path: lectures/3/MaM_${{ env.LEC3}}.pdf
+
+      - name: Compile LaTeX document MaM_${{ env.LEC4}}
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: MaM_${{ env.LEC4}}.tex
+          latexmk_use_lualatex: true
+          working_directory: lectures/4/
+
+      - name: Save ${{ env.LEC4}} artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: Lectures_slides
+          path: lectures/4/MaM_${{ env.LEC4}}.pdf
           
       - name: Update compiled PDFs in git repository
         if: github.event.pull_request.merged == true || github.event_name == 'push' || github.event_name == 'workflow_dispatch'

@@ -275,3 +275,9 @@ TSWLatexianTemp*
 .Trashes
 ehthumbs.db
 Thumbs.db
+<<<<<<< HEAD
+=======
+
+.vscode/*
+solution/
+>>>>>>> main

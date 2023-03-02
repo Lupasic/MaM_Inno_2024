@@ -1,0 +1,2156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XYPLOT-GraphTemplate version="11.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="DefaultTemplate_V110.xsd">
+    <GeneralDisplayStyles2D>
+        <PhaseDisplayRangeOption>0</PhaseDisplayRangeOption>
+        <ComplexOption2D>0</ComplexOption2D>
+        <XYSwapped>0</XYSwapped>
+    </GeneralDisplayStyles2D>
+    <WallDisplayStyles2D>
+        <Title Enabled="1">
+            <TextLines IsAuto="1"/>
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="4">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="0">
+                <Style FillColor="10079487" Filled="0"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+        </Title>
+        <Marker>
+            <NumberText ShowNumber="1"/>
+            <NoteText ShowNote="0"/>
+            <Attachment AbsPercentage="0.5" SnapToData="0" Type="1"/>
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <NumberFormat decimalPlace="3" formatOption="0"/>
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="2">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="1">
+                <Style FillColor="16768058" Filled="1"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+            <Leader>
+                <Line Color="134" Font="1" Width="2"/>
+                <Anchor Color="134" PointMarker="4"/>
+            </Leader>
+        </Marker>
+        <Note>
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="2">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="1">
+                <Style FillColor="10079487" Filled="0"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+        </Note>
+        <GraphName Enabled="1">
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="2">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="0">
+                <Style FillColor="10079487" Filled="0"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+            <Position Option="0"/>
+        </GraphName>
+        <PageNumber Enabled="1">
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="2">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="0">
+                <Style FillColor="10079487" Filled="0"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+        </PageNumber>
+        <AnnotationText>
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="2">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="0">
+                <Style FillColor="10079487" Filled="1"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+        </AnnotationText>
+        <Grid2D>
+            <Layout>
+                <MajorGrid Color="3355443" Font="1" Width="2"/>
+                <DenseGrid Color="13421772" Font="1" Width="2"/>
+                <Ticks Color="3355443" Font="1" Width="2"/>
+                <GraphBackground Color="16777215" Enabled="1"/>
+                <PlaneBackground Color="10079487" Enabled="0"/>
+                <Contouring Enabled="0" Level="4" Type="0"/>
+                <XYPlane Type="3"/>
+            </Layout>
+            <Divisions>
+                <Item Index="0" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="1" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="2" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="3" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="4" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="5" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="6" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="7" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="8" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="9" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="10" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="11" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+            </Divisions>
+        </Grid2D>
+        <X-Axis>
+            <Type Overhead="0" Value="0">
+                <Log LogDecades="0"/>
+            </Type>
+            <Limits Type="1"/>
+            <Units UnitSystem="0"/>
+            <Label Enabled="1" IncludeMeasureType="1" IncludeUnit="1" SingleLine="1">
+                <TextLines IsAuto="1"/>
+                <Style Angle="0" Color="3355443" TextJust="1" useGlobalFontSetting="1">
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="3">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+            </Label>
+            <Number Enabled="1">
+                <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                    <NumberFormat decimalPlace="3" formatOption="0"/>
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="2">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+            </Number>
+        </X-Axis>
+        <Y-Axis UseLowerLimitForBar="0">
+            <Type Overhead="0" Value="0">
+                <Log LogDecades="0"/>
+            </Type>
+            <Limits Type="1"/>
+            <Units UnitSystem="6"/>
+            <Label Enabled="1" IncludeMeasureType="1" IncludeUnit="1" SingleLine="1">
+                <TextLines IsAuto="1"/>
+                <Style Angle="90" Color="3355443" TextJust="1" useGlobalFontSetting="1">
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="3">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="1" Left="0.5" Right="0.5" Top="1"/>
+                </TextBox>
+            </Label>
+            <Number Enabled="1">
+                <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                    <NumberFormat decimalPlace="3" formatOption="0"/>
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="2">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+            </Number>
+        </Y-Axis>
+        <Angle-Axis Enabled="1">
+            <AngleAxisLine Color="0" Font="4" Width="5"/>
+            <Number>
+                <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="2">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+            </Number>
+            <DisplayUnit AngleUnit="0"/>
+        </Angle-Axis>
+        <Probing>
+            <ProbingText>
+                <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                    <NumberFormat decimalPlace="3" formatOption="0"/>
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="2">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="1">
+                    <Style FillColor="16768058" Filled="1"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+                <Leader>
+                    <Line Color="134" Font="1" Width="2"/>
+                    <Anchor Color="134" PointMarker="4"/>
+                </Leader>
+            </ProbingText>
+            <HelpLine Color="3700928" Font="1" Width="2"/>
+            <StepLine Color="3700928" Font="2" Width="1"/>
+        </Probing>
+        <LegendTableGroup Enabled="1">
+            <FloatingLegendTable Enabled="1">
+                <GridLineStyle Color="3355443" Enabled="1" Font="1" Width="7"/>
+                <BorderLineStyle Color="3355443" Enabled="1" Font="1" Width="9"/>
+                <Header Color="10079487" Enabled="0"/>
+                <LegendTableText>
+                    <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                        <NumberFormat decimalPlace="3" formatOption="0"/>
+                        <GlobalFont automaticScaling="1" fontScale="1"/>
+                        <LocalFont FontType="0" Size="2">
+                            <NXFont Font="ideas_simplex" Thickness="1"/>
+                            <StandardFont Font="Times New Roman" fontStyle="0"/>
+                        </LocalFont>
+                    </Style>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </LegendTableText>
+                <MaximumLegendItemCount>10</MaximumLegendItemCount>
+                <GridBackground Color="16777215" Enabled="1"/>
+                <Position X="0.86" Y="0.91" Z="0"/>
+                <ColumnTitles>
+                    <Item Index="0" Name="Free Text"/>
+                </ColumnTitles>
+            </FloatingLegendTable>
+            <DockedLegendTable Enabled="0">
+                <GridLineStyle Color="3355443" Enabled="1" Font="1" Width="7"/>
+                <BorderLineStyle Color="3355443" Enabled="1" Font="1" Width="9"/>
+                <Header Color="10079487" Enabled="1"/>
+                <LegendTableText>
+                    <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                        <NumberFormat decimalPlace="3" formatOption="0"/>
+                        <GlobalFont automaticScaling="1" fontScale="1"/>
+                        <LocalFont FontType="0" Size="2">
+                            <NXFont Font="ideas_simplex" Thickness="1"/>
+                            <StandardFont Font="Times New Roman" fontStyle="0"/>
+                        </LocalFont>
+                    </Style>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </LegendTableText>
+                <MaximumLegendItemCount>10</MaximumLegendItemCount>
+                <GridBackground Color="16777215" Enabled="0"/>
+                <ColumnTitles>
+                    <Item Index="0" Name="Record Name"/>
+                    <Item Index="1" Name="Function Type"/>
+                </ColumnTitles>
+            </DockedLegendTable>
+        </LegendTableGroup>
+        <Pan>
+            <ToolPosition XPos="0.5" YPos="0.5" ZPos="0.5"/>
+            <ToolSize Size="1"/>
+        </Pan>
+        <FormulaGrid Enabled="0">
+            <FormulaExpression FormulaGridType="0" IncludeNegativeInfinity="1" IncludePositiveInfinity="0" VariableValues="-1.000000,0.000000,0.500000,0.700000"/>
+            <FormulaGridLine Color="0" Font="2" Width="5"/>
+            <FormulaGridValueText>
+                <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                    <NumberFormat decimalPlace="3" formatOption="0"/>
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="2">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="1">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+            </FormulaGridValueText>
+        </FormulaGrid>
+        <CalculationLegendTable Enabled="1">
+            <GridLineStyle Color="3355443" Enabled="1" Font="1" Width="7"/>
+            <BorderLineStyle Color="3355443" Enabled="1" Font="1" Width="9"/>
+            <Header Color="10079487" Enabled="1"/>
+            <LegendTableText>
+                <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                    <NumberFormat decimalPlace="3" formatOption="0"/>
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="2">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </LegendTableText>
+            <MaximumLegendItemCount>10</MaximumLegendItemCount>
+            <GridBackground Color="16777215" Enabled="1"/>
+            <Position X="0.5182295505806502" Y="0.852268940306513" Z="0"/>
+            <ColumnTitles>
+                <Item Index="0" Name="Max Amplitude"/>
+                <Item Index="1" Name="Min Amplitude"/>
+                <Item Index="2" Name="RMS"/>
+                <Item Index="3" Name="Linear Averaging"/>
+            </ColumnTitles>
+        </CalculationLegendTable>
+    </WallDisplayStyles2D>
+    <DiagramDisplayStyles2D DisplayStyleAssignment="">
+        <Item Active="0" Index="0" StyleName="NO.1">
+            <CurveStyle LineFont="1" LineWidth="9" OutlineColor="16711680" PointMarker="0"/>
+            <BarStyle BarWidth="50" ConstBarWidth="2" FillColor="10092543" OutlineColor="53199" PointMarker="0" ShowConstBarWidth="0" ShowOutline="0"/>
+            <ScatterStyle Color="16711680" PointMarker="1"/>
+            <VectorStyle AutoTextCount="1" DrawText="1" LineFont="1" LineWidth="9" MaximumTextCount="10" OutlineColor="16711680,255,39168,16750848,6697932,10040166,6737151,10406461,6710835,16711935," OverlapTextAndVector="0" PointMarker="0"/>
+            <GraphOptions FrequencyBandSummationBandType="0" FrequencyBandSummationBandTypeMode="0" FrequencyBandSummationDisplayMode="0" ShowFrequencyBandSummation="0" ShowTotalResponseForPolar="1" ShowTotalResponseForVector="1">
+                <TotalResponseLine Color="0" Font="4" Width="5"/>
+            </GraphOptions>
+        </Item>
+        <Item Active="0" Index="1" StyleName="NO.2">
+            <CurveStyle LineFont="1" LineWidth="9" OutlineColor="255" PointMarker="0"/>
+            <BarStyle BarWidth="50" ConstBarWidth="2" FillColor="16105432" OutlineColor="15363749" PointMarker="0" ShowConstBarWidth="0" ShowOutline="0"/>
+            <ScatterStyle Color="255" PointMarker="1"/>
+            <VectorStyle AutoTextCount="1" DrawText="1" LineFont="4" LineWidth="9" MaximumTextCount="10" OutlineColor="255,39168,16750848,6697932,10040166,6737151,10406461,6710835,16711935,16711680," OverlapTextAndVector="0" PointMarker="0"/>
+            <GraphOptions FrequencyBandSummationBandType="0" FrequencyBandSummationBandTypeMode="0" FrequencyBandSummationDisplayMode="0" ShowFrequencyBandSummation="0" ShowTotalResponseForPolar="1" ShowTotalResponseForVector="1">
+                <TotalResponseLine Color="0" Font="4" Width="5"/>
+            </GraphOptions>
+        </Item>
+        <Item Active="0" Index="2" StyleName="NO.3">
+            <CurveStyle LineFont="1" LineWidth="9" OutlineColor="39168" PointMarker="0"/>
+            <BarStyle BarWidth="50" ConstBarWidth="2" FillColor="16760908" OutlineColor="16737792" PointMarker="0" ShowConstBarWidth="0" ShowOutline="0"/>
+            <ScatterStyle Color="39168" PointMarker="1"/>
+            <VectorStyle AutoTextCount="1" DrawText="1" LineFont="1" LineWidth="9" MaximumTextCount="10" OutlineColor="39168,16750848,6697932,10040166,6737151,10406461,6710835,16711935,16711680,255," OverlapTextAndVector="0" PointMarker="0"/>
+            <GraphOptions FrequencyBandSummationBandType="0" FrequencyBandSummationBandTypeMode="0" FrequencyBandSummationDisplayMode="0" ShowFrequencyBandSummation="0" ShowTotalResponseForPolar="1" ShowTotalResponseForVector="1">
+                <TotalResponseLine Color="0" Font="4" Width="5"/>
+            </GraphOptions>
+        </Item>
+        <Item Active="0" Index="3" StyleName="NO.4">
+            <CurveStyle LineFont="1" LineWidth="9" OutlineColor="16750848" PointMarker="0"/>
+            <BarStyle BarWidth="50" ConstBarWidth="2" FillColor="3381555" OutlineColor="1853699" PointMarker="0" ShowConstBarWidth="0" ShowOutline="0"/>
+            <ScatterStyle Color="16750848" PointMarker="1"/>
+            <VectorStyle AutoTextCount="1" DrawText="1" LineFont="4" LineWidth="9" MaximumTextCount="10" OutlineColor="16750848,6697932,10040166,6737151,10406461,6710835,16711935,16711680,255,39168," OverlapTextAndVector="0" PointMarker="0"/>
+            <GraphOptions FrequencyBandSummationBandType="0" FrequencyBandSummationBandTypeMode="0" FrequencyBandSummationDisplayMode="0" ShowFrequencyBandSummation="0" ShowTotalResponseForPolar="1" ShowTotalResponseForVector="1">
+                <TotalResponseLine Color="0" Font="4" Width="5"/>
+            </GraphOptions>
+        </Item>
+        <Item Active="0" Index="4" StyleName="NO.5">
+            <CurveStyle LineFont="1" LineWidth="9" OutlineColor="6697932" PointMarker="0"/>
+            <BarStyle BarWidth="50" ConstBarWidth="2" FillColor="7760534" OutlineColor="4076372" PointMarker="0" ShowConstBarWidth="0" ShowOutline="0"/>
+            <ScatterStyle Color="6697932" PointMarker="1"/>
+            <VectorStyle AutoTextCount="1" DrawText="1" LineFont="1" LineWidth="9" MaximumTextCount="10" OutlineColor="6697932,10040166,6737151,10406461,6710835,16711935,16711680,255,39168,16750848," OverlapTextAndVector="0" PointMarker="0"/>
+            <GraphOptions FrequencyBandSummationBandType="0" FrequencyBandSummationBandTypeMode="0" FrequencyBandSummationDisplayMode="0" ShowFrequencyBandSummation="0" ShowTotalResponseForPolar="1" ShowTotalResponseForVector="1">
+                <TotalResponseLine Color="0" Font="4" Width="5"/>
+            </GraphOptions>
+        </Item>
+        <Item Active="0" Index="5" StyleName="NO.6">
+            <CurveStyle LineFont="1" LineWidth="9" OutlineColor="10040166" PointMarker="0"/>
+            <BarStyle BarWidth="50" ConstBarWidth="2" FillColor="13408563" OutlineColor="6697728" PointMarker="0" ShowConstBarWidth="0" ShowOutline="0"/>
+            <ScatterStyle Color="10040166" PointMarker="1"/>
+            <VectorStyle AutoTextCount="1" DrawText="1" LineFont="4" LineWidth="9" MaximumTextCount="10" OutlineColor="10040166,6737151,10406461,6710835,16711935,16711680,255,39168,16750848,6697932," OverlapTextAndVector="0" PointMarker="0"/>
+            <GraphOptions FrequencyBandSummationBandType="0" FrequencyBandSummationBandTypeMode="0" FrequencyBandSummationDisplayMode="0" ShowFrequencyBandSummation="0" ShowTotalResponseForPolar="1" ShowTotalResponseForVector="1">
+                <TotalResponseLine Color="0" Font="4" Width="5"/>
+            </GraphOptions>
+        </Item>
+        <Item Active="0" Index="6" StyleName="NO.7">
+            <CurveStyle LineFont="1" LineWidth="9" OutlineColor="6737151" PointMarker="0"/>
+            <BarStyle BarWidth="50" ConstBarWidth="2" FillColor="13382451" OutlineColor="8257536" PointMarker="0" ShowConstBarWidth="0" ShowOutline="0"/>
+            <ScatterStyle Color="6737151" PointMarker="1"/>
+            <VectorStyle AutoTextCount="1" DrawText="1" LineFont="1" LineWidth="9" MaximumTextCount="10" OutlineColor="6737151,10406461,6710835,16711935,16711680,255,39168,16750848,6697932,10040166," OverlapTextAndVector="0" PointMarker="0"/>
+            <GraphOptions FrequencyBandSummationBandType="0" FrequencyBandSummationBandTypeMode="0" FrequencyBandSummationDisplayMode="0" ShowFrequencyBandSummation="0" ShowTotalResponseForPolar="1" ShowTotalResponseForVector="1">
+                <TotalResponseLine Color="0" Font="4" Width="5"/>
+            </GraphOptions>
+        </Item>
+        <Item Active="0" Index="7" StyleName="NO.8">
+            <CurveStyle LineFont="1" LineWidth="9" OutlineColor="10406461" PointMarker="0"/>
+            <BarStyle BarWidth="50" ConstBarWidth="2" FillColor="40409" OutlineColor="16222" PointMarker="0" ShowConstBarWidth="0" ShowOutline="0"/>
+            <ScatterStyle Color="10406461" PointMarker="1"/>
+            <VectorStyle AutoTextCount="1" DrawText="1" LineFont="4" LineWidth="9" MaximumTextCount="10" OutlineColor="10406461,6710835,16711935,16711680,255,39168,16750848,6697932,10040166,6737151," OverlapTextAndVector="0" PointMarker="0"/>
+            <GraphOptions FrequencyBandSummationBandType="0" FrequencyBandSummationBandTypeMode="0" FrequencyBandSummationDisplayMode="0" ShowFrequencyBandSummation="0" ShowTotalResponseForPolar="1" ShowTotalResponseForVector="1">
+                <TotalResponseLine Color="0" Font="4" Width="5"/>
+            </GraphOptions>
+        </Item>
+        <Item Active="0" Index="8" StyleName="NO.9">
+            <CurveStyle LineFont="1" LineWidth="9" OutlineColor="6710835" PointMarker="0"/>
+            <BarStyle BarWidth="50" ConstBarWidth="2" FillColor="13421619" OutlineColor="7301120" PointMarker="0" ShowConstBarWidth="0" ShowOutline="0"/>
+            <ScatterStyle Color="6710835" PointMarker="1"/>
+            <VectorStyle AutoTextCount="1" DrawText="1" LineFont="1" LineWidth="9" MaximumTextCount="10" OutlineColor="6710835,16711935,16711680,255,39168,16750848,6697932,10040166,6737151,10406461," OverlapTextAndVector="0" PointMarker="0"/>
+            <GraphOptions FrequencyBandSummationBandType="0" FrequencyBandSummationBandTypeMode="0" FrequencyBandSummationDisplayMode="0" ShowFrequencyBandSummation="0" ShowTotalResponseForPolar="1" ShowTotalResponseForVector="1">
+                <TotalResponseLine Color="0" Font="4" Width="5"/>
+            </GraphOptions>
+        </Item>
+        <Item Active="0" Index="9" StyleName="NO.10">
+            <CurveStyle LineFont="1" LineWidth="9" OutlineColor="16711935" PointMarker="0"/>
+            <BarStyle BarWidth="50" ConstBarWidth="2" FillColor="13421772" OutlineColor="10066329" PointMarker="0" ShowConstBarWidth="0" ShowOutline="0"/>
+            <ScatterStyle Color="16711935" PointMarker="1"/>
+            <VectorStyle AutoTextCount="1" DrawText="1" LineFont="4" LineWidth="9" MaximumTextCount="10" OutlineColor="16711935,16711680,255,39168,16750848,6697932,10040166,6737151,10406461,6710835," OverlapTextAndVector="0" PointMarker="0"/>
+            <GraphOptions FrequencyBandSummationBandType="0" FrequencyBandSummationBandTypeMode="0" FrequencyBandSummationDisplayMode="0" ShowFrequencyBandSummation="0" ShowTotalResponseForPolar="1" ShowTotalResponseForVector="1">
+                <TotalResponseLine Color="0" Font="4" Width="5"/>
+            </GraphOptions>
+        </Item>
+        <Item Active="0" Index="10" StyleName="NO.11">
+            <CurveStyle LineFont="2" LineWidth="9" OutlineColor="16711680" PointMarker="0"/>
+            <BarStyle BarWidth="50" ConstBarWidth="2" FillColor="16773246" OutlineColor="16763392" PointMarker="0" ShowConstBarWidth="0" ShowOutline="0"/>
+            <ScatterStyle Color="6697932" PointMarker="1"/>
+            <VectorStyle AutoTextCount="1" DrawText="1" LineFont="1" LineWidth="9" MaximumTextCount="10" OutlineColor="16711680,255,39168,16750848,6697932,10040166,6737151,10406461,6710835,16711935," OverlapTextAndVector="0" PointMarker="0"/>
+            <GraphOptions FrequencyBandSummationBandType="0" FrequencyBandSummationBandTypeMode="0" FrequencyBandSummationDisplayMode="0" ShowFrequencyBandSummation="0" ShowTotalResponseForPolar="1" ShowTotalResponseForVector="1">
+                <TotalResponseLine Color="0" Font="4" Width="5"/>
+            </GraphOptions>
+        </Item>
+        <Item Active="0" Index="11" StyleName="NO.12">
+            <CurveStyle LineFont="2" LineWidth="9" OutlineColor="255" PointMarker="0"/>
+            <BarStyle BarWidth="50" ConstBarWidth="2" FillColor="13434726" OutlineColor="11133696" PointMarker="0" ShowConstBarWidth="0" ShowOutline="0"/>
+            <ScatterStyle Color="255" PointMarker="1"/>
+            <VectorStyle AutoTextCount="1" DrawText="1" LineFont="4" LineWidth="9" MaximumTextCount="10" OutlineColor="255,39168,16750848,6697932,10040166,6737151,10406461,6710835,16711935,16711680," OverlapTextAndVector="0" PointMarker="0"/>
+            <GraphOptions FrequencyBandSummationBandType="0" FrequencyBandSummationBandTypeMode="0" FrequencyBandSummationDisplayMode="0" ShowFrequencyBandSummation="0" ShowTotalResponseForPolar="1" ShowTotalResponseForVector="1">
+                <TotalResponseLine Color="0" Font="4" Width="5"/>
+            </GraphOptions>
+        </Item>
+        <Item Active="0" Index="12" StyleName="NO.13">
+            <CurveStyle LineFont="2" LineWidth="9" OutlineColor="39168" PointMarker="0"/>
+            <BarStyle BarWidth="50" ConstBarWidth="2" FillColor="7536589" OutlineColor="44133" PointMarker="0" ShowConstBarWidth="0" ShowOutline="0"/>
+            <ScatterStyle Color="39168" PointMarker="1"/>
+            <VectorStyle AutoTextCount="1" DrawText="1" LineFont="1" LineWidth="9" MaximumTextCount="10" OutlineColor="39168,16750848,6697932,10040166,6737151,10406461,6710835,16711935,16711680,255," OverlapTextAndVector="0" PointMarker="0"/>
+            <GraphOptions FrequencyBandSummationBandType="0" FrequencyBandSummationBandTypeMode="0" FrequencyBandSummationDisplayMode="0" ShowFrequencyBandSummation="0" ShowTotalResponseForPolar="1" ShowTotalResponseForVector="1">
+                <TotalResponseLine Color="0" Font="4" Width="5"/>
+            </GraphOptions>
+        </Item>
+        <Item Active="0" Index="13" StyleName="NO.14">
+            <CurveStyle LineFont="2" LineWidth="9" OutlineColor="16750848" PointMarker="0"/>
+            <BarStyle BarWidth="50" ConstBarWidth="2" FillColor="12595364" OutlineColor="6619204" PointMarker="0" ShowConstBarWidth="0" ShowOutline="0"/>
+            <ScatterStyle Color="16750848" PointMarker="1"/>
+            <VectorStyle AutoTextCount="1" DrawText="1" LineFont="4" LineWidth="9" MaximumTextCount="10" OutlineColor="16750848,6697932,10040166,6737151,10406461,6710835,16711935,16711680,255,39168," OverlapTextAndVector="0" PointMarker="0"/>
+            <GraphOptions FrequencyBandSummationBandType="0" FrequencyBandSummationBandTypeMode="0" FrequencyBandSummationDisplayMode="0" ShowFrequencyBandSummation="0" ShowTotalResponseForPolar="1" ShowTotalResponseForVector="1">
+                <TotalResponseLine Color="0" Font="4" Width="5"/>
+            </GraphOptions>
+        </Item>
+        <Item Active="0" Index="14" StyleName="NO.15">
+            <CurveStyle LineFont="2" LineWidth="9" OutlineColor="6697932" PointMarker="0"/>
+            <BarStyle BarWidth="50" ConstBarWidth="2" FillColor="4284671" OutlineColor="192" PointMarker="0" ShowConstBarWidth="0" ShowOutline="0"/>
+            <ScatterStyle Color="6697932" PointMarker="1"/>
+            <VectorStyle AutoTextCount="1" DrawText="1" LineFont="1" LineWidth="9" MaximumTextCount="10" OutlineColor="6697932,10040166,6737151,10406461,6710835,16711935,16711680,255,39168,16750848," OverlapTextAndVector="0" PointMarker="0"/>
+            <GraphOptions FrequencyBandSummationBandType="0" FrequencyBandSummationBandTypeMode="0" FrequencyBandSummationDisplayMode="0" ShowFrequencyBandSummation="0" ShowTotalResponseForPolar="1" ShowTotalResponseForVector="1">
+                <TotalResponseLine Color="0" Font="4" Width="5"/>
+            </GraphOptions>
+        </Item>
+        <Item Active="0" Index="15" StyleName="NO.16">
+            <CurveStyle LineFont="2" LineWidth="9" OutlineColor="10040166" PointMarker="0"/>
+            <BarStyle BarWidth="50" ConstBarWidth="2" FillColor="11781088" OutlineColor="6724044" PointMarker="0" ShowConstBarWidth="0" ShowOutline="0"/>
+            <ScatterStyle Color="10040166" PointMarker="1"/>
+            <VectorStyle AutoTextCount="1" DrawText="1" LineFont="4" LineWidth="9" MaximumTextCount="10" OutlineColor="10040166,6737151,10406461,6710835,16711935,16711680,255,39168,16750848,6697932," OverlapTextAndVector="0" PointMarker="0"/>
+            <GraphOptions FrequencyBandSummationBandType="0" FrequencyBandSummationBandTypeMode="0" FrequencyBandSummationDisplayMode="0" ShowFrequencyBandSummation="0" ShowTotalResponseForPolar="1" ShowTotalResponseForVector="1">
+                <TotalResponseLine Color="0" Font="4" Width="5"/>
+            </GraphOptions>
+        </Item>
+        <Item Active="0" Index="16" StyleName="NO.17">
+            <CurveStyle LineFont="2" LineWidth="9" OutlineColor="6737151" PointMarker="0"/>
+            <BarStyle BarWidth="50" ConstBarWidth="2" FillColor="16774567" OutlineColor="16771170" PointMarker="0" ShowConstBarWidth="0" ShowOutline="0"/>
+            <ScatterStyle Color="6737151" PointMarker="1"/>
+            <VectorStyle AutoTextCount="1" DrawText="1" LineFont="1" LineWidth="9" MaximumTextCount="10" OutlineColor="6737151,10406461,6710835,16711935,16711680,255,39168,16750848,6697932,10040166," OverlapTextAndVector="0" PointMarker="0"/>
+            <GraphOptions FrequencyBandSummationBandType="0" FrequencyBandSummationBandTypeMode="0" FrequencyBandSummationDisplayMode="0" ShowFrequencyBandSummation="0" ShowTotalResponseForPolar="1" ShowTotalResponseForVector="1">
+                <TotalResponseLine Color="0" Font="4" Width="5"/>
+            </GraphOptions>
+        </Item>
+        <Item Active="0" Index="17" StyleName="NO.18">
+            <CurveStyle LineFont="2" LineWidth="9" OutlineColor="10406461" PointMarker="0"/>
+            <BarStyle BarWidth="50" ConstBarWidth="2" FillColor="10053222" OutlineColor="6684672" PointMarker="0" ShowConstBarWidth="0" ShowOutline="0"/>
+            <ScatterStyle Color="10406461" PointMarker="1"/>
+            <VectorStyle AutoTextCount="1" DrawText="1" LineFont="4" LineWidth="9" MaximumTextCount="10" OutlineColor="10406461,6710835,16711935,16711680,255,39168,16750848,6697932,10040166,6737151," OverlapTextAndVector="0" PointMarker="0"/>
+            <GraphOptions FrequencyBandSummationBandType="0" FrequencyBandSummationBandTypeMode="0" FrequencyBandSummationDisplayMode="0" ShowFrequencyBandSummation="0" ShowTotalResponseForPolar="1" ShowTotalResponseForVector="1">
+                <TotalResponseLine Color="0" Font="4" Width="5"/>
+            </GraphOptions>
+        </Item>
+        <Item Active="0" Index="18" StyleName="NO.19">
+            <CurveStyle LineFont="2" LineWidth="9" OutlineColor="6710835" PointMarker="0"/>
+            <BarStyle BarWidth="50" ConstBarWidth="2" FillColor="10540200" OutlineColor="6194495" PointMarker="0" ShowConstBarWidth="0" ShowOutline="0"/>
+            <ScatterStyle Color="6710835" PointMarker="1"/>
+            <VectorStyle AutoTextCount="1" DrawText="1" LineFont="1" LineWidth="9" MaximumTextCount="10" OutlineColor="6710835,16711935,16711680,255,39168,16750848,6697932,10040166,6737151,10406461," OverlapTextAndVector="0" PointMarker="0"/>
+            <GraphOptions FrequencyBandSummationBandType="0" FrequencyBandSummationBandTypeMode="0" FrequencyBandSummationDisplayMode="0" ShowFrequencyBandSummation="0" ShowTotalResponseForPolar="1" ShowTotalResponseForVector="1">
+                <TotalResponseLine Color="0" Font="4" Width="5"/>
+            </GraphOptions>
+        </Item>
+        <Item Active="0" Index="19" StyleName="NO.20">
+            <CurveStyle LineFont="2" LineWidth="9" OutlineColor="16711935" PointMarker="0"/>
+            <BarStyle BarWidth="50" ConstBarWidth="2" FillColor="16739839" OutlineColor="13382604" PointMarker="0" ShowConstBarWidth="0" ShowOutline="0"/>
+            <ScatterStyle Color="16711935" PointMarker="1"/>
+            <VectorStyle AutoTextCount="1" DrawText="1" LineFont="4" LineWidth="9" MaximumTextCount="10" OutlineColor="16711935,16711680,255,39168,16750848,6697932,10040166,6737151,10406461,6710835," OverlapTextAndVector="0" PointMarker="0"/>
+            <GraphOptions FrequencyBandSummationBandType="0" FrequencyBandSummationBandTypeMode="0" FrequencyBandSummationDisplayMode="0" ShowFrequencyBandSummation="0" ShowTotalResponseForPolar="1" ShowTotalResponseForVector="1">
+                <TotalResponseLine Color="0" Font="4" Width="5"/>
+            </GraphOptions>
+        </Item>
+    </DiagramDisplayStyles2D>
+    <GeneralDisplayStyles3D>
+        <PhaseDisplayRangeOption>0</PhaseDisplayRangeOption>
+        <ComplexOption3D>0</ComplexOption3D>
+    </GeneralDisplayStyles3D>
+    <WallDisplayStyles3D>
+        <Title Enabled="1">
+            <TextLines IsAuto="1"/>
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="4">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="0">
+                <Style FillColor="10079487" Filled="0"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+        </Title>
+        <Marker>
+            <NumberText ShowNumber="1"/>
+            <NoteText ShowNote="0"/>
+            <Attachment AbsPercentage="0.5" SnapToData="0" Type="1"/>
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <NumberFormat decimalPlace="3" formatOption="0"/>
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="2">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="1">
+                <Style FillColor="16768058" Filled="1"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+            <Leader>
+                <Line Color="134" Font="1" Width="2"/>
+                <Anchor Color="134" PointMarker="4"/>
+            </Leader>
+        </Marker>
+        <Note>
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="2">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="1">
+                <Style FillColor="10079487" Filled="0"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+        </Note>
+        <GraphName Enabled="1">
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="2">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="0">
+                <Style FillColor="10079487" Filled="0"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+            <Position Option="0"/>
+        </GraphName>
+        <PageNumber Enabled="1">
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="2">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="0">
+                <Style FillColor="10079487" Filled="0"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+        </PageNumber>
+        <Grid3D>
+            <Layout>
+                <MajorGrid Color="3355443" Font="1" Width="2"/>
+                <DenseGrid Color="13421772" Font="1" Width="2"/>
+                <Ticks Color="3355443" Font="1" Width="2"/>
+                <GraphBackground Color="10079487" Enabled="0"/>
+                <PlaneBackground Color="10079487" Enabled="0"/>
+                <Contouring Enabled="0" Level="4" Type="0"/>
+                <XYPlane Type="3"/>
+                <ZYPlane Type="3"/>
+                <ZXPlane Type="3"/>
+            </Layout>
+            <Divisions>
+                <Item Index="0" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="1" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="2" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="3" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="4" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="5" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="6" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="7" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="8" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="9" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="10" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="11" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+            </Divisions>
+        </Grid3D>
+        <X-Axis>
+            <Type Overhead="0" Value="0">
+                <Log LogDecades="0"/>
+            </Type>
+            <Limits Type="1"/>
+            <Units UnitSystem="0"/>
+            <Label Enabled="1" IncludeMeasureType="1" IncludeUnit="1" SingleLine="1">
+                <TextLines IsAuto="1"/>
+                <Style Angle="0" Color="3355443" TextJust="1" useGlobalFontSetting="1">
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="3">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+            </Label>
+            <Number Enabled="1">
+                <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                    <NumberFormat decimalPlace="3" formatOption="0"/>
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="2">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+            </Number>
+        </X-Axis>
+        <Y-Axis>
+            <Type Overhead="0" Value="0">
+                <Log LogDecades="0"/>
+            </Type>
+            <Limits Type="1"/>
+            <Units UnitSystem="0"/>
+            <Label Enabled="1" IncludeMeasureType="1" IncludeUnit="1" SingleLine="1">
+                <TextLines IsAuto="1"/>
+                <Style Angle="90" Color="3355443" TextJust="1" useGlobalFontSetting="1">
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="3">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="1" Left="0.5" Right="0.5" Top="1"/>
+                </TextBox>
+            </Label>
+            <Number Enabled="1">
+                <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                    <NumberFormat decimalPlace="3" formatOption="0"/>
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="2">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+            </Number>
+        </Y-Axis>
+        <Z-Axis>
+            <Type Overhead="0" Value="0">
+                <Log LogDecades="0"/>
+            </Type>
+            <Limits Type="1"/>
+            <Units UnitSystem="0"/>
+            <Label Enabled="1" IncludeMeasureType="1" IncludeUnit="1" SingleLine="1">
+                <TextLines IsAuto="1"/>
+                <Style Angle="0" Color="3355443" TextJust="1" useGlobalFontSetting="1">
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="3">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+            </Label>
+            <Number Enabled="1">
+                <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                    <NumberFormat decimalPlace="3" formatOption="0"/>
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="2">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+            </Number>
+        </Z-Axis>
+        <Probing>
+            <ProbingText>
+                <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                    <NumberFormat decimalPlace="3" formatOption="0"/>
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="2">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="1">
+                    <Style FillColor="16768058" Filled="1"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+                <Leader>
+                    <Line Color="134" Font="1" Width="2"/>
+                    <Anchor Color="134" PointMarker="4"/>
+                </Leader>
+            </ProbingText>
+            <HelpLine Color="3700928" Font="1" Width="2"/>
+            <StepLine Color="3700928" Font="2" Width="1"/>
+        </Probing>
+        <LegendTableGroup Enabled="0">
+            <FloatingLegendTable Enabled="1">
+                <GridLineStyle Color="3355443" Enabled="1" Font="1" Width="7"/>
+                <BorderLineStyle Color="3355443" Enabled="1" Font="1" Width="9"/>
+                <Header Color="10079487" Enabled="0"/>
+                <LegendTableText>
+                    <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                        <NumberFormat decimalPlace="3" formatOption="0"/>
+                        <GlobalFont automaticScaling="1" fontScale="1"/>
+                        <LocalFont FontType="0" Size="2">
+                            <NXFont Font="ideas_simplex" Thickness="1"/>
+                            <StandardFont Font="Times New Roman" fontStyle="0"/>
+                        </LocalFont>
+                    </Style>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </LegendTableText>
+                <MaximumLegendItemCount>10</MaximumLegendItemCount>
+                <GridBackground Color="16777215" Enabled="1"/>
+                <Position X="0.9" Y="0.9" Z="0"/>
+                <ColumnTitles>
+                    <Item Index="0" Name="Free Text"/>
+                </ColumnTitles>
+            </FloatingLegendTable>
+            <DockedLegendTable Enabled="0">
+                <GridLineStyle Color="3355443" Enabled="1" Font="1" Width="7"/>
+                <BorderLineStyle Color="3355443" Enabled="1" Font="1" Width="9"/>
+                <Header Color="10079487" Enabled="1"/>
+                <LegendTableText>
+                    <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                        <NumberFormat decimalPlace="3" formatOption="0"/>
+                        <GlobalFont automaticScaling="1" fontScale="1"/>
+                        <LocalFont FontType="0" Size="2">
+                            <NXFont Font="ideas_simplex" Thickness="1"/>
+                            <StandardFont Font="Times New Roman" fontStyle="0"/>
+                        </LocalFont>
+                    </Style>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </LegendTableText>
+                <MaximumLegendItemCount>10</MaximumLegendItemCount>
+                <GridBackground Color="16777215" Enabled="0"/>
+                <ColumnTitles>
+                    <Item Index="0" Name="Record Name"/>
+                    <Item Index="1" Name="Function Type"/>
+                </ColumnTitles>
+            </DockedLegendTable>
+        </LegendTableGroup>
+        <Pan>
+            <ToolPosition XPos="0.5" YPos="0.5" ZPos="0.5"/>
+            <ToolSize Size="1"/>
+        </Pan>
+        <ViewOrientation X1="0.9346314105891125" X2="-0.04456272831185715" X3="0.3528148091925983" Y1="0.005127639784137529" Y2="0.9937031488153312" Y3="0.1119274735922329" Z1="-0.3555809804396885" Z2="-0.1028018252751354" Z3="0.9289746773026972"/>
+    </WallDisplayStyles3D>
+    <DiagramDisplayStyles3D DisplayStyleAssignment="">
+        <Item Active="0" Index="0" StyleName="NO.1">
+            <CurveStyle Direction="0" LineFont="1" LineWidth="9" OutlineColor="16711680" PointMarker="0"/>
+            <BarStyle BarDepth="50" BarWidth="50" ColorOption="0" FillColor="10092543" OutlineColor="53199" PointMarker="0" ShowOutline="0"/>
+            <ScatterStyle Color="16711680" PointMarker="1"/>
+            <SurfaceStyle ColorOption="2" FillColor="5177343" OutlineColor="16711680" PointMarker="0"/>
+        </Item>
+        <Item Active="0" Index="1" StyleName="NO.2">
+            <CurveStyle Direction="0" LineFont="2" LineWidth="9" OutlineColor="255" PointMarker="0"/>
+            <BarStyle BarDepth="50" BarWidth="50" ColorOption="0" FillColor="16105432" OutlineColor="15363749" PointMarker="0" ShowOutline="0"/>
+            <ScatterStyle Color="255" PointMarker="1"/>
+            <SurfaceStyle ColorOption="2" FillColor="15635901" OutlineColor="255" PointMarker="0"/>
+        </Item>
+        <Item Active="0" Index="2" StyleName="NO.3">
+            <CurveStyle Direction="0" LineFont="3" LineWidth="9" OutlineColor="39168" PointMarker="0"/>
+            <BarStyle BarDepth="50" BarWidth="50" ColorOption="0" FillColor="16760908" OutlineColor="16737792" PointMarker="0" ShowOutline="0"/>
+            <ScatterStyle Color="39168" PointMarker="1"/>
+            <SurfaceStyle ColorOption="2" FillColor="16750899" OutlineColor="39168" PointMarker="0"/>
+        </Item>
+        <Item Active="0" Index="3" StyleName="NO.4">
+            <CurveStyle Direction="0" LineFont="4" LineWidth="9" OutlineColor="16776960" PointMarker="0"/>
+            <BarStyle BarDepth="50" BarWidth="50" ColorOption="0" FillColor="3381555" OutlineColor="1853699" PointMarker="0" ShowOutline="0"/>
+            <ScatterStyle Color="16776960" PointMarker="1"/>
+            <SurfaceStyle ColorOption="2" FillColor="3381555" OutlineColor="16776960" PointMarker="0"/>
+        </Item>
+        <Item Active="0" Index="4" StyleName="NO.5">
+            <CurveStyle Direction="0" LineFont="5" LineWidth="9" OutlineColor="65535" PointMarker="0"/>
+            <BarStyle BarDepth="50" BarWidth="50" ColorOption="0" FillColor="7760534" OutlineColor="4076372" PointMarker="0" ShowOutline="0"/>
+            <ScatterStyle Color="65535" PointMarker="1"/>
+            <SurfaceStyle ColorOption="2" FillColor="7760534" OutlineColor="65535" PointMarker="0"/>
+        </Item>
+        <Item Active="0" Index="5" StyleName="NO.6">
+            <CurveStyle Direction="0" LineFont="6" LineWidth="9" OutlineColor="16711935" PointMarker="0"/>
+            <BarStyle BarDepth="50" BarWidth="50" ColorOption="0" FillColor="13408563" OutlineColor="6697728" PointMarker="0" ShowOutline="0"/>
+            <ScatterStyle Color="16711935" PointMarker="1"/>
+            <SurfaceStyle ColorOption="2" FillColor="4801838" OutlineColor="16711935" PointMarker="0"/>
+        </Item>
+        <Item Active="0" Index="6" StyleName="NO.7">
+            <CurveStyle Direction="0" LineFont="7" LineWidth="9" OutlineColor="6710835" PointMarker="0"/>
+            <BarStyle BarDepth="50" BarWidth="50" ColorOption="0" FillColor="13382451" OutlineColor="8257536" PointMarker="0" ShowOutline="0"/>
+            <ScatterStyle Color="6710835" PointMarker="1"/>
+            <SurfaceStyle ColorOption="2" FillColor="13382451" OutlineColor="6710835" PointMarker="0"/>
+        </Item>
+        <Item Active="0" Index="7" StyleName="NO.8">
+            <CurveStyle Direction="0" LineFont="1" LineWidth="9" OutlineColor="13605532" PointMarker="0"/>
+            <BarStyle BarDepth="50" BarWidth="50" ColorOption="0" FillColor="40409" OutlineColor="16222" PointMarker="0" ShowOutline="0"/>
+            <ScatterStyle Color="13605532" PointMarker="1"/>
+            <SurfaceStyle ColorOption="2" FillColor="16222" OutlineColor="13605532" PointMarker="0"/>
+        </Item>
+        <Item Active="0" Index="8" StyleName="NO.9">
+            <CurveStyle Direction="0" LineFont="2" LineWidth="9" OutlineColor="10053171" PointMarker="0"/>
+            <BarStyle BarDepth="50" BarWidth="50" ColorOption="0" FillColor="13421619" OutlineColor="7301120" PointMarker="0" ShowOutline="0"/>
+            <ScatterStyle Color="10053171" PointMarker="1"/>
+            <SurfaceStyle ColorOption="2" FillColor="40409" OutlineColor="10053171" PointMarker="0"/>
+        </Item>
+        <Item Active="0" Index="9" StyleName="NO.10">
+            <CurveStyle Direction="0" LineFont="3" LineWidth="9" OutlineColor="13211493" PointMarker="0"/>
+            <BarStyle BarDepth="50" BarWidth="50" ColorOption="0" FillColor="13421772" OutlineColor="10066329" PointMarker="0" ShowOutline="0"/>
+            <ScatterStyle Color="13211493" PointMarker="1"/>
+            <SurfaceStyle ColorOption="2" FillColor="13421772" OutlineColor="13211493" PointMarker="0"/>
+        </Item>
+        <Item Active="0" Index="10" StyleName="NO.11">
+            <CurveStyle Direction="0" LineFont="4" LineWidth="9" OutlineColor="6697932" PointMarker="0"/>
+            <BarStyle BarDepth="50" BarWidth="50" ColorOption="0" FillColor="16773246" OutlineColor="16763392" PointMarker="0" ShowOutline="0"/>
+            <ScatterStyle Color="6697932" PointMarker="1"/>
+            <SurfaceStyle ColorOption="2" FillColor="16737792" OutlineColor="6697932" PointMarker="0"/>
+        </Item>
+        <Item Active="0" Index="11" StyleName="NO.12">
+            <CurveStyle Direction="0" LineFont="5" LineWidth="9" OutlineColor="10040115" PointMarker="0"/>
+            <BarStyle BarDepth="50" BarWidth="50" ColorOption="0" FillColor="13434726" OutlineColor="11133696" PointMarker="0" ShowOutline="0"/>
+            <ScatterStyle Color="10040115" PointMarker="1"/>
+            <SurfaceStyle ColorOption="2" FillColor="11133696" OutlineColor="10040115" PointMarker="0"/>
+        </Item>
+        <Item Active="0" Index="12" StyleName="NO.13">
+            <CurveStyle Direction="0" LineFont="6" LineWidth="9" OutlineColor="2465701" PointMarker="0"/>
+            <BarStyle BarDepth="50" BarWidth="50" ColorOption="0" FillColor="7536589" OutlineColor="44133" PointMarker="0" ShowOutline="0"/>
+            <ScatterStyle Color="2465701" PointMarker="1"/>
+            <SurfaceStyle ColorOption="2" FillColor="16763392" OutlineColor="2465701" PointMarker="0"/>
+        </Item>
+        <Item Active="0" Index="13" StyleName="NO.14">
+            <CurveStyle Direction="0" LineFont="7" LineWidth="9" OutlineColor="3355443" PointMarker="0"/>
+            <BarStyle BarDepth="50" BarWidth="50" ColorOption="0" FillColor="12595364" OutlineColor="6619204" PointMarker="0" ShowOutline="0"/>
+            <ScatterStyle Color="3355443" PointMarker="1"/>
+            <SurfaceStyle ColorOption="2" FillColor="52614" OutlineColor="3355443" PointMarker="0"/>
+        </Item>
+        <Item Active="0" Index="14" StyleName="NO.15">
+            <CurveStyle Direction="0" LineFont="1" LineWidth="9" OutlineColor="13434777" PointMarker="0"/>
+            <BarStyle BarDepth="50" BarWidth="50" ColorOption="0" FillColor="4284671" OutlineColor="192" PointMarker="0" ShowOutline="0"/>
+            <ScatterStyle Color="13434777" PointMarker="1"/>
+            <SurfaceStyle ColorOption="2" FillColor="192" OutlineColor="13434777" PointMarker="0"/>
+        </Item>
+        <Item Active="0" Index="15" StyleName="NO.16">
+            <CurveStyle Direction="0" LineFont="2" LineWidth="9" OutlineColor="11133696" PointMarker="0"/>
+            <BarStyle BarDepth="50" BarWidth="50" ColorOption="0" FillColor="11781088" OutlineColor="6724044" PointMarker="0" ShowOutline="0"/>
+            <ScatterStyle Color="11133696" PointMarker="1"/>
+            <SurfaceStyle ColorOption="2" FillColor="9025279" OutlineColor="11133696" PointMarker="0"/>
+        </Item>
+        <Item Active="0" Index="16" StyleName="NO.17">
+            <CurveStyle Direction="0" LineFont="3" LineWidth="9" OutlineColor="8695195" PointMarker="0"/>
+            <BarStyle BarDepth="50" BarWidth="50" ColorOption="0" FillColor="16774567" OutlineColor="16771170" PointMarker="0" ShowOutline="0"/>
+            <ScatterStyle Color="8695195" PointMarker="1"/>
+            <SurfaceStyle ColorOption="2" FillColor="16774567" OutlineColor="8695195" PointMarker="0"/>
+        </Item>
+        <Item Active="0" Index="17" StyleName="NO.18">
+            <CurveStyle Direction="0" LineFont="4" LineWidth="9" OutlineColor="39423" PointMarker="0"/>
+            <BarStyle BarDepth="50" BarWidth="50" ColorOption="0" FillColor="10053222" OutlineColor="6684672" PointMarker="0" ShowOutline="0"/>
+            <ScatterStyle Color="39423" PointMarker="1"/>
+            <SurfaceStyle ColorOption="2" FillColor="10053222" OutlineColor="39423" PointMarker="0"/>
+        </Item>
+        <Item Active="0" Index="18" StyleName="NO.19">
+            <CurveStyle Direction="0" LineFont="5" LineWidth="9" OutlineColor="10774016" PointMarker="0"/>
+            <BarStyle BarDepth="50" BarWidth="50" ColorOption="0" FillColor="10540200" OutlineColor="6194495" PointMarker="0" ShowOutline="0"/>
+            <ScatterStyle Color="10774016" PointMarker="1"/>
+            <SurfaceStyle ColorOption="2" FillColor="8960880" OutlineColor="10774016" PointMarker="0"/>
+        </Item>
+        <Item Active="0" Index="19" StyleName="NO.20">
+            <CurveStyle Direction="0" LineFont="6" LineWidth="9" OutlineColor="22568" PointMarker="0"/>
+            <BarStyle BarDepth="50" BarWidth="50" ColorOption="0" FillColor="16739839" OutlineColor="13382604" PointMarker="0" ShowOutline="0"/>
+            <ScatterStyle Color="22568" PointMarker="1"/>
+            <SurfaceStyle ColorOption="2" FillColor="16726753" OutlineColor="22568" PointMarker="0"/>
+        </Item>
+    </DiagramDisplayStyles3D>
+    <GeneralDisplayStyles2DColorContour>
+        <PhaseDisplayRangeOption>0</PhaseDisplayRangeOption>
+        <ComplexOption2DColorContour>0</ComplexOption2DColorContour>
+    </GeneralDisplayStyles2DColorContour>
+    <WallDisplayStyles2DColorContour>
+        <Title Enabled="1">
+            <TextLines IsAuto="1"/>
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="4">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="0">
+                <Style FillColor="10079487" Filled="0"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+        </Title>
+        <Marker>
+            <NumberText ShowNumber="1"/>
+            <NoteText ShowNote="0"/>
+            <Attachment AbsPercentage="0.5" SnapToData="0" Type="1"/>
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <NumberFormat decimalPlace="3" formatOption="0"/>
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="2">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="1">
+                <Style FillColor="16768058" Filled="1"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+            <Leader>
+                <Line Color="134" Font="1" Width="2"/>
+                <Anchor Color="134" PointMarker="4"/>
+            </Leader>
+        </Marker>
+        <Note>
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="2">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="1">
+                <Style FillColor="10079487" Filled="0"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+        </Note>
+        <GraphName Enabled="1">
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="2">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="0">
+                <Style FillColor="10079487" Filled="0"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+            <Position Option="0"/>
+        </GraphName>
+        <PageNumber Enabled="1">
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="2">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="0">
+                <Style FillColor="10079487" Filled="0"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+        </PageNumber>
+        <ColorGrid>
+            <Layout>
+                <MajorGrid Color="3355443" Font="1" Width="2"/>
+                <DenseGrid Color="13421772" Font="1" Width="2"/>
+                <Ticks Color="3355443" Font="1" Width="2"/>
+                <GraphBackground Color="16777215" Enabled="1"/>
+                <PlaneBackground Color="10079487" Enabled="0"/>
+                <Contouring Enabled="0" Level="4" Type="0"/>
+                <XYPlane Type="2"/>
+            </Layout>
+            <Divisions>
+                <Item Index="0" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="1" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="2" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="3" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="4" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="5" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="6" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="7" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="8" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="9" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="10" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="11" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+            </Divisions>
+        </ColorGrid>
+        <X-Axis>
+            <Type Overhead="0" Value="0">
+                <Log LogDecades="0"/>
+            </Type>
+            <Limits Type="0"/>
+            <Units UnitSystem="0"/>
+            <Label Enabled="1" IncludeMeasureType="1" IncludeUnit="1" SingleLine="1">
+                <TextLines IsAuto="1"/>
+                <Style Angle="0" Color="3355443" TextJust="1" useGlobalFontSetting="1">
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="3">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+            </Label>
+            <Number Enabled="1">
+                <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                    <NumberFormat decimalPlace="3" formatOption="0"/>
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="2">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+            </Number>
+        </X-Axis>
+        <Y-Axis>
+            <Type Overhead="0" Value="0">
+                <Log LogDecades="0"/>
+            </Type>
+            <Limits Type="0"/>
+            <Units UnitSystem="0"/>
+            <Label Enabled="1" IncludeMeasureType="1" IncludeUnit="1" SingleLine="1">
+                <TextLines IsAuto="1"/>
+                <Style Angle="90" Color="3355443" TextJust="1" useGlobalFontSetting="1">
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="3">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="1" Left="0.5" Right="0.5" Top="1"/>
+                </TextBox>
+            </Label>
+            <Number Enabled="1">
+                <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                    <NumberFormat decimalPlace="3" formatOption="0"/>
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="2">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+            </Number>
+        </Y-Axis>
+        <Color-Axis>
+            <Type Overhead="0" Value="0">
+                <Log LogDecades="0"/>
+            </Type>
+            <Limits Type="0"/>
+            <Units UnitSystem="0"/>
+            <Label Enabled="1" IncludeMeasureType="1" IncludeUnit="1" SingleLine="0">
+                <TextLines IsAuto="1"/>
+                <Style Angle="0" Color="3355443" TextJust="1" useGlobalFontSetting="1">
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="3">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+            </Label>
+            <Number Enabled="1">
+                <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                    <NumberFormat decimalPlace="3" formatOption="0"/>
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="2">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+            </Number>
+            <ColorScale>
+                <Style Level="12" UseAutoLevel="0"/>
+                <ColorControl IsInverted="0" SpectrumType="3"/>
+                <CustomizedColorLegend AreColorsOverridden="0" AreValuesOverridden="0"/>
+            </ColorScale>
+            <ResultLegend Enabled="1">
+                <UnknownResultColor Color="1"/>
+                <OverflowResultColor ColorOption="1" ShadedColor="10079487"/>
+                <UnderflowResultColor ColorOption="1" ShadedColor="3355443"/>
+                <LegendTextStyle Enabled="1">
+                    <TextLines IsAuto="1"/>
+                    <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                        <GlobalFont automaticScaling="1" fontScale="1"/>
+                        <LocalFont FontType="0" Size="3">
+                            <NXFont Font="ideas_simplex" Thickness="1"/>
+                            <StandardFont Font="Times New Roman" fontStyle="0"/>
+                        </LocalFont>
+                    </Style>
+                    <TextBox Enabled="0">
+                        <Style FillColor="10079487" Filled="0"/>
+                        <LineStyle Color="3355443" Font="1" Width="7"/>
+                        <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                    </TextBox>
+                </LegendTextStyle>
+            </ResultLegend>
+        </Color-Axis>
+        <Y-Argument-Axis>
+            <Limits IsFreeLimits="1"/>
+            <Units UnitSystem="0"/>
+            <Label Enabled="1" IncludeMeasureType="1" IncludeUnit="1" SingleLine="1">
+                <TextLines IsAuto="1"/>
+                <Style Angle="90" Color="3355443" TextJust="1" useGlobalFontSetting="1">
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="3">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+            </Label>
+            <ItemText Enabled="1">
+                <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                    <NumberFormat decimalPlace="3" formatOption="0"/>
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="2">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+                <ItemTextLength>20</ItemTextLength>
+            </ItemText>
+        </Y-Argument-Axis>
+        <Probing>
+            <ProbingText>
+                <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                    <NumberFormat decimalPlace="3" formatOption="0"/>
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="2">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="1">
+                    <Style FillColor="16768058" Filled="1"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+                <Leader>
+                    <Line Color="134" Font="1" Width="2"/>
+                    <Anchor Color="134" PointMarker="4"/>
+                </Leader>
+            </ProbingText>
+            <HelpLine Color="3700928" Font="1" Width="2"/>
+            <StepLine Color="3700928" Font="2" Width="1"/>
+        </Probing>
+        <Pan>
+            <ToolPosition XPos="0.5" YPos="0.5" ZPos="0.5"/>
+            <ToolSize Size="1"/>
+        </Pan>
+    </WallDisplayStyles2DColorContour>
+    <DiagramDisplayStylesColorMap>
+        <GraphOptions>
+            <FrequencyBandSummation BandType="0" BandTypeMode="0" DisplayMode="0" Visibility="0"/>
+        </GraphOptions>
+    </DiagramDisplayStylesColorMap>
+    <WallDisplayStylesCampbell>
+        <Title Enabled="1">
+            <TextLines IsAuto="1"/>
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="4">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="0">
+                <Style FillColor="10079487" Filled="0"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+        </Title>
+        <Marker>
+            <NumberText ShowNumber="1"/>
+            <NoteText ShowNote="0"/>
+            <Attachment AbsPercentage="0.5" SnapToData="0" Type="1"/>
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <NumberFormat decimalPlace="3" formatOption="0"/>
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="2">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="1">
+                <Style FillColor="16768058" Filled="1"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+            <Leader>
+                <Line Color="134" Font="1" Width="2"/>
+                <Anchor Color="134" PointMarker="4"/>
+            </Leader>
+        </Marker>
+        <Note>
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="2">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="1">
+                <Style FillColor="10079487" Filled="0"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+        </Note>
+        <GraphName Enabled="1">
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="2">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="0">
+                <Style FillColor="10079487" Filled="0"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+            <Position Option="0"/>
+        </GraphName>
+        <PageNumber Enabled="1">
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="2">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="0">
+                <Style FillColor="10079487" Filled="0"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+        </PageNumber>
+        <Grid2D>
+            <Layout>
+                <MajorGrid Color="3355443" Font="1" Width="2"/>
+                <DenseGrid Color="13421772" Font="1" Width="2"/>
+                <Ticks Color="3355443" Font="1" Width="2"/>
+                <GraphBackground Color="16777215" Enabled="1"/>
+                <PlaneBackground Color="10079487" Enabled="0"/>
+                <Contouring Enabled="0" Level="4" Type="0"/>
+                <XYPlane Type="3"/>
+            </Layout>
+            <Divisions>
+                <Item Index="0" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="1" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="2" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="3" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="4" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="5" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="6" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="7" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="8" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="9" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="10" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="11" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+            </Divisions>
+        </Grid2D>
+        <X-Axis>
+            <Type Overhead="0" Value="0">
+                <Log LogDecades="0"/>
+            </Type>
+            <Limits Type="0"/>
+            <Units UnitSystem="0"/>
+            <Label Enabled="1" IncludeMeasureType="1" IncludeUnit="1" SingleLine="1">
+                <TextLines IsAuto="1"/>
+                <Style Angle="0" Color="3355443" TextJust="1" useGlobalFontSetting="1">
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="3">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+            </Label>
+            <Number Enabled="1">
+                <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                    <NumberFormat decimalPlace="3" formatOption="0"/>
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="2">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+            </Number>
+        </X-Axis>
+        <Y-Axis>
+            <Type Overhead="0" Value="0">
+                <Log LogDecades="0"/>
+            </Type>
+            <Limits Type="0"/>
+            <Units UnitSystem="0"/>
+            <Label Enabled="1" IncludeMeasureType="1" IncludeUnit="1" SingleLine="1">
+                <TextLines IsAuto="1"/>
+                <Style Angle="90" Color="3355443" TextJust="1" useGlobalFontSetting="1">
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="3">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="1" Left="0.5" Right="0.5" Top="1"/>
+                </TextBox>
+            </Label>
+            <Number Enabled="1">
+                <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                    <NumberFormat decimalPlace="3" formatOption="0"/>
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="2">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+            </Number>
+        </Y-Axis>
+        <Color-Axis>
+            <Type Overhead="0" Value="0">
+                <Log LogDecades="0"/>
+            </Type>
+            <Limits Type="0"/>
+            <Units UnitSystem="0"/>
+            <Label Enabled="1" IncludeMeasureType="1" IncludeUnit="1" SingleLine="0">
+                <TextLines IsAuto="1"/>
+                <Style Angle="0" Color="3355443" TextJust="1" useGlobalFontSetting="1">
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="3">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+            </Label>
+            <Number Enabled="1">
+                <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                    <NumberFormat decimalPlace="3" formatOption="0"/>
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="2">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+            </Number>
+            <ColorScale>
+                <Style Level="12" UseAutoLevel="0"/>
+                <ColorControl IsInverted="0" SpectrumType="0"/>
+                <CustomizedColorLegend AreColorsOverridden="0" AreValuesOverridden="0"/>
+            </ColorScale>
+            <ResultLegend Enabled="1">
+                <UnknownResultColor Color="1"/>
+                <OverflowResultColor ColorOption="0" ShadedColor="10079487"/>
+                <UnderflowResultColor ColorOption="0" ShadedColor="3355443"/>
+                <LegendTextStyle Enabled="1">
+                    <TextLines IsAuto="1"/>
+                    <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                        <GlobalFont automaticScaling="1" fontScale="1"/>
+                        <LocalFont FontType="0" Size="3">
+                            <NXFont Font="ideas_simplex" Thickness="1"/>
+                            <StandardFont Font="Times New Roman" fontStyle="0"/>
+                        </LocalFont>
+                    </Style>
+                    <TextBox Enabled="0">
+                        <Style FillColor="10079487" Filled="0"/>
+                        <LineStyle Color="3355443" Font="1" Width="7"/>
+                        <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                    </TextBox>
+                </LegendTextStyle>
+            </ResultLegend>
+        </Color-Axis>
+        <Probing>
+            <ProbingText>
+                <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                    <NumberFormat decimalPlace="3" formatOption="0"/>
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="2">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="1">
+                    <Style FillColor="16768058" Filled="1"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+                <Leader>
+                    <Line Color="134" Font="1" Width="2"/>
+                    <Anchor Color="134" PointMarker="4"/>
+                </Leader>
+            </ProbingText>
+            <HelpLine Color="3700928" Font="1" Width="2"/>
+            <StepLine Color="3700928" Font="2" Width="1"/>
+        </Probing>
+        <Pan>
+            <ToolPosition XPos="0.5" YPos="0.5" ZPos="0.5"/>
+            <ToolSize Size="1"/>
+        </Pan>
+    </WallDisplayStylesCampbell>
+    <GeneralDisplayStyles2DBarChart>
+        <PhaseDisplayRangeOption>0</PhaseDisplayRangeOption>
+        <ComplexOption2DBarChart>0</ComplexOption2DBarChart>
+    </GeneralDisplayStyles2DBarChart>
+    <WallDisplayStyles2DBarChart>
+        <Title Enabled="1">
+            <TextLines IsAuto="1"/>
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="4">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="0">
+                <Style FillColor="10079487" Filled="0"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+        </Title>
+        <Marker>
+            <NumberText ShowNumber="1"/>
+            <NoteText ShowNote="0"/>
+            <Attachment AbsPercentage="0.5" SnapToData="0" Type="1"/>
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <NumberFormat decimalPlace="3" formatOption="0"/>
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="2">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="1">
+                <Style FillColor="16768058" Filled="1"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+            <Leader>
+                <Line Color="134" Font="1" Width="2"/>
+                <Anchor Color="134" PointMarker="4"/>
+            </Leader>
+        </Marker>
+        <Note>
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="2">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="1">
+                <Style FillColor="10079487" Filled="0"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+        </Note>
+        <GraphName Enabled="1">
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="2">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="0">
+                <Style FillColor="10079487" Filled="0"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+            <Position Option="0"/>
+        </GraphName>
+        <PageNumber Enabled="1">
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="2">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="0">
+                <Style FillColor="10079487" Filled="0"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+        </PageNumber>
+        <ValueText Enabled="1">
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <NumberFormat decimalPlace="3" formatOption="0"/>
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="2">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="0">
+                <Style FillColor="10079487" Filled="0"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+        </ValueText>
+        <Grid2D>
+            <Layout>
+                <MajorGrid Color="13421772" Font="1" Width="2"/>
+                <DenseGrid Color="13421772" Font="1" Width="2"/>
+                <Ticks Color="3355443" Font="1" Width="2"/>
+                <GraphBackground Color="16777215" Enabled="1"/>
+                <PlaneBackground Color="10079487" Enabled="0"/>
+                <Contouring Enabled="0" Level="4" Type="0"/>
+                <XYPlane Type="3"/>
+            </Layout>
+            <Divisions>
+                <Item Index="0" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="1" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="2" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="3" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="4" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="5" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="6" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="7" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="8" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="9" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="10" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+                <Item Index="11" IsAuto="1" TicksPerGrid="4" UnitsPerGrid="0"/>
+            </Divisions>
+        </Grid2D>
+        <Y-Axis UseLowerLimitForBar="0">
+            <Type Overhead="0" Value="0">
+                <Log LogDecades="0"/>
+            </Type>
+            <Limits Type="1"/>
+            <Units UnitSystem="0"/>
+            <Label Enabled="1" IncludeMeasureType="1" IncludeUnit="1" SingleLine="1">
+                <TextLines IsAuto="1"/>
+                <Style Angle="90" Color="3355443" TextJust="1" useGlobalFontSetting="1">
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="3">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="1" Left="0.5" Right="0.5" Top="1"/>
+                </TextBox>
+            </Label>
+            <Number Enabled="1">
+                <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                    <NumberFormat decimalPlace="3" formatOption="0"/>
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="2">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+            </Number>
+        </Y-Axis>
+        <X-Argument-Axis>
+            <Limits IsFreeLimits="1"/>
+            <Units UnitSystem="0"/>
+            <Label Enabled="1" IncludeMeasureType="1" IncludeUnit="1" SingleLine="1">
+                <TextLines IsAuto="1"/>
+                <Style Angle="0" Color="3355443" TextJust="1" useGlobalFontSetting="1">
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="3">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+            </Label>
+            <ItemText Enabled="1">
+                <Style Angle="90" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                    <NumberFormat decimalPlace="3" formatOption="0"/>
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="2">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+                <ItemTextLength>20</ItemTextLength>
+            </ItemText>
+        </X-Argument-Axis>
+        <Probing>
+            <ProbingText>
+                <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                    <NumberFormat decimalPlace="3" formatOption="0"/>
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="2">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="1">
+                    <Style FillColor="16768058" Filled="1"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+                <Leader>
+                    <Line Color="134" Font="1" Width="2"/>
+                    <Anchor Color="134" PointMarker="4"/>
+                </Leader>
+            </ProbingText>
+            <HelpLine Color="3700928" Font="1" Width="2"/>
+            <StepLine Color="3700928" Font="1" Width="2"/>
+        </Probing>
+        <LegendTableGroup Enabled="1">
+            <FloatingLegendTable Enabled="1">
+                <GridLineStyle Color="3355443" Enabled="1" Font="1" Width="7"/>
+                <BorderLineStyle Color="3355443" Enabled="1" Font="1" Width="9"/>
+                <Header Color="10079487" Enabled="0"/>
+                <LegendTableText>
+                    <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                        <NumberFormat decimalPlace="3" formatOption="0"/>
+                        <GlobalFont automaticScaling="1" fontScale="1"/>
+                        <LocalFont FontType="0" Size="2">
+                            <NXFont Font="ideas_simplex" Thickness="1"/>
+                            <StandardFont Font="Times New Roman" fontStyle="0"/>
+                        </LocalFont>
+                    </Style>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </LegendTableText>
+                <MaximumLegendItemCount>10</MaximumLegendItemCount>
+                <GridBackground Color="16777215" Enabled="1"/>
+                <Position X="0.86" Y="0.91" Z="0"/>
+                <ColumnTitles>
+                    <Item Index="0" Name="Free Text"/>
+                </ColumnTitles>
+            </FloatingLegendTable>
+            <DockedLegendTable Enabled="0">
+                <GridLineStyle Color="3355443" Enabled="1" Font="1" Width="7"/>
+                <BorderLineStyle Color="3355443" Enabled="1" Font="1" Width="9"/>
+                <Header Color="10079487" Enabled="1"/>
+                <LegendTableText>
+                    <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                        <NumberFormat decimalPlace="3" formatOption="0"/>
+                        <GlobalFont automaticScaling="1" fontScale="1"/>
+                        <LocalFont FontType="0" Size="2">
+                            <NXFont Font="ideas_simplex" Thickness="1"/>
+                            <StandardFont Font="Times New Roman" fontStyle="0"/>
+                        </LocalFont>
+                    </Style>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </LegendTableText>
+                <MaximumLegendItemCount>10</MaximumLegendItemCount>
+                <GridBackground Color="16777215" Enabled="0"/>
+                <ColumnTitles>
+                    <Item Index="0" Name="Record Name"/>
+                    <Item Index="1" Name="Function Type"/>
+                </ColumnTitles>
+            </DockedLegendTable>
+        </LegendTableGroup>
+        <Pan>
+            <ToolPosition XPos="0.5" YPos="0.5" ZPos="0.5"/>
+            <ToolSize Size="1"/>
+        </Pan>
+    </WallDisplayStyles2DBarChart>
+    <DiagramDisplayStyles2DBarChart DisplayStyleAssignment="" SpaceBetweenFunctions="0" SpaceBetweenItems="10">
+        <Item Active="7" Index="0" StyleName="NO.1">
+            <CurveStyle LineFont="1" LineWidth="9" OutlineColor="16711680" PointMarker="0"/>
+            <ScatterStyle Color="16711680" PointMarker="1"/>
+            <BarChartStyle FillColor="10092543" OutlineColor="53199" PointMarker="0" ShowOutline="0" ShowValueText="0" SpaceBetweenTextAndBar="2"/>
+        </Item>
+        <Item Active="7" Index="1" StyleName="NO.2">
+            <CurveStyle LineFont="1" LineWidth="9" OutlineColor="255" PointMarker="0"/>
+            <ScatterStyle Color="255" PointMarker="1"/>
+            <BarChartStyle FillColor="16105432" OutlineColor="15363749" PointMarker="0" ShowOutline="0" ShowValueText="0" SpaceBetweenTextAndBar="2"/>
+        </Item>
+        <Item Active="7" Index="2" StyleName="NO.3">
+            <CurveStyle LineFont="1" LineWidth="9" OutlineColor="39168" PointMarker="0"/>
+            <ScatterStyle Color="39168" PointMarker="1"/>
+            <BarChartStyle FillColor="16760908" OutlineColor="16737792" PointMarker="0" ShowOutline="0" ShowValueText="0" SpaceBetweenTextAndBar="2"/>
+        </Item>
+        <Item Active="7" Index="3" StyleName="NO.4">
+            <CurveStyle LineFont="1" LineWidth="9" OutlineColor="16750848" PointMarker="0"/>
+            <ScatterStyle Color="16750848" PointMarker="1"/>
+            <BarChartStyle FillColor="3381555" OutlineColor="1853699" PointMarker="0" ShowOutline="0" ShowValueText="0" SpaceBetweenTextAndBar="2"/>
+        </Item>
+        <Item Active="7" Index="4" StyleName="NO.5">
+            <CurveStyle LineFont="1" LineWidth="9" OutlineColor="6697932" PointMarker="0"/>
+            <ScatterStyle Color="6697932" PointMarker="1"/>
+            <BarChartStyle FillColor="7760534" OutlineColor="4076372" PointMarker="0" ShowOutline="0" ShowValueText="0" SpaceBetweenTextAndBar="2"/>
+        </Item>
+        <Item Active="7" Index="5" StyleName="NO.6">
+            <CurveStyle LineFont="1" LineWidth="9" OutlineColor="10040166" PointMarker="0"/>
+            <ScatterStyle Color="10040166" PointMarker="1"/>
+            <BarChartStyle FillColor="13408563" OutlineColor="6697728" PointMarker="0" ShowOutline="0" ShowValueText="0" SpaceBetweenTextAndBar="2"/>
+        </Item>
+        <Item Active="7" Index="6" StyleName="NO.7">
+            <CurveStyle LineFont="1" LineWidth="9" OutlineColor="6737151" PointMarker="0"/>
+            <ScatterStyle Color="6737151" PointMarker="1"/>
+            <BarChartStyle FillColor="13382451" OutlineColor="8257536" PointMarker="0" ShowOutline="0" ShowValueText="0" SpaceBetweenTextAndBar="2"/>
+        </Item>
+        <Item Active="7" Index="7" StyleName="NO.8">
+            <CurveStyle LineFont="1" LineWidth="9" OutlineColor="10406461" PointMarker="0"/>
+            <ScatterStyle Color="10406461" PointMarker="1"/>
+            <BarChartStyle FillColor="40409" OutlineColor="16222" PointMarker="0" ShowOutline="0" ShowValueText="0" SpaceBetweenTextAndBar="2"/>
+        </Item>
+        <Item Active="7" Index="8" StyleName="NO.9">
+            <CurveStyle LineFont="1" LineWidth="9" OutlineColor="6710835" PointMarker="0"/>
+            <ScatterStyle Color="6710835" PointMarker="1"/>
+            <BarChartStyle FillColor="13421619" OutlineColor="7301120" PointMarker="0" ShowOutline="0" ShowValueText="0" SpaceBetweenTextAndBar="2"/>
+        </Item>
+        <Item Active="7" Index="9" StyleName="NO.10">
+            <CurveStyle LineFont="1" LineWidth="9" OutlineColor="16711935" PointMarker="0"/>
+            <ScatterStyle Color="16711935" PointMarker="1"/>
+            <BarChartStyle FillColor="13421772" OutlineColor="10066329" PointMarker="0" ShowOutline="0" ShowValueText="0" SpaceBetweenTextAndBar="2"/>
+        </Item>
+        <Item Active="7" Index="10" StyleName="NO.11">
+            <CurveStyle LineFont="2" LineWidth="9" OutlineColor="16711680" PointMarker="0"/>
+            <ScatterStyle Color="6697932" PointMarker="1"/>
+            <BarChartStyle FillColor="16773246" OutlineColor="16763392" PointMarker="0" ShowOutline="0" ShowValueText="0" SpaceBetweenTextAndBar="2"/>
+        </Item>
+        <Item Active="7" Index="11" StyleName="NO.12">
+            <CurveStyle LineFont="2" LineWidth="9" OutlineColor="255" PointMarker="0"/>
+            <ScatterStyle Color="255" PointMarker="1"/>
+            <BarChartStyle FillColor="13434726" OutlineColor="11133696" PointMarker="0" ShowOutline="0" ShowValueText="0" SpaceBetweenTextAndBar="2"/>
+        </Item>
+        <Item Active="7" Index="12" StyleName="NO.13">
+            <CurveStyle LineFont="2" LineWidth="9" OutlineColor="39168" PointMarker="0"/>
+            <ScatterStyle Color="39168" PointMarker="1"/>
+            <BarChartStyle FillColor="7536589" OutlineColor="44133" PointMarker="0" ShowOutline="0" ShowValueText="0" SpaceBetweenTextAndBar="2"/>
+        </Item>
+        <Item Active="7" Index="13" StyleName="NO.14">
+            <CurveStyle LineFont="2" LineWidth="9" OutlineColor="16750848" PointMarker="0"/>
+            <ScatterStyle Color="16750848" PointMarker="1"/>
+            <BarChartStyle FillColor="12595364" OutlineColor="6619204" PointMarker="0" ShowOutline="0" ShowValueText="0" SpaceBetweenTextAndBar="2"/>
+        </Item>
+        <Item Active="7" Index="14" StyleName="NO.15">
+            <CurveStyle LineFont="2" LineWidth="9" OutlineColor="6697932" PointMarker="0"/>
+            <ScatterStyle Color="6697932" PointMarker="1"/>
+            <BarChartStyle FillColor="4284671" OutlineColor="192" PointMarker="0" ShowOutline="0" ShowValueText="0" SpaceBetweenTextAndBar="2"/>
+        </Item>
+        <Item Active="7" Index="15" StyleName="NO.16">
+            <CurveStyle LineFont="2" LineWidth="9" OutlineColor="10040166" PointMarker="0"/>
+            <ScatterStyle Color="10040166" PointMarker="1"/>
+            <BarChartStyle FillColor="11781088" OutlineColor="6724044" PointMarker="0" ShowOutline="0" ShowValueText="0" SpaceBetweenTextAndBar="2"/>
+        </Item>
+        <Item Active="7" Index="16" StyleName="NO.17">
+            <CurveStyle LineFont="2" LineWidth="9" OutlineColor="6737151" PointMarker="0"/>
+            <ScatterStyle Color="6737151" PointMarker="1"/>
+            <BarChartStyle FillColor="16774567" OutlineColor="16771170" PointMarker="0" ShowOutline="0" ShowValueText="0" SpaceBetweenTextAndBar="2"/>
+        </Item>
+        <Item Active="7" Index="17" StyleName="NO.18">
+            <CurveStyle LineFont="2" LineWidth="9" OutlineColor="10406461" PointMarker="0"/>
+            <ScatterStyle Color="10406461" PointMarker="1"/>
+            <BarChartStyle FillColor="10053222" OutlineColor="6684672" PointMarker="0" ShowOutline="0" ShowValueText="0" SpaceBetweenTextAndBar="2"/>
+        </Item>
+        <Item Active="7" Index="18" StyleName="NO.19">
+            <CurveStyle LineFont="2" LineWidth="9" OutlineColor="6710835" PointMarker="0"/>
+            <ScatterStyle Color="6710835" PointMarker="1"/>
+            <BarChartStyle FillColor="10540200" OutlineColor="6194495" PointMarker="0" ShowOutline="0" ShowValueText="0" SpaceBetweenTextAndBar="2"/>
+        </Item>
+        <Item Active="7" Index="19" StyleName="NO.20">
+            <CurveStyle LineFont="2" LineWidth="9" OutlineColor="16711935" PointMarker="0"/>
+            <ScatterStyle Color="16711935" PointMarker="1"/>
+            <BarChartStyle FillColor="16739839" OutlineColor="13382604" PointMarker="0" ShowOutline="0" ShowValueText="0" SpaceBetweenTextAndBar="2"/>
+        </Item>
+    </DiagramDisplayStyles2DBarChart>
+    <GeneralDisplayStylesMatrix2D>
+        <PhaseDisplayRangeOption>0</PhaseDisplayRangeOption>
+        <ComplexOptionMatrix2D>0</ComplexOptionMatrix2D>
+        <XYSwapped>0</XYSwapped>
+        <LayoutMode>0</LayoutMode>
+    </GeneralDisplayStylesMatrix2D>
+    <WallDisplayStylesMatrix2D MaximumDisplayableColumns="150" MaximumDisplayableRows="150">
+        <Title Enabled="1">
+            <TextLines IsAuto="1"/>
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="4">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="0">
+                <Style FillColor="10079487" Filled="0"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+        </Title>
+        <Marker>
+            <NumberText ShowNumber="1"/>
+            <NoteText ShowNote="0"/>
+            <Attachment AbsPercentage="0.5" SnapToData="0" Type="1"/>
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <NumberFormat decimalPlace="3" formatOption="0"/>
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="2">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="1">
+                <Style FillColor="16768058" Filled="1"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+            <Leader>
+                <Line Color="134" Font="1" Width="2"/>
+                <Anchor Color="134" PointMarker="4"/>
+            </Leader>
+        </Marker>
+        <Note>
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="2">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="1">
+                <Style FillColor="10079487" Filled="0"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+        </Note>
+        <GraphName Enabled="1">
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="2">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="0">
+                <Style FillColor="10079487" Filled="0"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+            <Position Option="0"/>
+        </GraphName>
+        <PageNumber Enabled="1">
+            <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                <GlobalFont automaticScaling="1" fontScale="1"/>
+                <LocalFont FontType="0" Size="2">
+                    <NXFont Font="ideas_simplex" Thickness="1"/>
+                    <StandardFont Font="Times New Roman" fontStyle="0"/>
+                </LocalFont>
+            </Style>
+            <TextBox Enabled="0">
+                <Style FillColor="10079487" Filled="0"/>
+                <LineStyle Color="3355443" Font="1" Width="7"/>
+                <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+            </TextBox>
+        </PageNumber>
+        <MatrixGrid2D>
+            <Layout>
+                <MajorGrid Color="3355443" Font="1" Width="2"/>
+                <GraphBackground Color="16777215" Enabled="1"/>
+                <XYPlane Type="0"/>
+            </Layout>
+        </MatrixGrid2D>
+        <X-Argument-Axis>
+            <Limits IsFreeLimits="1"/>
+            <Units UnitSystem="0"/>
+            <Label Enabled="1" IncludeMeasureType="1" IncludeUnit="1" SingleLine="1">
+                <TextLines IsAuto="1"/>
+                <Style Angle="0" Color="3355443" TextJust="1" useGlobalFontSetting="1">
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="3">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+            </Label>
+            <ItemText Enabled="1">
+                <Style Angle="90" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                    <NumberFormat decimalPlace="3" formatOption="0"/>
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="2">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+                <ItemTextLength>20</ItemTextLength>
+            </ItemText>
+        </X-Argument-Axis>
+        <Y-Argument-Axis>
+            <Limits IsFreeLimits="1"/>
+            <Units UnitSystem="0"/>
+            <Label Enabled="1" IncludeMeasureType="1" IncludeUnit="1" SingleLine="1">
+                <TextLines IsAuto="1"/>
+                <Style Angle="90" Color="3355443" TextJust="1" useGlobalFontSetting="1">
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="3">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+            </Label>
+            <ItemText Enabled="1">
+                <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                    <NumberFormat decimalPlace="3" formatOption="0"/>
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="2">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+                <ItemTextLength>20</ItemTextLength>
+            </ItemText>
+        </Y-Argument-Axis>
+        <Color-Axis>
+            <Type Overhead="0" Value="0">
+                <Log LogDecades="0"/>
+            </Type>
+            <Limits Type="0"/>
+            <Units UnitSystem="0"/>
+            <Label Enabled="1" IncludeMeasureType="1" IncludeUnit="1" SingleLine="0">
+                <TextLines IsAuto="1"/>
+                <Style Angle="0" Color="3355443" TextJust="1" useGlobalFontSetting="1">
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="3">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+            </Label>
+            <Number Enabled="1">
+                <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                    <NumberFormat decimalPlace="3" formatOption="0"/>
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="2">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="0">
+                    <Style FillColor="10079487" Filled="0"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+            </Number>
+            <ColorScale>
+                <Style Level="12" UseAutoLevel="0"/>
+                <ColorControl IsInverted="0" SpectrumType="3"/>
+                <CustomizedColorLegend AreColorsOverridden="0" AreValuesOverridden="0"/>
+            </ColorScale>
+            <ResultLegend Enabled="1">
+                <UnknownResultColor Color="1"/>
+                <OverflowResultColor ColorOption="1" ShadedColor="10079487"/>
+                <UnderflowResultColor ColorOption="1" ShadedColor="3355443"/>
+                <LegendTextStyle Enabled="1">
+                    <TextLines IsAuto="1"/>
+                    <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                        <GlobalFont automaticScaling="1" fontScale="1"/>
+                        <LocalFont FontType="0" Size="3">
+                            <NXFont Font="ideas_simplex" Thickness="1"/>
+                            <StandardFont Font="Times New Roman" fontStyle="0"/>
+                        </LocalFont>
+                    </Style>
+                    <TextBox Enabled="0">
+                        <Style FillColor="10079487" Filled="0"/>
+                        <LineStyle Color="3355443" Font="1" Width="7"/>
+                        <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                    </TextBox>
+                </LegendTextStyle>
+            </ResultLegend>
+        </Color-Axis>
+        <Probing>
+            <ProbingText>
+                <Style Angle="0" Color="3355443" TextJust="0" useGlobalFontSetting="1">
+                    <NumberFormat decimalPlace="3" formatOption="0"/>
+                    <GlobalFont automaticScaling="1" fontScale="1"/>
+                    <LocalFont FontType="0" Size="2">
+                        <NXFont Font="ideas_simplex" Thickness="1"/>
+                        <StandardFont Font="Times New Roman" fontStyle="0"/>
+                    </LocalFont>
+                </Style>
+                <TextBox Enabled="1">
+                    <Style FillColor="16768058" Filled="1"/>
+                    <LineStyle Color="3355443" Font="1" Width="7"/>
+                    <Margin Bottom="0.5" Left="1" Right="1" Top="0.5"/>
+                </TextBox>
+                <Leader>
+                    <Line Color="134" Font="1" Width="2"/>
+                    <Anchor Color="134" PointMarker="4"/>
+                </Leader>
+            </ProbingText>
+            <HelpLine Color="3700928" Font="1" Width="2"/>
+            <StepLine Color="3700928" Font="1" Width="2"/>
+        </Probing>
+        <Pan>
+            <ToolPosition XPos="0.5" YPos="0.5" ZPos="0.5"/>
+            <ToolSize Size="1"/>
+        </Pan>
+    </WallDisplayStylesMatrix2D>
+    <DiagramDisplayStylesCampbell GraphStyle="point" ShowBackground="0">
+        <CampbellLineStyle LineWidth="9" PointMarker="0"/>
+        <CampbellPointStyle PointSizeScale="1" PointSizeType="constant"/>
+    </DiagramDisplayStylesCampbell>
+</XYPLOT-GraphTemplate>

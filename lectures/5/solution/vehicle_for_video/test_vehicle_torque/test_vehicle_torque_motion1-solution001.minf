@@ -1,4 +1,4 @@
-Input file: D:\Latex_docs\MaM\lectures\5\solution\vehicle\test_vehicle_torque_motion1-solution001.minp
+Input file: D:\Latex_docs\MaM\lectures\5\solution\vehicle_for_video\test_vehicle_torque\test_vehicle_torque_motion1-solution001.minp
 
 Solver running in Simcenter Mode
 
@@ -27,7 +27,7 @@ being reset to zero (disabled) and execution is continuing.
 
 [9803]
 Warning from the driver element "MOTION_J001_RZ".
-The curve referenced by this driver, named "AFUREC_test_vehicle_torque_motion1.afu#trapez",
+The curve referenced by this driver, named "AFUREC_/Device/HarddiskVolume13/Latex_docs/MaM/lectures/5/solution/vehicle_for_video/test_vehicle_torque/test_vehicle_torque_motion1.afu#trapez",
 uses linear interpolation.  Use of linear interpolation in driver curves is
 not recommended for two reasons:  First, the second derivative of such curves
 is zero, which will result in an imposed acceleration of zero, regardless of
@@ -37,7 +37,7 @@ solution times.  Please consider using a different interpolation type.
 
 [9803]
 Warning from the driver element "MOTION_J002_RZ".
-The curve referenced by this driver, named "AFUREC_test_vehicle_torque_motion1.afu#trapez",
+The curve referenced by this driver, named "AFUREC_/Device/HarddiskVolume13/Latex_docs/MaM/lectures/5/solution/vehicle_for_video/test_vehicle_torque/test_vehicle_torque_motion1.afu#trapez",
 uses linear interpolation.  Use of linear interpolation in driver curves is
 not recommended for two reasons:  First, the second derivative of such curves
 is zero, which will result in an imposed acceleration of zero, regardless of
@@ -45,13 +45,15 @@ how the points are defined.  Second, if the BDF integrator is used, the
 integration will restart at every defined point on the curve, resulting in long
 solution times.  Please consider using a different interpolation type.
 
-[6902]
-Generic Force Sensor Report
----------------------------
-   Expression element "Se001" includes:
-      "TY(HIEROBJECT19,ALL,HIEROBJECT18)" measures torque of:
-         revolute joint "J001"
-         driver element "MOTION_J001_RZ"
+[1276]
+Warning:  In the dynamic data element, the step size is larger
+than the print interval specified in the system data element.  The step
+size is being reset so that it equals the print interval.
+  PRint.interval = 0.10000000000000E-01
+  old MAX.int.step = 5.0000000000000E-02
+  new MAX.int.step = 0.10000000000000E-01
+NOTE:  The Time Series Global Output element will reduce PRint.interval
+       when the Output Rate variable is set to two or more.
 
 License Server is [27800@localhost]
 
@@ -73,7 +75,7 @@ Results achieved by the model assembly process with drivers:
   Number of function evaluations =     1
   Maximum constraint violation   =   0.179787E-13
 
- Element: base
+ Element: ROBOT_BASE
     Coordinate    New Value     Original Value  Difference
     X             0.15068        0.15068         0.0000    
     Y              0.0000         0.0000         0.0000    
@@ -83,7 +85,7 @@ Results achieved by the model assembly process with drivers:
     E2           -0.70373       -0.70373         0.0000    
     E3             0.0000         0.0000         0.0000    
 
- Element: terrain_1
+ Element: TERRAIN_1
     Coordinate    New Value     Original Value  Difference
     X              1.1967         1.1967         0.0000    
     Y              0.0000         0.0000         0.0000    
@@ -92,6 +94,26 @@ Results achieved by the model assembly process with drivers:
     E1             0.0000         0.0000         0.0000    
     E2           -0.71554       -0.71554         0.0000    
     E3             0.0000         0.0000         0.0000    
+
+ Element: WHEEL
+    Coordinate    New Value     Original Value  Difference
+    X             0.70008E-01    0.70008E-01     0.0000    
+    Y            -0.11959       -0.11959         0.0000    
+    Z             0.49976E-01    0.49976E-01     0.0000    
+    E0            0.57401        0.57401         0.0000    
+    E1            0.41296        0.41296         0.0000    
+    E2            0.41303        0.41303         0.0000    
+    E3            0.57391        0.57391         0.0000    
+
+ Element: WHEEL_1
+    Coordinate    New Value     Original Value  Difference
+    X             0.69994E-01    0.69994E-01     0.0000    
+    Y             0.11959        0.11959         0.0000    
+    Z             0.50024E-01    0.50024E-01     0.0000    
+    E0            0.55965        0.55965         0.0000    
+    E1            0.43222        0.43222         0.0000    
+    E2            0.43230        0.43230         0.0000    
+    E3            0.55955        0.55955         0.0000    
 
  Element: the_ground
     Coordinate    New Value     Original Value  Difference
@@ -102,26 +124,6 @@ Results achieved by the model assembly process with drivers:
     E1             0.0000         0.0000         0.0000    
     E2             0.0000         0.0000         0.0000    
     E3             0.0000         0.0000         0.0000    
-
- Element: wheel1
-    Coordinate    New Value     Original Value  Difference
-    X             0.70008E-01    0.70008E-01     0.0000    
-    Y            -0.11959       -0.11959         0.0000    
-    Z             0.49976E-01    0.49976E-01     0.0000    
-    E0            0.57401        0.57401         0.0000    
-    E1            0.41296        0.41296         0.0000    
-    E2            0.41303        0.41303         0.0000    
-    E3            0.57391        0.57391         0.0000    
-
- Element: wheel2
-    Coordinate    New Value     Original Value  Difference
-    X             0.69994E-01    0.69994E-01     0.0000    
-    Y             0.11959        0.11959         0.0000    
-    Z             0.50024E-01    0.50024E-01     0.0000    
-    E0            0.55965        0.55965         0.0000    
-    E1            0.43222        0.43222         0.0000    
-    E2            0.43230        0.43230         0.0000    
-    E3            0.55955        0.55955         0.0000    
 
  Element: MOTION_J001_RZ
     Coordinate    New Value     Original Value  Difference
@@ -135,22 +137,22 @@ Ignoring Initial conditions, the following were chosen
 as independent coordinates:
 
 
- Element: base
+ Element: ROBOT_BASE
     Coordinate:  E1        
 
- Element: wheel2
+ Element: WHEEL_1
     Coordinate:  E1        
 
- Element: wheel2
-    Coordinate:  E2        
-
- Element: wheel1
+ Element: ROBOT_BASE
     Coordinate:  Z         
 
- Element: base
+ Element: WHEEL_1
     Coordinate:  Y         
 
- Element: base
+ Element: WHEEL_1
+    Coordinate:  E2        
+
+ Element: WHEEL_1
     Coordinate:  X         
  Using QR Initial Velocity Method
 
@@ -158,7 +160,7 @@ as independent coordinates:
 Warning:  Initial conditions may not be sufficient (DAP2).
 Solution of initial velocities, using QR method:
 
- Element: base
+ Element: ROBOT_BASE
     Coordinate    Velocity
     X              0.00000    
     Y              0.00000    
@@ -168,7 +170,27 @@ Solution of initial velocities, using QR method:
     E2             0.00000    
     E3             0.00000    
 
- Element: terrain_1
+ Element: TERRAIN_1
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: WHEEL
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    E0             0.00000    
+    E1             0.00000    
+    E2             0.00000    
+    E3             0.00000    
+
+ Element: WHEEL_1
     Coordinate    Velocity
     X              0.00000    
     Y              0.00000    
@@ -179,26 +201,6 @@ Solution of initial velocities, using QR method:
     E3             0.00000    
 
  Element: the_ground
-    Coordinate    Velocity
-    X              0.00000    
-    Y              0.00000    
-    Z              0.00000    
-    E0             0.00000    
-    E1             0.00000    
-    E2             0.00000    
-    E3             0.00000    
-
- Element: wheel1
-    Coordinate    Velocity
-    X              0.00000    
-    Y              0.00000    
-    Z              0.00000    
-    E0             0.00000    
-    E1             0.00000    
-    E2             0.00000    
-    E3             0.00000    
-
- Element: wheel2
     Coordinate    Velocity
     X              0.00000    
     Y              0.00000    
@@ -218,7 +220,7 @@ Solution of initial velocities, using QR method:
 
 Solution of velocities in local coordinates:
 
- Element: base
+ Element: ROBOT_BASE
     Coordinate    Velocity
     X              0.00000    
     Y              0.00000    
@@ -227,7 +229,25 @@ Solution of velocities in local coordinates:
     OMEGA_YL       0.00000    
     OMEGA_ZL       0.00000    
 
- Element: terrain_1
+ Element: TERRAIN_1
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: WHEEL
+    Coordinate    Velocity
+    X              0.00000    
+    Y              0.00000    
+    Z              0.00000    
+    OMEGA_XL       0.00000    
+    OMEGA_YL       0.00000    
+    OMEGA_ZL       0.00000    
+
+ Element: WHEEL_1
     Coordinate    Velocity
     X              0.00000    
     Y              0.00000    
@@ -245,40 +265,22 @@ Solution of velocities in local coordinates:
     OMEGA_YL       0.00000    
     OMEGA_ZL       0.00000    
 
- Element: wheel1
-    Coordinate    Velocity
-    X              0.00000    
-    Y              0.00000    
-    Z              0.00000    
-    OMEGA_XL       0.00000    
-    OMEGA_YL       0.00000    
-    OMEGA_ZL       0.00000    
-
- Element: wheel2
-    Coordinate    Velocity
-    X              0.00000    
-    Y              0.00000    
-    Z              0.00000    
-    OMEGA_XL       0.00000    
-    OMEGA_YL       0.00000    
-    OMEGA_ZL       0.00000    
-
-Number of real data in the system     =     77484
-Number of integer data in the system  =     45646
+Number of real data in the system     =     94511
+Number of integer data in the system  =     55020
 
 
 Solution of accelerations in local coordinates:
 
- Element: base
+ Element: ROBOT_BASE
     Coordinate    Acceleration
-    X            -0.682739E-04
-    Y             0.233990E-05
-    Z             -9.80650    
-    OMEGAD_XL     0.111781E-04
-    OMEGAD_YL    -0.141224E-01
-    OMEGAD_ZL     0.456244E-03
+    X            -0.345789E-03
+    Y             0.150738E-05
+    Z             -9.80602    
+    OMEGAD_XL     0.133944E-03
+    OMEGAD_YL    -0.715268E-01
+    OMEGAD_ZL     0.698456E-04
 
- Element: terrain_1
+ Element: TERRAIN_1
     Coordinate    Acceleration
     X              0.00000    
     Y              0.00000    
@@ -286,6 +288,24 @@ Solution of accelerations in local coordinates:
     OMEGAD_XL      0.00000    
     OMEGAD_YL      0.00000    
     OMEGAD_ZL      0.00000    
+
+ Element: WHEEL
+    Coordinate    Acceleration
+    X             0.274442E-02
+    Y            -0.124122E-04
+    Z             -9.81183    
+    OMEGAD_XL      4.92847    
+    OMEGAD_YL     0.101786E-02
+    OMEGAD_ZL    -0.222425E-04
+
+ Element: WHEEL_1
+    Coordinate    Acceleration
+    X             0.294991E-02
+    Y            -0.124108E-04
+    Z             -9.81177    
+    OMEGAD_XL      4.92847    
+    OMEGAD_YL     0.101600E-02
+    OMEGAD_ZL    -0.323397E-04
 
  Element: the_ground
     Coordinate    Acceleration
@@ -295,24 +315,6 @@ Solution of accelerations in local coordinates:
     OMEGAD_XL      0.00000    
     OMEGAD_YL      0.00000    
     OMEGAD_ZL      0.00000    
-
- Element: wheel1
-    Coordinate    Acceleration
-    X             0.540240E-03
-    Y            -0.192772E-04
-    Z             -9.80760    
-    OMEGAD_XL     0.985878    
-    OMEGAD_YL     0.333373E-03
-    OMEGAD_ZL    -0.427545E-03
-
- Element: wheel2
-    Coordinate    Acceleration
-    X             0.584071E-03
-    Y            -0.192554E-04
-    Z             -9.80769    
-    OMEGAD_XL     0.985878    
-    OMEGAD_YL     0.303964E-03
-    OMEGAD_ZL    -0.437402E-03
 
 Total Number of Bodies             =    5
 
@@ -326,374 +328,365 @@ Number of Degrees of Freedom       =    6
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
-  Warning flag            =     72
-  Current simulation time =    1.21281
-
-[1027]
-Warning from Sparse matrix solution package.
-Matrix decomposition failed. Solver will recreate symbolic factorization
-and try decomposition of matrix again.
-  Warning flag            =     46
-  Current simulation time =    1.53393
-
-[1027]
-Warning from Sparse matrix solution package.
-Matrix decomposition failed. Solver will recreate symbolic factorization
-and try decomposition of matrix again.
-  Warning flag            =     -2
-  Current simulation time =    1.53393
+  Warning flag            =     59
+  Current simulation time =   0.764453
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
   Warning flag            =     63
-  Current simulation time =    1.90780
+  Current simulation time =   0.852501
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     60
+  Current simulation time =    1.06334
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     86
+  Current simulation time =    1.75562
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
   Warning flag            =     -2
-  Current simulation time =    1.90893
+  Current simulation time =    1.78955
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
-  Warning flag            =     45
-  Current simulation time =    3.22523
+  Warning flag            =     90
+  Current simulation time =    1.78445
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
-  Warning flag            =     -2
-  Current simulation time =    3.78127
-
-[1027]
-Warning from Sparse matrix solution package.
-Matrix decomposition failed. Solver will recreate symbolic factorization
-and try decomposition of matrix again.
-  Warning flag            =     -2
-  Current simulation time =    3.82587
-
-[1027]
-Warning from Sparse matrix solution package.
-Matrix decomposition failed. Solver will recreate symbolic factorization
-and try decomposition of matrix again.
-  Warning flag            =     67
-  Current simulation time =    3.84962
+  Warning flag            =     61
+  Current simulation time =    1.84201
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
   Warning flag            =     -2
-  Current simulation time =    3.85083
+  Current simulation time =    1.96888
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     80
+  Current simulation time =    1.96466
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
   Warning flag            =     -2
-  Current simulation time =    3.85172
+  Current simulation time =    2.01886
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
-  Warning flag            =     66
-  Current simulation time =    3.85582
+  Warning flag            =     23
+  Current simulation time =    2.05003
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
-  Warning flag            =     68
-  Current simulation time =    3.85708
-
-[1027]
-Warning from Sparse matrix solution package.
-Matrix decomposition failed. Solver will recreate symbolic factorization
-and try decomposition of matrix again.
-  Warning flag            =     -2
-  Current simulation time =    3.86058
-
-[1027]
-Warning from Sparse matrix solution package.
-Matrix decomposition failed. Solver will recreate symbolic factorization
-and try decomposition of matrix again.
-  Warning flag            =     67
-  Current simulation time =    4.03338
+  Warning flag            =     80
+  Current simulation time =    2.05548
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
   Warning flag            =     -2
-  Current simulation time =    4.03139
+  Current simulation time =    2.13725
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
-  Warning flag            =     45
-  Current simulation time =    6.38116
+  Warning flag            =     59
+  Current simulation time =    2.78915
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
-  Warning flag            =     -2
-  Current simulation time =    6.38189
+  Warning flag            =     61
+  Current simulation time =    2.79966
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
-  Warning flag            =     -2
-  Current simulation time =    6.38498
+  Warning flag            =     80
+  Current simulation time =    2.80409
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
-  Warning flag            =     69
-  Current simulation time =    6.65039
-
-[1027]
-Warning from Sparse matrix solution package.
-Matrix decomposition failed. Solver will recreate symbolic factorization
-and try decomposition of matrix again.
-  Warning flag            =     -2
-  Current simulation time =    6.65125
-
-[1027]
-Warning from Sparse matrix solution package.
-Matrix decomposition failed. Solver will recreate symbolic factorization
-and try decomposition of matrix again.
-  Warning flag            =     67
-  Current simulation time =    8.22630
+  Warning flag            =     80
+  Current simulation time =    2.88808
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
   Warning flag            =     -2
-  Current simulation time =    8.22639
+  Current simulation time =    3.12127
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
   Warning flag            =     -2
-  Current simulation time =    8.22705
+  Current simulation time =    3.14751
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     80
+  Current simulation time =    3.25914
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
   Warning flag            =     -2
-  Current simulation time =    8.22743
+  Current simulation time =    3.29034
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
   Warning flag            =     -2
-  Current simulation time =    8.22762
+  Current simulation time =    3.38733
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
-  Warning flag            =     66
-  Current simulation time =    8.22786
-
-[1027]
-Warning from Sparse matrix solution package.
-Matrix decomposition failed. Solver will recreate symbolic factorization
-and try decomposition of matrix again.
-  Warning flag            =     -2
-  Current simulation time =    8.22815
+  Warning flag            =     59
+  Current simulation time =    3.41957
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
   Warning flag            =     -2
-  Current simulation time =    8.22821
+  Current simulation time =    3.44075
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
   Warning flag            =     -2
-  Current simulation time =    8.22815
+  Current simulation time =    3.69155
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
   Warning flag            =     -2
-  Current simulation time =    8.23229
-
-[1027]
-Warning from Sparse matrix solution package.
-Matrix decomposition failed. Solver will recreate symbolic factorization
-and try decomposition of matrix again.
-  Warning flag            =     43
-  Current simulation time =    8.47475
+  Current simulation time =    3.72173
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
   Warning flag            =     -2
-  Current simulation time =    8.47473
-
-[1027]
-Warning from Sparse matrix solution package.
-Matrix decomposition failed. Solver will recreate symbolic factorization
-and try decomposition of matrix again.
-  Warning flag            =     73
-  Current simulation time =    8.87876
+  Current simulation time =    3.72302
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
   Warning flag            =     -2
-  Current simulation time =    8.87885
+  Current simulation time =    3.97079
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
-  Warning flag            =     45
-  Current simulation time =    10.4830
-
-[1027]
-Warning from Sparse matrix solution package.
-Matrix decomposition failed. Solver will recreate symbolic factorization
-and try decomposition of matrix again.
-  Warning flag            =     -2
-  Current simulation time =    10.4831
-
-[1027]
-Warning from Sparse matrix solution package.
-Matrix decomposition failed. Solver will recreate symbolic factorization
-and try decomposition of matrix again.
-  Warning flag            =     69
-  Current simulation time =    10.8246
+  Warning flag            =     80
+  Current simulation time =    4.04460
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
   Warning flag            =     -2
-  Current simulation time =    10.8247
+  Current simulation time =    4.07661
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     74
+  Current simulation time =    4.08025
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
   Warning flag            =     -2
-  Current simulation time =    10.8277
-
-[1027]
-Warning from Sparse matrix solution package.
-Matrix decomposition failed. Solver will recreate symbolic factorization
-and try decomposition of matrix again.
-  Warning flag            =     72
-  Current simulation time =    11.1973
+  Current simulation time =    4.12228
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
   Warning flag            =     -2
-  Current simulation time =    11.2341
+  Current simulation time =    4.18080
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
-  Warning flag            =     73
-  Current simulation time =    11.2533
-
-[1027]
-Warning from Sparse matrix solution package.
-Matrix decomposition failed. Solver will recreate symbolic factorization
-and try decomposition of matrix again.
-  Warning flag            =     46
-  Current simulation time =    12.2925
-
-[1027]
-Warning from Sparse matrix solution package.
-Matrix decomposition failed. Solver will recreate symbolic factorization
-and try decomposition of matrix again.
-  Warning flag            =     68
-  Current simulation time =    12.3388
+  Warning flag            =     80
+  Current simulation time =    4.24939
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
   Warning flag            =     -2
-  Current simulation time =    12.4326
+  Current simulation time =    4.53557
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
-  Warning flag            =     73
-  Current simulation time =    12.6474
+  Warning flag            =     61
+  Current simulation time =    4.58692
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
-  Warning flag            =     -2
-  Current simulation time =    12.6757
-3D CONTACT element #3 is switching from midplane
-to vertex projection method at time t=13.05758740605.
-
-[1027]
-Warning from Sparse matrix solution package.
-Matrix decomposition failed. Solver will recreate symbolic factorization
-and try decomposition of matrix again.
-  Warning flag            =     73
-  Current simulation time =    13.5008
-
-[1027]
-Warning from Sparse matrix solution package.
-Matrix decomposition failed. Solver will recreate symbolic factorization
-and try decomposition of matrix again.
-  Warning flag            =     49
-  Current simulation time =    13.6406
+  Warning flag            =     80
+  Current simulation time =    4.60474
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
   Warning flag            =     -2
-  Current simulation time =    13.6404
+  Current simulation time =    4.63834
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     59
+  Current simulation time =    4.66948
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     85
+  Current simulation time =    4.68851
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     79
+  Current simulation time =    4.71346
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     61
+  Current simulation time =    4.79135
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     80
+  Current simulation time =    4.80917
 
 [1027]
 Warning from Sparse matrix solution package.
 Matrix decomposition failed. Solver will recreate symbolic factorization
 and try decomposition of matrix again.
   Warning flag            =     -2
-  Current simulation time =    13.6406
+  Current simulation time =    4.82269
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     -2
+  Current simulation time =    5.00291
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     81
+  Current simulation time =    5.03619
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     -2
+  Current simulation time =    5.05089
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     53
+  Current simulation time =    5.05699
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     81
+  Current simulation time =    5.70831
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     89
+  Current simulation time =    6.53341
+
+[1027]
+Warning from Sparse matrix solution package.
+Matrix decomposition failed. Solver will recreate symbolic factorization
+and try decomposition of matrix again.
+  Warning flag            =     -2
+  Current simulation time =    6.53417
 
 [1494]
-Warning:  At time  14.000000000000, curve element "AFUREC_test_vehicle_torque_motion1.afu#trapez"
+Warning:  At time  9.0000000000000, curve element "AFUREC_/Device/HarddiskVolume13/Latex_docs/MaM/lectures/5/solution/vehicle_for_video/test_vehicle_torque/test_vehicle_torque_motion1.afu#trapez"
 was evaluated outside the range of defined abscissas by the
 driver element "MOTION_J001_RZ".
-   Curve evaluated at x =  14.000000000000
-   Range of abscissas:  0.0000000000000 <= x <  14.000000000000
+   Curve evaluated at x =  9.0000000000000
+   Range of abscissas:  0.0000000000000 <= x <  9.0000000000000
 This message may indicate an undesired solution, inadequate curve definition, or
 be caused by an intermediate iteration during the solution process.  Further in-
 stances of this condition will not be reported for this curve/element reference.
@@ -701,11 +694,11 @@ To suppress this message for future simulations, define the environment variable
 LMSMOTSUP1494.  The simulation will continue.
 
 [1494]
-Warning:  At time  14.000000000000, curve element "AFUREC_test_vehicle_torque_motion1.afu#trapez"
+Warning:  At time  9.0000000000000, curve element "AFUREC_/Device/HarddiskVolume13/Latex_docs/MaM/lectures/5/solution/vehicle_for_video/test_vehicle_torque/test_vehicle_torque_motion1.afu#trapez"
 was evaluated outside the range of defined abscissas by the
 driver element "MOTION_J002_RZ".
-   Curve evaluated at x =  14.000000000000
-   Range of abscissas:  0.0000000000000 <= x <  14.000000000000
+   Curve evaluated at x =  9.0000000000000
+   Range of abscissas:  0.0000000000000 <= x <  9.0000000000000
 This message may indicate an undesired solution, inadequate curve definition, or
 be caused by an intermediate iteration during the solution process.  Further in-
 stances of this condition will not be reported for this curve/element reference.
@@ -714,22 +707,22 @@ LMSMOTSUP1494.  The simulation will continue.
 
 The number of symbolic factorizations of the Acceleration matrix =                    1
 
-The number of symbolic factorizations of BDF Jacobian matrix =                   53
+The number of symbolic factorizations of BDF Jacobian matrix =                   52
 
 [1441]
 Final integrator statistics:
-  Number of steps                 =               238446
-  Number of f-s                   =              1421708
-  Number of j-s                   =               173706
-  Ratio of f-s/steps              =  5.9623898073358
-  Ratio of j-s/steps              = 0.72849198560680
-  Current time                    =  14.000000000000
-  Total velocity computations     =                   24
-  Total position computations     =                   26
-Average Integration Order =   1.023468626020    
-Average Step Size         =  0.5871350326699E-04
+  Number of steps                 =                27018
+  Number of f-s                   =               152523
+  Number of j-s                   =                17903
+  Ratio of f-s/steps              =  5.6452365089940
+  Ratio of j-s/steps              = 0.66263231919461
+  Current time                    =  10.000000000000
+  Total velocity computations     =                  172
+  Total position computations     =                  174
+Average Integration Order =   1.050336812495    
+Average Step Size         =  0.3704097268488E-03
 
 Userdef was internal
 
-    Total elapsed CPU time:   98.37199    
-    Total clock time:         99
+    Total elapsed CPU time:   16.14900    
+    Total clock time:         16

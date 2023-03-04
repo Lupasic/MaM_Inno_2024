@@ -276,5 +276,5 @@ TSWLatexianTemp*
 ehthumbs.db
 Thumbs.db
 
-.vscode/*
-solution/
+.vscode/
+**/solution/

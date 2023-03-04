@@ -16,6 +16,8 @@ All class related material can be found in corresponding folder/task_data
 * [Lecture 2 (Intro to Theory of Mechanisms and Machines; Links, Joints (Kinematic pairs); Kinematic chains, Degrees of Freedom, Mobility)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/2/MaM_lec2.pdf) 
 * [Lecture 3 (Types of drives: kinematics, where to find other info; Drives: friction, belts, chains, gears, universal, geneva, ballscrew)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/3/MaM_lec3.pdf)
 * [Lecture 4 (Synthesis of planar mechanisms)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/4/MaM_lec4.pdf)
+* [Lecture 5 (Motor sizing (selection))](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/5/MaM_lec5.pdf)
+* [Lecture 6 (Problems of description and compensation of kinetic friction in robotics)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/6/MaM_lec6.pdf)
 
 # Lab slides
 * [Lab 1 CAD_DET1 (Intro to subject; History of CAD; Solid modeling)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/labs/CAD_DET1/MaM_CAD_DET1.pdf)

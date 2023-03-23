@@ -18,6 +18,7 @@ All class related material can be found in corresponding folder/task_data
 * [Lecture 4 (Synthesis of planar mechanisms)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/4/MaM_lec4.pdf)
 * [Lecture 5 (Motor sizing (selection))](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/5/MaM_lec5.pdf)
 * [Lecture 6 (Problems of description and compensation of kinetic friction in robotics)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/6/MaM_lec6.pdf)
+* [Lecture 7 (Links, Joints, Connections; Shafts, Axles, Shaft couplings; Bearings)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/7/MaM_lec7.pdf)
 
 # Lab slides
 * [Lab 1 CAD_DET1 (Intro to subject; History of CAD; Solid modeling)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/labs/CAD_DET1/MaM_CAD_DET1.pdf)
@@ -26,6 +27,7 @@ All class related material can be found in corresponding folder/task_data
 * [Lab 4 CAD_ASM2 (Top - Down approach: WAVE; Assembly Load Options; GOST Naming convection; Common Parts Library; Sequence (<Dis>Assembling animation))](https://github.com/Lupasic/MaM_Inno_2023/blob/main/labs/CAD_ASM2/MaM_CAD_ASM2.pdf)
 * [Lab 5 CAE_DYN1 (Introduction to CAE; Animation Designer; Mechatronics Concept Designer; Motion; Measure; Interference; Density; Assign Materials)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/labs/CAE_DYN1/MaM_CAE_DYN1.pdf)
 * [Lab 6 CAE_DYN2 (Motion Analysis, Part 2)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/labs/CAE_DYN2/MaM_CAE_DYN2.pdf)
+* [Lab 7 CAD_REN1 (Render)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/labs/CAD_REN1/MaM_CAD_REN1.pdf)
 
 # HWs
 * [HW 1 CAD_DET1 (Simple Detail)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/HWs/HW_CAD_DET1/MaM_HW_CAD_DET1.pdf)
@@ -34,6 +36,7 @@ All class related material can be found in corresponding folder/task_data
 * [HW 4 CAD_ASM2 (Complex Assembly)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/HWs/HW_CAD_ASM2/MaM_HW_CAD_ASM2.pdf)
 * [HW 5 CAE_DYN1 (Inverse Dynamics Problem)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/HWs/HW_CAE_DYN1/MaM_HW_CAE_DYN1.pdf)
 * [HW 6 CAE_DYN2 (Motion Analysis)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/HWs/HW_CAE_DYN2/MaM_HW_CAE_DYN2.pdf)
+* [HW 7 CAD_REN1 (Render)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/HWs/HW_CAD_REN1/MaM_HW_CAD_REN1.pdf)
 
 # For contributors
 

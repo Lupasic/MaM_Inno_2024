@@ -19,6 +19,7 @@ All class related material can be found in corresponding folder/task_data
 * [Lecture 5 (Motor sizing (selection))](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/5/MaM_lec5.pdf)
 * [Lecture 6 (Problems of description and compensation of kinetic friction in robotics)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/6/MaM_lec6.pdf)
 * [Lecture 7 (Links, Joints, Connections; Shafts, Axles, Shaft couplings; Bearings)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/7/MaM_lec7.pdf)
+* [Lecture 8 (Connections: Detachable (Threaded, Keyed, ...); Permanent (Riveting, Welding, ...))](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/8/MaM_lec8.pdf)
 
 # Lab slides
 * [Lab 1 CAD_DET1 (Intro to subject; History of CAD; Solid modeling)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/labs/CAD_DET1/MaM_CAD_DET1.pdf)

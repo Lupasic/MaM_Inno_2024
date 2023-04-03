@@ -39,7 +39,8 @@ jobs:
         LEC4: 'lec4'
         LEC5: 'lec5'
         LEC7: 'lec7'
-        LEC7: 'lec8'
+        LEC8: 'lec8'
+        LEC9: 'lec9'
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2
@@ -331,7 +332,20 @@ jobs:
         with:
           name: Lectures_slides
           path: lectures/8/MaM_${{ env.LEC8}}.pdf
-          
+
+      - name: Compile LaTeX document MaM_${{ env.LEC9}}
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: MaM_${{ env.LEC9}}.tex
+          latexmk_use_lualatex: true
+          working_directory: lectures/9/
+
+      - name: Save ${{ env.LEC9}} artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: Lectures_slides
+          path: lectures/9/MaM_${{ env.LEC9}}.pdf
+
       - name: Update compiled PDFs in git repository
         if: github.event.pull_request.merged == true || github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         run: |

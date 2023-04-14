@@ -22,6 +22,7 @@ All class related material can be found in corresponding folder/task_data
 * [Lecture 8 (Connections: Detachable (Threaded, Keyed, ...); Permanent (Riveting, Welding, ...))](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/8/MaM_lec8.pdf)
 * [Lecture 9 (Engineering Materials: Steel, Bronze, Aluminum, Titanium, Composites)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/9/MaM_lec9.pdf)
 * [Lecture 10 (Design Thinking and Manufacturing)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/10/MaM_lec10.pdf)
+* [Lecture 11 (Basics of FDM Printing)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/11/MaM_lec11.pdf)
 
 
 # Lab slides
@@ -32,6 +33,7 @@ All class related material can be found in corresponding folder/task_data
 * [Lab 5 CAE_DYN1 (Introduction to CAE; Animation Designer; Mechatronics Concept Designer; Motion; Measure; Interference; Density; Assign Materials)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/labs/CAE_DYN1/MaM_CAE_DYN1.pdf)
 * [Lab 6 CAE_DYN2 (Motion Analysis, Part 2)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/labs/CAE_DYN2/MaM_CAE_DYN2.pdf)
 * [Lab 7 CAD_REN1 (Render)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/labs/CAD_REN1/MaM_CAD_REN1.pdf)
+* [Lab 8 MAN1 (How to create such parts?)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/labs/MAN1/MaM_MAN1.pdf)
 
 # HWs
 * [HW 1 CAD_DET1 (Simple Detail)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/HWs/HW_CAD_DET1/MaM_HW_CAD_DET1.pdf)

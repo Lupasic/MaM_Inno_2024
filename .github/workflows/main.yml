@@ -32,6 +32,7 @@ jobs:
         LAB5: 'CAE_DYN1'
         LAB6: 'CAE_DYN2'
         LAB7: 'CAD_REN1'
+        LAB8: 'MAN1'
         
 #         LEC1:
         LEC2: 'lec2'
@@ -42,6 +43,7 @@ jobs:
         LEC8: 'lec8'
         LEC9: 'lec9'
         LEC10: 'lec10'
+        LEC11: 'lec11'
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2
@@ -241,7 +243,20 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: Lab_slides
-          path: labs/${{ env.LAB7}}/MaM_${{ env.LAB7}}.pdf              
+          path: labs/${{ env.LAB7}}/MaM_${{ env.LAB7}}.pdf         
+
+      - name: Compile LaTeX document MaM_${{ env.LAB8}}
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: MaM_${{ env.LAB8}}.tex
+          latexmk_use_lualatex: true
+          working_directory: labs/${{ env.LAB8}}/
+
+      - name: Save ${{ env.LAB8}} artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: Lab_slides
+          path: labs/${{ env.LAB8}}/MaM_${{ env.LAB8}}.pdf          
 # LECs
 #       - name: Compile LaTeX document MaM_${{ env.LEC1}}
 #         uses: xu-cheng/latex-action@master
@@ -359,6 +374,20 @@ jobs:
         with:
           name: Lectures_slides
           path: lectures/10/MaM_${{ env.LEC10}}.pdf
+
+      - name: Compile LaTeX document MaM_${{ env.LEC11}}
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: MaM_${{ env.LEC11}}.tex
+          latexmk_use_lualatex: true
+          working_directory: lectures/11/
+
+      - name: Save ${{ env.LEC11}} artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: Lectures_slides
+          path: lectures/11/MaM_${{ env.LEC11}}.pdf
+
 
       - name: Update compiled PDFs in git repository
         if: github.event.pull_request.merged == true || github.event_name == 'push' || github.event_name == 'workflow_dispatch'

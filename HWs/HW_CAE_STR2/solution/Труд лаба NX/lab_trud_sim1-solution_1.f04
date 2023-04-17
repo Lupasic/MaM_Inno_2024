@@ -1,0 +1,183 @@
+1
+ MACHINE                          MODEL                 OPERATING SYSTEM       NX Nastran       BUILD DATE         RUN DATE
+ Intel64 Family 6 Mod                                   Windows 7 Service Pa    VERSION   8.5    AUG 11, 2012       JUN  1, 2015
+
+ 
+                               ===      N X  N a s t r a n            E X E C U T I O N   S U M M A R Y    ===
+
+ Day_Time  Elapsed     I/O_Mb      Del_Mb     CPU_Sec    Del_CPU    Subroutine
+ 
+ 15:18:33     0:00        0.0         0.0         0.0        0.0    SEMTRN   BGN
+ 15:18:33     0:00        0.0         0.0         0.0        0.0    SEMTRN   END
+ 15:18:33     0:00        0.0         0.0         0.0        0.0    DBINIT   BGN
+      ** CURRENT PROJECT ID = ' "BLANK" '  ** CURRENT VERSION ID =          1
+
+     S U M M A R Y   O F   F I L E   A S S I G N M E N T   F O R   T H E   P R I M A R Y   D A T A B A S E     ( DBSNO   1, NXN8.5 )
+
+    ASSIGNED PHYSICAL FILE NAME (/ORIGINAL)      LOGICAL NAME     DBSET        STATUS    BUFFSIZE     CLUSTER SIZE      TIME STAMP
+    ---------------------------------------      ------------     -----        ------    --------     ------------     ------------
+    ..._trud_sim1-solution_1.T6900_33.MASTER     MASTER           MASTER       NEW           8193           1          150601151833
+    .../lab_trud_sim1-solution_1.T6900_33.DB     DBALL            DBALL        NEW           8193           1          150601151834
+    ..._trud_sim1-solution_1.T6900_33.OBJSCR     OBJSCR           OBJSCR       NEW           8193           1          150601151835
+               **** MEM FILE ****                * N/A *          SCRATCH 
+    ...trud_sim1-solution_1.T6900_33.SCRATCH     SCRATCH          SCRATCH      NEW           8193           1          150601151836
+    ..._trud_sim1-solution_1.T6900_33.SCR300     SCR300           SCRATCH      NEW           8193           1          150601151837
+ 15:18:33     0:00        1.0         1.0         0.0        0.0    DBINIT   END
+ 15:18:33     0:00        1.0         0.0         0.0        0.0    XCSA     BGN
+
+     S U M M A R Y   O F   F I L E   A S S I G N M E N T   F O R   T H E   D E L I V E R Y   D A T A B A S E   ( DBSNO   2, NXN8.5 )
+
+    ASSIGNED PHYSICAL FILE NAME (/ORIGINAL)      LOGICAL NAME     DBSET        STATUS    BUFFSIZE     CLUSTER SIZE      TIME STAMP
+    ---------------------------------------      ------------     -----        ------    --------     ------------     ------------
+    d:/install/.../em64tnt/SSS.MASTERA           MASTERA          MASTER       OLD           8193           1          120813164617
+   /./sss.MASTERA                           
+    d:/install/.../nxn8p5/em64tnt/SSS.MSCOBJ     MSCOBJ           MSCOBJ       OLD           8193           1          120813164622
+   /./sss.MSCOBJ                            
+    d:/install/.../nxn8p5/em64tnt/SSS.MSCSOU     MSCSOU           MSCSOU       OLD           8193           1          120813164623
+   /./sss.MSCSOU                            
+ 15:18:33     0:00       43.0        42.0         0.0        0.0    XCSA     END
+ 15:18:33     0:00       43.0         0.0         0.0        0.0    CGPI     BGN
+ 15:18:33     0:00       43.0         0.0         0.0        0.0    CGPI     END
+ 15:18:33     0:00       43.0         0.0         0.0        0.0    LINKER   BGN
+ 15:18:33     0:00       65.0        22.0         0.0        0.0    LINKER   END
+
+                    S U M M A R Y   O F   P H Y S I C A L   F I L E   I N F O R M A T I O N
+
+    ASSIGNED PHYSICAL FILE NAME                                   RECL (BYTES)  MODE  FLAGS  WSIZE  (WNUM)
+    ------------------------------------------------------------  ------------  ----  -----  -------------
+    c:/users/.../temp/lab_trud_sim1-solution_1.T6900_33.SCRATCH          32768   R/W           N/A        
+    c:/users/.../temp/lab_trud_sim1-solution_1.T6900_33.OBJSCR           32768   R/W           N/A        
+    c:/users/.../temp/lab_trud_sim1-solution_1.T6900_33.MASTER           32768   R/W           N/A        
+    c:/users/.../temp/lab_trud_sim1-solution_1.T6900_33.DBALL            32768   R/W           N/A        
+    c:/users/.../temp/lab_trud_sim1-solution_1.T6900_33.SCR300           32768   R/W           N/A        
+    d:/install/siemens/.../nxnastran/nxn8p5/em64tnt/SSS.MASTERA          32768   R/O           N/A        
+    d:/install/siemens/.../nxnastran/nxn8p5/em64tnt/SSS.MSCOBJ           32768   R/O           N/A        
+
+    FLAG VALUES ARE --
+      B   BUFFERED I/O USED TO PROCESS FILE
+      M   FILE MAPPING USED TO PROCESS FILE
+      R   FILE BEING ACCESSED IN 'RAW' MODE
+ 
+    ASSIGNED PHYSICAL FILE NAME                                   LOGICAL   UNIT  STATUS   ACCESS   RECL  FORM    FLAGS
+    ------------------------------------------------------------  --------  ----  -------  ------  -----  ------  -----
+    ./lab_trud_sim1-solution_1.f04                                LOGFL        4  OLD      SEQ      N/A   FMTD         
+    ./lab_trud_sim1-solution_1.f06                                PRINT        6  OLD      SEQ      N/A   FMTD         
+    d:/install/siemens/nx 8.5/nxnastran/nxn8p5/nast/news.txt      INCLD1       9  OLD      SEQ      N/A   FMTD      R  
+    ./lab_trud_sim1-solution_1.plt                                PLOT        14  OLD      SEQ      N/A   UNFMTD       
+    ./lab_trud_sim1-solution_1.op2                                OP2         12  OLD      SEQ      N/A   UNFMTD       
+    c:/users/oleg/.../temp/lab_trud_sim1-solution_1.T6900_33.f18  OUTPUT2     18  UNKNOWN  SEQ      N/A   UNFMTD       
+    c:/users/oleg/.../temp/lab_trud_sim1-solution_1.T6900_33.f19  INPUTT4     19  OLD      SEQ      N/A   UNFMTD    R  
+    ./lab_trud_sim1-solution_1.pch                                PUNCH        7  OLD      SEQ      N/A   FMTD         
+    ./lab_trud_sim1-solution_1.xdb                                DBC         40  UNKNOWN  DIRECT   1024  UNFMTD       
+    ./lab_trud_sim1-solution_1.asm                                ASSEM       16  OLD      SEQ      N/A   FMTD         
+
+    FLAG VALUES ARE --
+      A   FILE HAS BEEN DEFINED BY AN 'ASSIGN' STATEMENT
+      D   FILE IS TO BE DELETED BEFORE RUN, IF IT EXISTS
+      R   FILE IS READ-ONLY
+      T   FILE IS TEMPORARY AND WILL BE DELETED AT END OF RUN
+
+    ** PHYSICAL FILES LARGER THAN 2GB ARE SUPPORTED ON THIS PLATFORM
+ 
+0    ** MASTER DIRECTORIES ARE LOADED IN MEMORY.
+        USER OPENCORE (HICORE)         =    24689825  WORDS
+        EXECUTIVE SYSTEM WORK AREA     =      218621  WORDS
+        MASTER(RAM)                    =       68305  WORDS
+        SCRATCH(MEM) AREA              =      819300  WORDS (     100 BUFFERS)
+        BUFFER POOL AREA (GINO/EXEC)   =      418353  WORDS (      51 BUFFERS)
+
+        TOTAL NX NASTRAN MEMORY LIMIT  =    26214404  WORDS
+
+
+ Day_Time  Elapsed     I/O_Mb      Del_Mb     CPU_Sec    Del_CPU    SubDMAP Line (S)SubDMAP/Module
+ 
+ 15:18:33     0:00       66.0         1.0         0.0        0.0    XSEMDR   BGN
+ 15:18:33     0:00       66.0         0.0         0.0        0.0    NLTCSH  2    (S)NLTRAN  BEGN    
+ 15:18:33     0:00       66.0         0.0         0.0        0.0    NLTRAN  26   (S)SUPER1  BEGN    
+ 15:18:33     0:00       66.0         0.0         0.0        0.0    SUPER1  25   (S)IFPL    BEGN    
+ 15:18:33     0:00       66.0         0.0         0.0        0.0    IFPL    40      IFP1    BEGN    
+ 15:18:33     0:00       66.0         0.0         0.0        0.0    IFPL    135     XSORT   BEGN    
+ 15:18:33     0:00       66.0         0.0         0.0        0.0    IFPL    162     COPY    BEGN    
+ 15:18:33     0:00       66.0         0.0         0.0        0.0    IFPL    184     FORTIO  BEGN    
+ 15:18:33     0:00       66.0         0.0         0.0        0.0    IFPL    218  (S)IFPS    BEGN    
+ 15:18:33     0:00       66.0         0.0         0.0        0.0    IFPS    26      IFP     BEGN    
+ 15:18:33     0:00       66.0         0.0         0.0        0.0    IFP     
+ *       COUNT:ENTRY          COUNT:ENTRY          COUNT:ENTRY          COUNT:ENTRY          COUNT:ENTRY          COUNT:ENTRY     *
+ *          19:CHBDYE           192:CTRIA6             1:DLOAD            429:GRID               1:MAT4               4:PARAM     *
+ *           1:PSHELL             1:QBDY3              7:SPC                1:TABLED1            1:TEMPD              1:TLOAD1    *
+ *           1:TSTEPNL 
+ *    PARAM:  OMACHPR   POST      POSTEXT   UNITSYS                                                                               *
+ 15:18:33     0:00       67.0         1.0         0.0        0.0    IFPS    27      DMIIN   BEGN    
+ 15:18:33     0:00       67.0         0.0         0.0        0.0    IFPS    32      DTIIN   BEGN    
+ 15:18:33     0:00       67.0         0.0         0.0        0.0    IFPS    125     MODGM2  BEGN    
+ 15:18:33     0:00       67.0         0.0         0.0        0.0    IFPS    137     MODGM2B BEGN    
+ 15:18:33     0:00       67.0         0.0         0.0        0.0    IFPS    145     PVT     BEGN    
+ 15:18:33     0:00       67.0         0.0         0.0        0.0    IFPL    223     SEPR1   BEGN    
+ 15:18:33     0:00       67.0         0.0         0.0        0.0    IFPL    224     DBDELETEBEGN    
+ 15:18:33     0:00       67.0         0.0         0.0        0.0    IFPL    239     PROJVER BEGN    
+ 15:18:33     0:00       68.0         1.0         0.0        0.0    IFPL    244     PVT     BEGN    
+ 15:18:33     0:00       68.0         0.0         0.0        0.0    IFPL    278  (S)IFPS1   BEGN    
+ 15:18:33     0:00       68.0         0.0         0.0        0.0    IFPS1   16      DTIIN   BEGN    
+ 15:18:33     0:00       68.0         0.0         0.0        0.0    IFPS1   48      PLTSET  BEGN    
+ 15:18:33     0:00       68.0         0.0         0.0        0.0    IFPS1   51      MSGHAN  BEGN    
+ 15:18:33     0:00       68.0         0.0         0.0        0.0    IFPS1   52      MSGHAN  BEGN    
+ 15:18:33     0:00       68.0         0.0         0.0        0.0    IFPS1   53      GP0     BEGN    
+ 15:18:33     0:00       68.0         0.0         0.0        0.0    IFPS1   59      MSGHAN  BEGN    
+ 15:18:33     0:00       68.0         0.0         0.0        0.0    IFPL    285  (S)TESTBIT BEGN    
+ 15:18:33     0:00       68.0         0.0         0.0        0.0    IFPL    302     PRTPARM BEGN    
+ 15:18:33     0:00       68.0         0.0         0.0        0.0    IFPL    303  (S)PRTSUM  BEGN    
+ 15:18:33     0:00       68.0         0.0         0.0        0.0    IFPL    304     EXIT    BEGN    
+
+
+ *** PARALLEL PROCESSES CPU INFORMATION (SECONDS) ***
+
+  MODULE     PROCESS-1     PROCESS-2     PROCESS-3     PROCESS-4     PROCESS-5     PROCESS-6     PROCESS-7     PROCESS-8
+  --------   -----------   -----------   -----------   -----------   -----------   -----------   -----------   -----------
+  ========   ===========   ===========   ===========   ===========   ===========   ===========   ===========   ===========
+  
+ *** SYSTEM WARNING MESSAGE 6299 (PARCPU)
+     NO PARALLEL PROCESS CREATED
+
+ *** TOTAL MEMORY AND DISK USAGE STATISTICS ***
+
+ +---------- SPARSE SOLUTION MODULES -----------+         +------------- MAXIMUM DISK USAGE -------------+
+    HIWATER               SUB_DMAP        DMAP               HIWATER               SUB_DMAP        DMAP
+    (WORDS)   DAY_TIME      NAME         MODULE                 (MB)   DAY_TIME      NAME         MODULE
+          0   15:18:33    PREFACE     0  PREFACE               9.906   15:18:33    IFPL      304  EXIT    
+
+
+ *** DATABASE USAGE STATISTICS ***
+ 
+ +------------------ LOGICAL DBSETS ------------------+   +------------------------- DBSET FILES -------------------------+
+  DBSET      ALLOCATED   BLOCKSIZE        USED    USED     FILE       ALLOCATED     HIWATER       HIWATER  I/O TRANSFERRED
+              (BLOCKS)     (WORDS)    (BLOCKS)       %                 (BLOCKS)    (BLOCKS)          (MB)             (GB)
+ 
+  MASTER          5000        8192          63    1.26     MASTER          5000          63         1.969            0.041
+  DBALL        2000000        8192          11    0.00     DBALL        2000000          11         0.344            0.001
+  OBJSCR          5000        8192         241    4.82     OBJSCR          5000         241         7.531            0.010
+  SCRATCH      4000100        8192          37    0.00    (MEMFILE          100          43         1.344            0.000)
+                                                           SCRATCH      2000000           1         0.031            0.000
+                                                           SCR300       2000000           1         0.031            0.000
+                                                                                                            ==============
+                                                                                                     TOTAL:          0.051
+ 
+ *** BUFFER POOL AND SCRATCH 300 USAGE STATISTICS ***
+ 
+ +----------------- BUFFER POOL -----------------+      +-------------------------- SCRATCH 300 --------------------------+ 
+   OPTION        BLOCKS      BLOCKS      BLOCKS           OPTION    HIWATER               SUB_DMAP        DMAP     OPN/CLS
+  SELECTED     ALLOCATED     REUSED     RELEASED         SELECTED  (BLOCKS)   DAY_TIME      NAME         MODULE    COUNTER
+  GINO,EXEC          51        2718         795              2           1    15:18:33    PREFACE     0  PREFACE       0
+
+
+ *** SUMMARY OF PHYSICAL FILE I/O ACTIVITY ***
+
+ ASSIGNED PHYSICAL FILE NAME                                   RECL (BYTES)  READ/WRITE COUNTS   WSIZE  (WNUM)  MAP-I/O CNT
+ ------------------------------------------------------------  -----------  -------------------  -------------  -----------
+ c:/users/.../temp/lab_trud_sim1-solution_1.T6900_33.SCRATCH         32768          0/1            N/A            N/A          
+ c:/users/.../temp/lab_trud_sim1-solution_1.T6900_33.OBJSCR          32768         24/290          N/A            N/A          
+ c:/users/.../temp/lab_trud_sim1-solution_1.T6900_33.MASTER          32768         26/1318         N/A            N/A          
+ c:/users/.../temp/lab_trud_sim1-solution_1.T6900_33.DBALL           32768         10/27           N/A            N/A          
+ c:/users/.../temp/lab_trud_sim1-solution_1.T6900_33.SCR300          32768          0/1            N/A            N/A          
+ d:/install/siemens/.../nxnastran/nxn8p5/em64tnt/SSS.MASTERA         32768         73/0            N/A            N/A          
+ d:/install/siemens/.../nxnastran/nxn8p5/em64tnt/SSS.MSCOBJ          32768        427/0            N/A            N/A          
+ 

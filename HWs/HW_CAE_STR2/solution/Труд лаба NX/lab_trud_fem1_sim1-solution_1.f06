@@ -1,0 +1,246 @@
+1
+ 
+ 
+ 
+ 
+                                                             
+                 Copyright 2011 Siemens Product Lifecycle    
+                        Management Software Inc.             
+                         All Rights Reserved.                
+                                                             
+               This software and related documentation are   
+                 proprietary to Siemens Product Lifecycle    
+                        Management Software Inc.             
+                                                             
+              Siemens and the Siemens logo are registered    
+             trademarks of Siemens AG. NX is a trademark or  
+                registered trademark of Siemens Product      
+               Lifecycle Management Software Inc. or its     
+             subsidiaries in the United States and in other  
+             countries.  NASTRAN is a registered trademark   
+                 of the National Aeronautics and Space       
+                 Administration.  All other trademarks,      
+              registered trademarks or service marks belong  
+                      to their respective holders.           
+                                                             
+           LIMITATIONS TO U.S. GOVERNMENT RIGHTS. UNPUBLISHED
+           - RIGHTS RESERVED UNDER THE COPYRIGHT LAWS OF THE 
+            UNITED STATES. This computer software and related
+               computer software documentation have been     
+            developed exclusively at private expense and are 
+           provided subject to the following rights:  If this
+               computer software and computer  software      
+            documentation qualify as "commercial items" (as  
+             that term is defined in FAR 2.101), their use,  
+            duplication or disclosure by the U.S. Government 
+           is subject to the protections and restrictions as 
+            set forth in the Siemens commercial license for  
+            software and/or documentation, as prescribed in  
+           FAR 12.212 and FAR 27.405(b)(2)(i) (for civilian  
+             agencies) and in DFARS 227.7202-1(a) and DFARS  
+           227.7202-3(a) (for the Department of Defense), or 
+           any successor or similar regulation, as applicable
+           or as amended from time to time.  If this computer
+           software and computer documentation do not qualify
+            as "commercial items", then they are "restricted 
+           computer software" and are provided with "restric-
+            tive rights", and their use, duplication or dis- 
+            closure by the U.S. Government is subject to the 
+            protections and restrictions as set forth in FAR 
+           27.404(b) and FAR 52-227-14 (for civilian agencies
+           ), and DFARS 227.7203-5(c) and DFARS 252.227-7014 
+           (for the Department of Defense), or any successor 
+           or similar regulation, as applicable or as amended
+              from time to time.  Siemens PLM Software Inc.  
+              5400 Legacy Drive, Plano, Texas 75024-3199.    
+
+                * * * * * * * * * * * * * * * * * * * *
+                * * * * * * * * * * * * * * * * * * * *
+                * *                                 * *
+                * *                                 * *
+                * *                                 * *
+                * *                                 * *
+                * *       N X   N a s t r a n       * *
+                * *                                 * *
+                * *         VERSION -   8.5         * *
+                * *                                 * *
+                * *          AUG 11, 2012           * *
+                * *                                 * *
+                * *                                 * *
+                * *Intel64 Family 6 Model 58 Steppi * *
+                * *                                 * *
+                * *Intel(R) Core(TM) i7-3770K CPU @ * *
+                * *                                 * *
+                * *    Windows 7 Service Pack 1     * *
+                * *                                 * *
+                * *       Compiled for X86-64       * *
+                * *                                 * *
+                * * * * * * * * * * * * * * * * * * * *
+                * * * * * * * * * * * * * * * * * * * *
+1 
+  
+                        Welcome to NX Nastran
+                        -------------------------
+  
+  
+ This "news" information can be turned off by setting "news=no" in the runtime
+ configuration (RC) file.  The "news" keyword can be set in the system RC file
+ for global, or multi-user control, and in a local file for local control.
+ Individual jobs can be controlled by setting news to yes or no on the command
+ line.
+1                                                                              JUNE   1, 2015  NX NASTRAN  8/11/12   PAGE     1
+                                                                                                                                    
+0        N A S T R A N    F I L E    A N D    S Y S T E M    P A R A M E T E R    E C H O                                           
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     NASTRAN BUFFSIZE=8193 $(D:/INSTALL/SIEMENS/NX 8.5/NXNASTRAN/CONF/NAST8.RCF[2])  
+     NASTRAN DIAGA=128 DIAGB=0 $(D:/INSTALL/SIEMENS/NX 8.5/NXNASTRAN/CONF/NAST8.RCF[6
+     NASTRAN SYSTEM(442)=1 $(COMMAND LINE[5])                                        
+     NASTRAN REAL=2147483647 $(PROGRAM DEFAULT)                                      
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$             
+     $*                                                                              
+     $*                    NX V8.5.0.23 TRANSLATOR                                   
+     $*                    FOR NX NASTRAN VERSION 8.5                                
+     $*                                                                              
+     $*             FEM FILE: E:\CHERTEJI\NX_CHERTEJI\LAB_TRUD_FEM1.FEM              
+     $*             SIM FILE: E:\CHERTEJI\NX_CHERTEJI\LAB_TRUD_FEM1_SIM1.SIM         
+     $*        ANALYSIS TYPE: THERMAL                                                
+     $*        SOLUTION NAME: SOLUTION 1                                             
+     $*        SOLUTION TYPE: SOL 159 TRANSIENT NONLINEAR HEAT TRANSFER              
+     $*                                                                              
+     $*    SOLVER INPUT FILE: LAB_TRUD_FEM1_SIM1-SOLUTION_1.DAT                      
+     $*        CREATION DATE:  1-JUN-2015                                            
+     $*        CREATION TIME: 15:21:43                                               
+     $*             HOSTNAME: LUPASIC                                                
+     $*      NASTRAN LICENSE: DESKTOP BUNDLE                                         
+     $*                                                                              
+     $*                UNITS: MM (MILLI-NEWTON)                                      
+     $*                      ... LENGTH : MM                                         
+     $*                      ... TIME   : SEC                                        
+     $*                      ... MASS   : KILOGRAM (KG)                              
+     $*                      ... TEMPERATURE : DEG CELSIUS                           
+     $*                      ... FORCE  : MILLI-NEWTON                               
+     $*                      ... THERMAL ENERGY : MN-MM (MICRO-JOULE)                
+     $*                                                                              
+     $* |||||| |||||||||:                                                            
+     $*     ||| ||||||| ||||||||||||| NX | |||||||| ||| ||||||||||.                  
+     $*     ||||| ||||||||| |||||||||| |||||||||||||| NX.                            
+     $*                                                                              
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$             
+     $*                                                                              
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                           
+     $*                                                                              
+     $* FILE MANAGEMENT                                                              
+     $*                                                                              
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                           
+     $*                                                                              
+     $*                                                                              
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                           
+     $*                                                                              
+     $* EXECUTIVE CONTROL                                                            
+     $*                                                                              
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                           
+     $*                                                                              
+1                                                                              JUNE   1, 2015  NX NASTRAN  8/11/12   PAGE     2
+                                                                                                                                    
+0        N A S T R A N    E X E C U T I V E    C O N T R O L    E C H O                                                             
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     ID,NASTRAN,LAB_TRUD_FEM1_SIM1-SOLUTION_1                                                
+     SOL 159                                                                                 
+     CEND                                                                                    
+1                                                                              JUNE   1, 2015  NX NASTRAN  8/11/12   PAGE     3
+                                                                                                                                    
+0                                                                                                                                   
+0                                        C A S E    C O N T R O L    E C H O                                                        
+                 COMMAND                                                                                                            
+                 COUNT                                                                                                              
+                  1      $*                                                                                      
+                  2      $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                   
+                  3      $*                                                                                      
+                  4      $* CASE CONTROL                                                                         
+                  5      $*                                                                                      
+                  6      $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                   
+                  7      $*                                                                                      
+                  8      ECHO = NONE                                                                             
+                  9      ANALYSIS = HEAT                                                                         
+                 10      IC = 200                                                                                
+                 11      TSTEPNL = 100                                                                           
+                 12      OUTPUT                                                                                  
+                 13      FLUX(PLOT) = ALL                                                                        
+                 14      THERMAL(PLOT) = ALL                                                                     
+                 15      $*  NX STEP: SUBCASE - THERMAL TRANSIENT                                                
+                 16      SUBCASE 1                                                                               
+                 17      LABEL = SUBCASE - THERMAL TRANSIENT                                                     
+                 18      DLOAD = 301                                                                             
+                 19      SPC = 3                                                                                 
+                 20      $*                                                                                      
+                 21      $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                   
+                 22      $*                                                                                      
+                 23      $* BULK DATA                                                                            
+                 24      $*                                                                                      
+                 25      $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                   
+                 26      $*                                                                                      
+                 27      BEGIN BULK                                                                              
+0                             INPUT BULK DATA ENTRY COUNT =        1548
+0                       TOTAL COUNT=      1521
+ *** USER FATAL MESSAGE 316 (IFPDRV)
+     ILLEGAL DATA ON BULK DATA ENTRY MAT4    
+ MAT4           11.0000+6          0.0000                1.000000                
+
+
+                                        M O D E L   S U M M A R Y
+
+                                   NUMBER OF GRID     POINTS   =      429
+ 
+ 
+                                   NUMBER OF CHBDYE   ELEMENTS =       19
+                                   NUMBER OF CTRIA6   ELEMENTS =      192
+ 
+1                                                                              JUNE   1, 2015  NX NASTRAN  8/11/12   PAGE     4
+                                                                                                                                    
+0                                                                                                                                   
+ ^^^ USER   FATAL   MESSAGE 9002 (IFPS)  
+ ^^^ ERROR(S) ENCOUNTERED IN THE    MAIN BULK DATA SECTION   
+ ^^^ SEE MESSAGES ABOVE. ERROR ENCOUNTERED IN MODULE    IFP,                                     
+1                                                                              JUNE   1, 2015  NX NASTRAN  8/11/12   PAGE     5
+                                                                                                                                    
+0                                                                                                                                   
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+ *** USER INFORMATION MESSAGE 4425 (PRTPRN)
+     ONE OR MORE FATAL ERRORS HAVE OCCURRED.  THERE MAY BE MORE ERROR MESSAGES IN THE PRECEDING OUTPUT
+1                                                                              JUNE   1, 2015  NX NASTRAN  8/11/12   PAGE     6
+                                                                                                                                    
+0                                                                                                                                   
+ * * * *  D B D I C T   P R I N T  * * * *      SUBDMAP = PRTSUM  ,  DMAP STATEMENT NO.     29
+
+
+
+0                                   * * * *  A N A L Y S I S  S U M M A R Y  T A B L E  * * * *
+0 SEID  PEID PROJ VERS APRCH      SEMG SEMR SEKR SELG SELR MODES DYNRED SOLLIN PVALID SOLNL LOOPID DESIGN CYCLE SENSITIVITY
+ --------------------------------------------------------------------------------------------------------------------------
+0SEID = SUPERELEMENT ID.
+ PEID = PRIMARY SUPERELEMENT ID OF IMAGE SUPERELEMENT.
+ PROJ = PROJECT ID NUMBER.
+ VERS = VERSION ID.
+ APRCH = BLANK FOR STRUCTURAL ANALYSIS.  HEAT FOR HEAT TRANSFER ANALYSIS.
+ SEMG = STIFFNESS AND MASS MATRIX GENERATION STEP.
+ SEMR = MASS MATRIX REDUCTION STEP (INCLUDES EIGENVALUE SOLUTION FOR MODES).
+ SEKR = STIFFNESS MATRIX REDUCTION STEP.
+ SELG = LOAD MATRIX GENERATION STEP.
+ SELR = LOAD MATRIX REDUCTION STEP. 
+ MODES = T (TRUE) IF NORMAL MODES OR BUCKLING MODES CALCULATED.
+ DYNRED = T (TRUE) MEANS GENERALIZED DYNAMIC AND/OR COMPONENT MODE REDUCTION PERFORMED.
+ SOLLIN = T (TRUE) IF LINEAR SOLUTION EXISTS IN DATABASE.
+ PVALID = P-DISTRIBUTION ID OF P-VALUE FOR P-ELEMENTS
+ LOOPID = THE LAST LOOPID VALUE USED IN THE NONLINEAR ANALYSIS.  USEFUL FOR RESTARTS.
+ SOLNL = T (TRUE) IF NONLINEAR SOLUTION EXISTS IN DATABASE.
+ DESIGN CYCLE = THE LAST DESIGN CYCLE (ONLY VALID IN OPTIMIZATION).
+ SENSITIVITY = SENSITIVITY MATRIX GENERATION FLAG.
+1                                        * * * END OF JOB * * *
+ 
+ 

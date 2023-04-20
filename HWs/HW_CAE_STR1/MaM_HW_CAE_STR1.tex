@@ -115,15 +115,18 @@
             \textbf{Zip archive, which contains all needed data}: \textit{HWs/HW\_CAE\_STR1/task\_data/HW\_CAE\_STR1\_1.zip}
             \begin{enumerate}
                 \item Take the detail from zip archive
-                \item Assign <<Aluminum>> material
-                \item Find the biggest hole in detail and make a static stress analysis in 3 ways:
-                      \begin{itemize}
-                        \scriptsize
-                          \item Make a steel rod (the same diam as a hole, 500mm length). Apply a force 3000 N to the end of rod.
-                          \item Remove the rod. Apply remote force with the same length as in previous bullet to 1) face 2) edge.
-                          \item Remove the rod. Apply a torque (you need to calculate it based on knowledge from 1st bullet)
-                      \end{itemize}
-                \item Compare results
+                \item Assign <<Steel>> material
+                \item You should solve task in 3 ways:
+                \begin{enumerate}
+                    \scriptsize
+                    \item Without creating idealized model. 3D mesh.
+                    \item Simplify model (remove edge bendings, small holes, etc). Use 3D mesh.
+                    \item The same as in previous, but you need to use 2D mesh. \textit{Hint:} use Midsurface operation 
+                \end{enumerate}
+                \item Fix detail as it used to be fixed in real life
+                \item Add 12000 N force  upper edge. Force should be perpendicular to the ground
+                \item Obtain result and interpret it. Also compare the calculating speed
+                \item Modify the detail and repeat until the detail won't be broken
             \end{enumerate}
         \end{column}
         \begin{column}{0.39\textwidth}
@@ -166,25 +169,56 @@
     % \framesubtitle{}
     \vspace{-0.4cm}
     \begin{columns}[T,onlytextwidth]
-        \begin{column}{0.54\textwidth}
+        \begin{column}{0.59\textwidth}
             \scriptsize
             \textbf{Zip archive, which contains all needed data}: \textit{HWs/HW\_CAE\_STR1/task\_data/HW\_CAE\_STR1\_3.zip}
+            \begin{enumerate}
+                \item Take the detail from zip archive
+                \item Assign <<Aluminum>> material
+                \item Find the biggest hole in detail and make a static stress analysis in 2 ways:
+                      \begin{itemize}
+                        \scriptsize
+                          \item Make a steel rod (the same diam as a hole, 500mm length). Apply a force 3000 N to the end of rod.
+                          \item * Remove the rod. Apply a moment (you need to calculate it based on knowledge from 1st bullet) (More info in 9th pdf + Advance Sim Инженерный Анализ pdf page 85)
+                          
+                            \textbf{This task is not affecting on grade.}
+                      \end{itemize}
+                \item Compare results
+            \end{enumerate}
+        \end{column}
+        \begin{column}{0.39\textwidth}
+            \begin{figure}[H]
+                \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{HW_CAE_STR1_3.png}
+                % \caption{caption_name}
+                \label{fig:HW_CAE_STR1_3.png}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}[t]{Task 4}
+    % \framesubtitle{}
+    \vspace{-0.4cm}
+    \begin{columns}[T,onlytextwidth]
+        \begin{column}{0.54\textwidth}
+            \scriptsize
+            \textbf{Zip archive, which contains all needed data}: \textit{HWs/HW\_CAE\_STR1/task\_data/HW\_CAE\_STR1\_4.zip}
             \begin{enumerate}
                 \item Take the detail from zip archive
                 \item Assign <<Steel>> material
                 \item Generate a mesh using tetrahedron
                 \item Solve the task 1) using bolt connection for lugs and 2) without. Explain the difference
                 \item The main goal of the task to apply contact between bodies. You should try: 1) automatic 2) manual contact
-                \item Apply pressure 0.5MPa to the central beam
+                \item Apply pressure 500 MPa to the central beam
                 \item Show the possible displacement of pins and the who assembly separately.
             \end{enumerate}
         \end{column}
         \begin{column}{0.45\textwidth}
             \vspace{0.5cm}
             \begin{figure}[H]
-                \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{HW_CAE_STR1_3.png}
+                \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{HW_CAE_STR1_4.png}
                 % \caption{caption_name}
-                \label{fig:HW_CAE_STR1_3.png}
+                \label{fig:HW_CAE_STR1_4.png}
             \end{figure}
         \end{column}
     \end{columns}

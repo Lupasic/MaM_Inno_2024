@@ -1,0 +1,449 @@
+1
+ 
+ 
+ 
+ 
+                                                             
+                        Copyright 2022 Siemens               
+                         All Rights Reserved.                
+                                                             
+               This software and related documentation are   
+                    proprietary to Siemens Industry          
+                             Software Inc.                   
+                                                             
+              Siemens and the Siemens logo are registered    
+             trademarks of Siemens Trademark GmbH & Co. KG.  
+            Simcenter is a trademark, or registered trademark
+                of Siemens Industry Software Inc. or its     
+             subsidiaries in the United States and in other  
+             countries.  Simcenter NASTRAN is a registered   
+               trademark of Siemens Industry Software Inc.   
+            All other trademarks, registered trademarks or   
+               service marks belong to their respective      
+                        holders.                             
+                                                             
+           LIMITATIONS TO U.S. GOVERNMENT RIGHTS. UNPUBLISHED
+           - RIGHTS RESERVED UNDER THE COPYRIGHT LAWS OF THE 
+            UNITED STATES. This computer software and related
+               computer software documentation have been     
+            developed exclusively at private expense and are 
+           provided subject to the following rights:  If this
+               computer software and computer  software      
+            documentation qualify as "commercial items" (as  
+             that term is defined in FAR 2.101), their use,  
+            duplication or disclosure by the U.S. Government 
+           is subject to the protections and restrictions as 
+            set forth in the Siemens commercial license for  
+            software and/or documentation, as prescribed in  
+           FAR 12.212 and FAR 27.405(b)(2)(i) (for civilian  
+             agencies) and in DFARS 227.7202-1(a) and DFARS  
+           227.7202-3(a) (for the Department of Defense), or 
+           any successor or similar regulation, as applicable
+           or as amended from time to time.  If this computer
+           software and computer documentation do not qualify
+            as "commercial items", then they are "restricted 
+           computer software" and are provided with "restric-
+            tive rights", and their use, duplication or dis- 
+            closure by the U.S. Government is subject to the 
+            protections and restrictions as set forth in FAR 
+           27.404(b) and FAR 52-227-14 (for civilian agencies
+           ), and DFARS 227.7203-5(c) and DFARS 252.227-7014 
+           (for the Department of Defense), or any successor 
+           or similar regulation, as applicable or as amended
+           from time to time. Siemens Industry Software Inc. 
+           5800 Granite Parkway, Suite 600, Plano, TX 75024  
+ 
+
+                * * * * * * * * * * * * * * * * * * * *
+                * * * * * * * * * * * * * * * * * * * *
+                * *                                 * *
+                * *                                 * *
+                * *                                 * *
+                * *                                 * *
+                * *   Simcenter Nastran 2206.5000   * *
+                * *                                 * *
+                * *       VERSION - 2206.5026       * *
+                * *                                 * *
+                * *          AUG  4, 2022           * *
+                * *                                 * *
+                * *                                 * *
+                * *Intel64 Family 6 Model 85 Steppi * *
+                * *                                 * *
+                * *MODEL Intel(R) Core(TM) i9-9820X * *
+                * *                                 * *
+                * *           Windows 10            * *
+                * *                                 * *
+                * *       Compiled for X86-64       * *
+                * *                                 * *
+                * * * * * * * * * * * * * * * * * * * *
+                * * * * * * * * * * * * * * * * * * * *
+1 
+  
+                      Welcome to Simcenter Nastran
+                      ----------------------------
+  
+  
+ This "news" information can be turned off by setting "news=no" in the runtime
+ configuration (RC) file.  The "news" keyword can be set in the system RC file
+ for global, or multi-user control, and in a local file for local control.
+ Individual jobs can be controlled by setting news to yes or no on the command
+ line.
+1                                                                             APRIL  18, 2023  SIMCENTER NASTRAN  8/ 4/22   PAGE     1
+                                                                                                                                    
+0        N A S T R A N    F I L E    A N D    S Y S T E M    P A R A M E T E R    E C H O                                           
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     NASTRAN BUFFSIZE=32769 $(H:/INSTALL_SLOW/SIEMENS/NX2206/NXNASTRAN/CONF/NASTRAN.R
+     NASTRAN BUFFPOOL=23509                                                          
+     NASTRAN DIAGA=128 DIAGB=0 $(H:/INSTALL_SLOW/SIEMENS/NX2206/NXNASTRAN/CONF/NASTRA
+     NASTRAN SYSTEM(442)=2 $(COMMAND LINE[5])                                        
+     NASTRAN REAL=8560967680 $(MEMORY LIMIT FOR MPI AND OTHER SPECIALIZED MODULES)   
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$             
+     $*                                                                              
+     $*                    SIMCENTER V2206.0.0.8101 TRANSLATOR                       
+     $*                    FOR SIMCENTER NASTRAN VERSION 2206.0                      
+     $*                                                                              
+     $*             FEM FILE: D:\LATEX_DOCS\MAM\HWS\HW_CAE_STR1\SOLUTION\1\HW_CAE_STR
+     $*             SIM FILE: D:\LATEX_DOCS\MAM\HWS\HW_CAE_STR1\SOLUTION\1\HW_CAE_STR
+     $*        ANALYSIS TYPE: STRUCTURAL                                             
+     $*        SOLUTION NAME: SOLUTION 1                                             
+     $*        SOLUTION TYPE: SOL 101 LINEAR STATICS                                 
+     $*                                                                              
+     $*    SOLVER INPUT FILE: HW_CAE_STR1_1_SIM3-SOLUTION_1.DAT                      
+     $*        CREATION DATE: 18-APR-2023                                            
+     $*        CREATION TIME: 11:32:12                                               
+     $*             HOSTNAME: DESKTOP-6AFHIMM                                        
+     $*      NASTRAN LICENSE: DESKTOP BUNDLE                                         
+     $*                                                                              
+     $*                UNITS: MM (MILLI-NEWTON)                                      
+     $*                      ... LENGTH : MM                                         
+     $*                      ... TIME   : SEC                                        
+     $*                      ... MASS   : KILOGRAM (KG)                              
+     $*                      ... TEMPERATURE : DEG CELSIUS                           
+     $*                      ... FORCE  : MILLI-NEWTON                               
+     $*                      ... THERMAL ENERGY : MN-MM (MICRO-JOULE)                
+     $*                                                                              
+     $* IMPORTANT NOTE:                                                              
+     $*     THIS BANNER WAS GENERATED BY SIMCENTER AND ALTERING THIS                 
+     $*     INFORMATION MAY COMPROMISE THE PRE AND POST PROCESSING OF RESULTS        
+     $*                                                                              
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$             
+     $*                                                                              
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                           
+     $*                                                                              
+     $* FILE MANAGEMENT                                                              
+     $*                                                                              
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                           
+     $*                                                                              
+     $*                                                                              
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                           
+     $*                                                                              
+     $* EXECUTIVE CONTROL                                                            
+     $*                                                                              
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                           
+     $*                                                                              
+1                                                                             APRIL  18, 2023  SIMCENTER NASTRAN  8/ 4/22   PAGE     2
+                                                                                                                                    
+0        N A S T R A N    E X E C U T I V E    C O N T R O L    E C H O                                                             
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     ID,NASTRAN,HW_CAE_STR1_1_SIM3-SOLUTION_1                                                
+     SOL 101                                                                                 
+     CEND                                                                                    
+1                                                                             APRIL  18, 2023  SIMCENTER NASTRAN  8/ 4/22   PAGE     3
+                                                                                                                                    
+0                                                                                                                                   
+0                                        C A S E    C O N T R O L    E C H O                                                        
+                 COMMAND                                                                                                            
+                 COUNT                                                                                                              
+                  1      $*                                                                                      
+                  2      $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                   
+                  3      $*                                                                                      
+                  4      $* CASE CONTROL                                                                         
+                  5      $*                                                                                      
+                  6      $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                   
+                  7      $*                                                                                      
+                  8      ECHO = NONE                                                                             
+                  9      OUTPUT                                                                                  
+                 10      DISPLACEMENT(PLOT,REAL) = ALL                                                           
+                 11      SPCFORCES(PLOT,REAL) = ALL                                                              
+                 12      STRESS(PLOT,REAL,VONMISES,CENTER) = ALL                                                 
+                 13      $*  STEP: SUBCASE - STATICS 1                                                           
+                 14      SUBCASE 1                                                                               
+                 15        LABEL = SUBCASE - STATICS 1                                                           
+                 16        LOAD = 1                                                                              
+                 17        SPC = 2                                                                               
+                 18      $*                                                                                      
+                 19      $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                   
+                 20      $*                                                                                      
+                 21      $* BULK DATA                                                                            
+                 22      $*                                                                                      
+                 23      $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                   
+                 24      $*                                                                                      
+                 25      BEGIN BULK                                                                              
+0                             INPUT BULK DATA ENTRY COUNT =        3771
+0                       TOTAL COUNT=      3747
+
+
+                                        M O D E L   S U M M A R Y
+
+                                   NUMBER OF GRID     POINTS   =      968
+ 
+ 
+                                   NUMBER OF CQUAD4   ELEMENTS =      842
+                                   NUMBER OF CTRIA3   ELEMENTS =        7
+ 
+ *** USER INFORMATION MESSAGE 4109 (OUTPBN2)
+     THE LABEL IS NX2206.5 FOR FORTRAN UNIT 12
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =        7 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =        8 RECORDS.)
+     (TOTAL DATA WRITTEN FOR TAPE LABEL =       17 WORDS.)
+1                                                                             APRIL  18, 2023  SIMCENTER NASTRAN  8/ 4/22   PAGE     4
+                                                                                                                                    
+0                                                                                                                                   
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK IBULK    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                 1                 0                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       20 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =    18864 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =    90503 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK ICASE    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    102                27                 0                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       20 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =      149 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =      674 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK CASECC   WRITTEN ON FORTRAN UNIT  12, TRL =
+                    103                 1                 0              1200                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     1200 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       19 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =     1226 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK PVT0     WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                28                 0                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       28 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       19 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =       54 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK GPL      WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101               968               968                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     1936 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =     2935 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK GPDT     WRITTEN ON FORTRAN UNIT  12, TRL =
+                    102               968                 7                 0                 1                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     9680 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       19 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =     9706 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK EPT      WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                 0               512                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       14 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =       47 WORDS.)
+1                                                                             APRIL  18, 2023  SIMCENTER NASTRAN  8/ 4/22   PAGE     5
+                                                                                                                                    
+0                                                                                                                                   
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK MPT      WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101             32768                 0                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       15 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =       48 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK GEOM2    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                 0                 0                 0              8224                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    11791 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       29 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =    11922 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK GEOM3    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    102                 0                 0                64                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      143 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =      176 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK GEOM4    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    103                 0                 0                 0               512                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      339 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =      372 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK GEOM1    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    104                 0                 0                 8                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    10651 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =    10684 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK BGPDT    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    105               968                 0              5808                 1                 0               968
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    11616 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =    13582 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK EQEXIN   WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101               968                 0                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     1936 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =     3902 WORDS.)
+1                                                                             APRIL  18, 2023  SIMCENTER NASTRAN  8/ 4/22   PAGE     6
+                                                                                                                                    
+0                                                                                                                                   
+0
+0
+0
+ 
+ *** USER INFORMATION MESSAGE 7555 (GMTSTS)
+     FINITE ELEMENT GEOMETRY CHECK RESULTS EXCEED TOLERANCE LEVELS FOR THE FOLLOWING ELEMENTS.
+     USER ACTION: USE THE GEOMCHECK (EXECUTIVE CONTROL STATEMENT) KEYWORD=VALUE TO CHANGE TOLERANCE VALUES IF DESIRED.
+     A MAXIMUM OF        100 SKEW ANGLE (SA)      TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+     A MAXIMUM OF        100 MIN INT. ANGLE (IA)  TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+     A MAXIMUM OF        100 MAX INT. ANGLE (IA)  TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+     A MAXIMUM OF        100 WARPING FACTOR (WF)  TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+     A MAXIMUM OF        100 TAPER RATIO (TR)     TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+     A MAXIMUM OF        100 ASPECT RATIO (AR)    TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+1                                                                             APRIL  18, 2023  SIMCENTER NASTRAN  8/ 4/22   PAGE     7
+                                                                                                                                    
+0                                                                                                                                   
+     TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50, AR = 100.00
+ (xxxx = LIMIT VIOLATED)
+ ELEMENT TYPE       ID          SKEW ANGLE      MIN INT. ANGLE    MAX INT. ANGLE    WARPING FACTOR      TAPER RATIO      ASPECT RATIO  
+    QUAD4         286        85.44             62.95            123.35              0.00              0.50 xxxx         1.77     
+    QUAD4         443        77.24             48.01            143.38              0.00              0.51 xxxx         2.25     
+    QUAD4         444        87.24             61.98            132.84              0.00              0.59 xxxx         1.98     
+    QUAD4         445        75.74             64.34            141.38              0.00              0.57 xxxx         1.93     
+    QUAD4         462        35.81             27.05 xxxx       153.92 xxxx         0.00              0.21              2.86     
+    QUAD4         478        64.04             58.65            149.46              0.00              0.56 xxxx         1.37     
+    QUAD4         479        67.65             41.49            125.33              0.00              0.54 xxxx         3.02     
+    QUAD4         498        57.86             38.81            153.14 xxxx         0.00              0.52 xxxx         2.16     
+    QUAD4         669        33.98             25.99 xxxx       154.81 xxxx         0.00              0.20              2.76     
+    QUAD4         688        78.27             53.12            129.17              0.00              0.61 xxxx         2.20     
+1                                                                             APRIL  18, 2023  SIMCENTER NASTRAN  8/ 4/22   PAGE     8
+                                                                                                                                    
+0                                                                                                                                   
+
+
+                            E L E M E N T   G E O M E T R Y   T E S T   R E S U L T S   S U M M A R Y
+                                        TOTAL NUMBER OF TIMES TOLERANCES WERE EXCEEDED
+ ELEMENT     SKEW    ASPECT/       MINIMUM       MAXIMUM    SURFACE/FACE  THICKNESS/     EDGE POINT    EDGE POINT       JACOBIAN
+ TYPE        ANGLE  TAPER RATIO  INTER. ANGLE  INTER. ANGLE  WARP FACTOR  OFFSET RATIO  LENGTH RATIO  INCLUDED ANGLE  DETERMINANT
+ QUAD4           0          8             2             3             0           N/A           N/A           N/A           N/A     
+ TRIA3           0        N/A           N/A             0           N/A           N/A           N/A           N/A           N/A     
+
+         N/A IN THE ABOVE TABLE INDICATES TESTS THAT ARE NOT APPLICABLE TO THE ELEMENT TYPE AND WERE NOT PERFORMED.
+         FOR ALL ELEMENTS WHERE GEOMETRY TEST RESULTS HAVE EXCEEDED TOLERANCES,
+
+         QUAD4    ELEMENT ID      688 PRODUCED LARGEST  TAPER RATIO      OF       0.61 (TOLERANCE =        0.50).
+         QUAD4    ELEMENT ID      669 PRODUCED SMALLEST INTERIOR ANGLE   OF      25.99 (TOLERANCE =       30.00).
+         QUAD4    ELEMENT ID      669 PRODUCED LARGEST  INTERIOR ANGLE   OF     154.81 (TOLERANCE =      150.00).
+1                                                                             APRIL  18, 2023  SIMCENTER NASTRAN  8/ 4/22   PAGE     9
+                                                                                                                                    
+0                                                                                                                                   
+ *** USER INFORMATION MESSAGE 7310 (VECPRN)
+     ORIGIN OF SUPERELEMENT BASIC COORDINATE SYSTEM WILL BE USED AS REFERENCE LOCATION.
+     RESULTANTS ABOUT ORIGIN OF SUPERELEMENT BASIC COORDINATE SYSTEM IN SUPERELEMENT BASIC SYSTEM COORDINATES.
+0                                                  OLOAD    RESULTANT       
+  SUBCASE/    LOAD
+  DAREA ID    TYPE       T1            T2            T3            R1            R2            R3
+0        1     FX   -1.200002E+07     ----          ----          ----      -8.400014E+08  4.800008E+08                             
+               FY       ----       0.000000E+00     ----       0.000000E+00     ----       0.000000E+00                             
+               FZ       ----          ----       0.000000E+00  0.000000E+00  0.000000E+00     ----                                  
+               MX       ----          ----          ----       0.000000E+00     ----          ----                                  
+               MY       ----          ----          ----          ----       0.000000E+00     ----                                  
+               MZ       ----          ----          ----          ----          ----       0.000000E+00                             
+             TOTALS -1.200002E+07  0.000000E+00  0.000000E+00  0.000000E+00 -8.400014E+08  4.800008E+08                             
+ *** USER INFORMATION MESSAGE - SINGULARITIES FOUND USING EIGENVALUE METHOD
+ ***       0 SINGULARITIES FOUND         0 SINGULARITIES ELIMINATED
+1                                                                             APRIL  18, 2023  SIMCENTER NASTRAN  8/ 4/22   PAGE    10
+                                                                                                                                    
+0                                                                                                            SUBCASE 1              
+ *** SYSTEM INFORMATION MESSAGE 6916 (DFMSYN)
+     DECOMP ORDERING METHOD CHOSEN: DEFAULT, ORDERING METHOD USED: MMD
+  
+ *** USER INFORMATION MESSAGE 4158 (DFMSA)
+ ---- STATISTICS FOR SPARSE DECOMPOSITION OF DATA BLOCK KLL      FOLLOW
+        NUMBER OF NEGATIVE TERMS ON FACTOR DIAGONAL =      2
+        MAXIMUM RATIO OF MATRIX DIAGONAL TO FACTOR DIAGONAL =  4.2E+14 AT ROW NUMBER       4790
+ *** USER WARNING MESSAGE 4698 (DCMPD)
+     STATISTICS FOR DECOMPOSITION OF MATRIX KLL     .
+     THE FOLLOWING DEGREES OF FREEDOM HAVE FACTOR DIAGONAL RATIOS GREATER THAN
+      1.00000E+07 OR HAVE NEGATIVE TERMS ON THE FACTOR DIAGONAL.
+     USER INFORMATION:
+     THIS MESSAGE MAY BE IGNORED IF NO GRID POINT IDS OR HIGH RATIO MESSAGES APPEAR IN THE TABLE ON THE NEXT PAGE.
+1                                                                             APRIL  18, 2023  SIMCENTER NASTRAN  8/ 4/22   PAGE    11
+                                                                                                                                    
+0                                                                                                            SUBCASE 1              
+0                                                                                                                                   
+         GRID POINT ID       DEGREE OF FREEDOM   MATRIX/FACTOR DIAGONAL RATIO        MATRIX DIAGONAL                                
+                                                                                                                                    
+             799                    T1                  -2.55441E+14                   3.85813E+08
+             799                    T2                   4.17852E+14                   9.73945E+08
+             799                    T3                   6.72110E+13                   9.04312E+08
+             799                    R1                   2.59266E+08                   1.34806E+06
+             799                    R2                   2.50298E+11                   2.69682E+09
+             799                    R3                  -5.12588E+12                   2.85040E+09
+ ^^^ USER   FATAL   MESSAGE 9137 (SEKRRS)    
+ ^^^ RUN TERMINATED DUE TO EXCESSIVE PIVOT RATIOS IN MATRIX KLL. 
+ ^^^ USER ACTION:  CONSTRAIN MECHANISMS WITH SPCI OR SUPORTI ENTRIES OR SPECIFY PARAM,BAILOUT,-1 TO  
+ ^^^ CONTINUE THE RUN WITH MECHANISMS.   
+ *** USER INFORMATION MESSAGE 4110 (OUTPBN2)
+                                 END-OF-DATA SIMULATION ON FORTRAN UNIT 12
+                                 (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      1 WORDS.)
+                                       (NUMBER OF FORTRAN RECORDS WRITTEN =      1 RECORDS.)
+                                       (TOTAL DATA WRITTEN FOR EOF MARKER =      1 WORDS.)
+1                                                                             APRIL  18, 2023  SIMCENTER NASTRAN  8/ 4/22   PAGE    12
+                                                                                                                                    
+0                                                                                                            SUBCASE 1              
+ * * * *  D B D I C T   P R I N T  * * * *      SUBDMAP = PRTSUM  ,  DMAP STATEMENT NO.     28
+
+
+
+0                                   * * * *  A N A L Y S I S  S U M M A R Y  T A B L E  * * * *
+0 SEID  PEID PROJ VERS APRCH      SEMG SEMR SEKR SELG SELR MODES DYNRED SOLLIN PVALID SOLNL LOOPID DESIGN CYCLE SENSITIVITY
+ --------------------------------------------------------------------------------------------------------------------------
+     0     0    1    1 '        '    T    F    T    T    T     F      F      F      0     F     -1            0           F
+0SEID = SUPERELEMENT ID.
+ PEID = PRIMARY SUPERELEMENT ID OF IMAGE SUPERELEMENT.
+ PROJ = PROJECT ID NUMBER.
+ VERS = VERSION ID.
+ APRCH = BLANK FOR STRUCTURAL ANALYSIS.  HEAT FOR HEAT TRANSFER ANALYSIS.
+ SEMG = STIFFNESS AND MASS MATRIX GENERATION STEP.
+ SEMR = MASS MATRIX REDUCTION STEP (INCLUDES EIGENVALUE SOLUTION FOR MODES).
+ SEKR = STIFFNESS MATRIX REDUCTION STEP.
+ SELG = LOAD MATRIX GENERATION STEP.
+ SELR = LOAD MATRIX REDUCTION STEP. 
+ MODES = T (TRUE) IF NORMAL MODES OR BUCKLING MODES CALCULATED.
+ DYNRED = T (TRUE) MEANS GENERALIZED DYNAMIC AND/OR COMPONENT MODE REDUCTION PERFORMED.
+ SOLLIN = T (TRUE) IF LINEAR SOLUTION EXISTS IN DATABASE.
+ PVALID = P-DISTRIBUTION ID OF P-VALUE FOR P-ELEMENTS
+ LOOPID = THE LAST LOOPID VALUE USED IN THE NONLINEAR ANALYSIS.  USEFUL FOR RESTARTS.
+ SOLNL = T (TRUE) IF NONLINEAR SOLUTION EXISTS IN DATABASE.
+ DESIGN CYCLE = THE LAST DESIGN CYCLE (ONLY VALID IN OPTIMIZATION).
+ SENSITIVITY = SENSITIVITY MATRIX GENERATION FLAG.
+1                                        * * * END OF JOB * * *
+ 
+ 

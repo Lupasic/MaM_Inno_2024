@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<DurabilityMetaSolution Name="Durability 1">
+  <Events>
+    <Event Name="Static Event 1" Solve="1">HW_CAE_STR1_1_sim1-Durability_1-Static_Event_1.xml</Event>
+  </Events>
+  <Output Format="bun" SaveGeometry="false">HW_CAE_STR1_1_sim1-Durability_1.bud</Output>
+</DurabilityMetaSolution>

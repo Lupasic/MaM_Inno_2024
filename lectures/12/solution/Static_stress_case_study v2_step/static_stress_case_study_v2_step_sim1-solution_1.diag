@@ -1,0 +1,74 @@
+
+*** 09:14:17 *** 
+Starting Nastran Exporter
+
+*** 09:14:17 *** 
+Writing file D:\Latex_docs\MaM\lectures\12\solution\Static_stress_case_study 
+v2_step\static_stress_case_study_v2_step_sim1-solution_1.dat
+ 
+*** 09:14:17 *** 
+Writing SIMCENTER NASTRAN 2206.0 compatible deck
+
+*** 09:14:17 *** 
+Writing Nastran System section
+
+*** 09:14:17 *** 
+Writing File Management section
+
+*** 09:14:17 *** 
+Writing Executive Control section
+
+*** 09:14:17 *** 
+Writing Case Control section
+
+*** 09:14:17 *** 
+Writing Bulk Data section
+
+*** 09:14:18 *** 
+Writing Nodes
+
+*** 09:14:18 *** 
+Writing Elements
+
+*** 09:14:18 *** 
+Writing Physical Properties
+
+*** 09:14:18 *** 
+Writing Materials
+
+*** 09:14:18 *** 
+Writing Degree-of-Freedom Sets
+
+*** 09:14:18 *** 
+Writing Loads and Constraints
+
+*** 09:14:18 *** 
+Writing Coordinate Systems
+
+*** 09:14:18 *** 
+Validating Solution Setup
+
+*** 09:14:18 *** 
+Summary of Bulk Data cards written
+
++----------+----------+
+|   NAME   |  NUMBER  |
++----------+----------+
+| CHEXA    | 348      |
+| CPENTA   | 4        |
+| CTETRA   | 2462     |
+| FORCE    | 925      |
+| GRID     | 4655     |
+| LOAD     | 1        |
+| MAT1     | 1        |
+| MATT1    | 1        |
+| PARAM    | 6        |
+| PSOLID   | 3        |
+| RBE3     | 679      |
+| SPC      | 149      |
+| TABLEM1  | 3        |
++----------+----------+
+
+*** 09:14:18 *** 
+Nastran Deck Successfully Written
+

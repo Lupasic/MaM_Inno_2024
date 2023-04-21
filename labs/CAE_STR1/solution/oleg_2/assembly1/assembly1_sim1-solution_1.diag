@@ -1,0 +1,71 @@
+
+*** 17:54:17 *** 
+Starting Nastran Exporter
+
+*** 17:54:18 *** 
+Writing file 
+D:\Latex_docs\MaM\labs\CAE_STR1\solution\3\assembly1\assembly1_sim1-solution_1.dat
+ 
+*** 17:54:18 *** 
+Writing SIMCENTER NASTRAN 2206.0 compatible deck
+
+*** 17:54:18 *** 
+Writing Nastran System section
+
+*** 17:54:18 *** 
+Writing File Management section
+
+*** 17:54:18 *** 
+Writing Executive Control section
+
+*** 17:54:18 *** 
+Writing Case Control section
+
+*** 17:54:18 *** 
+Writing Bulk Data section
+
+*** 17:54:18 *** 
+Writing Nodes
+
+*** 17:54:19 *** 
+Writing Elements
+
+*** 17:54:20 *** 
+Writing Physical Properties
+
+*** 17:54:20 *** 
+Writing Materials
+
+*** 17:54:20 *** 
+Writing Degree-of-Freedom Sets
+
+*** 17:54:20 *** 
+Writing Loads and Constraints
+
+*** 17:54:20 *** 
+Writing Coordinate Systems
+
+*** 17:54:20 *** 
+Validating Solution Setup
+
+*** 17:54:20 *** 
+Summary of Bulk Data cards written
+
++----------+----------+
+|   NAME   |  NUMBER  |
++----------+----------+
+| CHEXA    | 5280     |
+| CPENTA   | 1440     |
+| CTETRA   | 28606    |
+| FORCE    | 3962     |
+| GRID     | 62097    |
+| MAT1     | 1        |
+| PARAM    | 6        |
+| PSOLID   | 2        |
+| RBE3     | 525      |
+| SPC      | 217      |
++----------+----------+
+
+*** 17:54:20 *** 
+Nastran Deck Successfully Written
+

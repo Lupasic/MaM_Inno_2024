@@ -34,6 +34,7 @@ jobs:
         LAB7: 'CAD_REN1'
         LAB8: 'MAN1'
         
+        
 #         LEC1:
         LEC2: 'lec2'
         LEC3: 'lec3'
@@ -44,6 +45,8 @@ jobs:
         LEC9: 'lec9'
         LEC10: 'lec10'
         LEC11: 'lec11'
+        LEC12: 'lec12'
+        LEC13: 'lec13'
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2

@@ -24,6 +24,7 @@ All class related material can be found in corresponding folder/task_data
 * [Lecture 10 (Design Thinking and Manufacturing)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/10/MaM_lec10.pdf)
 * [Lecture 11 (Basics of FDM Printing)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/11/MaM_lec11.pdf)
 * [Lecture 12 (Overview of Strength of Materials)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/12/MaM_lec12.pdf)
+* [Lecture 13 (Finite Difference Method; Finite Element Method)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/lectures/13/MaM_lec13.pdf)
 
 # Lab slides
 * [Lab 1 CAD_DET1 (Intro to subject; History of CAD; Solid modeling)](https://github.com/Lupasic/MaM_Inno_2023/blob/main/labs/CAD_DET1/MaM_CAD_DET1.pdf)

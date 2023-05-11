@@ -1,0 +1,71 @@
+
+*** 11:22:26 *** 
+Starting Nastran Exporter
+
+*** 11:22:26 *** 
+Writing file 
+D:\Latex_docs\MaM\HWs\HW_CAE_STR2\solution\NX\model1\model1_sim1-solution_1.dat
+ 
+*** 11:22:26 *** 
+Writing SIMCENTER NASTRAN 2206.0 compatible deck
+
+*** 11:22:26 *** 
+Writing Nastran System section
+
+*** 11:22:26 *** 
+Writing File Management section
+
+*** 11:22:26 *** 
+Writing Executive Control section
+
+*** 11:22:26 *** 
+Writing Case Control section
+
+*** 11:22:26 *** 
+Writing Bulk Data section
+
+*** 11:22:27 *** 
+Writing Nodes
+
+*** 11:22:27 *** 
+Writing Elements
+
+*** 11:22:27 *** 
+Writing Physical Properties
+
+*** 11:22:27 *** 
+Writing Materials
+
+*** 11:22:27 *** 
+Writing Degree-of-Freedom Sets
+
+*** 11:22:27 *** 
+Writing Loads and Constraints
+
+*** 11:22:27 *** 
+Writing Coordinate Systems
+
+*** 11:22:27 *** 
+Validating Solution Setup
+
+*** 11:22:27 *** 
+Summary of Bulk Data cards written
+
++----------+----------+
+|   NAME   |  NUMBER  |
++----------+----------+
+| CQUAD8   | 42       |
+| GRID     | 153      |
+| MAT4     | 1        |
+| MATT4    | 1        |
+| PARAM    | 5        |
+| PSHELL   | 1        |
+| TABLEM1  | 1        |
+| TEMP     | 15       |
+| TEMPD    | 1        |
+| TSTEPNL  | 1        |
++----------+----------+
+
+*** 11:22:27 *** 
+Nastran Deck Successfully Written
+

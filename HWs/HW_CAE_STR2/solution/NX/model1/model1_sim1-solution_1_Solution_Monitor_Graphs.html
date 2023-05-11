@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+  <head>
+    <title>Solution Monitor Graphs</title>
+    <script type = "text/javascript">
+      var isPluginLoaded = false;
+      function PluginLoaded() {
+        isPluginLoaded = true;
+      }
+    </script>
+    <script src = "plotly-latest.min.js" onload="PluginLoaded()"></script>
+    <script src = "file:///H:/Install_slow/Siemens/NX2206/nxcae_extras/tmg/js/plotly-latest.min.js" onload="PluginLoaded()"></script>
+    <script src = "https://cdn.plot.ly/plotly-latest.min.js" onload="PluginLoaded()"></script>
+  </head>
+  <body>
+    <div id = 'Nonlinear Iteration History'></div> 
+    <script> 
+      var xData = [
+      [1,2,2.25,2.3125,2.375,2.5,2.75,3.25,4.25,6.25,8.25,10.25,12.25,14.25]
+      ];
+      var yData = [
+      [4,7,10,12,14,16,19,22,25,28,31,33,35,37]
+      ];
+      var colors  = ['rgba( 12, 36, 97,1.0)','rgba(106,176, 76,1.0)','rgba(179, 57, 57,1.0)',
+                     'rgba(250,152, 58,1.0)','rgba(115,115,115,1.0)','rgba( 49,130,189,1.0)','rgba(189,189,189,1.0)'];
+      var colors2 = ['rgba( 12, 36, 97,0.5)','rgba(106,176, 76,0.5)','rgba(179, 57, 57,0.5)',
+                     'rgba(250,152, 58,0.5)','rgba(115,115,115,0.5)','rgba( 49,130,189,0.5)','rgba(189,189,189,0.5)'];
+      var lineSize = [2, 4, 2, 2, 2, 2];
+      var labels = [''];
+      var data = [];
+      for (var i = 0; i < xData.length; i++) {
+        var result = {
+           x: xData[i],
+           y : yData[i],
+           type : 'scatter',
+           showlegend: true,
+           legendgroup: labels[i],
+           mode : 'lines',
+           name : labels[i],
+           line : {
+              color: colors[i],
+              width : lineSize[i]
+           }
+        };
+        var result2 = {
+           x: [xData[i][0], xData[i][13]],
+           y : [yData[i][0], yData[i][13]],
+           type : 'scatter',
+           showlegend: false,
+           legendgroup: labels[i],
+           mode : 'markers',
+           name : '',
+           hoverinfo : 'skip',
+           marker : {
+              color: colors2[i],
+              size : 12
+           }
+        };
+        data.push(result, result2);
+      }
+      var layout = {
+        height : 600,
+        width : 800,
+        xaxis : {
+           showline: true,
+           showgrid : false,
+           zeroline : false,
+           showticklabels : true,
+           linecolor : 'rgb(204,204,204)',
+           linewidth : 2,
+           autotick : true,
+           ticks : 'outside',
+           tickcolor : 'rgb(204,204,204)',
+           tickwidth : 2,
+           ticklen : 5,
+           tickfont : {
+              family: 'Arial',
+              size : 12,
+              color : 'rgb(82, 82, 82)'
+           }
+        },
+        yaxis: {
+           showline: true,
+           showgrid : false,
+           zeroline : false,
+           showticklabels : true,
+           linecolor : 'rgb(204,204,204)',
+           linewidth : 2,
+           autotick : true,
+           ticks : 'outside',
+           tickcolor : 'rgb(204,204,204)',
+           tickwidth : 2,
+           ticklen : 5,
+           tickfont : {
+              family: 'Arial',
+              size : 12,
+              color : 'rgb(82, 82, 82)'
+           },
+        },
+        autosize : false,
+        margin : {
+           autoexpand: true,
+           l : 100,
+           r : 150,
+           t : 110
+        },
+        annotations : [
+           {
+              xref: 'paper',
+              yref : 'paper',
+              x : 0.0,
+              y : 1.05,
+              xanchor : 'left',
+              yanchor : 'bottom',
+              text : 'Nonlinear Iteration History',
+              font : {
+                 family: 'Arial',
+                 size : 30,
+                 color : 'rgb(37,37,37)'
+              },
+              showarrow : false
+           },
+           {
+              xref: 'paper',
+              yref : 'paper',
+              x : 0.5,
+              y : -0.1,
+              xanchor : 'center',
+              yanchor : 'top',
+              text : 'Load Step',
+              showarrow : false,
+              font : {
+                 family: 'Arial',
+                 size : 22,
+                 color : 'rgb(150,150,150)'
+              }
+           }
+        ]
+      };
+      for (var i = 0; i < xData.length; i++) {
+        var result = {
+        xref: 'paper',
+        x : 0.05,
+        y : yData[i][0],
+        text : yData[i][0],
+        xanchor : 'right',
+        yanchor : 'middle',
+        showarrow : false,
+        clicktoshow  : 'onout',
+        font : {
+           family: 'Arial',
+           size : 16,
+           color : 'black'
+        }
+        };
+        var result2 = {
+           xref: 'paper',
+           x : 0.95,
+           y : yData[i][13],
+           text : yData[i][13],
+           xanchor : 'left',
+           yanchor : 'middle',
+           font : {
+              family: 'Arial',
+              size : 16,
+              color : 'black'
+           },
+           showarrow : false,
+           clicktoshow  : 'onout'
+        };
+        layout.annotations.push(result, result2);
+      }
+      var config = {responsive: true,
+                    displaylogo: false};
+      Plotly.newPlot('Nonlinear Iteration History', data, layout, config);
+    </script>
+
+    <div id = 'Sparse Matrix Solver'></div> 
+    <script> 
+      var xData = [
+      [1,3,6,7,8,11,12,14,15,19,20,21,24,25,26,27,28,29]
+      ];
+      var yData = [
+      [1,8,20,30,31,38,48,58,59,66,78,79,86,96,111,112,115,153]
+      ];
+      var colors  = ['rgba( 12, 36, 97,1.0)','rgba(106,176, 76,1.0)','rgba(179, 57, 57,1.0)',
+                     'rgba(250,152, 58,1.0)','rgba(115,115,115,1.0)','rgba( 49,130,189,1.0)','rgba(189,189,189,1.0)'];
+      var colors2 = ['rgba( 12, 36, 97,0.5)','rgba(106,176, 76,0.5)','rgba(179, 57, 57,0.5)',
+                     'rgba(250,152, 58,0.5)','rgba(115,115,115,0.5)','rgba( 49,130,189,0.5)','rgba(189,189,189,0.5)'];
+      var lineSize = [2, 4, 2, 2, 2, 2];
+      var labels = [''];
+      var data = [];
+      for (var i = 0; i < xData.length; i++) {
+        var result = {
+           x: xData[i],
+           y : yData[i],
+           type : 'scatter',
+           showlegend: true,
+           legendgroup: labels[i],
+           mode : 'lines',
+           name : labels[i],
+           line : {
+              color: colors[i],
+              width : lineSize[i]
+           }
+        };
+        var result2 = {
+           x: [xData[i][0], xData[i][17]],
+           y : [yData[i][0], yData[i][17]],
+           type : 'scatter',
+           showlegend: false,
+           legendgroup: labels[i],
+           mode : 'markers',
+           name : '',
+           hoverinfo : 'skip',
+           marker : {
+              color: colors2[i],
+              size : 12
+           }
+        };
+        data.push(result, result2);
+      }
+      var layout = {
+        height : 600,
+        width : 800,
+        xaxis : {
+           showline: true,
+           showgrid : false,
+           zeroline : false,
+           showticklabels : true,
+           linecolor : 'rgb(204,204,204)',
+           linewidth : 2,
+           autotick : true,
+           ticks : 'outside',
+           tickcolor : 'rgb(204,204,204)',
+           tickwidth : 2,
+           ticklen : 5,
+           tickfont : {
+              family: 'Arial',
+              size : 12,
+              color : 'rgb(82, 82, 82)'
+           }
+        },
+        yaxis: {
+           showline: true,
+           showgrid : false,
+           zeroline : false,
+           showticklabels : true,
+           linecolor : 'rgb(204,204,204)',
+           linewidth : 2,
+           autotick : true,
+           ticks : 'outside',
+           tickcolor : 'rgb(204,204,204)',
+           tickwidth : 2,
+           ticklen : 5,
+           tickfont : {
+              family: 'Arial',
+              size : 12,
+              color : 'rgb(82, 82, 82)'
+           },
+        },
+        autosize : false,
+        margin : {
+           autoexpand: true,
+           l : 100,
+           r : 150,
+           t : 110
+        },
+        annotations : [
+           {
+              xref: 'paper',
+              yref : 'paper',
+              x : 0.0,
+              y : 1.05,
+              xanchor : 'left',
+              yanchor : 'bottom',
+              text : 'Sparse Matrix Solver',
+              font : {
+                 family: 'Arial',
+                 size : 30,
+                 color : 'rgb(37,37,37)'
+              },
+              showarrow : false
+           },
+           {
+              xref: 'paper',
+              yref : 'paper',
+              x : 0.5,
+              y : -0.1,
+              xanchor : 'center',
+              yanchor : 'top',
+              text : 'Supernode',
+              showarrow : false,
+              font : {
+                 family: 'Arial',
+                 size : 22,
+                 color : 'rgb(150,150,150)'
+              }
+           }
+        ]
+      };
+      for (var i = 0; i < xData.length; i++) {
+        var result = {
+        xref: 'paper',
+        x : 0.05,
+        y : yData[i][0],
+        text : yData[i][0],
+        xanchor : 'right',
+        yanchor : 'middle',
+        showarrow : false,
+        clicktoshow  : 'onout',
+        font : {
+           family: 'Arial',
+           size : 16,
+           color : 'black'
+        }
+        };
+        var result2 = {
+           xref: 'paper',
+           x : 0.95,
+           y : yData[i][17],
+           text : yData[i][17],
+           xanchor : 'left',
+           yanchor : 'middle',
+           font : {
+              family: 'Arial',
+              size : 16,
+              color : 'black'
+           },
+           showarrow : false,
+           clicktoshow  : 'onout'
+        };
+        layout.annotations.push(result, result2);
+      }
+      var config = {responsive: true,
+                    displaylogo: false};
+      Plotly.newPlot('Sparse Matrix Solver', data, layout, config);
+    </script>
+
+    <div class="plotly" id="plotly">
+      <span onclick="document.getElementById('plotly').style.display='none'" class='none'>&times; </span>
+      <p>The Javascript file required for visualization is not located<br>
+      in the current directory.Please follow the link:<br>
+      <a href="https://cdn.plot.ly/plotly-latest.min.js" target="_blank">plotly-latest.min.js</a></p>
+      Click Control + S and save it to the current directory.
+    </div> 
+    <script>
+      if (!isPluginLoaded) {
+        document.getElementById('plotly').style.margin="10px 10% 60px 50%";
+      }
+      else {
+        document.getElementById('plotly').style.display='none';
+      }
+    </script>
+  </body>
+</html>

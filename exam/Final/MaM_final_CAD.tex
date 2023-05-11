@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ right=10mm,
+ top=45mm,
+ bottom=20mm,
+ headheight=75pt
+ }
+% \usepackage[utf8x]{inputenc}
+\usepackage{fontspec}
+\setmainfont{Open Sans}
+\setsansfont{Noto Sans}
+\usepackage{graphicx}
+\usepackage{forloop}
+\usepackage{subcaption}
+\usepackage{url}       % `\url`s
+\usepackage{floatrow}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\graphicspath{{resources_CAD/}}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[C]{\LARGE <<Mechanics And Machines>> \\ \textbf{Final Exam} \\ \textit{CAD part} \\ Variant: \thepage}
+\fancyfoot[]{}
+
+
+\newcommand\pic[1]{(\cref{#1})} %Где нужно сослаться на рисунок
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=cyan,
+    }
+
+% The preamble ends with the command \begin{document}
+\newcounter{themenumber}
+\begin{document}
+\forloop{themenumber}{1}{\value{themenumber} < 11}{
+\begin{enumerate}
+    \item (10 score) Make a CAD model of the blueprint, which provided below.
+    \item (2 extra score) Make the same blueprints (without dimensions), based on your CAD model.
+    \item (3 extra score) Perform the stress analysis of the detail. All forces and fix supports are on the picture. Material --- Steel. You have to show the stress and strain diagrams and explain what happens to the parts after such a load. 
+\end{enumerate}
+
+\begin{figure}[H]
+    \centering\includegraphics[height=18cm,width=1\textwidth,keepaspectratio]{var\arabic{themenumber}.png}
+\end{figure}
+
+\newpage
+
+}
+\end{document}

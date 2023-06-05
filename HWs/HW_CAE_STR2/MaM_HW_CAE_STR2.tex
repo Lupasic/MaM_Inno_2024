@@ -12,7 +12,7 @@
 %%
 %% These macros specify information about the presentation
 \title[MaM]{Mechanics and Machines, HW CAE STR 2} %% that will be typeset on the
-\subtitle{Unsteady Heat Transfer Problem
+\subtitle{Non-stationary Heat Transfer Problem
 \\ \  \\ \ 
          } %% title page.
 \author{Oleg Bulichev}
@@ -102,15 +102,15 @@
     \framesubtitle{}
     \vspace{-0.4cm}
     \scriptsize
-    \textbf{Description}:  Solve the non-stationary heat transfer equation using 3 methods: \begin{enumerate}
-        \item Finite Difference Method
-        \item Finite Element Method
+    \textbf{Description}:  Solve the non-stationary heat transfer equation using 2 methods: \begin{enumerate}
+        \item Implicit Finite Difference Method
+        % \item Finite Element Method
         \item NX simulation
     \end{enumerate}
     \textbf{Research Object}: Rectangular plate of size 7*6 cm. The initial value of the plate temperature is 10$^\circ$.
 
     \textbf{Boundary conditions}: \begin{itemize}
-        \item the lower half of the left boundary is heat isolated (0 degrees)
+        \item the lower half of the left boundary is heat isolated
         \item 20 degrees is maintained on the lower (south) boundary
         \item the rest of the boundary temperature is 800 degrees
     \end{itemize}
@@ -124,7 +124,7 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}[t]{Result example}
+\begin{frame}[t]{Different case example}
 \framesubtitle{}
     \vspace{-0.6cm}
     \begin{figure}[H]

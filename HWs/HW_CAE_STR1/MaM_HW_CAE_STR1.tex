@@ -120,13 +120,13 @@
                 \begin{enumerate}
                     \scriptsize
                     \item Without creating idealized model. 3D mesh.
-                    \item Simplify model (remove edge bendings, small holes, etc). Use 3D mesh.
+                    \item Simplify model (remove edge bendings). Use 3D mesh.
                     \item The same as in previous, but you need to use 2D mesh. \textit{Hint:} use Midsurface operation 
                 \end{enumerate}
-                \item Fix detail as it used to be fixed in real life
-                \item Add 12000 N force  upper edge. Force should be perpendicular to the ground
+                \item Fix detail on the bottom 6th holes.
+                \item Add 60000 N force  upper edge. Force should be collinear to the base. We are unbending the detail.
                 \item Obtain result and interpret it. Also compare the calculating speed
-                \item Modify the detail and repeat until the detail won't be broken
+                \item Modify the detail and repeat until the detail won't be broken.
             \end{enumerate}
         \end{column}
         \begin{column}{0.39\textwidth}
@@ -151,7 +151,7 @@
                 \item You need to create idealized model: remove all edge bending, useless holes. You should cut the object on several pieces for easier mesh creating.
                 \item Generate a mesh using hexahedron
                 \item Assign <<Aluminum>> material
-                \item In simulation constant temperature on the left part of the body is 620$^\circ$. Convection cooling should be on the right side.
+                \item In simulation constant temperature on the <<A>> part of the body is 620$^\circ$. Convection cooling should be on the right side (<<B>>).
                 \item Calculate a heat transfer in statics. Compare results, when you assign different materials (brass, steel)
             \end{enumerate}
         \end{column}
@@ -175,11 +175,12 @@
             \begin{enumerate}
                 \item Take the detail from zip archive
                 \item Assign <<Aluminum>> material
-                \item Find the biggest hole in detail and make a static stress analysis in 2 ways:
+                \item Find the hole <<A>> in detail and make a static stress analysis in 2 ways:
                       \begin{itemize}
                         \scriptsize
-                          \item Make a steel rod (the same diam as a hole, 500mm length). Apply a force 3000 N to the end of rod.
-                          \item * Remove the rod. Apply a moment (you need to calculate it based on knowledge from 1st bullet) (More info in 9th pdf + Advance Sim Инженерный Анализ pdf page 85)
+                          \item Make a steel rod (the same diam as a hole, 500 mm length). The end of the beam must coincide with the end of the detail.
+                          \item Apply a force 3000 N to the end of rod.
+                          \item * Remove the rod. Apply a moment (you need to calculate it based on knowledge from 2nd bullet) (More info in 9th pdf + Advance Sim Инженерный Анализ pdf page 85)
                           
                             \textbf{This task is not affecting on grade.}
                       \end{itemize}
@@ -207,10 +208,11 @@
                 \item Take the detail from zip archive
                 \item Assign <<Steel>> material
                 \item Generate a mesh using tetrahedron
+                \item The detail should be fixed in lugs (ушки) on both sides of the detail. 
                 \item Solve the task 1) using bolt connection for lugs and 2) without. Explain the difference
                 \item The main goal of the task to apply contact between bodies. You should try: 1) automatic 2) manual contact
-                \item Apply pressure 500 MPa to the central beam
-                \item Show the possible displacement of pins and the who assembly separately.
+                \item Apply pressure 100 MPa to the central beam. You should apply the pressure on central 1/3 part of the beam.
+                \item Show the possible displacement of pins and the assembly separately.
             \end{enumerate}
         \end{column}
         \begin{column}{0.45\textwidth}

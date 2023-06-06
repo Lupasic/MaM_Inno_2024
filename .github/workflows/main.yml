@@ -14,41 +14,31 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: aggregate all lecture tex files
-        id: lecture-tex-files
-        working-directory: src/lectures
+      - name: aggregate all tex files
+        id: tex-files
+        working-directory: src
         run: |
-          echo "::set-output name=paths::$(find . -name '*.tex' -type f -print0 | xargs -0 printf '../%s ')"
-      
-      - name: aggregate all homework tex files
-        id: homework-tex-files
-        working-directory: src/HWs
-        run: |
-          echo "::set-output name=paths::$(find . -name '*.tex' -type f -print0 | xargs -0 printf '../%s ')"
-      
-      - name: aggregate all lab tex files
-        id: lab-tex-files
-        working-directory: src/labs
-        run: |
-          echo "::set-output name=paths::$(find . -name '*.tex' -type f -print0 | xargs -0 printf '../%s ')"
-
+          echo "::set-output name=lectures::$(find ./lectures -name '*.tex' -type f -print0 | xargs -0 printf '../%s ')"
+          echo "::set-output name=homeworks::$(find ./HWs -name '*.tex' -type f -print0 | xargs -0 printf '../%s ')"
+          echo "::set-output name=labs::$(find ./labs -name '*.tex' -type f -print0 | xargs -0 printf '../%s ')"
+    
       - name: build lectures
         uses: xu-cheng/latex-action@v2
         with: 
           working_directory: ./out/lectures
-          root_file: "{{ steps.lecture-tex-files.outputs.paths }}"
-      
+          root_file: "{{ steps.tex-files.outputs.lectures }}"
+
       - name: build homeworks
         uses: xu-cheng/latex-action@v2
         with: 
-          working_directory: ./out/HWs
-          root_file: "{{ steps.homework-tex-files.outputs.paths }}"
-      
+          working_directory: ./out/homeworks
+          root_file: "{{ steps.tex-files.outputs.homeworks }}"
+
       - name: build labs
         uses: xu-cheng/latex-action@v2
         with: 
           working_directory: ./out/labs
-          root_file: "{{ steps.lab-tex-files.outputs.paths }}"
+          root_file: "{{ steps.tex-files.outputs.labs }}"
       
       - uses: EndBug/add-and-commit@v9
         with:

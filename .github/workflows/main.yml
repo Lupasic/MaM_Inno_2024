@@ -38,7 +38,8 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with: 
           working_directory: ./src
-          root_file: "${{ steps.tex-files.outputs.lectures }}"
+          root_file: |
+            ${{ steps.tex-files.outputs.lectures }}
           post_compile: |
             mkdir -p ../out/lectures
             mv *.pdf ../out/lectures

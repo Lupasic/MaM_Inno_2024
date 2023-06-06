@@ -14,9 +14,9 @@ jobs:
         id: tex-files
         working-directory: src
         run: |
-          echo "lectures=$(find ./lectures -name '*.tex' -type f -print0 | xargs -0 printf '../src/%s ')" >> $GITHUB_OUTPUT
-          echo "homeworks=$(find ./HWs -name '*.tex' -type f -print0 | xargs -0 printf '../src/%s ')" >> $GITHUB_OUTPUT
-          echo "labs=$(find ./labs -name '*.tex' -type f -print0 | xargs -0 printf '../src/%s ')" >> $GITHUB_OUTPUT
+          echo "lectures=$(find ./lectures -name '*.tex' -type f -print0 | xargs -0 printf '../../src/%s ')" >> $GITHUB_OUTPUT
+          echo "homeworks=$(find ./HWs -name '*.tex' -type f -print0 | xargs -0 printf '../../src/%s ')" >> $GITHUB_OUTPUT
+          echo "labs=$(find ./labs -name '*.tex' -type f -print0 | xargs -0 printf '../../src/%s ')" >> $GITHUB_OUTPUT
     
       - name: build lectures
         uses: xu-cheng/latex-action@v2

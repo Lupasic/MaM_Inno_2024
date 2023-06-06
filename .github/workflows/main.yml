@@ -1,12 +1,8 @@
 name: Build LaTeX documents
 
 on: 
-  workflow_dispatch:
-  pull_request:
-    types:
-      - closed
-    branches:
-      - main
+  push:
+    branches: ['master']
 
 jobs:
   build_latex:

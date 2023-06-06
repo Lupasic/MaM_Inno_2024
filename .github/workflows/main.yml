@@ -24,9 +24,9 @@ jobs:
           homeworks="${homeworks//$'\n'/'%0A'}"
           
           # set outputs
-          echo "lectures=$lectures" >> $GITHUB_ENV
-          echo "homeworks=$homeworks" >> $GITHUB_ENV
-          echo "labs=$labs" >> $GITHUB_ENV
+          echo "lectures=$lectures" >> $GITHUB_OUTPUT
+          echo "homeworks=$homeworks" >> $GITHUB_OUTPUT
+          echo "labs=$labs" >> $GITHUB_OUTPUT
     
       - name: echo aggregations
         run: |

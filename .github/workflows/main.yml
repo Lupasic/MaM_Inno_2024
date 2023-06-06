@@ -15,23 +15,25 @@ jobs:
         working-directory: src
         run: |
           lectures=$(find ./lectures -name '*.tex' -type f -print0 | xargs -0 printf '%s\n')
-          homeworks=$(find ./homeworks -name '*.tex' -type f -print0 | xargs -0 printf '%s\n')
+          homeworks=$(find ./HWs -name '*.tex' -type f -print0 | xargs -0 printf '%s\n')
           labs=$(find ./labs -name '*.tex' -type f -print0 | xargs -0 printf '%s\n')
           
           # escape newlines
           lectures="${lectures//$'\n'/'%0A'}"
           labs="${labs//$'\n'/'%0A'}"
           homeworks="${homeworks//$'\n'/'%0A'}"
-
-          echo "lectures: $lectures"
-          echo "homeworks: $homeworks"
-          echo "labs: $labs"
           
           # set outputs
           echo "lectures=$lectures" >> $GITHUB_ENV
           echo "homeworks=$homeworks" >> $GITHUB_ENV
           echo "labs=$labs" >> $GITHUB_ENV
     
+      - name: echo aggregations
+        run: |
+          echo "lectures: ${{ steps.tex-files.outputs.lectures }}"
+          echo "homeworks: ${{ steps.tex-files.outputs.homeworks }}"
+          echo "labs: ${{ steps.tex-files.outputs.labs }}"
+
       - name: build lectures
         uses: xu-cheng/latex-action@v2
         with: 

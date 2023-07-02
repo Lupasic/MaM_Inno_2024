@@ -38,7 +38,7 @@ jobs:
         uses: xu-cheng/latex-action@v2
         env:
           # rewrite steps.tex-files.outputs.lectures with %0A replaced with \n
-          LECTURES: ${ ${{ steps.tex-files.outputs.lectures }}//$'%0A'/$'\n' }
+          LECTURES: ${{ steps.tex-files.outputs.lectures//$'%0A'/$'\n' }}
         with: 
           working_directory: ./src
           root_file: ${{ env.LECTURES }}}

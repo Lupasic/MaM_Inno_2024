@@ -7,6 +7,7 @@ on:
 jobs:
   build_latex:
     runs-on: ubuntu-latest
+    container: ghcr.io/xu-cheng/texlive-full:latest
     steps:
       - uses: actions/checkout@v2
 
@@ -14,14 +15,9 @@ jobs:
         id: tex-files
         working-directory: src
         run: |
-          lectures=$(find ./lectures -name '*.tex' -type f -print0 | xargs -0 printf '%s\n')
-          homeworks=$(find ./HWs -name '*.tex' -type f -print0 | xargs -0 printf '%s\n')
-          labs=$(find ./labs -name '*.tex' -type f -print0 | xargs -0 printf '%s\n')
-          
-          # escape newlines
-          lectures="${lectures//$'\n'/'%0A'}"
-          labs="${labs//$'\n'/'%0A'}"
-          homeworks="${homeworks//$'\n'/'%0A'}"
+          lectures=$(find ./lectures -name '*.tex' -type f -print0 | xargs -0 printf '%s ')
+          homeworks=$(find ./HWs -name '*.tex' -type f -print0 | xargs -0 printf '%s ')
+          labs=$(find ./labs -name '*.tex' -type f -print0 | xargs -0 printf '%s ')
           
           # set outputs
           echo "lectures=$lectures" >> $GITHUB_OUTPUT
@@ -35,33 +31,76 @@ jobs:
           echo "labs: ${{ steps.tex-files.outputs.labs }}"
 
       - name: build lectures
-        uses: xu-cheng/latex-action@v2
-        with: 
-          working_directory: ./src
-          # sed rewrite %0A to \n
-          root_file: $(${{ steps.tex-files.outputs.lectures }} | sed 's/%0A/\\n/g')
-          glob_root_files: true
-          post_compile: |
-            mkdir -p ../out/lectures
-            mv *.pdf ../out/lectures
-
+        working-directory: src
+        run: |
+          # for each file in lectures, separated by space
+          for file in ${{ steps.tex-files.outputs.lectures }}; do
+            # get the file name without extension
+            filename=$(basename -- "$file")
+            filename="${filename%.*}"
+            # compile the file
+            latexmk -pdf -interaction=nonstopmode -halt-on-error -file-line-error -outdir=../out/lectures "$file"
+            # move the pdf to out/lectures
+            mv "../out/lectures/$filename.pdf" "../out/lectures/$filename.pdf"
+          done
+      
       - name: build homeworks
-        uses: xu-cheng/latex-action@v2
-        with: 
-          working_directory: ./src
-          root_file: "${{ steps.tex-files.outputs.homeworks }}"
-          post_compile: |
-            mkdir -p ../out/homeworks
-            mv *.pdf ../out/homeworks
-
+        working-directory: src
+        run: |
+          # for each file in homeworks, separated by space
+          for file in ${{ steps.tex-files.outputs.homeworks }}; do
+            # get the file name without extension
+            filename=$(basename -- "$file")
+            filename="${filename%.*}"
+            # compile the file
+            latexmk -pdf -interaction=nonstopmode -halt-on-error -file-line-error -outdir=../out/homeworks "$file"
+            # move the pdf to out/homeworks
+            mv "../out/homeworks/$filename.pdf" "../out/homeworks/$filename.pdf"
+          done
+      
       - name: build labs
-        uses: xu-cheng/latex-action@v2
-        with: 
-          working_directory: ./src
-          root_file: "${{ steps.tex-files.outputs.labs }}"
-          post_compile: |
-            mkdir -p ../out/labs
-            mv *.pdf ../out/labs
+        working-directory: src
+        run: |
+          # for each file in labs, separated by space
+          for file in ${{ steps.tex-files.outputs.labs }}; do
+            # get the file name without extension
+            filename=$(basename -- "$file")
+            filename="${filename%.*}"
+            # compile the file
+            latexmk -pdf -interaction=nonstopmode -halt-on-error -file-line-error -outdir=../out/labs "$file"
+            # move the pdf to out/labs
+            mv "../out/labs/$filename.pdf" "../out/labs/$filename.pdf"
+          done
+
+
+      # # - name: build lectures
+      # #   uses: xu-cheng/latex-action@v2
+      # #   with: 
+      # #     working_directory: ./src
+      # #     # sed rewrite %0A to space
+      # #     root_file: $(${{ steps.tex-files.outputs.lectures }} | sed 's/%0A/ /g')
+      # #     glob_root_files: true
+      # #     post_compile: |
+      # #       mkdir -p ../out/lectures
+      # #       mv *.pdf ../out/lectures
+
+      # - name: build homeworks
+      #   uses: xu-cheng/latex-action@v2
+      #   with: 
+      #     working_directory: ./src
+      #     root_file: "${{ steps.tex-files.outputs.homeworks }}"
+      #     post_compile: |
+      #       mkdir -p ../out/homeworks
+      #       mv *.pdf ../out/homeworks
+
+      # - name: build labs
+      #   uses: xu-cheng/latex-action@v2
+      #   with: 
+      #     working_directory: ./src
+      #     root_file: "${{ steps.tex-files.outputs.labs }}"
+      #     post_compile: |
+      #       mkdir -p ../out/labs
+      #       mv *.pdf ../out/labs
       
       - uses: EndBug/add-and-commit@v9
         with:

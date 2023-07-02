@@ -15,16 +15,11 @@ jobs:
         run: |
           # for each directory in src/lectures
           for dir in src/lectures/*/; do
-            # cd into the directory
-            cd $dir
-            # find tex files
-            for file in *.tex; do
-              # build pdf
-              latexmk -pdf -interaction=nonstopmode -halt-on-error $file
-              # mkdir out directory if not exists
-              mkdir -p ../../out/lectures
-              # move pdf to out directory
-              mv *.pdf ../../out/lectures
+            if [ ! -f "$dir"*.tex ]; then
+              continue
+            fi
+            for file in "$dir"*.tex; do
+              latexmk -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=../out/lectures "$file"
             done
           done
 

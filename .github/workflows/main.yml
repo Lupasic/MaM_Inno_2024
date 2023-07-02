@@ -8,7 +8,12 @@ jobs:
   build_latex:
     runs-on: ubuntu-latest
     container: ghcr.io/xu-cheng/texlive-full:latest
+    
     steps:
+      - name: update git
+        run: |
+          apk add --no-cache git
+
       - uses: actions/checkout@v2
       
       - name: build lectures

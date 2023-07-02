@@ -41,7 +41,7 @@ jobs:
           LECTURES: ${ ${{ steps.tex-files.outputs.lectures }}//$'%0A'/$'\n' }
         with: 
           working_directory: ./src
-          root_file: "$LECTURES"
+          root_file: ${{ env.LECTURES }}}
           post_compile: |
             mkdir -p ../out/lectures
             mv *.pdf ../out/lectures

@@ -18,9 +18,11 @@ jobs:
             if [ ! -f "$dir"*.tex ]; then
               continue
             fi
+            cd "$dir"
             for file in "$dir"*.tex; do
               latexmk -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=../out/lectures "$file"
             done
+            cd ../../..
           done
 
       - uses: EndBug/add-and-commit@v9

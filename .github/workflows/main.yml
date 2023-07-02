@@ -30,6 +30,10 @@ jobs:
             cd ../../..
           done
 
+      - name: add dir to temporary safe
+        run: |
+          git config --global --add safe.directory /__w/MaM_Inno_2023/MaM_Inno_2023
+        
       - uses: EndBug/add-and-commit@v9
         with:
           add: 'out'

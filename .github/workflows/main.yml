@@ -13,14 +13,14 @@ jobs:
       
       - name: build lectures
         run: |
-          # for each directory in src/lectures
-          for dir in src/lectures/*/; do
+          srcdir=lectures
+          for dir in src/$srcdir/*/; do
             if [ ! -f "$dir"*.tex ]; then
               continue
             fi
             cd "$dir"
-            for file in "$dir"*.tex; do
-              latexmk -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=../out/lectures "$file"
+            for file in *.tex; do
+              latexmk -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=../../out/$srcdir "$file"
             done
             cd ../../..
           done

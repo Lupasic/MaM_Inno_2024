@@ -20,7 +20,7 @@ jobs:
             fi
             cd "$dir"
             for file in *.tex; do
-              latexmk -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=../../out/$srcdir "$file"
+              latexmk -lualatex -file-line-error -halt-on-error -interaction=nonstopmode -outdir=../../out/$srcdir "$file"
             done
             cd ../../..
           done

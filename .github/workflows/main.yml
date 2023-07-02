@@ -38,7 +38,9 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with: 
           working_directory: ./src
-          root_file: "$(${{ steps.tex-files.outputs.lectures }}//'%0A'/'\n')')"
+          pre_compile: |
+            lectures=$(echo ${{ steps.tex-files.outputs.lectures }} | sed 's/%0A/ /g')
+          root_file: $lectures
           post_compile: |
             mkdir -p ../out/lectures
             mv *.pdf ../out/lectures

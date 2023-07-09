@@ -38,10 +38,8 @@ jobs:
         with:
           add: 'out'
           author_name: 'GitHub Actions'
-          author_email: 
           commit: --signoff
-          committer_name: 'Yelshat Duskaliyev'
-          committer_email: ura2178@gmail.com
+          committer_name: 'Oleg Bulichev'
           message: '[auto-ci] added generated pdf'
           pathspec_error_handling: exitImmediately
           

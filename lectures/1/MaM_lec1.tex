@@ -13,8 +13,7 @@
 %% These macros specify information about the presentation
 \title[MaM]{Mechanics and Machines, Lecture 1} %% that will be typeset on the
 \subtitle{Introduction  
-\\ Engineering Drawings  \\   
-\ } %% title page.
+\\ Computer Aided Design (CAD) \\ Engineering Drawings } %% title page.
 \author{Oleg Bulichev}
 %% These additional packages are used within the document:
 \usepackage{ragged2e}  % `\justifying` text
@@ -151,10 +150,12 @@
 
 \begin{frame}[t]{Grading criteria}
     \framesubtitle{}
+    \vspace{-0.5cm}
     \begin{itemize}
         \item[CP:] Course project: 40\%
-        \item[HWs:] Homework assignments: 30\%
-        \item[FE:] Final Exam: 30\%
+        \item[HWs:] Homework assignments: 15\% Lab tasks + 15\% HWs
+        \item[Mid:] Midterm: 10\%
+        \item[FE:] Final Exam: 20\%
     \end{itemize}
     \textbf{Late policy:} -50\% om max grade for a task \\
     \textbf{Scale}:
@@ -216,6 +217,143 @@
     \framesubtitle{}
     \LARGE \centering
     \textbf{Information about project} \\ In <<Project>> slides
+\end{frame}
+
+\begin{frame}[t]{Final Exam (Previous Year)}
+    \framesubtitle{}
+        \begin{figure}[H]
+            \begin{subfigure}{0.32\textwidth}
+                \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{resources/ex1.png}
+                \caption*{CAD part}
+                \label{fig:resources/ex1.png}
+            \end{subfigure}
+            \begin{subfigure}{0.32\textwidth}
+                \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{resources/ex2.png}
+                \caption*{CAE part}
+                \label{fig:resources/ex2.png}
+            \end{subfigure}
+            \begin{subfigure}{0.32\textwidth}
+                \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{resources/ex3.png}
+                \caption*{Theory part}
+                \label{fig:resources/ex3.png}
+            \end{subfigure}
+        \end{figure}
+    \end{frame}
+
+\begin{frame}[c]{}
+    \framesubtitle{}
+    \centering \LARGE \textbf{Lab Goals} \\
+    To obtain the needed tools for solving the design part of the competition
+\end{frame}
+
+\begin{frame}[t]{Computer Aided Design}
+    \framesubtitle{}
+        \vspace{-0.6cm}
+        \begin{figure}[H]
+            \centering\includegraphics[height=6.5cm,width=1\textwidth,keepaspectratio]{resources/CADCAMCAE.png}
+            \label{fig:resources/CADCAMCAE.png}
+        \end{figure}
+    \end{frame}
+    
+    \begin{frame}[t]{Computer Aided Design}
+    \framesubtitle{Types of modeling}
+        \vspace{-0.6cm}
+        \begin{figure}[H]
+            \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{resources/solidsurface.png}
+            \label{fig:resources/solidsurface.png}
+        \end{figure}
+    \end{frame}
+    
+    \begin{frame}[t]{History of CAD}
+    \framesubtitle{}
+        \begin{itemize}
+            \item[60th] --- Theoretical studies of the possibility of solving design problems on the computer were carried out.
+            \item[70th] --- Methods, algorithms and programs for solving individual tasks for different design stages were developed.
+            \item[80th] --- CAD is being developed and improved. 3D modeling became more popular.
+            \item[90th] --- Developers had finished formation of base concepts of CAD and unified data transfer between systems.
+        \end{itemize}
+    \end{frame}
+    
+    \begin{frame}[c]{}
+        \framesubtitle{}
+            \LARGE\centering
+            \textbf{CAD benefits}\\
+            \medskip
+            Cheaper\\
+            Safer \\
+            Faster
+        \end{frame}
+    
+    \begin{frame}[c]{Popular CAD systems in Russia}
+    \framesubtitle{}
+        \vspace{-0.6cm}
+        \begin{figure}[H]
+            \centering\includegraphics[height=6.5cm,width=1\textwidth,keepaspectratio]{resources/CADs.png}
+            \label{fig:resources/CADs.png}
+        \end{figure}
+    \end{frame}
+    
+    \begin{frame}[t]{Siemens NX}
+    \framesubtitle{}
+        \begin{columns}[T,onlytextwidth]
+            \begin{column}{0.32\textwidth}
+                \centering\textbf{Prof}
+                \begin{itemize}
+                    \item All in one system (CAD,CAM,CAE,PDM)
+                    \item Free for students
+                    \item Can create a real aircraft in it
+                \end{itemize}
+            \end{column}
+            \begin{column}{0.32\textwidth}
+                \begin{figure}[H]
+                    \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{resources/NXpic.png}
+                    % \caption{caption_name}
+                    \label{fig:resources/NXpic.png}
+                \end{figure}
+            \end{column}
+            \begin{column}{0.32\textwidth}
+                \centering\textbf{Cons}
+                \begin{itemize}
+                    \item Complex system
+                    \item Not popular in small companies
+                \end{itemize}
+            \end{column}
+        \end{columns}
+    \end{frame}
+    
+    \begin{frame}[t]{Common usage of other systems for our tasks}
+    \framesubtitle{}
+        \begin{itemize}
+            \item If you need a good drawings. Make CAD anywhere, afterwards import to Kompas-3D.
+            \item If you need Standard Component Library (SCL), use either Kompas, or Solid Edge, or \href{https://www.mcmaster.com/}{mcmaster}. Insert needed stuff in NX.
+        \end{itemize}
+    \end{frame}
+
+\begin{frame}[t]{Common Labs Workflow}
+\framesubtitle{}
+\vspace{-0.4cm}
+
+    \textbf{Lab 1}
+    \begin{enumerate}
+        \scriptsize
+        \item Oleg explains some new concepts.
+        \item Oleg provides HW, which should be done after the lab.
+        \item You start to watch prerecorded videos and make class tasks. You can do it at home.
+    \end{enumerate}
+    \textbf{Between lab 1 and lab 2}
+    \begin{enumerate}
+        \scriptsize
+        \item You should finish lab tasks and solve HW.
+        \item Submit HW and Lab in Moodle (formal stuff for late policy).
+    \end{enumerate}
+    \textbf{Lab 2}
+    \begin{enumerate}
+        \scriptsize
+        \item Oleg explains some new concepts.
+        \item Oleg provides new HW, which should be done after the lab.
+        \item You defend previous lab task solutions and HW results.
+        \item You start to watch prerecorded videos and make class tasks. You can do it at home.
+    \end{enumerate}
 \end{frame}
 
 \begin{frame}[c]{}

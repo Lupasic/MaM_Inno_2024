@@ -19,11 +19,11 @@ All class related material can be found in corresponding folder/task_data
 * [Lecture 5 (Motor sizing (selection))](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/main/lectures/5/MaM_lec5.pdf)
 * [Lecture 6 (Problems of description and compensation of kinetic friction in robotics)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/main/lectures/6/MaM_lec6.pdf)
 * [Lecture 7 (Links, Joints, Connections; Shafts, Axles, Shaft couplings; Bearings)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/main/lectures/7/MaM_lec7.pdf)
-* [Lecture 8 (Connections: Detachable (Threaded, Keyed, ...); Permanent (Riveting, Welding, ...))](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/main/lectures/8/MaM_lec8.pdf)
+* [Lecture 8 (Connections: Detachable (Threaded, Keyed, ...); Permanent (Riveting, Welding, ...))](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/main/lectures/8/MaM_lec8.pdf) -->
 * [Lecture 9 (Engineering Materials: Steel, Bronze, Aluminum, Titanium, Composites)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/main/lectures/9/MaM_lec9.pdf)
-* [Lecture 10 (Design Thinking and Manufacturing)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/main/lectures/10/MaM_lec10.pdf)
+<!-- * [Lecture 10 (Design Thinking and Manufacturing)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/main/lectures/10/MaM_lec10.pdf) -->
 * [Lecture 11 (Basics of FDM Printing)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/main/lectures/11/MaM_lec11.pdf)
-* [Lecture 12 (Overview of Strength of Materials)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/main/lectures/12/MaM_lec12.pdf)
+<!--* [Lecture 12 (Overview of Strength of Materials)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/main/lectures/12/MaM_lec12.pdf)
 * [Lecture 13 (Finite Difference Method; Finite Element Method)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/main/lectures/13/MaM_lec13.pdf) -->
 
 # Lab slides

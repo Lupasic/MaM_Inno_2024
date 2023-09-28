@@ -13,16 +13,19 @@ All class related material can be found in corresponding folder/task_data
 
 # Lecture slides
 * [Lecture 1 (Introduction; Engineering Drawings)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/lectures/1/MaM_lec1.pdf)
-* [Lecture 2 (Intro to Theory of Mechanisms and Machines; Links, Joints (Kinematic pairs); Kinematic chains, Degrees of Freedom, Mobility)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/lectures/2/MaM_lec2.pdf) 
-<!-- * [Lecture 3 (Types of drives: kinematics, where to find other info; Drives: friction, belts, chains, gears, universal, geneva, ballscrew)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/lectures/3/MaM_lec3.pdf)
+* [Lecture 2 (Intro to Theory of Mechanisms and Machines; Links, Joints (Kinematic pairs); Kinematic chains, Degrees of Freedom, Mobility)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/lectures/2/MaM_lec2.pdf)
+* [Lecture 9 (Engineering Materials: Steel, Bronze, Aluminum, Titanium, Composites)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/lectures/9/MaM_lec9.pdf)
+* [Lecture 11 (Basics of FDM Printing)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/lectures/11/MaM_lec11.pdf)
+* [Lecture 3 (Types of drives: kinematics, where to find other info; Drives: friction, belts, chains, gears, universal, geneva, ballscrew)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/lectures/3/MaM_lec3.pdf)
+<!-- 
 * [Lecture 4 (Synthesis of planar mechanisms)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/lectures/4/MaM_lec4.pdf)
 * [Lecture 5 (Motor sizing (selection))](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/lectures/5/MaM_lec5.pdf)
 * [Lecture 6 (Problems of description and compensation of kinetic friction in robotics)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/lectures/6/MaM_lec6.pdf)
 * [Lecture 7 (Links, Joints, Connections; Shafts, Axles, Shaft couplings; Bearings)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/lectures/7/MaM_lec7.pdf)
 * [Lecture 8 (Connections: Detachable (Threaded, Keyed, ...); Permanent (Riveting, Welding, ...))](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/lectures/8/MaM_lec8.pdf) -->
-* [Lecture 9 (Engineering Materials: Steel, Bronze, Aluminum, Titanium, Composites)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/lectures/9/MaM_lec9.pdf)
+
 <!-- * [Lecture 10 (Design Thinking and Manufacturing)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/lectures/10/MaM_lec10.pdf) -->
-* [Lecture 11 (Basics of FDM Printing)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/lectures/11/MaM_lec11.pdf)
+
 <!--* [Lecture 12 (Overview of Strength of Materials)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/lectures/12/MaM_lec12.pdf)
 * [Lecture 13 (Finite Difference Method; Finite Element Method)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/lectures/13/MaM_lec13.pdf) -->
 
@@ -30,7 +33,8 @@ All class related material can be found in corresponding folder/task_data
 * [Lab 1 CAD_DET1 (Intro to subject; History of CAD; Solid modeling)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/labs/CAD_DET1/MaM_CAD_DET1.pdf)
 * [Lab 2 CAD_DET2 (Workflow, Work in groups; CAD file formats; Threads)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/labs/CAD_DET2/MaM_CAD_DET2.pdf) 
 * [Lab 3 CAD_ASM1 (Bottom-Up approach; Basics)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/labs/CAD_ASM1/MaM_CAD_ASM1.pdf)
-<!-- * [Lab 4 CAD_ASM2 (Top - Down approach: WAVE; Assembly Load Options; GOST Naming convection; Common Parts Library; Sequence (<Dis>Assembling animation))](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/labs/CAD_ASM2/MaM_CAD_ASM2.pdf)
+* [Lab 4 CAD_ASM2 (Top - Down approach: WAVE; Assembly Load Options; GOST Naming convection; Common Parts Library; Sequence (<Dis>Assembling animation))](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/labs/CAD_ASM2/MaM_CAD_ASM2.pdf)
+<!-- 
 * [Lab 5 CAE_DYN1 (Introduction to CAE; Animation Designer; Mechatronics Concept Designer; Motion; Measure; Interference; Density; Assign Materials)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/labs/CAE_DYN1/MaM_CAE_DYN1.pdf)
 * [Lab 6-7 CAE_DYN2 (Motion Analysis, Part 2)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/labs/CAE_DYN2/MaM_CAE_DYN2.pdf)
 * [Lab 8 CAD_REN1 (Render)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/labs/CAD_REN1/MaM_CAD_REN1.pdf)
@@ -41,7 +45,8 @@ All class related material can be found in corresponding folder/task_data
 * [HW 1 CAD_DET1 (Simple Detail)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/HWs/HW_CAD_DET1/MaM_HW_CAD_DET1.pdf)
 * [HW 2 CAD_DET2 (Complex Detail)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/HWs/HW_CAD_DET2/MaM_HW_CAD_DET2.pdf) 
 * [HW 3 CAD_ASM1 (Simple Assembly)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/HWs/HW_CAD_ASM1/MaM_HW_CAD_ASM1.pdf)
-<!-- * [HW 4 CAD_ASM2 (Complex Assembly)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/HWs/HW_CAD_ASM2/MaM_HW_CAD_ASM2.pdf)
+* [HW 4 CAD_ASM2 (Complex Assembly)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/HWs/HW_CAD_ASM2/MaM_HW_CAD_ASM2.pdf)
+<!-- 
 * [HW 5 CAE_DYN1 (Inverse Dynamics Problem)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/HWs/HW_CAE_DYN1/MaM_HW_CAE_DYN1.pdf)
 * [HW 6 CAE_DYN2 (Motion Analysis)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/HWs/HW_CAE_DYN2/MaM_HW_CAE_DYN2.pdf)
 * [HW 7 CAD_REN1 (Render)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/HWs/HW_CAD_REN1/MaM_HW_CAD_REN1.pdf)

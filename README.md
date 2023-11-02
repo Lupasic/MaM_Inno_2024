@@ -20,9 +20,6 @@ All class related material can be found in corresponding folder/task_data
 * [Lecture 4 (Synthesis of planar mechanisms)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/lectures/4/MaM_lec4.pdf)
 * [Lecture 5 (Motor sizing (selection))](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/lectures/5/MaM_lec5.pdf)
 * [Lecture 6 (Problems of description and compensation of kinetic friction in robotics)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/lectures/6/MaM_lec6.pdf)
-<!-- 
-
-
 * [Lecture 7 (Links, Joints, Connections; Shafts, Axles, Shaft couplings; Bearings)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/lectures/7/MaM_lec7.pdf)
 * [Lecture 8 (Connections: Detachable (Threaded, Keyed, ...); Permanent (Riveting, Welding, ...))](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/lectures/8/MaM_lec8.pdf) -->
 
@@ -38,8 +35,8 @@ All class related material can be found in corresponding folder/task_data
 * [Lab 4 CAD_ASM2 (Top - Down approach: WAVE; Assembly Load Options; GOST Naming convection; Common Parts Library; Sequence (<Dis>Assembling animation))](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/labs/CAD_ASM2/MaM_CAD_ASM2.pdf)
 * [Lab 5 CAE_DYN1 (Introduction to CAE; Animation Designer; Mechatronics Concept Designer; Motion; Measure; Interference; Density; Assign Materials)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/labs/CAE_DYN1/MaM_CAE_DYN1.pdf)
 * [Lab 6-7 CAE_DYN2 (Motion Analysis, Part 2)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/labs/CAE_DYN2/MaM_CAE_DYN2.pdf)
-<!-- 
 * [Lab 8 CAD_REN1 (Render)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/labs/CAD_REN1/MaM_CAD_REN1.pdf)
+<!-- 
 * [Lab 9 MAN1 (How to create such parts?)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/labs/MAN1/MaM_MAN1.pdf)
 * [Lab 10-11 CAE_STR1 (Stress Analysis)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/labs/CAE_STR1/MaM_CAE_STR1.pdf) -->
 
@@ -50,8 +47,8 @@ All class related material can be found in corresponding folder/task_data
 * [HW 4 CAD_ASM2 (Complex Assembly)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/HWs/HW_CAD_ASM2/MaM_HW_CAD_ASM2.pdf)
 * [HW 5 CAE_DYN1 (Inverse Dynamics Problem)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/HWs/HW_CAE_DYN1/MaM_HW_CAE_DYN1.pdf)
 * [HW 6 CAE_DYN2 (Motion Analysis)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/HWs/HW_CAE_DYN2/MaM_HW_CAE_DYN2.pdf)
-<!-- 
 * [HW 7 CAD_REN1 (Render)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/HWs/HW_CAD_REN1/MaM_HW_CAD_REN1.pdf)
+<!-- 
 * [HW 8 CAE_STR1 (Stress Analysis)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/HWs/HW_CAE_STR1/MaM_HW_CAE_STR1.pdf)
 * [HW 9 CAE_STR2 (Unsteady Heat Transfer Problem)](https://github.com/Lupasic/MaM_Inno_2023_Fall/blob/pub_2023/HWs/HW_CAE_STR2/MaM_HW_CAE_STR2.pdf) -->
 

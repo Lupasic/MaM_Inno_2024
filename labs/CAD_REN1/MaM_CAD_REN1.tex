@@ -65,11 +65,6 @@
 }
 
 \begin{document}
-\setlength{\abovedisplayskip}{0pt}
-\setlength{\belowdisplayskip}{0pt}
-\setlength{\abovedisplayshortskip}{0pt}
-\setlength{\belowdisplayshortskip}{0pt}
-
 \fbckg{fibeamer/figs/title_page.png}
 \frame[c]{\setcounter{framenumber}{0}
     \usebeamerfont{title}%
@@ -94,10 +89,15 @@
 \note{\scriptsize
 }
 
+
+
 \begin{frame}[t]{Plan}
 \framesubtitle{}
 \begin{enumerate}
+    \scriptsize
     \item What do we want to achieve with the renderer?
+    \item CAD vs Polygonal
+    \item What defines the material
     \item How to make a photorealistic rendering.
     \begin{enumerate}
         \item How do we make sure we don't mess up the materials?
@@ -113,7 +113,6 @@
             \item Color/brightness highlighting
         \end{enumerate}
         \item Color balance, brightness
-        \item Controlling the user's eyes with the camera movement and objects in the scene
     \end{enumerate}
 \end{enumerate}
 \end{frame}
@@ -128,6 +127,11 @@
     \end{figure}
 
 \end{frame}
+
+\usebackgroundtemplate{}
+\setbeamercolor{background canvas}{bg=}
+\includepdf[pages=-,fitpaper, linktodoc=true, pagecommand={\section{Mam_Render}\label{pdf:Mam_Render}}]{Mam_Render.pdf}
+\fbckg{fibeamer/figs/common.png}
 
 \begin{frame}[t]{How to make it look nice}
     \framesubtitle{Video}
@@ -149,14 +153,34 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}[t]{NX aspects}
+\begin{frame}[t]{NX aspects (ENG)}
+    \framesubtitle{}
+    \begin{columns}[T,onlytextwidth]
+        \begin{column}{0.69\textwidth}
+            \begin{itemize}
+                \scriptsize
+                \item The standard scene is good, the light is already well set up there, and that's the most important thing. What's lacking is a bit more down-to-earth, so we'll take one of the standard scenes (the picture) and go for it.
+                \item Metals from the folder Metals - too perfect. Suitable either for slices or for satellites only from the conveyor. For the rest it's better to use variations from the folder Metals-Brushed. Although there they are exactly machined, but they look closer to what we are familiar with IRL.
+                \item Chamfers. A mouthpiece is not enough to fully convey how important smoothing the corners is for an adequate looking picture. If the corner is not a blade, then give it at least a millimeter chamfer. It will look a level better.
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.29\textwidth}
+            \begin{figure}[H]
+                \centering\includegraphics[height=5.5cm,width=1\textwidth,keepaspectratio]{standard_scence.jpg}
+                % \caption{caption_name}
+                \label{fig:standard_scence.jpg}
+            \end{figure}
+        \end{column}
+    \end{columns}
+    \end{frame}
+\begin{frame}[t]{NX aspects (RUS)}
 \framesubtitle{}
 \begin{columns}[T,onlytextwidth]
     \begin{column}{0.69\textwidth}
         \begin{itemize}
             \scriptsize
             \item Стандартная сцена хороша, там свет уже хорошо настроен, а это самое главное. Не хватает приземлённости, для этого выбираем одну из стандартных сцен (картинка) и радуемся
-            \item Металлы из папки Metals - слишком идеальные. Подойду либо для срезов, либо для спутников только с конвеера. Для остального лучше использовать вариации из папки Metals-Brushed. Хотя там они именно обработаны, но выглядят более приближенно к тому что нам знакомо ИРЛ.
+            \item Металлы из папки Metals - слишком идеальные. Подойдут либо для срезов, либо для спутников только с конвеера. Для остального лучше использовать вариации из папки Metals-Brushed. Хотя там они именно обработаны, но выглядят более приближенно к тому что нам знакомо ИРЛ.
             \item ФАСКИ. Капса не хватит что бы в полной мере передать насколько важно сглаживание углов для адекватно выглядящей картинки. Если угол не является лезвием, то дайте ему хотя бы миллиметровую фаску. Выглядеть станет на уровень лучше.
         \end{itemize}
     \end{column}
@@ -186,6 +210,16 @@
         \href{https://disk.yandex.ru/i/aXWXryrDGGdZ0A}{
             \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{practice_render.jpg}}
         \label{fig:practice_render.jpg}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[t]{Invited Lecturer Egor (RUS)}
+    \framesubtitle{Video}
+    \vspace{-0.6cm}
+    \begin{figure}[H]
+        \href{https://disk.yandex.ru/i/g4k_bOkkXyebJA}{
+            \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{egor_render_video.png}}
+        \label{fig:egor_render_video.png}
     \end{figure}
 \end{frame}
 

@@ -1,0 +1,86 @@
+\documentclass[12pt]{article}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ right=10mm,
+ top=10mm,
+ bottom=20mm,
+ headheight=75pt
+ }
+% \usepackage[utf8x]{inputenc}
+\usepackage{fontspec}
+\setmainfont{Open Sans}
+\setsansfont{Noto Sans}
+\usepackage{graphicx}
+\usepackage{forloop}
+\usepackage{subcaption}
+\usepackage{url}       % `\url`s
+\usepackage{floatrow}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\graphicspath{{resources_quiz_1/}}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+
+\renewcommand{\headrulewidth}{0pt}
+% \fancyhead[C]{}
+% \fancyfoot[]{}
+
+
+\newcommand\pic[1]{(\cref{#1})} %Где нужно сослаться на рисунок
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=cyan,
+    }
+
+% The preamble ends with the command \begin{document}
+\begin{document}
+\begin{center}
+    \LARGE <<Mechanics and Machines>> \\ \textbf{Test 2}
+\end{center}
+
+\textbf{Task 1}
+\begin{enumerate}
+    \item You are a cleaning robot developer. You know proposed characteristics of robot inertia, and you should choose the motors for it. Robot kinematics is 2 wheel robot, with 2 supports.
+
+    Explain your steps for choosing the motor.
+\end{enumerate}
+
+\textbf{Task 2}
+\begin{enumerate}
+    \item What the difference between rolling friction and sliding friction? 
+\end{enumerate}
+
+\textbf{Task 3}
+\begin{enumerate}
+    \item What types of synthesis do we have? What the main difference between them?
+    \item Propose the problem of structural synthesis and the steps what should you do for solving it?
+    \item What the difference between function generation and trajectory generation synthesis problems?
+\end{enumerate}
+
+\textbf{Task 4}
+\begin{enumerate}
+    \item Bearings. Types. Prof and cons. How to mount and dismount them. The idea besides locating and floating bearings.
+    \item Screw types. Type of drills. Type of holes. How to distinguish them on a blueprints?
+\end{enumerate}
+
+\textbf{Task 5}
+\begin{enumerate}
+    \item What types of permanent connections do you know (at least 4)? Examples. Benefits and withdraws
+    \item What types of detachable connections do you know (at least 4)? Examples. Benefits and withdraws
+\end{enumerate}
+
+\textbf{Task 6}
+\begin{enumerate}
+    \item Types of manufacturing. At least 1 example for each type. Prof and cons.
+\end{enumerate}
+
+
+\end{document}

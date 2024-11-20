@@ -23,10 +23,10 @@ All class related material can be found in corresponding folder/task_data
 * [Lecture 7 (Links, Joints, Connections; Shafts, Axles, Shaft couplings; Bearings)](https://github.com/Lupasic/MaM_Inno_2024/blob/pub_2024/lectures/7/MaM_lec7.pdf)
 * [Lecture 8 (Connections: Detachable (Threaded, Keyed, ...); Permanent (Riveting, Welding, ...))](https://github.com/Lupasic/MaM_Inno_2024/blob/pub_2024/lectures/8/MaM_lec8.pdf) -->
 
-<!-- * [Lecture 10 (Design Thinking and Manufacturing)](https://github.com/Lupasic/MaM_Inno_2024/blob/pub_2024/lectures/10/MaM_lec10.pdf) -->
+* [Lecture 10 (Design Thinking and Manufacturing)](https://github.com/Lupasic/MaM_Inno_2024/blob/pub_2024/lectures/10/MaM_lec10.pdf) -->
 
-<!--* [Lecture 12 (Overview of Strength of Materials)](https://github.com/Lupasic/MaM_Inno_2024/blob/pub_2024/lectures/12/MaM_lec12.pdf)
-* [Lecture 13 (Finite Difference Method; Finite Element Method)](https://github.com/Lupasic/MaM_Inno_2024/blob/pub_2024/lectures/13/MaM_lec13.pdf) -->
+* [Lecture 12 (Overview of Strength of Materials)](https://github.com/Lupasic/MaM_Inno_2024/blob/pub_2024/lectures/12/MaM_lec12.pdf)
+* [Lecture 13 (Finite Difference Method; Finite Element Method)](https://github.com/Lupasic/MaM_Inno_2024/blob/pub_2024/lectures/13/MaM_lec13.pdf)
 
 # Lab slides
 * [Lab 1 CAD_DET1 (Intro to subject; History of CAD; Solid modeling)](https://github.com/Lupasic/MaM_Inno_2024/blob/pub_2024/labs/CAD_DET1/MaM_CAD_DET1.pdf)
@@ -36,9 +36,9 @@ All class related material can be found in corresponding folder/task_data
 * [Lab 5 CAE_DYN1 (Introduction to CAE; Animation Designer; Mechatronics Concept Designer; Motion; Measure; Interference; Density; Assign Materials)](https://github.com/Lupasic/MaM_Inno_2024/blob/pub_2024/labs/CAE_DYN1/MaM_CAE_DYN1.pdf)
 * [Lab 6-7 CAE_DYN2 (Motion Analysis, Part 2)](https://github.com/Lupasic/MaM_Inno_2024/blob/pub_2024/labs/CAE_DYN2/MaM_CAE_DYN2.pdf)
 * [Lab 8 CAD_REN1 (Render)](https://github.com/Lupasic/MaM_Inno_2024/blob/pub_2024/labs/CAD_REN1/MaM_CAD_REN1.pdf)
-<!-- 
+
 * [Lab 9 MAN1 (How to create such parts?)](https://github.com/Lupasic/MaM_Inno_2024/blob/pub_2024/labs/MAN1/MaM_MAN1.pdf)
-* [Lab 10-11 CAE_STR1 (Stress Analysis)](https://github.com/Lupasic/MaM_Inno_2024/blob/pub_2024/labs/CAE_STR1/MaM_CAE_STR1.pdf) -->
+* [Lab 10-11 CAE_STR1 (Stress Analysis)](https://github.com/Lupasic/MaM_Inno_2024/blob/pub_2024/labs/CAE_STR1/MaM_CAE_STR1.pdf)
 
 # HWs
 * [HW 1 CAD_DET1 (Simple Detail)](https://github.com/Lupasic/MaM_Inno_2024/blob/pub_2024/HWs/HW_CAD_DET1/MaM_HW_CAD_DET1.pdf)
@@ -48,9 +48,9 @@ All class related material can be found in corresponding folder/task_data
 * [HW 5 CAE_DYN1 (Inverse Dynamics Problem)](https://github.com/Lupasic/MaM_Inno_2024/blob/pub_2024/HWs/HW_CAE_DYN1/MaM_HW_CAE_DYN1.pdf)
 * [HW 6 CAE_DYN2 (Motion Analysis)](https://github.com/Lupasic/MaM_Inno_2024/blob/pub_2024/HWs/HW_CAE_DYN2/MaM_HW_CAE_DYN2.pdf)
 * [HW 7 CAD_REN1 (Render)](https://github.com/Lupasic/MaM_Inno_2024/blob/pub_2024/HWs/HW_CAD_REN1/MaM_HW_CAD_REN1.pdf)
-<!-- 
+
 * [HW 8 CAE_STR1 (Stress Analysis)](https://github.com/Lupasic/MaM_Inno_2024/blob/pub_2024/HWs/HW_CAE_STR1/MaM_HW_CAE_STR1.pdf)
-* [HW 9 CAE_STR2 (Unsteady Heat Transfer Problem)](https://github.com/Lupasic/MaM_Inno_2024/blob/pub_2024/HWs/HW_CAE_STR2/MaM_HW_CAE_STR2.pdf) -->
+* [HW 9 CAE_STR2 (Unsteady Heat Transfer Problem)](https://github.com/Lupasic/MaM_Inno_2024/blob/pub_2024/HWs/HW_CAE_STR2/MaM_HW_CAE_STR2.pdf)
 
 # For contributors
 

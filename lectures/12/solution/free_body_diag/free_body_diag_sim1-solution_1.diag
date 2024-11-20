@@ -1,0 +1,74 @@
+
+*** 11:00:03 *** 
+Starting Nastran Exporter
+
+*** 11:00:03 *** 
+Writing file 
+D:\Latex_docs\MaM\lectures\12\solution\free_body_diag\free_body_diag_sim1-solution_1.dat
+ 
+*** 11:00:03 *** 
+Writing SIMCENTER NASTRAN 2206.0 compatible deck
+
+*** 11:00:03 *** 
+Writing Nastran System section
+
+*** 11:00:03 *** 
+Writing File Management section
+
+*** 11:00:03 *** 
+Writing Executive Control section
+
+*** 11:00:03 *** 
+Writing Case Control section
+
+*** 11:00:03 *** 
+Writing Bulk Data section
+
+*** 11:00:03 *** 
+Writing Nodes
+
+*** 11:00:03 *** 
+Writing Elements
+
+*** 11:00:04 *** 
+Writing Physical Properties
+
+*** 11:00:04 *** 
+Writing Materials
+
+*** 11:00:04 *** 
+Writing Degree-of-Freedom Sets
+
+*** 11:00:04 *** 
+Writing Loads and Constraints
+
+*** 11:00:04 *** 
+Writing Coordinate Systems
+
+*** 11:00:04 *** 
+Validating Solution Setup
+
+*** 11:00:04 *** 
+Summary of Bulk Data cards written
+
++----------+----------+
+|   NAME   |  NUMBER  |
++----------+----------+
+| CHEXA    | 7200     |
+| CQUAD8   | 9        |
+| FORCE    | 1204     |
+| GRID     | 12840    |
+| LOAD     | 1        |
+| MAT1     | 1        |
+| MATT1    | 1        |
+| MOMENT   | 40       |
+| PARAM    | 6        |
+| PSHELL   | 1        |
+| PSOLID   | 1        |
+| SPC      | 16       |
+| TABLEM1  | 3        |
++----------+----------+
+
+*** 11:00:04 *** 
+Nastran Deck Successfully Written
+

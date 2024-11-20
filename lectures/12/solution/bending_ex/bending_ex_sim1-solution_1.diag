@@ -1,0 +1,70 @@
+
+*** 10:27:17 *** 
+Starting Nastran Exporter
+
+*** 10:27:17 *** 
+Writing file 
+D:\Latex_docs\MaM\lectures\12\solution\bending_ex\bending_ex_sim1-solution_1.dat
+ 
+*** 10:27:17 *** 
+Writing SIMCENTER NASTRAN 2206.0 compatible deck
+
+*** 10:27:17 *** 
+Writing Nastran System section
+
+*** 10:27:17 *** 
+Writing File Management section
+
+*** 10:27:17 *** 
+Writing Executive Control section
+
+*** 10:27:17 *** 
+Writing Case Control section
+
+*** 10:27:17 *** 
+Writing Bulk Data section
+
+*** 10:27:17 *** 
+Writing Nodes
+
+*** 10:27:17 *** 
+Writing Elements
+
+*** 10:27:17 *** 
+Writing Physical Properties
+
+*** 10:27:17 *** 
+Writing Materials
+
+*** 10:27:17 *** 
+Writing Degree-of-Freedom Sets
+
+*** 10:27:17 *** 
+Writing Loads and Constraints
+
+*** 10:27:17 *** 
+Writing Coordinate Systems
+
+*** 10:27:17 *** 
+Validating Solution Setup
+
+*** 10:27:17 *** 
+Summary of Bulk Data cards written
+
++----------+----------+
+|   NAME   |  NUMBER  |
++----------+----------+
+| CBAR     | 100      |
+| FORCE    | 1        |
+| GRID     | 101      |
+| MAT1     | 1        |
+| MATT1    | 1        |
+| PARAM    | 6        |
+| PBAR     | 1        |
+| SPC      | 1        |
+| TABLEM1  | 3        |
++----------+----------+
+
+*** 10:27:17 *** 
+Nastran Deck Successfully Written
+
